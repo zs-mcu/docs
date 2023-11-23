@@ -1,3 +1,6 @@
+const moment = require('moment');
+moment.locale('zh-cn')
+
 module.exports = {
   title: "小邵子",
   description: '小邵子的个人笔记',
@@ -5,6 +8,17 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: '小邵子' }],
     ['meta', { name: 'keywords', content: '张邵,小邵子的 vuepress 个人博客' }]
+  ],
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          //return moment(timestamp).fromNow()
+          return moment(timestamp).format("LLLL")
+        }
+      }
+    ]
   ],
   themeConfig: {
     logo: '/assets/img/logo.png',
@@ -44,6 +58,8 @@ module.exports = {
       '/': [
         ""
       ]
-    }
-  }
+    },
+    lastUpdated: '更新时间',
+  },
+
 }
