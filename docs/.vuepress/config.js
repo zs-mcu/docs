@@ -1,4 +1,11 @@
 module.exports = {
+  title: "小邵子",
+  description: '小邵子的个人笔记',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'author', content: '小邵子' }],
+    ['meta', { name: 'keywords', content: '张邵,小邵子的 vuepress 个人博客' }]
+  ],
   themeConfig: {
     logo: '/assets/img/logo.png',
     nav: [
