@@ -13,7 +13,7 @@ module.exports = {
           { text: 'about', link: '/about/' },
           { text: 'about.html', link: '/about.html' },
           {
-            text: '关于我的一切', 
+            text: '关于我的一切',
             items: [
               { text: 'about', link: '/about/' },
               { text: 'about.html', link: '/about.html' },
@@ -22,6 +22,21 @@ module.exports = {
         ]
       },
 
-    ]
+    ],
+    sidebar: {
+      "/css/": [
+        'c-aaa',
+        'c-bbb',
+        'c-ccc',
+      ],
+      "/javascript/": [
+        'j-aaa',
+        'j-bbb',
+        'j-ccc',
+      ],
+      '/': [
+        ""
+      ]
+    }
   }
 }
