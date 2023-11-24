@@ -6,6 +6,7 @@
   "author": "zs <2020299870@qq.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.10",
     "@vuepress/plugin-pwa": "^1.9.10",
     "vuepress": "^1.9.10"
   },
