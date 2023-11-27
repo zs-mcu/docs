@@ -1,3 +1,6 @@
+> config.js
+
+```js
 
 const headConfig = require('./config/headConfig');
 const pluginsConfig = require('./config/pluginsConfig');
@@ -7,7 +10,12 @@ module.exports = {
   title: "小邵子",
   description: '小邵子的个人笔记',
   head: headConfig,
-  // base: "/docs/",
+  base: "/docs/",
   plugins: pluginsConfig,
   themeConfig: themeConfig,
 }
+```
+
+> 分割的js
+
+![image-20231124085825151](/vuepress/image-20231124085825151.png)

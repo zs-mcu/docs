@@ -23,5 +23,11 @@ module.exports = [
           }
         }
       ],
-      ['@vuepress/back-to-top']
+      ['@vuepress/back-to-top'],
+      [
+        '@vuepress/google-analytics',
+        {
+          'ga': 'G-97XP980WZE' // UA-00000000-0
+        }
+      ]
 ]
