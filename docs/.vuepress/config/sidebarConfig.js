@@ -9,7 +9,8 @@ module.exports = {
     'j-bbb',
     'j-ccc',
   ],
-  "/vuepress/": [
+  "/zs-tool-框架/vuepress/": [
+    '',
     '1、快速开始',
     '2、初体验',
     '3、导航栏',

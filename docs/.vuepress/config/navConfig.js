@@ -6,7 +6,7 @@ module.exports = [
       {
         text: '前端工具框架',
         items: [
-          {text: 'vuepress',link: '/vuepress/'},
+          {text: 'vuepress',link: '/zs-tool-框架/vuepress/'},
         ]
       },
     ]
