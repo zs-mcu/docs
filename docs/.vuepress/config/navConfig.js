@@ -9,7 +9,18 @@ module.exports = [
           {text: 'vuepress',link: '/vuepress/'},
         ]
       },
-      
+    ]
+  },
+  {
+    text: 'zs-tool-小结',
+    ariaLabel: 'zs-tool-小结',
+    items: [
+      {
+        text: '网址收藏',
+        items: [
+          {text: '实用网址',link: '/zs-tool-小结/网址收藏/实用网址'},
+        ]
+      },
     ]
   },
 
