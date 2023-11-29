@@ -1,3 +1,6 @@
+# 13、分割config
+
+
 > config.js
 
 ```js
@@ -18,4 +21,4 @@ module.exports = {
 
 > 分割的js
 
-![image-20231124085825151](/vuepress/image-20231124085825151.png)
+![image-20231124085825151](./vuepress.assist/image-20231124085825151.png)

@@ -1,6 +1,4 @@
-
-
-
+# 5、SEO
 
 - 标题
 - 描述信息
@@ -8,9 +6,7 @@
 - favicon
 - keywords
 
-
-
-[图标下载](https://favicon.io/)
+[图标下载：https://favicon.io/](https://favicon.io/)
 
 个人博客SEO属性设置
 

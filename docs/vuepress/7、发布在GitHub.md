@@ -1,4 +1,4 @@
-
+# 7、发布在GitHub
 
 在你的项目中，创建一个如下的 deploy.sh 文件（请自行判断去掉高亮行的注释）:
 
@@ -30,8 +30,8 @@ git commit -m 'deploy'
 cd -
 ```
 
-![image-20231123134557582](/vuepress/image-20231123134557582.png)
+![image-20231123134557582](./vuepress.assist/image-20231123134557582.png)
 
-![image-20231123134612933](/vuepress/image-20231123134612933.png)
+![image-20231123134612933](./vuepress.assist/image-20231123134612933.png)
 
-![image-20231123134649477](/vuepress/image-20231123134649477.png)
+![image-20231123134649477](./vuepress.assist/image-20231123134649477.png)
