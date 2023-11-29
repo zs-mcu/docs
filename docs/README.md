@@ -22,3 +22,7 @@ features:
   details: 心怀天下，声色犬码。生有热烈，藏与俗常。
 footer: Copyright © 2023-present 小邵子
 ---
+
+::: tip 更新说明
+Linux RedHead8 系统的基本使用
+::: 

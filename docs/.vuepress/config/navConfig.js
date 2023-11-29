@@ -15,12 +15,14 @@ module.exports = [
     text: 'zs-tool-小结',
     ariaLabel: 'zs-tool-小结',
     items: [
-      {
-        text: '网址收藏',
-        items: [
-          {text: '实用网址',link: '/zs-tool-小结/网址收藏/实用网址'},
-        ]
-      },
+      {text: '实用网址',link: '/zs-tool-小结/网址收藏/实用网址'},
+    ]
+  },
+  {
+    text: 'zs-use',
+    ariaLabel: 'zs-use',
+    items: [
+      {text: 'Linux',link: '/zs-use/linux/'},
     ]
   },
 
