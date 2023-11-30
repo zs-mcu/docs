@@ -23,6 +23,10 @@ features:
 footer: Copyright © 2023-present 小邵子
 ---
 
-::: tip 更新说明
+::: tip Git更新说明
+Git的基本使用
+::: 
+
+::: tip Linux说明
 Linux RedHead8 系统的基本使用
 ::: 
