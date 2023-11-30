@@ -22,4 +22,6 @@ git commit -m 'deploy'
 # 第一次发布的时候使用
 git push -f https://github.com/zs-mcu/docs.git master:gh-pages
 
+# git push -f git@github.com:zs-mcu/docs.git master:gh-pages
+
 cd -
