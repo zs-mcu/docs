@@ -1,4 +1,5 @@
 module.exports = [
+  { text: 'zs-在线简历', link: '/resume/' },
   {
     text: 'zs-tool-框架',
     ariaLabel: 'zs-tool-框架',

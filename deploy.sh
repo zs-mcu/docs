@@ -1,10 +1,16 @@
 #!/usr/bin/env sh
-
 # 确保脚本抛出遇到的错误
 set -e
 
 # 生成静态文件
 yarn docs:build
+cd ../animating-resume
+yarn build
+cd -
+cp -r ../animating-resume/public/ docs/.vuepress/dist/resume
+
+# Mac下的sed命令需要添加 “” 空字符串
+sed -i '' 's/\/static/\.\/static/g' docs/.vuepress/dist/resume/index.html
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist

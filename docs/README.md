@@ -1,18 +1,14 @@
 ---
 home: true
-
 # 中间的图片
-# heroImage: /assets/img/hero.png
+heroImage: /assets/img/wx.jpg
 # 主标题
 heroText: 悠闲的线程池
 # 副标题
 tagline: 包括：vuepress使用，科学上网
-
 # 按钮
 actionText: 开始阅读 →
 actionLink: /guide/
-
-
 features:
 - title: 沉淀
   details: 承遇朝霞，年少正恰。整装戎马，刻印风华。
