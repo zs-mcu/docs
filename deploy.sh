@@ -17,11 +17,10 @@ git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+# 如果想修改 cname 就必须使用ssh推送了
+git push -f git@github.com:zs-mcu/docs.git master:gh-pages
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # 第一次发布的时候使用
-git push -f https://github.com/zs-mcu/docs.git master:gh-pages
-
-# git push -f git@github.com:zs-mcu/docs.git master:gh-pages
-
+# git push -f https://github.com/zs-mcu/docs.git master:gh-pages
 cd -
