@@ -3,6 +3,7 @@ title: '附录1、常见的实际问题'
 ---
 
 ## Git替换远程仓库地址
+
 ```powershell
 # 查看当前的远程仓库
 zs@MacBook-Pro docs % git remote -v  
@@ -15,3 +16,4 @@ zs@MacBook-Pro docs % git branch -M main
 # 提交指定分支到远程仓库
 zs@MacBook-Pro docs % git push -u origin main
 ```
+
