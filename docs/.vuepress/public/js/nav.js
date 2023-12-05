@@ -8,7 +8,6 @@ module.exports = [
   //     }
   //   ]
   // },
-  
   //{ text: 'zs-在线简历', link: '/resume/' , target: '_self', rel: '' },
   { text: 'zs-在线简历', link: '/resume/' , target: '_blank', rel: '' },
   {
