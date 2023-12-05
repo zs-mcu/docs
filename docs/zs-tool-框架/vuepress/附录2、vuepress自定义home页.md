@@ -1,3 +1,8 @@
+---
+title: '附录2、vuepress自定义home页'
+
+autoGroup-1: 附录
+---
 ## 1、vuepress的主体继承
 
 ![image-20231205154950176](./images/image-20231205154950176.png)
