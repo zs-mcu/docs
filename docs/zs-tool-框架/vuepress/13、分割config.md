@@ -25,4 +25,4 @@ module.exports = {
 
 > 分割的js
 
-![image-20231124085825151](./vuepress.assist/image-20231124085825151.png)
+![image-20231124085825151](./images/image-20231124085825151.png)

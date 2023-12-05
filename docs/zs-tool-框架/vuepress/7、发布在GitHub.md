@@ -33,8 +33,8 @@ git commit -m 'deploy'
 cd -
 ```
 
-![image-20231123134557582](./vuepress.assist/image-20231123134557582.png)
+![image-20231123134557582](./images/image-20231123134557582.png)
 
-![image-20231123134612933](./vuepress.assist/image-20231123134612933.png)
+![image-20231123134612933](./images/image-20231123134612933.png)
 
-![image-20231123134649477](./vuepress.assist/image-20231123134649477.png)
+![image-20231123134649477](./images/image-20231123134649477.png)

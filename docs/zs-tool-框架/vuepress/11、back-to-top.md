@@ -6,13 +6,13 @@ autoSort: 90
 
 
 
-![image-20231123195238490](./vuepress.assist/image-20231123195238490.png)
+![image-20231123195238490](./images/image-20231123195238490.png)
 
 
 
 
 
-![image-20231123195544198](./vuepress.assist/image-20231123195544198.png)
+![image-20231123195544198](./images/image-20231123195544198.png)
 
 
 
