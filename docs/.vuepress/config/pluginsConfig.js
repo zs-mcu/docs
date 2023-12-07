@@ -50,6 +50,13 @@ module.exports = {
   '@vuepress/back-to-top': {},
   '@vuepress/google-analytics': {
     'ga': secret.ga
-  }
+  },
+  '@vuepress/medium-zoom': {
+    selector: 'img.zoom-custom-imgs',
+  },
+  //全文搜索插件，说是不太友好
+  'fulltext-search':{},
+  // 对中文不友好
+  //'flexsearch': {},
 
 }
