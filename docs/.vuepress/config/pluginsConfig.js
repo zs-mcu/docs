@@ -59,4 +59,7 @@ module.exports = {
   // 对中文不友好
   //'flexsearch': {},
 
+
+  "vuepress-plugin-code-copy": {},
+
 }
