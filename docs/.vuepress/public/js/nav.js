@@ -16,6 +16,10 @@ module.exports = [
       {
         "text": "网址收藏",
         "link": "/zs-tool-小结/网址收藏/实用网址"
+      },
+      {
+        "text": "文件",
+        "link": "/zs-tool-小结/文件/"
       }
     ]
   },

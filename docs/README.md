@@ -18,8 +18,17 @@ features:
   details: 心怀天下，声色犬码。生有热烈，藏与俗常。
 footer: Copyright © 2023-present 小邵子
 ---
+<center>
+<img alt="Static Badge" src="https://img.shields.io/badge/java-%E4%BA%8C%E6%89%8B%E7%A8%8B%E5%BA%8F%E5%91%98%F0%9F%90%92-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/java-CV%E6%94%BB%E5%9F%8E%E7%8B%AE%F0%9F%A6%81-red">
 
-🎉身为一名次高级全烂开发工程师的自我修养🎉
+🎉身为一名次高级全烂开发工程师的自我修养,拿来主义的践行者🎉
+
+</center>
+
+
+
+
 
 ::: tip Git更新说明
 Git的基本使用
