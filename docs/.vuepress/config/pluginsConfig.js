@@ -1,6 +1,8 @@
 const moment = require('moment');
 moment.locale('zh-cn')
 
+const secret = require("./secret")
+
 
 module.exports = {
   "vuepress-plugin-auto-sidebar": {
@@ -26,8 +28,8 @@ module.exports = {
     // 其他的 Vssue 配置
     owner: 'zs-mcu',
     repo: 'docs',
-    clientId: '09b48aa193526adeb1a8',
-    clientSecret: 'e3bfa36d814f2a4cc89ebefbb42858d714b4091e',
+    clientId: secret.clientId,
+    clientSecret: secret.clientSecret,
     autoCreateIssue: true,
     locale: 'zh'
   },
@@ -47,7 +49,7 @@ module.exports = {
   },
   '@vuepress/back-to-top': {},
   '@vuepress/google-analytics': {
-    'ga': 'G-97XP980WZE' // UA-00000000-0
+    'ga': secret.ga
   }
 
 }
