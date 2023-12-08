@@ -61,5 +61,6 @@ module.exports = {
 
 
   "vuepress-plugin-code-copy": {},
-
+  //"vuepress-plugin-side-anchor": {},
+  "vuepress-plugin-right-anchor": {},
 }
