@@ -1,7 +1,8 @@
 ---
-title: 获取ContentType
-
+title: '获取文件ContentType'
+autoGroup-1: '附录'
 ---
+
 ## 根据文件名判断Content-Type
 
 ### 方式一：spring提供(💯无脑选)
@@ -34,6 +35,7 @@ public class MainTest {
 > 枚举
 
 ```java
+
 import lombok.Getter;
 import org.springframework.util.StringUtils;
 
