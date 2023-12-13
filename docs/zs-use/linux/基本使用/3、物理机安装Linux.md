@@ -114,7 +114,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 等待机器进行重启。
 
-### 1.3.2 安装操作系统
+### 安装操作系统
 
 等待重启中，直到出现如图1-17所示为止，中间都不需要进行操作。
 
@@ -122,7 +122,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 ![img](./images/wps2.jpg)
 
-### 1.3.3 选择安装时使用的语言
+### 选择安装时使用的语言
 
 选择确认之后，等到图1-18所示的界面，并安装上面的步骤进行选择。
 
@@ -130,7 +130,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 点击继续之后，进行安装信息摘要部分，
 
-### 1.3.4 选择软件安装
+### 选择软件安装
 
 软件选择，安装如图1-19所示选择：
 
@@ -138,7 +138,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 
 
-### .3.5 进行手动磁盘分区
+### 进行手动磁盘分区
 
 安装目标位置(磁盘分区)，如图1-20所示
 
@@ -190,7 +190,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 图 1-26
 
-### 1.3.6 网络配置
+### 网络配置
 
 可以在安装的时候，就配置网络的IP地址和子网掩码。如果不在该处配置，也可参考第1.3.9章节的配置，进行网络地址的配置。IP地址等信息根据实际情况配置。
 
@@ -224,7 +224,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 自动回到安装信息摘要的界面，点击右下角的“开始安装”
 
-### 1.3.7 设置root密码和新建普通用户
+### 设置root密码和新建普通用户
 
 设置root密码为：jysp，由于密码过于简单，需点击两次完成按键才能设置成功，具体步骤如图1-33和图1-34所示。
 
@@ -246,7 +246,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 等待操作系统安装完成之后点击“重启”。
 
-### 1.3.8 关闭防火墙和selinux
+### 关闭防火墙和selinux
 
 直接在Mgmt的控制台上用root用户登入服务器。
 
@@ -272,7 +272,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 SELINUX=enforcing  修改为  SELINUX=disable
 
-### 1.3.9 修改网络配置网络并启动网络（补充说明）
+### 修改网络配置网络并启动网络（补充说明）
 
 (1) 修改网卡配置文件修改IP地址
 
@@ -293,8 +293,6 @@ NETMASK=255.255.255.0 #根据实际的子网掩码进行修改
 修改之后如图1-37所示
 
 ![img](./images/wps22.jpg) 
-
-图 1-37
 
 (2) 图形化界面修改网络
 
@@ -346,7 +344,7 @@ systemctl restart network
 
  
 
-#### 2.1 配置yum源
+#### 配置yum源
 
 Ø 系统版本：CentOS Linux release 7.9.2009 (AltArch)
 
@@ -366,27 +364,19 @@ mount -s CentOS-7-aarch64-Everything-2009.iso /media/
 
 ![img](./images/wps27.jpg) 
 
-图 2-1
-
 (2) 修改配置文件
 
 在/etc/yum.repos.d/目录下新建目录bak，然后将yum.repo.d目录下的所有文件都移动到bak目录下。之后/etc/yum.repos.d/目录下新建文件CentOS-iso.repo，并写入：
 
+```
 [base]
-
 name=CentOS-7 - iso
-
 baseurl=file:///media
-
 gpgcheck=0
-
 enabled=1
-
-如图2-2所示
+```
 
 ![img](./images/wps28.jpg) 
-
-图 2-2
 
 保存退出之后，执行yum 软件包缓存更新命令(如图2-3所示)：
 
@@ -417,9 +407,3 @@ rufus工具制作
 ![image-20231213142721041](./images/image-20231213142721041.png)
 
 ![image-20231213142734948](./images/image-20231213142734948.png)
-
-
-
-
-
-
