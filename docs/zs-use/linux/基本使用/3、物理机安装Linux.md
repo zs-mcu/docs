@@ -1,7 +1,6 @@
 ---
 autoSort: 8000
 ---
-
 # 物理机安装Linux
 
 ## 系统镜像获取
@@ -55,7 +54,7 @@ http://isoredirect.centos.org/centos/7/isos/
 
 
 
-## **RAID 1的配置** 
+### RAID 1的配置
 
 为了进行冗余，因此将服务器上四块磁盘进行两两的Raid 1的配置。
 
@@ -81,15 +80,15 @@ http://isoredirect.centos.org/centos/7/isos/
 
 ![image-20231213112812240](./images/image-20231213112812240.png)
 
-## **centos7操作系统安装**
+#### centos7操作系统安装
 
-**Ø** ***\*系统版本号\****：CentOS Linux release 7.9.2009 (AltArch)
+Ø 系统版本号：CentOS Linux release 7.9.2009 (AltArch)
 
-**Ø** ***\*系统内核版本\****：4.18.0-193.28.1.el7.aarch64
+Ø 系统内核版本：4.18.0-193.28.1.el7.aarch64
 
-**Ø** ***\*安装软件(自带)\****：GUI和FTP
+Ø 安装软件(自带)：GUI和FTP
 
-**Ø** ***\*磁盘分区方案\****：硬件RAID1和软件的LVM
+Ø 磁盘分区方案：硬件RAID1和软件的LVM
 
 
 
@@ -323,7 +322,7 @@ systemctl restart network
 
 之后用网线连接服务器的第一个电口，并测试网络是否正常。   
 
-# 第一章 **基础组件安装**
+### 基础组件安装
 
 如表2-1所示，汇总了安装的基础组件的相关信息，
 
@@ -347,11 +346,11 @@ systemctl restart network
 
  
 
-## **2.1 配置yum源**
+#### 2.1 配置yum源
 
-**Ø** ***\*系统版本\****：CentOS Linux release 7.9.2009 (AltArch)
+Ø 系统版本：CentOS Linux release 7.9.2009 (AltArch)
 
-**Ø** ***\*配置方式\****：配置本地源
+Ø 配置方式：配置本地源
 
 (1) 上传镜像并挂载
 
@@ -359,7 +358,9 @@ systemctl restart network
 
 将CentOS-7-aarch64-Everything-2009.iso镜像文件上传到服务器上(可放在jysp用户的家目录下)，并在该上传的目录下执行挂载镜像的命令（当服务器重启，该挂载失效，需重新挂载。）：
 
+```
 mount -s CentOS-7-aarch64-Everything-2009.iso /media/
+```
 
 执行结果如图2-1所示
 
@@ -395,7 +396,7 @@ yum makecache
 
 
 
-## 物理机安装
+## U盘物理机安装
 
 ### 制作启动盘
 
@@ -416,6 +417,9 @@ rufus工具制作
 ![image-20231213142721041](./images/image-20231213142721041.png)
 
 ![image-20231213142734948](./images/image-20231213142734948.png)
+
+
+
 
 
 
