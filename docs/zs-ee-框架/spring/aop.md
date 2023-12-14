@@ -620,3 +620,102 @@ spring 切换代理类型
 > `<aop:aspectj-autoproxy proxy-target-class="false" />`
 > XML配置
 > `<aop: config proxy-target-class="false"></aop:config>`
+
+
+
+
+
+ 
+
+以下是测试代码的日志
+
+\==== 没有异常的情况
+
+环绕通知前....
+
+before
+
+invoke
+
+环绕通知后....
+
+after
+
+afterReturning
+
+\==== 有异常的情况
+
+环绕通知前....
+
+before
+
+invoke
+
+after
+
+afterThrowable出现异常:msg=/ by zero
+
+\==== 总结
+
+after一定走。是在finally里
+
+afterReturning 在抛异常时不出现，在after之后。说明在finally外面
+
+before 在环绕通知后执行  
+ 
+
+_**错误版**_
+
+```
+// 这个是错的。因为执行这个，抛了异常之后会走afterReturning。而实际没有走。
+try{
+
+    Around();
+    Before();
+    invoke();
+
+}catch(Exception e){
+
+    AfterThrowable();
+
+}finally{
+
+    After();
+
+}
+
+AfterReturning();
+
+
+```
+
+抛异常之后并没有走AfterReturning。因此该方法在 catch 前面执行。在finally后执行。最终版如下
+
+_**最终版**_ 
+
+```
+// 最终版
+try{
+
+    try {
+
+        Around();
+        Before();
+        invoke();
+
+    } finally {
+
+        After();
+
+    }
+
+    AfterReturning();
+
+} catch (Exception e){
+
+    AfterThrowable();
+
+}
+
+
+```
