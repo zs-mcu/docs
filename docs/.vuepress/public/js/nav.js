@@ -24,6 +24,15 @@ module.exports = [
     ]
   },
   {
+    "text": "zs-ee-框架",
+    "items": [
+      {
+        "text": "mybatis-plus",
+        "link": "/zs-ee-框架/mybatis-plus/"
+      }
+    ]
+  },
+  {
     "text": "zs-tool-框架",
     "items": [
       {
