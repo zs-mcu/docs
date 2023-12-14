@@ -29,6 +29,10 @@ module.exports = [
       {
         "text": "mybatis-plus",
         "link": "/zs-ee-框架/mybatis-plus/"
+      },
+      {
+        "text": "spring",
+        "link": "/zs-ee-框架/spring/"
       }
     ]
   },

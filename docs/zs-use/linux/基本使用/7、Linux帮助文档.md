@@ -3,7 +3,7 @@ autoSort: 4000
 ---
 # Linux帮助文档
 
-### 1、简约求帮助(help)
+## 1、简约求帮助(help)
 
 ```powershell
 help命令：知道该命令的含义，相关参数不知道可以使用help
@@ -22,7 +22,7 @@ type命令：判断一个命令是内部还是外部
 
 
 
-### 2、详细求帮助(man)
+## 2、详细求帮助(man)
 
 ```powershell
 # man man
@@ -53,7 +53,7 @@ type命令：判断一个命令是内部还是外部
 管理员手册 man 158
 ```
 
-### 3、相关官方文档
+## 3、相关官方文档
 
 ```powershell
 http://httpd.apache.org/docs/2.4/
@@ -65,5 +65,3 @@ https://puppet.com/docs
 https://www.linuxidc.com/
 等等
 ```
-
-## 
