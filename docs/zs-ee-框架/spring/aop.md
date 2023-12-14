@@ -683,10 +683,7 @@ try{
     After();
 
 }
-
 AfterReturning();
-
-
 ```
 
 抛异常之后并没有走AfterReturning。因此该方法在 catch 前面执行。在finally后执行。最终版如下
@@ -716,6 +713,4 @@ try{
     AfterThrowable();
 
 }
-
-
 ```
