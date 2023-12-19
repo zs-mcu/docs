@@ -16,7 +16,7 @@ module.exports = {
       readmeFirstForce: true
       //所有文件会根据 autoSort 的大小进行排序，数值大的在前，数值小的在后，负数值会排在不具有 autoSort 属性的文件后。
     },
-    sidebarDepth: 2,
+    sidebarDepth: 3,
     collapse: {
       open: true
     },
@@ -64,7 +64,8 @@ module.exports = {
   // "vuepress-plugin-side-anchor": {},
   "vuepress-plugin-right-anchor": {
     expand: {
-      trigger: 'hover',
+      showDepth: 6,
+      trigger: 'click',
       clickModeDefaultOpen: true
     },
   },
