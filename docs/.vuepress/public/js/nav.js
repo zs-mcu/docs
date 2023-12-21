@@ -56,8 +56,9 @@ module.exports = [
         "text": "Linux",
         "ariaLabel": "Linux分组",
         items: [
-          {text: 'Linux基本使用', link: "/zs-use/linux/基本使用/"},
-          {text: 'Linux常见问题', link: "/zs-use/linux/常见问题/"}, 
+          {text: '基本使用', link: "/zs-use/linux/基本使用/"},
+          {text: '常见问题', link: "/zs-use/linux/常见问题/"}, 
+          {text: 'shell编程', link: "/zs-use/linux/shell编程/"},
         ]
         
       }
