@@ -6,7 +6,7 @@ autoSort: 9999
 
 ## 历史命令
 
-> 参考： [23、history.md](../基本使用/23、history.md) 
+> 参考： [23、history.md](../基本使用/23、shell--history.md) 
 
 ## 命令与文件的补全
 
@@ -14,7 +14,7 @@ autoSort: 9999
 
 ## 命令别名
 
-> 参考： [24、alias.md](../基本使用/24、alias.md) 
+> 参考： [24、alias.md](../基本使用/24、shell--alias.md) 
 
 ## Bash常用快捷键
 
@@ -242,14 +242,3 @@ xiaoshaozi
 [root@xiaoshaozi ~]# 
 
 ```
-
-
-
-
-
-
-
-
-
-
-

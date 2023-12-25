@@ -1,7 +1,7 @@
 ---
 autoSort: 8000
 ---
-# 物理机安装Linux
+# Linux概述--物理机安装Linux
 
 ## 系统镜像获取
 

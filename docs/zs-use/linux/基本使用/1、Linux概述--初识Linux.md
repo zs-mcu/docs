@@ -1,7 +1,7 @@
 ---
 autoSort: 10000
 ---
-# 初识Linux
+# Linux概述--初识Linux
 
 ## 一、计算机资源介绍
 

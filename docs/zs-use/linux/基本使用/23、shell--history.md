@@ -1,7 +1,7 @@
 ---
-autoSort: 798
+autoSort: 800
 ---
-# history命令
+# shell--history命令
 
 1）历史命令的查看
 

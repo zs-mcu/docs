@@ -1,4 +1,7 @@
-# alias
+---
+autoSort: 799
+---
+# shell--alias
 
 ```powershell
 命令格式：
