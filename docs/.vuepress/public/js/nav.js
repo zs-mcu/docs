@@ -48,10 +48,7 @@ module.exports = [
   {
     "text": "zs-use",
     "items": [
-      {
-        "text": "Git",
-        "link": "/zs-use/git/"
-      },
+     
       {
         "text": "Linux",
         "ariaLabel": "Linux分组",
@@ -60,8 +57,15 @@ module.exports = [
           {text: '常见问题', link: "/zs-use/linux/常见问题/"}, 
           {text: 'shell编程', link: "/zs-use/linux/shell编程/"},
         ]
-        
-      }
+      },
+      {
+        "text": "Git",
+        "link": "/zs-use/git/"
+      },
+      {
+        "text": "env",
+        "link": "/zs-use/env/"
+      },
     ]
   },
   {
@@ -70,6 +74,15 @@ module.exports = [
       {
         "text": "io",
         "link": "/zs-se/io/"
+      }
+    ]
+  },
+  {
+    "text": "zs-web",
+    "items": [
+      {
+        "text": "tool-小结",
+        "link": "/zs-web/tool-小结/"
       }
     ]
   },
