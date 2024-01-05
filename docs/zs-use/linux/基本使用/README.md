@@ -1,7 +1,11 @@
-
+---
+autoGroup+1: 'Linux概述'
+---
 # 说明
 
 > 参考教程：黑马2019Linux系统教程189讲
+> 
+> https://linux265.com/course/linux-command-ldconfig.html
 
 ::: tip 了解
 

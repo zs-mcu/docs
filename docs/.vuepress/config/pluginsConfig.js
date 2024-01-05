@@ -11,12 +11,12 @@ module.exports = {
       // `asc`、`desc`、`created_time_asc`、`created_time_desc`  | custom
       // 在使用 created_time_asc 和 created_time_desc 必须使用 git (opens new window)跟踪文件。
       // 自定义排序  mode: "custom"  fn: sortFn
-      mode: "desc",
+      mode: "asc",
       //README文件一直在前面
       readmeFirstForce: true
       //所有文件会根据 autoSort 的大小进行排序，数值大的在前，数值小的在后，负数值会排在不具有 autoSort 属性的文件后。
     },
-    sidebarDepth: 3,
+    sidebarDepth: 1,
     collapse: {
       open: true
     },

@@ -1,6 +1,5 @@
 ---
 autoGroup-1: '服务管理'
-autoSort: 700
 ---
 # 网络服务—NFS
 
