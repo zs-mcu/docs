@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令--10.挂载 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.b8e2b3f9.css" as="style"><link rel="preload" href="/assets/js/app.70f08e00.js" as="script"><link rel="preload" href="/assets/js/2.eed0477d.js" as="script"><link rel="preload" href="/assets/js/1.a00bfedd.js" as="script"><link rel="preload" href="/assets/js/35.a3efe7b1.js" as="script"><link rel="preload" href="/assets/js/61.0fc8b31b.js" as="script"><link rel="prefetch" href="/assets/js/10.80dd7b8f.js"><link rel="prefetch" href="/assets/js/100.315bc49c.js"><link rel="prefetch" href="/assets/js/101.3b32c9aa.js"><link rel="prefetch" href="/assets/js/102.f343ba8c.js"><link rel="prefetch" href="/assets/js/103.df00e76c.js"><link rel="prefetch" href="/assets/js/104.16f99412.js"><link rel="prefetch" href="/assets/js/105.19ada2bc.js"><link rel="prefetch" href="/assets/js/106.bea1fc1e.js"><link rel="prefetch" href="/assets/js/107.1ef88602.js"><link rel="prefetch" href="/assets/js/108.c7b2f390.js"><link rel="prefetch" href="/assets/js/109.5d6e976c.js"><link rel="prefetch" href="/assets/js/11.6d838c23.js"><link rel="prefetch" href="/assets/js/110.6abe333e.js"><link rel="prefetch" href="/assets/js/111.235fa44f.js"><link rel="prefetch" href="/assets/js/112.91a8f941.js"><link rel="prefetch" href="/assets/js/113.69877d25.js"><link rel="prefetch" href="/assets/js/114.9295a7b2.js"><link rel="prefetch" href="/assets/js/115.2c5ac9e6.js"><link rel="prefetch" href="/assets/js/116.1247b8a4.js"><link rel="prefetch" href="/assets/js/117.0ef03f5d.js"><link rel="prefetch" href="/assets/js/118.96c6d1cf.js"><link rel="prefetch" href="/assets/js/119.82c4375c.js"><link rel="prefetch" href="/assets/js/12.d35b794a.js"><link rel="prefetch" href="/assets/js/120.f0bbbb55.js"><link rel="prefetch" href="/assets/js/121.b282fa0a.js"><link rel="prefetch" href="/assets/js/122.77d7d41e.js"><link rel="prefetch" href="/assets/js/123.cafe892b.js"><link rel="prefetch" href="/assets/js/124.6c90636f.js"><link rel="prefetch" href="/assets/js/125.c696b73e.js"><link rel="prefetch" href="/assets/js/126.977fc502.js"><link rel="prefetch" href="/assets/js/127.212bf7ef.js"><link rel="prefetch" href="/assets/js/128.f309e819.js"><link rel="prefetch" href="/assets/js/129.9ef483c8.js"><link rel="prefetch" href="/assets/js/13.b70a653f.js"><link rel="prefetch" href="/assets/js/130.aa43940a.js"><link rel="prefetch" href="/assets/js/131.6ea087a4.js"><link rel="prefetch" href="/assets/js/132.a3585cbe.js"><link rel="prefetch" href="/assets/js/133.a32f455d.js"><link rel="prefetch" href="/assets/js/134.65bf0c21.js"><link rel="prefetch" href="/assets/js/135.dbd56264.js"><link rel="prefetch" href="/assets/js/136.5ee7b3a9.js"><link rel="prefetch" href="/assets/js/137.f8cc646b.js"><link rel="prefetch" href="/assets/js/138.41086b8f.js"><link rel="prefetch" href="/assets/js/14.a2012371.js"><link rel="prefetch" href="/assets/js/15.16bb6bb4.js"><link rel="prefetch" href="/assets/js/16.77e51987.js"><link rel="prefetch" href="/assets/js/17.0107da88.js"><link rel="prefetch" href="/assets/js/18.894c6dca.js"><link rel="prefetch" href="/assets/js/19.e357204a.js"><link rel="prefetch" href="/assets/js/20.8b5b8188.js"><link rel="prefetch" href="/assets/js/21.86f24138.js"><link rel="prefetch" href="/assets/js/22.77242996.js"><link rel="prefetch" href="/assets/js/23.192a1678.js"><link rel="prefetch" href="/assets/js/24.637c2171.js"><link rel="prefetch" href="/assets/js/25.c3676b4d.js"><link rel="prefetch" href="/assets/js/26.6371deb4.js"><link rel="prefetch" href="/assets/js/27.f8f80a6e.js"><link rel="prefetch" href="/assets/js/28.d677df2f.js"><link rel="prefetch" href="/assets/js/29.e56db6c0.js"><link rel="prefetch" href="/assets/js/3.0508432a.js"><link rel="prefetch" href="/assets/js/30.287c6a9b.js"><link rel="prefetch" href="/assets/js/31.d2a7b852.js"><link rel="prefetch" href="/assets/js/32.65962397.js"><link rel="prefetch" href="/assets/js/33.84f3ea25.js"><link rel="prefetch" href="/assets/js/34.4b17afbc.js"><link rel="prefetch" href="/assets/js/36.793fbca5.js"><link rel="prefetch" href="/assets/js/37.ca7257be.js"><link rel="prefetch" href="/assets/js/38.c81a7cba.js"><link rel="prefetch" href="/assets/js/39.110ed0f9.js"><link rel="prefetch" href="/assets/js/4.3eb2b108.js"><link rel="prefetch" href="/assets/js/40.11e60430.js"><link rel="prefetch" href="/assets/js/41.fcc18308.js"><link rel="prefetch" href="/assets/js/42.17efa4bb.js"><link rel="prefetch" href="/assets/js/43.35e5ccbf.js"><link rel="prefetch" href="/assets/js/44.3b318a35.js"><link rel="prefetch" href="/assets/js/45.886216d3.js"><link rel="prefetch" href="/assets/js/46.15bb012a.js"><link rel="prefetch" href="/assets/js/47.c4602654.js"><link rel="prefetch" href="/assets/js/48.53a36534.js"><link rel="prefetch" href="/assets/js/49.65f71493.js"><link rel="prefetch" href="/assets/js/5.37d95400.js"><link rel="prefetch" href="/assets/js/50.c045b513.js"><link rel="prefetch" href="/assets/js/51.cf20ebf7.js"><link rel="prefetch" href="/assets/js/52.eaa54320.js"><link rel="prefetch" href="/assets/js/53.f069f554.js"><link rel="prefetch" href="/assets/js/54.6feeeff8.js"><link rel="prefetch" href="/assets/js/55.f7223a4f.js"><link rel="prefetch" href="/assets/js/56.80a4cd32.js"><link rel="prefetch" href="/assets/js/57.52f1a434.js"><link rel="prefetch" href="/assets/js/58.8278c5a8.js"><link rel="prefetch" href="/assets/js/59.2616553b.js"><link rel="prefetch" href="/assets/js/6.0874cacf.js"><link rel="prefetch" href="/assets/js/60.2a9dc3e3.js"><link rel="prefetch" href="/assets/js/62.16df58e0.js"><link rel="prefetch" href="/assets/js/63.b6dddcf8.js"><link rel="prefetch" href="/assets/js/64.2c7f4004.js"><link rel="prefetch" href="/assets/js/65.1ecfe8d7.js"><link rel="prefetch" href="/assets/js/66.0d662d97.js"><link rel="prefetch" href="/assets/js/67.b9dc2fa8.js"><link rel="prefetch" href="/assets/js/68.76ca7ebe.js"><link rel="prefetch" href="/assets/js/69.3af58381.js"><link rel="prefetch" href="/assets/js/7.163267df.js"><link rel="prefetch" href="/assets/js/70.e673b1ce.js"><link rel="prefetch" href="/assets/js/71.e3d4a829.js"><link rel="prefetch" href="/assets/js/72.d7751526.js"><link rel="prefetch" href="/assets/js/73.e22f5ea0.js"><link rel="prefetch" href="/assets/js/74.122d90f1.js"><link rel="prefetch" href="/assets/js/75.e9237ff9.js"><link rel="prefetch" href="/assets/js/76.851ec65c.js"><link rel="prefetch" href="/assets/js/77.17cbac5c.js"><link rel="prefetch" href="/assets/js/78.cb6faa21.js"><link rel="prefetch" href="/assets/js/79.b4bd6b83.js"><link rel="prefetch" href="/assets/js/80.c1297afe.js"><link rel="prefetch" href="/assets/js/81.2fe8ea3b.js"><link rel="prefetch" href="/assets/js/82.ec632a0d.js"><link rel="prefetch" href="/assets/js/83.794e9495.js"><link rel="prefetch" href="/assets/js/84.34d7e0fd.js"><link rel="prefetch" href="/assets/js/85.baec61d4.js"><link rel="prefetch" href="/assets/js/86.405849f3.js"><link rel="prefetch" href="/assets/js/87.0261cfa5.js"><link rel="prefetch" href="/assets/js/88.3bfdd74a.js"><link rel="prefetch" href="/assets/js/89.70a62ddf.js"><link rel="prefetch" href="/assets/js/90.de8063c3.js"><link rel="prefetch" href="/assets/js/91.dde72f7f.js"><link rel="prefetch" href="/assets/js/92.d9e75ef4.js"><link rel="prefetch" href="/assets/js/93.f221c27e.js"><link rel="prefetch" href="/assets/js/94.f7561210.js"><link rel="prefetch" href="/assets/js/95.05613038.js"><link rel="prefetch" href="/assets/js/96.0e26f249.js"><link rel="prefetch" href="/assets/js/97.eeb228fa.js"><link rel="prefetch" href="/assets/js/98.8f596663.js"><link rel="prefetch" href="/assets/js/99.447e2b67.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fc9c3e4d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b8e2b3f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网址.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网址.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="sidebar-link">命令--4.文件操作管理</a></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="sidebar-link">命令--5.查找命令</a></li><li><a href="/zs-use/linux/基本使用/命令--6.用户|组.html" class="sidebar-link">命令--6.用户、组</a></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="active sidebar-link">命令--10.挂载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#mount" class="sidebar-link">mount</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#umount" class="sidebar-link">umount</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#etc-fstab文件" class="sidebar-link">/etc/fstab文件</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#本地iso挂载" class="sidebar-link">本地iso挂载</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#光盘挂载" class="sidebar-link">光盘挂载</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#挂载u盘" class="sidebar-link">挂载U盘</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#挂载ntfs分区" class="sidebar-link">挂载NTFS分区</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--10.挂载.html#nfs挂载" class="sidebar-link">nfs挂载</a></li></ul></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="sidebar-link">命令--13.时间日期</a></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="sidebar-link">命令--16.vim编辑器</a></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="sidebar-link">系统管理--3.2.系统管理-定时任务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令-10-挂载"><a href="#命令-10-挂载" class="header-anchor">#</a> 命令--10.挂载</h1> <blockquote><p>将硬件资源，或文件资源💿，和📂空目录🔗连接起来的过程</p></blockquote> <h2 id="mount"><a href="#mount" class="header-anchor">#</a> mount</h2> <p>linux 所有存储设备都必须挂载使用，包括硬盘</p> <p>​		命令名称：mount</p> <p>​		命令所在路径：/bin/mount</p> <p>​		执行权限：所有用户</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment">#查询系统中已经挂载的设备，-l 会显不卷标名称</span>
+<span class="token function">mount</span> <span class="token punctuation">[</span><span class="token operator">-</span>l<span class="token punctuation">]</span>
+df <span class="token operator">-</span>h
+df <span class="token operator">-</span>HT
+
+<span class="token comment"># 依据配置文件/etc/fstab的内容，自动挂载</span>
+<span class="token function">mount</span> <span class="token operator">-</span>a
+
+<span class="token comment"># 只需了解-o</span>
+<span class="token comment"># \代办这一行没有写完，换行</span>
+<span class="token function">mount</span> <span class="token punctuation">[</span><span class="token operator">-</span>t 文件系统<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">-</span>L 卷标名<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token operator">-</span>o 特殊选项<span class="token punctuation">]</span> \
+设备文件名 挂载点
+
+选项：
+	<span class="token operator">-</span>t 文件系统：	加入文件系统类型来指定挂载的类型，可以ext3、ext4、iso9660等文件系统。具体可以参考下表
+	<span class="token operator">-</span>L 卷标名：		挂载指定卷标的分区，而不是安装设备文件名挂载
+	<span class="token operator">-</span>o 特殊选项：	可以指定挂载的额外选项，比如读写权限、同步异步等，如果不指定则默认值生效。
+</code></pre></div><table><thead><tr><th>参数</th> <th>说明</th></tr></thead> <tbody><tr><td>atime/noatime</td> <td>更新访问时间/不更新访问时间。访问分区文件时，是否更新文件的访问时间，默认为更新</td></tr> <tr><td>async/sync</td> <td>异步/同步，默认为异步</td></tr> <tr><td>auto/noauto</td> <td>自动/手动，mount -a命令执行时，是否会自动安装/etc/fstab文件内容挂载，默认为自动</td></tr> <tr><td>defaults</td> <td>定义默认值，相当于rw,suid,dev,exec,auto,nouser,async这七个选项</td></tr> <tr><td>exec/noexec</td> <td>执行/不执行，设定是否允许在文件系统中执行可执行文件，默认是exec允许</td></tr> <tr><td>remount</td> <td>重新挂载已经挂载的文件系统，一般用于指定修改特殊权限</td></tr> <tr><td>rw/ro</td> <td>读写/只读，文件系统挂载时，是否具有读写权限，默认是rw</td></tr> <tr><td>suid/nosuid</td> <td>具有/不具有SUID权限，设定文件系统是否具有SUID和SGID的权限，默认是具有</td></tr> <tr><td>user/nosuer</td> <td>允许/不允许普通用户挂载，设定文件系统是否允许普通用户挂载，默认是不允许，只有root可以挂载分区</td></tr> <tr><td>userquota</td> <td>写入代表文件系统支持用户磁盘配额，默认不支持</td></tr> <tr><td>grpquota</td> <td>写入代表文件系统支持组磁盘配额，默认不支持</td></tr></tbody></table> <p>举例</p> <div class="language- extra-class"><pre class="language-text"><code>例1：
+[root@localhost ~]# mount
+#查看系统中已经挂载的文件系统，注意有虚拟文件系统
+/dev/sda3 on / type ext4 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+devpts on /dev/pts type devpts (rw,gid-5,mode-620)
+tmpfs on /dev/shm type tmpfs (rw)
+/dev/sdal on /boot type ext4 (rw)
+none on /proc/sys/fs/binfmt misc type binfmt misc (rw)
+sunrpc on /var/lib/nfs/rpc pipefs type rpc pipefs (rw)
+#命令结果是代表: /dev/sda3 分区挂载到/目录，文件系统是 ext4，权限是读写
+
+例 2: 修改特殊权限
+root@localhost # mount
+#我们查看到/boot 分区已经被挂载，而且采用的 defaults 选项，那么我们重新载分区，并采用noexec
+#权限禁止执行文件执行，看看会出现什么情况(注意不要用/分区做试验，
+#不然系统命令也不能执行了)
+..·省略部分输出·..
+root@localhost 7# mount -o remount,noexec /boot
+#重新挂载/boot 分区，并使用 noexec 权限
+</code></pre></div><p><img src="/assets/img/image-20231218124156405.b87b21e5.png" alt="image-20231218124156405"></p> <p><img src="/assets/img/image-20231218124219275.68d31346.png" alt="image-20231218124219275"></p> <h2 id="umount"><a href="#umount" class="header-anchor">#</a> umount</h2> <p>譬如 /dev/hda5 已经挂载在/mnt/hda5上,用一下三条命令均可卸载挂载的文件系统</p> <div class="language- extra-class"><pre class="language-text"><code># umount /dev/hda5
+# umount /mnt/hda5
+# umount /dev/hda5 /mnt/hda5
+</code></pre></div><p>为什么umount的时候老显示 device busy？</p> <p>这是因为有程序正在访问这个设备，最简单的办法就是让访问该设备的程序退出以后再umount。可能有时候用户搞不清除究竟是什么程序在访问设备，如果用户不急着umount，则可以用:</p> <div class="language- extra-class"><pre class="language-text"><code># umount -l /mnt/hda5
+</code></pre></div><p>来卸载设备。选项 –l 并不是马上umount，而是在该目录空闲后再umount。还可以先用命令ps aux 来查看占用设备的程序PID，然后用命令kill来杀死占用设备的进程，这样就umount的非常放心了。</p> <h2 id="etc-fstab文件"><a href="#etc-fstab文件" class="header-anchor">#</a> /etc/fstab文件</h2> <blockquote><p><code>man 5 fstab</code></p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code>1<span class="token punctuation">.</span>被挂载的设备：
+		设备文件，LABEL，UUID，伪文件系统等
+		
+2<span class="token punctuation">.</span>挂载点：
+		swap为特殊挂载，挂载点为swap
+              
+3<span class="token punctuation">.</span>文件系统类型
+
+4<span class="token punctuation">.</span>挂载选项：
+		defaults为默认挂载选项<span class="token punctuation">(</span>rw，suid，dev，exec，auto，nouser，and async<span class="token punctuation">)</span>，可以有多个挂载选项，以逗号为分隔符
+
+5<span class="token punctuation">.</span>转储频率：
+		0表示从不备份，1表示每天备份，2表示每隔一天备份
+		
+6<span class="token punctuation">.</span>自检次序：
+		0表示不自检，1<span class="token punctuation">,</span>表示首先自检，一般是根文件系统为1，2<span class="token punctuation">,</span>表示次级自检<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre></div><h2 id="本地iso挂载"><a href="#本地iso挂载" class="header-anchor">#</a> 本地iso挂载</h2> <p>准备工作：上传镜像，创建挂载目录</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>上传镜像文件到<span class="token operator">/</span>home/jysp/CentOS-7-x86_64-Everything-2009<span class="token punctuation">.</span>iso
+
+<span class="token namespace">[root@Server ~]</span><span class="token comment"># mkdir /media/centos7_iso                     #创建挂载点的目录</span>
+<span class="token namespace">[root@Server ~]</span><span class="token comment">#  mount -o  loop /home/CentOS-7-x86_64-DVD-1708.iso   /media/centos7_iso</span>
+<span class="token namespace">[root@Server ~]</span><span class="token comment"># df -HT            #查看镜像是否挂载成功</span>
+备注： <span class="token operator">-</span>o是参数，loop是把一个文件当成硬盘分区<span class="token function">mount</span>挂着到目录
+
+
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># df -HT</span>
+文件系统                类型      容量  已用  可用 已用<span class="token operator">%</span> 挂载点
+devtmpfs                devtmpfs   68G     0   68G    0% <span class="token operator">/</span>dev
+tmpfs                   tmpfs      68G     0   68G    0% <span class="token operator">/</span>dev/shm
+tmpfs                   tmpfs      68G   12M   68G    1% <span class="token operator">/</span>run
+tmpfs                   tmpfs      68G     0   68G    0% <span class="token operator">/</span>sys/fs/cgroup
+<span class="token operator">/</span>dev/mapper/centos-root xfs       7<span class="token punctuation">.</span>9T   15G  7<span class="token punctuation">.</span>9T    1% <span class="token operator">/</span>
+<span class="token operator">/</span>dev/loop0              iso9660    11G   11G     0  100% <span class="token operator">/</span>media/centos7_iso
+<span class="token operator">/</span>dev/sda2               xfs        11G  194M   11G    2% <span class="token operator">/</span>boot
+tmpfs                   tmpfs      14G   25k   14G    1% <span class="token operator">/</span>run/user/42
+tmpfs                   tmpfs      14G     0   14G    0% <span class="token operator">/</span>run/user/0
+
+</code></pre></div><p>开机自动挂载：修改配置文件</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>修改开机自动挂载配置：<span class="token operator">/</span>etc/fstab
+vim <span class="token operator">/</span>etc/fstab
+内容追加如下：
+<span class="token operator">/</span>home/jysp/CentOS-7-x86_64-Everything-2009<span class="token punctuation">.</span>iso <span class="token operator">/</span>media/centos7_iso/ iso9660 defaults<span class="token punctuation">,</span>ro<span class="token punctuation">,</span>loop 0 0 
+保存退出。
+</code></pre></div><p>例</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># cat /etc/fstab</span>
+
+<span class="token comment">#</span>
+<span class="token comment"># /etc/fstab</span>
+<span class="token comment"># Created by anaconda on Wed Dec 13 22:10:25 2023</span>
+<span class="token comment">#</span>
+<span class="token comment"># Accessible filesystems, by reference, are maintained under '/dev/disk'</span>
+<span class="token comment"># See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info</span>
+<span class="token comment">#</span>
+<span class="token operator">/</span>dev/mapper/centos-root <span class="token operator">/</span>                       xfs     defaults        0 0
+UUID=1b7d1f9f-b2af-4efb-af81-7d7bc7ef1864 <span class="token operator">/</span>boot                   xfs     defaults        0 0
+<span class="token operator">/</span>dev/mapper/centos-swap swap                    swap    defaults        0 0
+
+
+<span class="token operator">/</span>home/jysp/CentOS-7-x86_64-Everything-2009<span class="token punctuation">.</span>iso <span class="token operator">/</span>media/centos7_iso/ iso9660 defaults<span class="token punctuation">,</span>ro<span class="token punctuation">,</span>loop 0 0 
+
+</code></pre></div><h2 id="光盘挂载"><a href="#光盘挂载" class="header-anchor">#</a> 光盘挂载</h2> <p>光盘挂载的前提是指定光盘的设备文件名，不同版本的Linux，设备文件名并不相同：</p> <ul><li>CentOS 5.x以前的系统，光盘设备文件名是/dev/hdc</li> <li>CentOS 6.x以后的系统，光盘设备文件名是/dev/sr0</li></ul> <p>不论哪个系统都有软连接/dev/cdrom，与可以作为光盘的设备文件名</p> <p>（1）挂载</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost /]</span><span class="token comment"># ls</span>
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  <span class="token keyword">var</span>
+
+一般都习惯挂载到mnt目录下 <span class="token operator">/</span>cdrom下挂载光盘
+<span class="token comment"># mnt:挂载u盘</span>
+<span class="token comment"># media:挂载光盘</span>
+<span class="token comment"># misc:挂载网络存储盘</span>
+
+<span class="token function">mount</span> <span class="token operator">-</span>t iso9660 <span class="token operator">/</span>dev/cdrom <span class="token operator">/</span>mnt/cdrom
+<span class="token comment"># Linux中的光盘格式为iso9660，默认的可以识别</span>
+<span class="token function">mount</span> <span class="token operator">/</span>dev/cdrom <span class="token operator">/</span>mnt/cdrom
+</code></pre></div><p><img src="/assets/img/image-20231218105653924.1f56491e.png" alt="image-20231218105653924"></p> <p><img src="/assets/img/image-20231218105900623.0973c54d.png" alt="image-20231218105900623"></p> <p>（2）卸载</p> <p>用完之后记得卸载：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>umount <span class="token operator">/</span>dev/sr0
+umount <span class="token operator">/</span>mnt/cdrom
+<span class="token comment"># 因为设备文件名和挂载点已经连接到一起，卸载哪一个都可以</span>
+</code></pre></div><p>​		注意：卸载的时候需要退出光盘目录，才能正常卸载</p> <h2 id="挂载u盘"><a href="#挂载u盘" class="header-anchor">#</a> 挂载U盘</h2> <p>(1)查看U盘</p> <p>U盘会和硬盘公用设备文件名，所以U盘的设备文件名不是固定的，需要手工查询，查询命令：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>fdisk <span class="token operator">-</span>l
+<span class="token comment">#查询硬盘</span>
+</code></pre></div><p><img src="/assets/img/image-20231218111955255.83962bda.png" alt="image-20231218111955255"></p> <p>（2）挂载U盘</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token function">mount</span> <span class="token operator">-</span>t vfat <span class="token operator">/</span>dev/sdb4 <span class="token operator">/</span>mnt/usb/
+<span class="token comment"># 挂载U盘。因为是Windows分区，所以是vfat文件系统格式</span>
+</code></pre></div><p><img src="/assets/img/image-20231218112247176.c6e7dfe3.png" alt="image-20231218112247176"></p> <p>如果U盘中有中文，会发现中文是乱码。Linux要想正常显示中文，需要两个条件：</p> <ul><li>安装了中文编码和中文字体</li> <li>操作终端需要支持中文显示（纯字符终端，是不支持中文编码的）</li></ul> <p>手工指定中文编码：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token function">mount</span> <span class="token operator">-</span>t vfat <span class="token operator">-</span>o iocharset=utf8 <span class="token operator">/</span>dev/sdb1 <span class="token operator">/</span>mnt/usb/
+<span class="token comment"># 挂载U盘，指定中文编码格式为UTF-8</span>
+</code></pre></div><p>如果需要卸载，可以执行</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>umount <span class="token operator">/</span>mnt/usb/
+</code></pre></div><h2 id="挂载ntfs分区"><a href="#挂载ntfs分区" class="header-anchor">#</a> 挂载NTFS分区</h2> <h3 id="linux的驱动加载顺序"><a href="#linux的驱动加载顺序" class="header-anchor">#</a> Linux的驱动加载顺序</h3> <ul><li>驱动直接放入系统内核之中。这种驱动主要是系统启动加载必须的驱动，数量较少。</li> <li>驱动以模块的形式放入硬盘。大多数驱动都已这种方式保存，保存位置在<code>/lib/modules/3.10.0-862.el.x86_64/kernel/</code>中。</li> <li>驱动可以被Linux识别，但是系统认为这种驱动异步不常用，默认不加载。如果需要加载这种驱动，需要重新编译内核，而NTFS文件系统的驱动就属于这种情况。</li> <li>硬件不能被Linux内核识别，需要手工安装驱动。当然前提是厂商提供了改硬件针对Linux的驱动，否则就需要自己开发驱动了</li></ul> <h3 id="使用-ntfs-3g-安装-ntfs-文件系统模块"><a href="#使用-ntfs-3g-安装-ntfs-文件系统模块" class="header-anchor">#</a> 使用 NTFS-3G 安装 NTFS 文件系统模块</h3> <p>下载 NTFS-3G 插件</p> <p>我们从网站 http://www.tuxera.com/community/ntfs-3g-download/下载 NTFS-3G 插件到 Linux服务器上。</p> <p>安装 NTFS-3G 插件</p> <p>在编译安装 NTFS-3G 插件之前，要保证 gcc 编译器已经安装。具体安装命令如下:</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>tar <span class="token operator">-</span>zxvf ntfs-3g ntfsprogs-2013<span class="token punctuation">.</span>1<span class="token punctuation">.</span>13<span class="token punctuation">.</span>tgz
+<span class="token comment"># 解压</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># cd ntfs-3g ntfsprogs-2013.1.13</span>
+<span class="token comment">#进入解压目录</span>
+root@localhost ntfs-3g ntfsprogs-2013<span class="token punctuation">.</span>1<span class="token punctuation">.</span>13<span class="token punctuation">]</span><span class="token comment"># ./configure</span>
+<span class="token comment">#编译器准备。没有指定安装目录，安装到默认位置中</span>
+root@localhost ntfs-3g ntfsprogs-2013<span class="token punctuation">.</span>1<span class="token punctuation">.</span>137<span class="token comment"># make</span>
+<span class="token comment">#编译</span>
+root@localhost ntfs-3g ntfsprogs-2013<span class="token punctuation">.</span>1<span class="token punctuation">.</span>13<span class="token punctuation">]</span><span class="token comment"># make install</span>
+<span class="token comment">#编译安装</span>
+</code></pre></div><p>安装就完成了，已经可以挂载和使用 Windows 的 NTFS 分区了。不过需要注意挂载分区时的文件</p> <p>系统不是 ntfs，而是 ntfs-3g。挂载命令如下:</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost~]</span><span class="token comment"># mount -t ntfs-3g 分区设备文件名 挂载点</span>
+例如:
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># mount - t ntfs-3g /dev/sdbl /mnt/win</span>
+</code></pre></div><h2 id="nfs挂载"><a href="#nfs挂载" class="header-anchor">#</a> nfs挂载</h2> <p>参考后续文章（服务管理--NFS）</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[jysp@jysp ~]</span>$ df <span class="token operator">-</span>HT
+文件系统                类型      容量  已用  可用 已用<span class="token operator">%</span> 挂载点
+devtmpfs                devtmpfs   69G     0   69G    0% <span class="token operator">/</span>dev
+tmpfs                   tmpfs      69G     0   69G    0% <span class="token operator">/</span>dev/shm
+tmpfs                   tmpfs      69G  131M   69G    1% <span class="token operator">/</span>run
+tmpfs                   tmpfs      69G     0   69G    0% <span class="token operator">/</span>sys/fs/cgroup
+<span class="token operator">/</span>dev/mapper/centos-root xfs       5<span class="token punctuation">.</span>1T   84G  5<span class="token punctuation">.</span>0T    2% <span class="token operator">/</span>
+<span class="token operator">/</span>dev/sda2               xfs        11G  171M   11G    2% <span class="token operator">/</span>boot
+<span class="token operator">/</span>dev/sda1               vfat      4<span class="token punctuation">.</span>3G  9<span class="token punctuation">.</span>5M  4<span class="token punctuation">.</span>3G    1% <span class="token operator">/</span>boot/efi
+10<span class="token punctuation">.</span>139<span class="token punctuation">.</span>102<span class="token punctuation">.</span>114:<span class="token operator">/</span>data1   nfs4      128T  272G  128T    1% <span class="token operator">/</span>home/jysp/workspace/platform_file_storage
+10<span class="token punctuation">.</span>139<span class="token punctuation">.</span>102<span class="token punctuation">.</span>114:<span class="token operator">/</span><span class="token keyword">data</span>    nfs4      128T  272G  128T    1% <span class="token operator">/</span>home/jysp/ftps
+tmpfs                   tmpfs      14G  197k   14G    1% <span class="token operator">/</span>run/user/42
+tmpfs                   tmpfs      14G     0   14G    0% <span class="token operator">/</span>run/user/1000
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月5日星期五下午2点08分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="prev">
+        命令--9.1.文件系统（查看）
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html">
+        命令--11.包管理工具
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.70f08e00.js" defer></script><script src="/assets/js/2.eed0477d.js" defer></script><script src="/assets/js/1.a00bfedd.js" defer></script><script src="/assets/js/35.a3efe7b1.js" defer></script><script src="/assets/js/61.0fc8b31b.js" defer></script>
+  </body>
+</html>

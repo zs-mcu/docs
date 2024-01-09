@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令--4.文件操作管理 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.b8e2b3f9.css" as="style"><link rel="preload" href="/assets/js/app.70f08e00.js" as="script"><link rel="preload" href="/assets/js/2.eed0477d.js" as="script"><link rel="preload" href="/assets/js/1.a00bfedd.js" as="script"><link rel="preload" href="/assets/js/46.15bb012a.js" as="script"><link rel="preload" href="/assets/js/61.0fc8b31b.js" as="script"><link rel="prefetch" href="/assets/js/10.80dd7b8f.js"><link rel="prefetch" href="/assets/js/100.315bc49c.js"><link rel="prefetch" href="/assets/js/101.3b32c9aa.js"><link rel="prefetch" href="/assets/js/102.f343ba8c.js"><link rel="prefetch" href="/assets/js/103.df00e76c.js"><link rel="prefetch" href="/assets/js/104.16f99412.js"><link rel="prefetch" href="/assets/js/105.19ada2bc.js"><link rel="prefetch" href="/assets/js/106.bea1fc1e.js"><link rel="prefetch" href="/assets/js/107.1ef88602.js"><link rel="prefetch" href="/assets/js/108.c7b2f390.js"><link rel="prefetch" href="/assets/js/109.5d6e976c.js"><link rel="prefetch" href="/assets/js/11.6d838c23.js"><link rel="prefetch" href="/assets/js/110.6abe333e.js"><link rel="prefetch" href="/assets/js/111.235fa44f.js"><link rel="prefetch" href="/assets/js/112.91a8f941.js"><link rel="prefetch" href="/assets/js/113.69877d25.js"><link rel="prefetch" href="/assets/js/114.9295a7b2.js"><link rel="prefetch" href="/assets/js/115.2c5ac9e6.js"><link rel="prefetch" href="/assets/js/116.1247b8a4.js"><link rel="prefetch" href="/assets/js/117.0ef03f5d.js"><link rel="prefetch" href="/assets/js/118.96c6d1cf.js"><link rel="prefetch" href="/assets/js/119.82c4375c.js"><link rel="prefetch" href="/assets/js/12.d35b794a.js"><link rel="prefetch" href="/assets/js/120.f0bbbb55.js"><link rel="prefetch" href="/assets/js/121.b282fa0a.js"><link rel="prefetch" href="/assets/js/122.77d7d41e.js"><link rel="prefetch" href="/assets/js/123.cafe892b.js"><link rel="prefetch" href="/assets/js/124.6c90636f.js"><link rel="prefetch" href="/assets/js/125.c696b73e.js"><link rel="prefetch" href="/assets/js/126.977fc502.js"><link rel="prefetch" href="/assets/js/127.212bf7ef.js"><link rel="prefetch" href="/assets/js/128.f309e819.js"><link rel="prefetch" href="/assets/js/129.9ef483c8.js"><link rel="prefetch" href="/assets/js/13.b70a653f.js"><link rel="prefetch" href="/assets/js/130.aa43940a.js"><link rel="prefetch" href="/assets/js/131.6ea087a4.js"><link rel="prefetch" href="/assets/js/132.a3585cbe.js"><link rel="prefetch" href="/assets/js/133.a32f455d.js"><link rel="prefetch" href="/assets/js/134.65bf0c21.js"><link rel="prefetch" href="/assets/js/135.dbd56264.js"><link rel="prefetch" href="/assets/js/136.5ee7b3a9.js"><link rel="prefetch" href="/assets/js/137.f8cc646b.js"><link rel="prefetch" href="/assets/js/138.41086b8f.js"><link rel="prefetch" href="/assets/js/14.a2012371.js"><link rel="prefetch" href="/assets/js/15.16bb6bb4.js"><link rel="prefetch" href="/assets/js/16.77e51987.js"><link rel="prefetch" href="/assets/js/17.0107da88.js"><link rel="prefetch" href="/assets/js/18.894c6dca.js"><link rel="prefetch" href="/assets/js/19.e357204a.js"><link rel="prefetch" href="/assets/js/20.8b5b8188.js"><link rel="prefetch" href="/assets/js/21.86f24138.js"><link rel="prefetch" href="/assets/js/22.77242996.js"><link rel="prefetch" href="/assets/js/23.192a1678.js"><link rel="prefetch" href="/assets/js/24.637c2171.js"><link rel="prefetch" href="/assets/js/25.c3676b4d.js"><link rel="prefetch" href="/assets/js/26.6371deb4.js"><link rel="prefetch" href="/assets/js/27.f8f80a6e.js"><link rel="prefetch" href="/assets/js/28.d677df2f.js"><link rel="prefetch" href="/assets/js/29.e56db6c0.js"><link rel="prefetch" href="/assets/js/3.0508432a.js"><link rel="prefetch" href="/assets/js/30.287c6a9b.js"><link rel="prefetch" href="/assets/js/31.d2a7b852.js"><link rel="prefetch" href="/assets/js/32.65962397.js"><link rel="prefetch" href="/assets/js/33.84f3ea25.js"><link rel="prefetch" href="/assets/js/34.4b17afbc.js"><link rel="prefetch" href="/assets/js/35.a3efe7b1.js"><link rel="prefetch" href="/assets/js/36.793fbca5.js"><link rel="prefetch" href="/assets/js/37.ca7257be.js"><link rel="prefetch" href="/assets/js/38.c81a7cba.js"><link rel="prefetch" href="/assets/js/39.110ed0f9.js"><link rel="prefetch" href="/assets/js/4.3eb2b108.js"><link rel="prefetch" href="/assets/js/40.11e60430.js"><link rel="prefetch" href="/assets/js/41.fcc18308.js"><link rel="prefetch" href="/assets/js/42.17efa4bb.js"><link rel="prefetch" href="/assets/js/43.35e5ccbf.js"><link rel="prefetch" href="/assets/js/44.3b318a35.js"><link rel="prefetch" href="/assets/js/45.886216d3.js"><link rel="prefetch" href="/assets/js/47.c4602654.js"><link rel="prefetch" href="/assets/js/48.53a36534.js"><link rel="prefetch" href="/assets/js/49.65f71493.js"><link rel="prefetch" href="/assets/js/5.37d95400.js"><link rel="prefetch" href="/assets/js/50.c045b513.js"><link rel="prefetch" href="/assets/js/51.cf20ebf7.js"><link rel="prefetch" href="/assets/js/52.eaa54320.js"><link rel="prefetch" href="/assets/js/53.f069f554.js"><link rel="prefetch" href="/assets/js/54.6feeeff8.js"><link rel="prefetch" href="/assets/js/55.f7223a4f.js"><link rel="prefetch" href="/assets/js/56.80a4cd32.js"><link rel="prefetch" href="/assets/js/57.52f1a434.js"><link rel="prefetch" href="/assets/js/58.8278c5a8.js"><link rel="prefetch" href="/assets/js/59.2616553b.js"><link rel="prefetch" href="/assets/js/6.0874cacf.js"><link rel="prefetch" href="/assets/js/60.2a9dc3e3.js"><link rel="prefetch" href="/assets/js/62.16df58e0.js"><link rel="prefetch" href="/assets/js/63.b6dddcf8.js"><link rel="prefetch" href="/assets/js/64.2c7f4004.js"><link rel="prefetch" href="/assets/js/65.1ecfe8d7.js"><link rel="prefetch" href="/assets/js/66.0d662d97.js"><link rel="prefetch" href="/assets/js/67.b9dc2fa8.js"><link rel="prefetch" href="/assets/js/68.76ca7ebe.js"><link rel="prefetch" href="/assets/js/69.3af58381.js"><link rel="prefetch" href="/assets/js/7.163267df.js"><link rel="prefetch" href="/assets/js/70.e673b1ce.js"><link rel="prefetch" href="/assets/js/71.e3d4a829.js"><link rel="prefetch" href="/assets/js/72.d7751526.js"><link rel="prefetch" href="/assets/js/73.e22f5ea0.js"><link rel="prefetch" href="/assets/js/74.122d90f1.js"><link rel="prefetch" href="/assets/js/75.e9237ff9.js"><link rel="prefetch" href="/assets/js/76.851ec65c.js"><link rel="prefetch" href="/assets/js/77.17cbac5c.js"><link rel="prefetch" href="/assets/js/78.cb6faa21.js"><link rel="prefetch" href="/assets/js/79.b4bd6b83.js"><link rel="prefetch" href="/assets/js/80.c1297afe.js"><link rel="prefetch" href="/assets/js/81.2fe8ea3b.js"><link rel="prefetch" href="/assets/js/82.ec632a0d.js"><link rel="prefetch" href="/assets/js/83.794e9495.js"><link rel="prefetch" href="/assets/js/84.34d7e0fd.js"><link rel="prefetch" href="/assets/js/85.baec61d4.js"><link rel="prefetch" href="/assets/js/86.405849f3.js"><link rel="prefetch" href="/assets/js/87.0261cfa5.js"><link rel="prefetch" href="/assets/js/88.3bfdd74a.js"><link rel="prefetch" href="/assets/js/89.70a62ddf.js"><link rel="prefetch" href="/assets/js/90.de8063c3.js"><link rel="prefetch" href="/assets/js/91.dde72f7f.js"><link rel="prefetch" href="/assets/js/92.d9e75ef4.js"><link rel="prefetch" href="/assets/js/93.f221c27e.js"><link rel="prefetch" href="/assets/js/94.f7561210.js"><link rel="prefetch" href="/assets/js/95.05613038.js"><link rel="prefetch" href="/assets/js/96.0e26f249.js"><link rel="prefetch" href="/assets/js/97.eeb228fa.js"><link rel="prefetch" href="/assets/js/98.8f596663.js"><link rel="prefetch" href="/assets/js/99.447e2b67.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fc9c3e4d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b8e2b3f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网址.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网址.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="active sidebar-link">命令--4.文件操作管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_1、file" class="sidebar-link">1、file</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_2、ls" class="sidebar-link">2、ls</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_3、mkdir" class="sidebar-link">3、mkdir</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_4、touch" class="sidebar-link">4、touch</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_5、cat-more-less-head-tail" class="sidebar-link">5、cat|more|less|head|tail</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_6、cp" class="sidebar-link">6、cp</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_7、mv" class="sidebar-link">7、mv</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html#_8、rm" class="sidebar-link">8、rm</a></li></ul></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="sidebar-link">命令--5.查找命令</a></li><li><a href="/zs-use/linux/基本使用/命令--6.用户|组.html" class="sidebar-link">命令--6.用户、组</a></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="sidebar-link">命令--10.挂载</a></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="sidebar-link">命令--13.时间日期</a></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="sidebar-link">命令--16.vim编辑器</a></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="sidebar-link">系统管理--3.2.系统管理-定时任务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令-4-文件操作管理"><a href="#命令-4-文件操作管理" class="header-anchor">#</a> 命令--4.文件操作管理</h1> <p><strong>重要：Linux下，一切皆文件！！！</strong></p> <p><strong>说在前面：</strong></p> <ol><li><p>接下来所有的命令需要在一个载体上执行，这个载体就叫做<strong>终端</strong>。</p></li> <li><p>终端上所有命令都需要一个东西<strong>翻译解析</strong>一下，计算机才能理解并执行。</p></li> <li><p>这个翻译解析的东西叫<strong>SHELL</strong>解释器**，RedHat和Centos默认shell解释器叫**bash。</p></li> <li><p>既然需要bash帮忙翻译解释相关命令，那么你所敲的命令必须<strong>符合它的语法</strong>，否则报错给你看。</p></li></ol> <div class="language-powershell extra-class"><pre class="language-powershell"><code>命令 <span class="token punctuation">[</span>可选项<span class="token punctuation">]</span> 参数
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -l /root</span>
+命令：整条shell命令的主体
+选项：会影响或微调命令的行为，通常以<span class="token operator">-</span><span class="token punctuation">,</span> <span class="token operator">--</span>
+参数：命令作用的对象
+</code></pre></div><h2 id="_1、file"><a href="#_1、file" class="header-anchor">#</a> 1、file</h2> <blockquote><p>判断文件类型</p></blockquote> <p>常见文件类型</p> <table><thead><tr><th>文件类型</th> <th>描述</th></tr></thead> <tbody><tr><td>字符设备（c）</td> <td>所有==输入输出的设备==，如：键盘、鼠标、显示器、打印机等</td></tr> <tr><td>块设备（==b==）</td> <td>所有==存储设备==称之为块设备文件，如：软盘、磁盘、光盘、U盘、磁带、光驱等</td></tr> <tr><td>软连接文件（==l==）</td> <td>类似于Windows下的快捷方式</td></tr> <tr><td>目录文件（==d==）</td> <td>相当于Windows下的文件夹</td></tr> <tr><td>普通文件(==f==或==-==)</td> <td>类似Windows下记事本、word等，可以使用==相关命令==进行编辑、==查看文件内容==</td></tr> <tr><td>管道文件(p)</td> <td>简单理解为==程序或进程之间通讯==的一种方式</td></tr> <tr><td>套接字文件(s)</td> <td>简单理解为==程序或进程之间通讯==的一种方式</td></tr> <tr><td></td> <td></td></tr></tbody></table> <ul><li><p><strong>用</strong> file <strong>命令来判断文件类型</strong></p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># file /root</span>
+<span class="token operator">/</span>root: directory 目录
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># file /root/install.log</span>
+<span class="token operator">/</span>root/install<span class="token punctuation">.</span>log: ASCII text 普通的文本文件
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># file /dev/sda</span>
+<span class="token operator">/</span>dev/sda: block special 块设备文件，存放数据
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># file /dev/tty1</span>
+<span class="token operator">/</span>dev/tty1: character special 字符设备
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># file /bin/sh</span>
+<span class="token operator">/</span>bin/sh: symbolic link to bash 软连接文件
+</code></pre></div></li></ul> <p><img src="/assets/img/image-20231031155740005.2dfff98e.png" alt="image-20231031155740005"></p> <p>字符设备</p> <p><img src="/assets/img/image-20231031155712778.4ec013a6.png" alt="image-20231031155712778"></p> <p>块设备</p> <p><img src="/assets/img/image-20231031155736205.b4499700.png" alt="image-20231031155736205"></p> <p>软链接文件</p> <p><img src="/assets/img/image-20231031160000001.97ed956d.png" alt="image-20231031160000001"></p> <h2 id="_2、ls"><a href="#_2、ls" class="header-anchor">#</a> 2、ls</h2> <blockquote><p>列出目录内容</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code>常见选项
+<span class="token operator">-</span>a all<span class="token punctuation">,</span>查看目录下的所有文件，包括隐藏文件
+<span class="token operator">-</span>l 长列表显示
+<span class="token operator">-</span>h human，以人性化方式显示出来
+<span class="token operator">-</span>d 只列出目录名，不列出其他内容
+<span class="token operator">-</span>t 按修改时间排序
+<span class="token operator">-</span>r 逆序排列
+<span class="token operator">-</span>S 按文件的大小排序
+<span class="token operator">-</span>i 显示文件的inode号（索引号）
+<span class="token operator">-</span>R 递归列出目录中的内容
+<span class="token operator">-</span>m 用逗号分隔显示内容
+示例：以不同的选项列出<span class="token operator">/</span>root目录里的内容
+
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -a /root</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -l /root</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -lh /root</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -lt /root</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -S /root</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -R /root</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls -d /root 查看/root目录本身的信息</span>
+</code></pre></div><h2 id="_3、mkdir"><a href="#_3、mkdir" class="header-anchor">#</a> 3、mkdir</h2> <blockquote><p>创建目录</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code>常见选项
+<span class="token operator">-</span>p 级联创建
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># mkdir /test/ 在根下创建test目录</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># mkdir ./test/ 在当前目录下创建test目录</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># mkdir ./test /test 创建多个目录</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># mkdir -p /test/yunwei/redhat</span>
+
+说明：
+1<span class="token punctuation">.</span>如果创建的目录的上一级目录不存在，就需要加<span class="token operator">-</span>p参数；<span class="token operator">-</span>p在前面和后面都可以
+</code></pre></div><h2 id="_4、touch"><a href="#_4、touch" class="header-anchor">#</a> 4、touch</h2> <blockquote><p>创建文件</p></blockquote> <p>注意：Linux下文件的命名规则</p> <ol><li><p>文件名严格区分大小写 file FILE</p></li> <li><p>文件名不能包含特殊符号，如(/或*等)</p></li> <li><p>文件名最多可达255个字符</p></li></ol> <ul><li><p>创建一个新的空文件（目标文件不存在）</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># touch /tmp/file1 在/tmp目录下创建file1文件</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># touch file1 在当前目录下创建file1文件</span>
+思考：这2个file1文件是同一个文件吗？
+答：不是同一个文件，因为路径不一样。
+</code></pre></div></li> <li><p>修改文件的时间（目标文件存在）</p> <ul><li><p>查看文件的相关时间</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost tmp]</span><span class="token comment"># stat file1 查看文件的状态信息</span>
+File: `file1'
+Size: 0 Blocks: 0 IO Block: 4096 regular empty file
+Device: fd00h/64768d Inode: 915714 Links: 1
+Access: <span class="token punctuation">(</span>0644/<span class="token operator">-</span>rw-r-<span class="token operator">-</span>r-<span class="token operator">-</span><span class="token punctuation">)</span> Uid: <span class="token punctuation">(</span> 0/ root<span class="token punctuation">)</span> Gid: <span class="token punctuation">(</span> 0/ root<span class="token punctuation">)</span>
+Access: 2019-04-01 17:36:00<span class="token punctuation">.</span>353096343 <span class="token operator">+</span>0800
+Modify: 2019-04-01 17:36:00<span class="token punctuation">.</span>353096343 <span class="token operator">+</span>0800
+Change: 2019-04-01 17:36:00<span class="token punctuation">.</span>353096343 <span class="token operator">+</span>0800
+Access:文件的查看访问时间
+Modify:文件的修改时间
+Change:文件的属性时间<span class="token punctuation">,</span>文件的大小、权限等信息发生改变时，该时间会变化
+</code></pre></div></li> <li><p>修改文件的时间</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost tmp]</span><span class="token comment"># touch file1</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># stat file1 查看文件的状态信息</span>
+File: `file1'
+Size: 0 Blocks: 0 IO Block: 4096 regular empty file
+Device: fd00h/64768d Inode: 915714 Links: 1
+Access: <span class="token punctuation">(</span>0644/<span class="token operator">-</span>rw-r-<span class="token operator">-</span>r-<span class="token operator">-</span><span class="token punctuation">)</span> Uid: <span class="token punctuation">(</span> 0/ root<span class="token punctuation">)</span> Gid: <span class="token punctuation">(</span> 0/ root<span class="token punctuation">)</span>
+Access: 2019-04-01 17:41:00<span class="token punctuation">.</span>353096343 <span class="token operator">+</span>0800
+Modify: 2019-04-01 17:41:00<span class="token punctuation">.</span>353096343 <span class="token operator">+</span>0800
+Change: 2019-04-01 17:41:00<span class="token punctuation">.</span>353096343 <span class="token operator">+</span>0800
+
+其他修改：
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># touch -a file1 -t 201506161320 修改文件点访问时间</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># touch -m file1 -t 201612121330 修改文件修改时间</span>
+<span class="token operator">-</span>a：访问时间
+<span class="token operator">-</span>m：修改时间
+<span class="token operator">-</span>t：时间类型格式
+
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># touch -d 20110808 file1 修改文件日期</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># touch -d 1215 file1 修改文件时间</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># touch -d &quot;20101012 11:11:11&quot; file1 修改文件的日期和时间</span>
+
+说明：大家只需要掌握touch <span class="token operator">-</span>d的用法即可。
+
+注：RHEL6开始relatime，atime延迟修改，必须满足其中一个条件：
+1<span class="token punctuation">.</span> 自上次atime修改后，已达到86400秒；
+2<span class="token punctuation">.</span> 发生写操作时；
+</code></pre></div></li></ul></li></ul> <h2 id="_5、cat-more-less-head-tail"><a href="#_5、cat-more-less-head-tail" class="header-anchor">#</a> 5、cat|more|less|head|tail</h2> <ul><li><p>cat 命令：一般查看小文件，从第一行到最后一行列出来</p> <p>常见选项：</p> <p>-n：显示行号</p> <p>-A：显示控制字符，如换行符,制表符等（ linux $ 和 Windows ^M$ ）</p></li> <li><p>tac 命令：一般查看小文件，从最后一行到第一行列出来</p></li> <li><p>more和less 命令：一般查看大文件，q退出查看，可以搜索，建议less命令</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>less 文件
+	enter键：一行一行查看
+	空格键：一页一页查看
+	退出：Q键
+	<span class="token operator">/</span>:搜索
+	n:查找下一个
+	gg:回到开头
+</code></pre></div></li> <li><p>head 命令：默认查看文件前10行， head -n 15或head -15 表示查看前15行</p></li> <li><p>tail 命令：默认查看文件后10行， tail -n 15或tail -15 表示查看后15行； -f 表示动态查看</p></li> <li><p>ldd 命令：一般用来查看二进制的命令文件</p></li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost tmp]</span><span class="token comment"># cat /etc/passwd 查看/etc/passwd文件内容</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># cat -n /etc/passwd 查看/etc/passwd文件内容，并打印行号</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># tac /etc/passwd 查看/etc/passwd文件内容</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># head -5 /etc/passwd 查看/etc/passwd文件的前5行内容</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># tail -5 /etc/passwd 查看/etc/passwd文件的后5行内容</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># more /var/log/messages</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># less /var/log/messages</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># ldd /bin/mkdir 查看mkdir命令文件（二进制）的内容</span>
+</code></pre></div><h2 id="_6、cp"><a href="#_6、cp" class="header-anchor">#</a> 6、cp</h2> <blockquote><p>拷贝文件</p></blockquote> <p>注意：<strong>本地</strong>文件拷贝</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>常用选项：
+<span class="token operator">-</span>a 递归拷贝文件，包括目录及文件属性信息
+<span class="token operator">-</span>r 拷贝目录
+<span class="token operator">-</span>p 拷贝文件包含文件的属性信息
+<span class="token operator">-</span>v 显示拷贝过程信息
+用法：
+<span class="token function">cp</span> 选项 需要拷贝的文件 拷贝到哪里去
+<span class="token comment"># cp /root/file1 /home 拷贝/root/下的file1文件到/home目录下</span>
+<span class="token comment"># cp -r /home/itcast /root 拷贝/home/itcast目录到/root目录下</span>
+<span class="token comment"># su - user01 切换到user01用户下</span>
+$ touch file1
+<span class="token comment"># cp -p /home/user01/file1 /tmp/ 拷贝home/user01/file1文件（包含属性信息）到/tmp下</span>
+<span class="token comment"># cp /root/file1 /tmp/test1 拷贝文件并且重命名</span>
+
+
+问：<span class="token operator">-</span>a和<span class="token operator">-</span>p有什么区别？
+答：相同点都是需要拷贝文件的属性信息，比如拥有者（谁创建的等）；不同点在于，<span class="token operator">-</span>p只能拷贝文件，<span class="token operator">-</span>a既可以拷贝文件
+也可以拷贝目录。
+</code></pre></div><h2 id="_7、mv"><a href="#_7、mv" class="header-anchor">#</a> 7、mv</h2> <blockquote><p>移动或重命名文件</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code>移动文件用法（不同路径下）：
+<span class="token comment"># mv 需要移动的文件 移动到新的路径下</span>
+
+注意：文件的路径不一样
+重命名用法（相同路径下）：
+<span class="token comment"># mv 原来文件的名字 新文件的名字</span>
+
+注意：老文件和新文件的路径一样
+<span class="token comment"># mv /root/file1 /tmp 移动/root/file1文件到/tmp目录下</span>
+<span class="token comment"># mv /tmp/file1 /tmp/test1 将/tmp目录下的file1文件重命名成test1</span>
+</code></pre></div><h2 id="_8、rm"><a href="#_8、rm" class="header-anchor">#</a> 8、rm</h2> <blockquote><p>删除文件</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code>常用选项
+<span class="token operator">-</span>r 递归删除，一般用于删除目录
+<span class="token operator">-</span>f 直接删除，不提示
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># rm file1 删除当前目录下的file1文件，有提示</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># rm -r dir1 删除当前目录下的dir1目录，有提示</span>
+<span class="token namespace">[root@localhost tmp]</span><span class="token comment"># rm -f /root/file1 强制删除/root/file1文件，不提示，直接删</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月5日星期五上午11点23分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="prev">
+        命令--3.Linux帮助文档
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/命令--5.查找命令.html">
+        命令--5.查找命令
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.70f08e00.js" defer></script><script src="/assets/js/2.eed0477d.js" defer></script><script src="/assets/js/1.a00bfedd.js" defer></script><script src="/assets/js/46.15bb012a.js" defer></script><script src="/assets/js/61.0fc8b31b.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令--6.用户、组 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.b8e2b3f9.css" as="style"><link rel="preload" href="/assets/js/app.70f08e00.js" as="script"><link rel="preload" href="/assets/js/2.eed0477d.js" as="script"><link rel="preload" href="/assets/js/1.a00bfedd.js" as="script"><link rel="preload" href="/assets/js/60.2a9dc3e3.js" as="script"><link rel="preload" href="/assets/js/61.0fc8b31b.js" as="script"><link rel="prefetch" href="/assets/js/10.80dd7b8f.js"><link rel="prefetch" href="/assets/js/100.315bc49c.js"><link rel="prefetch" href="/assets/js/101.3b32c9aa.js"><link rel="prefetch" href="/assets/js/102.f343ba8c.js"><link rel="prefetch" href="/assets/js/103.df00e76c.js"><link rel="prefetch" href="/assets/js/104.16f99412.js"><link rel="prefetch" href="/assets/js/105.19ada2bc.js"><link rel="prefetch" href="/assets/js/106.bea1fc1e.js"><link rel="prefetch" href="/assets/js/107.1ef88602.js"><link rel="prefetch" href="/assets/js/108.c7b2f390.js"><link rel="prefetch" href="/assets/js/109.5d6e976c.js"><link rel="prefetch" href="/assets/js/11.6d838c23.js"><link rel="prefetch" href="/assets/js/110.6abe333e.js"><link rel="prefetch" href="/assets/js/111.235fa44f.js"><link rel="prefetch" href="/assets/js/112.91a8f941.js"><link rel="prefetch" href="/assets/js/113.69877d25.js"><link rel="prefetch" href="/assets/js/114.9295a7b2.js"><link rel="prefetch" href="/assets/js/115.2c5ac9e6.js"><link rel="prefetch" href="/assets/js/116.1247b8a4.js"><link rel="prefetch" href="/assets/js/117.0ef03f5d.js"><link rel="prefetch" href="/assets/js/118.96c6d1cf.js"><link rel="prefetch" href="/assets/js/119.82c4375c.js"><link rel="prefetch" href="/assets/js/12.d35b794a.js"><link rel="prefetch" href="/assets/js/120.f0bbbb55.js"><link rel="prefetch" href="/assets/js/121.b282fa0a.js"><link rel="prefetch" href="/assets/js/122.77d7d41e.js"><link rel="prefetch" href="/assets/js/123.cafe892b.js"><link rel="prefetch" href="/assets/js/124.6c90636f.js"><link rel="prefetch" href="/assets/js/125.c696b73e.js"><link rel="prefetch" href="/assets/js/126.977fc502.js"><link rel="prefetch" href="/assets/js/127.212bf7ef.js"><link rel="prefetch" href="/assets/js/128.f309e819.js"><link rel="prefetch" href="/assets/js/129.9ef483c8.js"><link rel="prefetch" href="/assets/js/13.b70a653f.js"><link rel="prefetch" href="/assets/js/130.aa43940a.js"><link rel="prefetch" href="/assets/js/131.6ea087a4.js"><link rel="prefetch" href="/assets/js/132.a3585cbe.js"><link rel="prefetch" href="/assets/js/133.a32f455d.js"><link rel="prefetch" href="/assets/js/134.65bf0c21.js"><link rel="prefetch" href="/assets/js/135.dbd56264.js"><link rel="prefetch" href="/assets/js/136.5ee7b3a9.js"><link rel="prefetch" href="/assets/js/137.f8cc646b.js"><link rel="prefetch" href="/assets/js/138.41086b8f.js"><link rel="prefetch" href="/assets/js/14.a2012371.js"><link rel="prefetch" href="/assets/js/15.16bb6bb4.js"><link rel="prefetch" href="/assets/js/16.77e51987.js"><link rel="prefetch" href="/assets/js/17.0107da88.js"><link rel="prefetch" href="/assets/js/18.894c6dca.js"><link rel="prefetch" href="/assets/js/19.e357204a.js"><link rel="prefetch" href="/assets/js/20.8b5b8188.js"><link rel="prefetch" href="/assets/js/21.86f24138.js"><link rel="prefetch" href="/assets/js/22.77242996.js"><link rel="prefetch" href="/assets/js/23.192a1678.js"><link rel="prefetch" href="/assets/js/24.637c2171.js"><link rel="prefetch" href="/assets/js/25.c3676b4d.js"><link rel="prefetch" href="/assets/js/26.6371deb4.js"><link rel="prefetch" href="/assets/js/27.f8f80a6e.js"><link rel="prefetch" href="/assets/js/28.d677df2f.js"><link rel="prefetch" href="/assets/js/29.e56db6c0.js"><link rel="prefetch" href="/assets/js/3.0508432a.js"><link rel="prefetch" href="/assets/js/30.287c6a9b.js"><link rel="prefetch" href="/assets/js/31.d2a7b852.js"><link rel="prefetch" href="/assets/js/32.65962397.js"><link rel="prefetch" href="/assets/js/33.84f3ea25.js"><link rel="prefetch" href="/assets/js/34.4b17afbc.js"><link rel="prefetch" href="/assets/js/35.a3efe7b1.js"><link rel="prefetch" href="/assets/js/36.793fbca5.js"><link rel="prefetch" href="/assets/js/37.ca7257be.js"><link rel="prefetch" href="/assets/js/38.c81a7cba.js"><link rel="prefetch" href="/assets/js/39.110ed0f9.js"><link rel="prefetch" href="/assets/js/4.3eb2b108.js"><link rel="prefetch" href="/assets/js/40.11e60430.js"><link rel="prefetch" href="/assets/js/41.fcc18308.js"><link rel="prefetch" href="/assets/js/42.17efa4bb.js"><link rel="prefetch" href="/assets/js/43.35e5ccbf.js"><link rel="prefetch" href="/assets/js/44.3b318a35.js"><link rel="prefetch" href="/assets/js/45.886216d3.js"><link rel="prefetch" href="/assets/js/46.15bb012a.js"><link rel="prefetch" href="/assets/js/47.c4602654.js"><link rel="prefetch" href="/assets/js/48.53a36534.js"><link rel="prefetch" href="/assets/js/49.65f71493.js"><link rel="prefetch" href="/assets/js/5.37d95400.js"><link rel="prefetch" href="/assets/js/50.c045b513.js"><link rel="prefetch" href="/assets/js/51.cf20ebf7.js"><link rel="prefetch" href="/assets/js/52.eaa54320.js"><link rel="prefetch" href="/assets/js/53.f069f554.js"><link rel="prefetch" href="/assets/js/54.6feeeff8.js"><link rel="prefetch" href="/assets/js/55.f7223a4f.js"><link rel="prefetch" href="/assets/js/56.80a4cd32.js"><link rel="prefetch" href="/assets/js/57.52f1a434.js"><link rel="prefetch" href="/assets/js/58.8278c5a8.js"><link rel="prefetch" href="/assets/js/59.2616553b.js"><link rel="prefetch" href="/assets/js/6.0874cacf.js"><link rel="prefetch" href="/assets/js/62.16df58e0.js"><link rel="prefetch" href="/assets/js/63.b6dddcf8.js"><link rel="prefetch" href="/assets/js/64.2c7f4004.js"><link rel="prefetch" href="/assets/js/65.1ecfe8d7.js"><link rel="prefetch" href="/assets/js/66.0d662d97.js"><link rel="prefetch" href="/assets/js/67.b9dc2fa8.js"><link rel="prefetch" href="/assets/js/68.76ca7ebe.js"><link rel="prefetch" href="/assets/js/69.3af58381.js"><link rel="prefetch" href="/assets/js/7.163267df.js"><link rel="prefetch" href="/assets/js/70.e673b1ce.js"><link rel="prefetch" href="/assets/js/71.e3d4a829.js"><link rel="prefetch" href="/assets/js/72.d7751526.js"><link rel="prefetch" href="/assets/js/73.e22f5ea0.js"><link rel="prefetch" href="/assets/js/74.122d90f1.js"><link rel="prefetch" href="/assets/js/75.e9237ff9.js"><link rel="prefetch" href="/assets/js/76.851ec65c.js"><link rel="prefetch" href="/assets/js/77.17cbac5c.js"><link rel="prefetch" href="/assets/js/78.cb6faa21.js"><link rel="prefetch" href="/assets/js/79.b4bd6b83.js"><link rel="prefetch" href="/assets/js/80.c1297afe.js"><link rel="prefetch" href="/assets/js/81.2fe8ea3b.js"><link rel="prefetch" href="/assets/js/82.ec632a0d.js"><link rel="prefetch" href="/assets/js/83.794e9495.js"><link rel="prefetch" href="/assets/js/84.34d7e0fd.js"><link rel="prefetch" href="/assets/js/85.baec61d4.js"><link rel="prefetch" href="/assets/js/86.405849f3.js"><link rel="prefetch" href="/assets/js/87.0261cfa5.js"><link rel="prefetch" href="/assets/js/88.3bfdd74a.js"><link rel="prefetch" href="/assets/js/89.70a62ddf.js"><link rel="prefetch" href="/assets/js/90.de8063c3.js"><link rel="prefetch" href="/assets/js/91.dde72f7f.js"><link rel="prefetch" href="/assets/js/92.d9e75ef4.js"><link rel="prefetch" href="/assets/js/93.f221c27e.js"><link rel="prefetch" href="/assets/js/94.f7561210.js"><link rel="prefetch" href="/assets/js/95.05613038.js"><link rel="prefetch" href="/assets/js/96.0e26f249.js"><link rel="prefetch" href="/assets/js/97.eeb228fa.js"><link rel="prefetch" href="/assets/js/98.8f596663.js"><link rel="prefetch" href="/assets/js/99.447e2b67.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.fc9c3e4d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b8e2b3f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网址.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网址.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="sidebar-link">命令--4.文件操作管理</a></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="sidebar-link">命令--5.查找命令</a></li><li><a href="/zs-use/linux/基本使用/命令--6.用户|组.html" class="active sidebar-link">命令--6.用户、组</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--6.用户|组.html#一、用户管理" class="sidebar-link">一、用户管理</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--6.用户|组.html#二、组管理" class="sidebar-link">二、组管理</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--6.用户|组.html#作业1" class="sidebar-link">作业1</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--6.用户|组.html#作业2" class="sidebar-link">作业2</a></li></ul></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="sidebar-link">命令--10.挂载</a></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="sidebar-link">命令--13.时间日期</a></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="sidebar-link">命令--16.vim编辑器</a></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="sidebar-link">系统管理--3.2.系统管理-定时任务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令-6-用户、组"><a href="#命令-6-用户、组" class="header-anchor">#</a> 命令--6.用户、组</h1> <h2 id="一、用户管理"><a href="#一、用户管理" class="header-anchor">#</a> 一、用户管理</h2> <h3 id="一-用户概念及作用-了解"><a href="#一-用户概念及作用-了解" class="header-anchor">#</a> ㈠ 用户概念及作用(了解)</h3> <p>**用户：**指的是<font color="red">Linux操作系统中</font>用于管理系统或者服务的<font color="red">人</font></p> <p>一问：管理系统到底在<strong>管理什么</strong>？</p> <p>答：Linux下一切皆<strong>文件</strong>，所以用户管理的是相应的<font color="red">文件</font></p> <p>二问：<strong>如何管理</strong>文件呢？</p> <p>答：</p> <ol><li><p>文件<font color="red">基本管理</font>，比如文件的创建、删除、复制、查找、打包压缩等；文件的权限增加、减少等；</p></li> <li><p>文件<font color="red">高级管理</font>，比如<strong>程序文件</strong>的安装、卸载、配置等。终极目的是对外提供稳定的服务。</p></li></ol> <h3 id="二-用户的分类-了解"><a href="#二-用户的分类-了解" class="header-anchor">#</a> ㈡ 用户的分类(了解)</h3> <h4 id="_1、超级用户"><a href="#_1、超级用户" class="header-anchor">#</a> 1、超级用户</h4> <ul><li>超级用户，也叫管理员，<strong><font color="red">root</font></strong>。该用户(root)具有<font color="red">所有权限</font>，<font color="red">UID=0</font>并且绝对只能是0。</li></ul> <h4 id="_2、系统用户"><a href="#_2、系统用户" class="header-anchor">#</a> 2、系统用户</h4> <ul><li><p>系统用户，也叫程序用户。一般都是由程序创建，用于程序或者服务运行时候的身份。</p></li> <li><p>默认<font color="red">不允许登录系统</font>。<font color="red">1&lt;=UID&lt;=499</font></p></li> <li><p>比如后面要学的web服务的管理用户apache，文件共享ftp服务的管理用户ftp等</p></li></ul> <p><strong>注意：Centos7/RHEL8中，系统用户UID范围</strong>：<font color="red">1&lt;=UID&lt;=999</font></p> <h4 id="_3、普通用户"><a href="#_3、普通用户" class="header-anchor">#</a> 3、普通用户</h4> <ul><li><p>普通用户，一般都是由管理员创建，用于<font color="red">对系统进行有限的管理维护操作</font>。</p></li> <li><p>默认可以登录系统。<font color="red">500&lt;=UID&lt;=60000</font></p></li></ul> <p><strong>注意：Centos7/RHEL8中，普通用户UID范围</strong>：<font color="red">1000&lt;=UID&lt;=60000</font></p> <p><font color="red"><strong>特别说明</strong>：</font></p> <ol><li><p>用户指的是操作系统上<font color="red">管理系统或服务</font>的<font color="red">人</font>，是人，就有相关的属性信息</p></li> <li><p>用户的属性信息包括但不限于，如：<font color="red">家目录、唯一身份标识(UID)、所属组(GID)</font>等</p></li> <li><p>今天我们讨论的用户指的是<font color="red">普通用户</font>，即由管理员创建的用户</p></li></ol> <h3 id="三-用户的基本管理-掌握"><a href="#三-用户的基本管理-掌握" class="header-anchor">#</a> ㈢ 用户的基本管理(掌握)</h3> <h4 id="_1、创建用户-useradd"><a href="#_1、创建用户-useradd" class="header-anchor">#</a> 1、创建用户(useradd)</h4> <h5 id="_1-基本语法和选项"><a href="#_1-基本语法和选项" class="header-anchor">#</a> (1) 基本语法和选项</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>useradd <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 用户名
+常用选项：
+<span class="token operator">-</span>u 指定用户uid，唯一标识，必须唯一
+<span class="token operator">-</span>g 指定用户的默认组<span class="token punctuation">(</span>主组<span class="token punctuation">)</span>
+<span class="token operator">-</span>G 指定用户附加组<span class="token punctuation">(</span>一个用户可以加入多个组，但是默认组只有一个<span class="token punctuation">)</span>
+<span class="token operator">-</span>d 指定用户家目录<span class="token punctuation">(</span>每个用户都有一个自己的家，并且默认在<span class="token operator">/</span>home/xxx<span class="token punctuation">)</span>
+<span class="token operator">-</span>s 指定用户默认shell
+
+
+查看系统支持的shell<span class="token punctuation">(</span>命令解释器<span class="token punctuation">)</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># cat /etc/shells</span>
+<span class="token operator">/</span>bin/sh 软连接文件
+<span class="token operator">/</span>bin/bash 系统默认的解释器
+<span class="token operator">/</span>usr/bin/sh 软连接文件
+<span class="token operator">/</span>usr/bin/bash 系统默认的解释器
+
+
+其他shell：
+<span class="token operator">/</span>sbin/nologin 不能登录操作系统，也叫非交互式shell
+<span class="token operator">/</span>bin/dash
+<span class="token operator">/</span>bin/tcsh
+<span class="token operator">/</span>bin/csh
+</code></pre></div><h5 id="_2-举例说明"><a href="#_2-举例说明" class="header-anchor">#</a> (2) 举例说明</h5> <h6 id="_1-创建默认用户"><a href="#_1-创建默认用户" class="header-anchor">#</a> ① 创建默认用户</h6> <div class="language-powershell extra-class"><pre class="language-powershell"><code>创建一个用户stu1
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># useradd stu1</span>
+查看用户信息
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># id stu1</span>
+uid=501<span class="token punctuation">(</span>stu1<span class="token punctuation">)</span> gid=501<span class="token punctuation">(</span>stu1<span class="token punctuation">)</span> groups=501<span class="token punctuation">(</span>stu1<span class="token punctuation">)</span>
+
+
+注意：当创建一个默认用户时，系统会给该用户以下东西，以stu1为例说明
+
+
+1）用户的UID<span class="token punctuation">(</span>唯一标识<span class="token punctuation">)</span> 501（系统自动分配）
+2）用户的默认组<span class="token punctuation">(</span>主组<span class="token punctuation">)</span> stu1组，默认跟该用户的用户名一致；组ID<span class="token punctuation">(</span>501<span class="token punctuation">)</span><span class="token punctuation">,</span>默认和用户UID一致
+3）用户的家目录 <span class="token operator">/</span>home/stu1
+4）拷贝相应的文件到用户的家里
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># su - stu1</span>
+<span class="token namespace">[stu1@localhost ~]</span>$ <span class="token function">ls</span> <span class="token operator">-</span>a
+<span class="token punctuation">.</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">.</span>bash_logout <span class="token punctuation">.</span>bash_profile <span class="token punctuation">.</span>bashrc <span class="token punctuation">.</span>gnome2 <span class="token punctuation">.</span>mozilla
+</code></pre></div><p><img src="/assets/img/image-20231101113024070.2366d689.png" alt="image-20231101113024070"></p> <h6 id="_2-根据需求创建用户"><a href="#_2-根据需求创建用户" class="header-anchor">#</a> ② 根据需求创建用户</h6> <p>1、创建用户，不允许登录</p> <p>2、创建用户，指定家目录</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>1<span class="token punctuation">.</span> 创建用户stu2，但是不能登录操作系统
+注意：<span class="token operator">-</span>s 指定用户的默认shell，<span class="token operator">/</span>sbin/nologin表示不能登录系统，也叫非交互
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># useradd -s /sbin/nologin stu2</span>
+验证：
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># id stu2</span>
+uid=502<span class="token punctuation">(</span>stu2<span class="token punctuation">)</span> gid=502<span class="token punctuation">(</span>stu2<span class="token punctuation">)</span> groups=502<span class="token punctuation">(</span>stu2<span class="token punctuation">)</span>
+切换用户失败，说明该用户不能登录系统
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># su - stu2</span>
+This account is currently not available<span class="token punctuation">.</span>
+
+
+2<span class="token punctuation">.</span> 创建用户stu2，同时指定该用户的家目录为<span class="token operator">/</span>rhome/stu2
+注意：<span class="token operator">-</span>d 指定用户的家目录，前提该用户家目录的上一级目录<span class="token operator">/</span>rhome必须存在
+
+
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># mkdir /rhome</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># useradd -d /rhome/stu2 stu2</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># id stu2</span>
+uid=502<span class="token punctuation">(</span>stu2<span class="token punctuation">)</span> gid=502<span class="token punctuation">(</span>stu2<span class="token punctuation">)</span> groups=502<span class="token punctuation">(</span>stu2<span class="token punctuation">)</span>
+说明：指定stu2家目录<span class="token operator">/</span>rhome/stu2时，只需要<span class="token operator">/</span>rhome存在即可，系统会默认在<span class="token operator">/</span>rhome下创建stu2目录
+自己创建的目录中没有 “家具文件”，可以从 <span class="token operator">/</span>etc/skel/ 下拷贝到家中即可
+</code></pre></div><h4 id="_2、用户密码设置-passwd"><a href="#_2、用户密码设置-passwd" class="header-anchor">#</a> 2、用户密码设置(passwd)</h4> <p>两个方式：</p> <p>1.交互式：<code>passwd 用户名</code></p> <p>2.非交互：<code>echo 密码|passwd --stdin 用户名</code></p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>passwd 用户名 表示给指定用户修改密码
+passwd 直接回车 表示给当前用户修改密码
+
+
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># passwd stu1</span>
+Changing password <span class="token keyword">for</span> user stu1<span class="token punctuation">.</span>
+New password: 密码不显示
+BAD PASSWORD: it is WAY too short
+BAD PASSWORD: is too simple
+Retype new password: 密码不显示
+passwd: all authentication tokens updated successfully<span class="token punctuation">.</span>
+
+
+说明：
+1<span class="token punctuation">.</span>管理员root可以给任何用户修改密码
+2<span class="token punctuation">.</span>普通用户可以自己给自己修改密码，但是密码复杂度要符合规范
+
+
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># echo 123|passwd --stdin stu2</span>
+更改用户 stu2 的密码 。
+passwd：所有的身份验证令牌已经成功更新。
+
+说明：使用这种方法不用交互可以直接设置成功，一般用于脚本中。
+管道符“<span class="token punctuation">|</span>”一般是将上一个命令的输出作为标准输入交给下一个命令
+<span class="token operator">--</span>stdin 标准输入
+</code></pre></div><h5 id="_1-保存用户信息的文件"><a href="#_1-保存用户信息的文件" class="header-anchor">#</a> ① 保存用户信息的文件</h5> <p>/etc/passwd</p> <p>/etc/shadow</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>1<span class="token punctuation">.</span> 用户信息保存文件<span class="token operator">/</span>etc/passwd
+了解相关配置文件内容，可以通过求man文档解决，即 man 5 passwd
+
+以冒号:分割为7列，如下：
+account <span class="token operator">--</span>&gt; stu1 用户名称
+password <span class="token operator">--</span>&gt; x 密码<span class="token punctuation">,</span>将密码单独存放在另外一个文件中
+UID <span class="token operator">--</span>&gt; 501 用户ID
+G  ID <span class="token operator">--</span>&gt; 501 组ID
+GECOS <span class="token operator">--</span>&gt; 用户自定义<span class="token punctuation">,</span>描述说明
+directory <span class="token operator">--</span>&gt; <span class="token operator">/</span>home/stu1 用户的家目录
+shell <span class="token operator">--</span>&gt; <span class="token operator">/</span>bin/bash用户的默认shell<span class="token punctuation">,</span>其中<span class="token operator">/</span>sbin/nologin表示非交互，不能登录系统
+
+
+
+
+2<span class="token punctuation">.</span> 用户密码信息保存文件<span class="token operator">/</span>etc/shadow
+了解相关配置文件内容，可以通过求man文档解决，即 man 5 shadow
+
+以冒号:分隔为9列，如下：
+
+login name
+	登录的用户名
+encrypted password
+	加密后的密码<span class="token punctuation">;</span>
+	<span class="token operator">!</span><span class="token operator">!</span>表示没有设置密码
+date of last password change
+	最后一次更改密码的天数（距离1970年的1月1日到现在的天数）
+	值0有特殊含义，即用户下次登录系统时应更改密码。
+minimum password age
+	密码的最小生存周期<span class="token punctuation">;</span>0表示可以立刻修改密码；如果是3，则表示3天后才能更改密码
+maximum password age
+	密码的最大生存周期<span class="token punctuation">;</span>如果30表示每隔30天需要更新一次密码
+password warning period 密码过期前几天发出警告；
+	7表示过期前7天开始警告
+password inactivity period
+	密码的宽限期；如果3表示允许密码过期3天<span class="token punctuation">,</span>3天内还能登录系统，但是要求修改密码。3天后（密码过期3天后账户被封锁，
+	需要联系管理员）
+account expiration date
+	账户过期的时间，账户过期的用户不能登录；密码过期用户不能用原来的密码登录。以1970年1月1日算起。
+reserved field
+	保留
+</code></pre></div><p>② 更改用户的账号信息(chage)</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>chage <span class="token operator">--</span>help
+<span class="token operator">-</span>d 修改用户最后一次更改密码的时间
+<span class="token operator">-</span>m 修改密码的最小存活期（几天后才能修改密码）
+<span class="token operator">-</span>M 修改密码的最大存活期（每隔多少天更新一次密码）
+<span class="token operator">-</span>W 修改密码过期前警告（过期前几天发出警告）
+<span class="token operator">-</span>I 修改允许密码过期几天
+<span class="token operator">-</span>E 修改账户过期时间
+<span class="token operator">-</span>l 列出账户的信息
+
+
+举例说明：
+查看用户账号的相关信息命令：chage <span class="token operator">-</span>l stu1
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># chage -l stu1</span>
+Last password change : Mar 04<span class="token punctuation">,</span> 2019
+Password expires : never
+Password inactive : never
+Account expires : never
+Minimum number of days between password change : 0
+Maximum number of days between password change : 99999
+Number of days of warning before password expires : 7
+
+
+修改用户账号的过期时间：2019-03-10过期
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># chage -E '2019-03-10' stu1</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># chage -l stu1</span>
+Last password change : Mar 04<span class="token punctuation">,</span> 2019
+Password expires : never
+Password inactive : never
+Account expires : Mar 10<span class="token punctuation">,</span> 2019
+Minimum number of days between password change : 0
+Maximum number of days between password change : 99999
+Number of days of warning before password expires : 7
+
+修改用户账号的过期时间为10天以后：
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># chage -E $(date +%F -d '+10days') stu1</span>
+
+
+修改用户登录后需要修改密码
+chage <span class="token operator">-</span>d 0 用户名
+</code></pre></div><p><img src="/assets/img/image-20231102102351590.0110b339.png" alt="image-20231102102351590"></p> <h4 id="_3、修改用户信息-usermod"><a href="#_3、修改用户信息-usermod" class="header-anchor">#</a> 3、修改用户信息(usermod)</h4> <h5 id="_1-基本语法选项"><a href="#_1-基本语法选项" class="header-anchor">#</a> ① 基本语法选项</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>usermod <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 用户名
+常用选项：
+<span class="token operator">-</span>u 指定用户uid，唯一标识，必须唯一
+<span class="token operator">-</span>g 指定用户的默认组<span class="token punctuation">(</span>主组<span class="token punctuation">)</span>
+<span class="token operator">-</span>G 指定用户附加组<span class="token punctuation">(</span>一个用户可以加入多个组，但是默认组只有一个<span class="token punctuation">)</span>
+<span class="token operator">-</span>d 指定用户家目录<span class="token punctuation">(</span>每个用户都有一个自己的家，并且默认在<span class="token operator">/</span>home/xxx<span class="token punctuation">)</span>
+<span class="token operator">-</span>s 指定用户默认shell
+<span class="token operator">-</span>m 移动用户家目录，和<span class="token operator">-</span>d一起使用
+</code></pre></div><h5 id="_2-举例说明-2"><a href="#_2-举例说明-2" class="header-anchor">#</a> ② 举例说明</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>1<span class="token punctuation">.</span> 修改stu3用户的UID为1100
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># usermod -u 1100 stu3</span>
+
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># tail -5 /etc/passwd</span>
+yunwei:x:1001:1001::<span class="token operator">/</span>home/yunwei:<span class="token operator">/</span>sbin/nologin
+stu1:x:1002:1002::<span class="token operator">/</span>home/stu1:<span class="token operator">/</span>bin/bash
+stu2:x:1003:1003::<span class="token operator">/</span>rhome/stu2:<span class="token operator">/</span>bin/bash
+stu3:x:1100:1004::<span class="token operator">/</span>rhome/stu3:<span class="token operator">/</span>bin/bash
+stu4:x:1005:1005::<span class="token operator">/</span>home/stu4:<span class="token operator">/</span>sbin/nologin
+
+
+2<span class="token punctuation">.</span>修改stu4用户的默认shell为可登录系统
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># su - stu4</span>
+This account is currently not available<span class="token punctuation">.</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># usermod -s /bin/sh stu4</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># tail -5 /etc/passwd</span>
+yunwei:x:1001:1001::<span class="token operator">/</span>home/yunwei:<span class="token operator">/</span>sbin/nologin
+stu1:x:1002:1002::<span class="token operator">/</span>home/stu1:<span class="token operator">/</span>bin/bash
+stu2:x:1003:1003::<span class="token operator">/</span>rhome/stu2:<span class="token operator">/</span>bin/bash
+stu3:x:1100:1004::<span class="token operator">/</span>rhome/stu3:<span class="token operator">/</span>bin/bash
+stu4:x:1005:1005::<span class="token operator">/</span>home/stu4:<span class="token operator">/</span>bin/sh
+
+
+3<span class="token punctuation">.</span>修改stu5用户的家目录
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># useradd -d /rhome/stu5 stu5</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># usermod -md /home/stu5 stu5</span>
+</code></pre></div><h4 id="_4、删除用户-userdel"><a href="#_4、删除用户-userdel" class="header-anchor">#</a> 4、删除用户(userdel)</h4> <h5 id="_1-基本语法选项-2"><a href="#_1-基本语法选项-2" class="header-anchor">#</a> ① 基本语法选项</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>userdel <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 用户名
+常用选项:
+<span class="token operator">-</span>r 删除用户并且移除其家目录和邮箱
+<span class="token operator">-</span>f 强制删除正在登录的用户
+</code></pre></div><h5 id="_2-举例说明-3"><a href="#_2-举例说明-3" class="header-anchor">#</a> ② 举例说明</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>说明：
+创建完用户后，家目录默认在<span class="token operator">/</span>home/用户名下；用户的邮箱在<span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>spool/mail/用户名
+1<span class="token punctuation">.</span> 删除stu4用户以及家目录
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># userdel -r stu4</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># id stu4</span>
+id: stu4: No such user
+
+
+2<span class="token punctuation">.</span>强制删除一个正在登录的用户
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># userdel -r stu5</span>
+userdel: user stu5 is currently used by <span class="token keyword">process</span> 7998
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># id stu5</span>
+uid=1101<span class="token punctuation">(</span>stu5<span class="token punctuation">)</span> gid=1101<span class="token punctuation">(</span>stu5<span class="token punctuation">)</span> 组=1101<span class="token punctuation">(</span>stu5<span class="token punctuation">)</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># userdel -rf stu5</span>
+userdel: user stu5 is currently used by <span class="token keyword">process</span> 7998
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># id stu5</span>
+id: “stu5”：无此用户
+
+
+3<span class="token punctuation">.</span> 只删除用户user02，不删除其家目录
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># userdel stu1</span>
+</code></pre></div><h3 id="四-总结"><a href="#四-总结" class="header-anchor">#</a> ㈣ 总结</h3> <h4 id="_1、创建用户-useradd-2"><a href="#_1、创建用户-useradd-2" class="header-anchor">#</a> 1、创建用户（useradd）</h4> <p>1）useradd 用户名——&gt;家目录/home/用户名、邮箱、UID、默认组（GID）[用户主组]</p> <p>2）useradd [选项] 用户名字——&gt;常用选项：-d/-s/-u/-g/-G</p> <h4 id="_2、设置用户密码-passwd"><a href="#_2、设置用户密码-passwd" class="header-anchor">#</a> 2、设置用户密码（passwd）</h4> <p>1）passwd 用户名——&gt;给指定的用户（管理员可以给任何人设置任何密码）</p> <p>2）echo 密码|passwd --stdin 用户名——&gt;非交互式（用于脚本中）</p> <p>3）用户基本信息和用户密码信息保存文件——&gt;/etc/passwd和/etc/shadow</p> <p>4）扩展chage命令——&gt;用来修改用户密码信息（账号过期时间、密码最小生存周期等）</p> <h4 id="_3、修改用户信息-usermod-2"><a href="#_3、修改用户信息-usermod-2" class="header-anchor">#</a> 3、修改用户信息（usermod）</h4> <p>1）usermod [选项] 用户名——&gt;usermod -md 新家 用户名</p> <h4 id="_4、删除用户-userdel-2"><a href="#_4、删除用户-userdel-2" class="header-anchor">#</a> 4、删除用户(userdel)</h4> <p>1）userdel 用户名——&gt;只删除用户，不删除用户家目录、邮箱等信息</p> <p>2）userdel -r 用户名——&gt;删除用户以及用户其他信息</p> <p>3）userdel -f 用户名——&gt;强制删除用户（删除正在登录的用户）</p> <h2 id="二、组管理"><a href="#二、组管理" class="header-anchor">#</a> 二、组管理</h2> <h3 id="一-组和用户的关系-理解"><a href="#一-组和用户的关系-理解" class="header-anchor">#</a> ㈠ 组和用户的关系(理解)</h3> <p><img src="/assets/img/image-20231102104849417.2d73d4e7.png" alt="image-20231102104849417"></p> <p><strong>核心：</strong><font color="red">组的目的是为了方便管理用户</font></p> <ul><li><p>用户是操作系统上管理维护系统或服务的人</p></li> <li><p>组是用户的一个<font color="red">属性信息</font></p></li> <li><p>任何一个用户<font color="red">默认都会有</font>一个<font color="red">主组</font>(默认组)</p></li> <li><p>一个用户除了主组也<font color="red">可以有多个其他组</font>(<strong>附加组</strong>)</p></li></ul> <p>**一问：**用户的主组和附加组到底有啥关系呢？</p> <p>**答：**用户的主组和附加组<font color="red">半毛钱关系都木有</font></p> <p>**二问：**那要这个主组或者附加组有啥用呢？</p> <p><strong>答：<strong>肯定是</strong>有用</strong>的，组的目的是方便管理用户，用户的目的是管理<font color="red">操作文件</font>，文件就有<font color="red">权限</font>这个属性。</p> <ol><li><p>用户要操作一些文件，文件是由用户创建，不同用户创建的文件的<font color="red">属性信息</font>也就不一样</p></li> <li><p>文件的属性都有啥呢？比如，文件的<font color="red">创建者</font>，文件<font color="red">属于哪个组</font>，文件大小，文件时间等</p></li> <li><p>其中，不同用户所创建的<font color="red">文件的属组</font>就是<font color="red">该用户的主组</font>(默认组)</p></li> <li><p>A用户附加组也有可能是其他用户的主组，道理同上（权限章节再细细体会组的作用）</p></li></ol> <h3 id="二-组的管理-掌握"><a href="#二-组的管理-掌握" class="header-anchor">#</a> ㈡ 组的管理(掌握)</h3> <h4 id="_1、创建组-groupadd"><a href="#_1、创建组-groupadd" class="header-anchor">#</a> 1、创建组(groupadd)</h4> <p>/etc/group 组信息文件</p> <h5 id="_1-基本语法"><a href="#_1-基本语法" class="header-anchor">#</a> ① 基本语法</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>groupadd <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 组名
+常用选项：
+<span class="token operator">-</span>g 指定组的GID<span class="token punctuation">(</span>编号<span class="token punctuation">)</span>，默认唯一
+</code></pre></div><h5 id="_2-举例说明-4"><a href="#_2-举例说明-4" class="header-anchor">#</a> ② 举例说明</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>1<span class="token punctuation">.</span>创建一个组admin
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># groupadd admin</span>
+
+
+2<span class="token punctuation">.</span>查看组信息
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># tail -1 /etc/group</span>
+admin:x:1005:
+说明：关于<span class="token operator">/</span>etc/<span class="token function">group</span>配置文件说明，可以man 5 <span class="token function">group</span>找帮助
+
+
+3<span class="token punctuation">.</span>创建一个组sysadmin，指定组的GID为1111
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># groupadd -g 1001 sysadmin</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># tail -1 /etc/group</span>
+admin:x:1005:
+sysadmin:x:1111
+</code></pre></div><h4 id="_2、删除组-groupdel"><a href="#_2、删除组-groupdel" class="header-anchor">#</a> 2、删除组(groupdel)</h4> <h5 id="_1-基本语法-2"><a href="#_1-基本语法-2" class="header-anchor">#</a> ① 基本语法</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>groupdel 组名
+</code></pre></div><p>② 举例说明</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima ~]</span><span class="token comment"># groupdel admin</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># groupdel stu2</span>
+groupdel: cannot remove the primary <span class="token function">group</span> of user <span class="token string">'stu2'</span>
+注意：以上信息说明不能删除属于其他用户的主组
+</code></pre></div><h4 id="_3、组成员管理-gpasswd"><a href="#_3、组成员管理-gpasswd" class="header-anchor">#</a> 3、组成员管理(gpasswd)</h4> <p>/etc/gshadow 组文件</p> <h5 id="_1-基本语法-3"><a href="#_1-基本语法-3" class="header-anchor">#</a> ① 基本语法</h5> <div class="language-powershell extra-class"><pre class="language-powershell"><code>gpasswd <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> 组名
+常见选项：
+<span class="token operator">-</span>a 添加用户到组
+<span class="token operator">-</span>d 从组中删除成员
+<span class="token operator">-</span>A 指定管理员
+<span class="token operator">-</span>M 指定组成员（会覆盖），可以批量添加用户到组中
+<span class="token operator">-</span>r 删除密码
+
+
+gpasswd 组名 给组设置密码
+</code></pre></div><h5 id="_2-举例说明-5"><a href="#_2-举例说明-5" class="header-anchor">#</a> ② 举例说明</h5> <ul><li><p>添加用户到组里</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>1<span class="token punctuation">.</span> 创建3个用户user01~user03
+2<span class="token punctuation">.</span> 将user01添加到sysadmin组里
+方法:1：指定user01用户的附加组为sysadmin（站在用户角度）
+<span class="token comment"># usermod -G sysadmin user01</span>
+
+
+方法2：使用gpasswd命令添加用户到组里
+<span class="token comment"># gpasswd -a user01 sysadmin</span>
+<span class="token operator">-</span>a选项：表示往组里追加用户
+
+<span class="token comment"># gpasswd -M user02,user03 sysadmin 设置sysadmin组成员为user02,user03</span>
+<span class="token operator">-</span>M选项：表示覆盖设置组成员（会覆盖原来的成员列表）
+
+<span class="token comment"># gpasswd -A stu2 admin</span>
+指定admin
+</code></pre></div></li> <li><p>删除组成员</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>将user03用户从组sysadmin里移除
+<span class="token comment"># gpasswd -d user03 sysadmin</span>
+</code></pre></div></li></ul> <h3 id="三-课堂练习"><a href="#三-课堂练习" class="header-anchor">#</a> ㈢ 课堂练习</h3> <ol><li><p>创建一个admin组，组id为900</p></li> <li><p>创建一个用户tom,并且admin组作为tom用户的附加组（要求在建立用户的时候就完成）,密码为123</p></li> <li><p>创建一个用户jack,要求在建立用户之后使用gpasswd把jack加入到该组，密码为123</p></li> <li><p>给admin组设定一个默认密码为123 （gpasswd命令）</p></li> <li><p>把tom用户设定为admin组的组管理员（gpasswd命令）</p></li></ol> <h3 id="四-总结-2"><a href="#四-总结-2" class="header-anchor">#</a> ㈣ 总结</h3> <h4 id="_1、创建组-groupadd-2"><a href="#_1、创建组-groupadd-2" class="header-anchor">#</a> 1、创建组（groupadd）</h4> <p>组的信息保存文件——&gt;/etc/group和/etc/gshadow</p> <h4 id="_2、删除组-groupdel-2"><a href="#_2、删除组-groupdel-2" class="header-anchor">#</a> 2、删除组（groupdel）</h4> <p>什么样的组不能删除？——&gt;不能删除属于其他用户的主组</p> <h4 id="_3、管理组成员-gpasswd"><a href="#_3、管理组成员-gpasswd" class="header-anchor">#</a> 3、管理组成员（gpasswd）</h4> <p>1）添加用户到组里——&gt;gpasswd -a user1 组名 或 gpasswd -M user1,user2,... 组名</p> <p>2）从组里移除用户——&gt;gpasswd -d user1 组名</p> <h1 id="任务实施"><a href="#任务实施" class="header-anchor">#</a> 任务实施</h1> <p>一、创建coding组</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># groupadd coding</span>
+</code></pre></div><p>二、创建用户</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># useradd -G coding lidamao</span>
+<span class="token comment"># useradd -G coding wangergou</span>
+</code></pre></div><p>三、给用户设置密码</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># passwd lidamao</span>
+<span class="token comment"># echo 123|passwd --stdin wangergou</span>
+</code></pre></div><h2 id="作业1"><a href="#作业1" class="header-anchor">#</a> 作业1</h2> <ol><li><p>创建一个公司itcast，3个部门财务(cw)，人事(rs)，市场(sc)</p> <p>说明：<font color="red">实际是创建4个组</font>，分别为itcast、cw、rs、sc，没有包含的关系</p></li> <li><p>每个部门创建2个用户，如 cw01 cw02，rs01，rs02，sc01，sc02；boss01管理公司所有部门；</p> <p>说明：boss01管理所有部门说明，boss01的附加组为财务、人事和市场部门</p></li> <li><p>所有用户账号有效期3个月&lt;90天&gt;，第一次登录强制修改密码，每隔15天更新一次密码；默认密码为123456</p></li></ol> <h2 id="作业2"><a href="#作业2" class="header-anchor">#</a> 作业2</h2> <ol><li><p>添加3个用户，用户harry，natasha，sarsh，要求harry，natasha用户的附加组为admin组，sarsh用户的登录shell为非交互式shell。密码均为redhat</p></li> <li><p>修改harry用户的家目录为/home/heima/redhat/harry</p></li> <li><p>修改natasha，sarsh用户的主组为heima，并且可以登录系统</p></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月5日星期五上午11点23分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="prev">
+        命令--5.查找命令
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html">
+        命令--7.1.文件权限(普通)
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.70f08e00.js" defer></script><script src="/assets/js/2.eed0477d.js" defer></script><script src="/assets/js/1.a00bfedd.js" defer></script><script src="/assets/js/60.2a9dc3e3.js" defer></script><script src="/assets/js/61.0fc8b31b.js" defer></script>
+  </body>
+</html>
