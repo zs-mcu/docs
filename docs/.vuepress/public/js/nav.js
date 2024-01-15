@@ -33,6 +33,10 @@ module.exports = [
       {
         "text": "spring",
         "link": "/zs-ee-框架/spring/"
+      },
+      {
+        "text": "cloud-gateway",
+        "link": "/zs-ee-框架/cloud-gateway/"
       }
     ]
   },

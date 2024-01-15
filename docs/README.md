@@ -27,16 +27,12 @@ footer: Copyright © 2023-present 小邵子
 </center>
 
 
+::: tip gateway
+
+:::
 
 
 
-::: tip Git更新说明
-Git的基本使用
-::: 
-
-::: tip Linux说明
-Linux RedHead8 系统的基本使用
-::: 
 
 ::: tip 待整理博客
 大文件上传问题
