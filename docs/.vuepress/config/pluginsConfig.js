@@ -145,7 +145,8 @@ module.exports = {
     'ga': secret.ga
   },
   '@vuepress/medium-zoom': {
-    selector: 'img.zoom-custom-imgs',
+    // selector: 'img.zoom-custom-imgs',
+    selector: 'img',
   },
   //全文搜索插件，说是不太友好
   'fulltext-search':{},
