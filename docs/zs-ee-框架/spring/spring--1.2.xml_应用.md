@@ -1,3 +1,5 @@
+# spring--1.2.xml_应用
+
 ## Spring的get方法
 
 ![image-20240116120305453](./images/image-20240116120305453.png)
