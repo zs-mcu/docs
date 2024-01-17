@@ -15,10 +15,55 @@ autoGroup-1: 手撕spring
 
 - 如果单例池中不存在，则通过反射创建，并放入单例池中
 
-![img](./images/bean-definition-and-bean-definition-registry.png)
 
 
+```mermaid
+classDiagram
+direction BT
+class AbstractAutowireCapableBeanFactory {
+  # createBean(String, BeanDefinition) Object
+  # doCreateBean(String, BeanDefinition) Object
+}
+class AbstractBeanFactory {
+  + getBean(String) Object
+  # getBeanDefinition(String) BeanDefinition
+  # createBean(String, BeanDefinition) Object
+}
+class BeanDefinition {
+  - Class beanClass
+  + setBeanClass(Class) void
+  + getBeanClass() Class
+}
+class BeanDefinitionRegistry {
+<<Interface>>
+  + registerBeanDefinition(String, BeanDefinition) void
+}
+class BeanFactory {
+<<Interface>>
+  + getBean(String) Object
+}
+class DefaultListableBeanFactory {
+  - Map~String, BeanDefinition~ beanDefinitionMap
+  + registerBeanDefinition(String, BeanDefinition) void
+  # getBeanDefinition(String) BeanDefinition
+}
+class DefaultSingletonBeanRegistry {
+  - Map~String, Object~ singletonObjects
+  # addSingleton(String, Object) void
+  + getSingleton(String) Object
+}
+class SingletonBeanRegistry {
+<<Interface>>
+  + getSingleton(String) Object
+}
 
+AbstractAutowireCapableBeanFactory  -->  AbstractBeanFactory 
+AbstractBeanFactory  ..>  BeanFactory 
+AbstractBeanFactory  -->  DefaultSingletonBeanRegistry 
+DefaultListableBeanFactory  -->  AbstractAutowireCapableBeanFactory 
+DefaultListableBeanFactory  ..>  BeanDefinitionRegistry 
+DefaultSingletonBeanRegistry  ..>  SingletonBeanRegistry 
+```
 
 
 ![image-20240117105035288](./images/image-20240117105035288.png)

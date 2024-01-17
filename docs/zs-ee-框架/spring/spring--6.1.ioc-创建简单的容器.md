@@ -78,7 +78,6 @@ public class BeanDefinition {
     public Object getBean() {
         return bean;
     }
-
 }
 ```
 

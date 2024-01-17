@@ -27,9 +27,20 @@ footer: Copyright © 2023-present 小邵子
 </center>
 
 
-::: tip gateway
 
-:::
+```mermaid
+gantt
+    title 内容整理进度
+    dateFormat X
+    axisFormat %s
+    section vuepress
+    完成   : 0, 100
+    section Linux
+    50%   : 0, 50
+    section spring
+    10%   : 0, 10
+   
+```
 
 
 

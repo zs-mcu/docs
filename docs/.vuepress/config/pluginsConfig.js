@@ -163,4 +163,5 @@ module.exports = {
       clickModeDefaultOpen: true
     },
   },
+  "vuepress-plugin-mermaidjs": {},
 }
