@@ -18,27 +18,27 @@ arch
  lspci | grep -i nvidia
 ```
 
-![image-20240118170520550](images/image-20240118170520550.png)
+![image-20240118170520550](./images/image-20240118170520550.png)
 
 查询显卡具体型号信息
 
 https://admin.pci-ids.ucw.cz/mods/PC/10de?action=help?help=pci
 
-![image-20240118170647581](images/image-20240118170647581.png)
+![image-20240118170647581](./images/image-20240118170647581.png)
 
-![image-20240118170654771](images/image-20240118170654771.png)
+![image-20240118170654771](./images/image-20240118170654771.png)
 
 驱动下载地址
 
 https://www.nvidia.cn/Download/index.aspx?lang=cn
 
-![image-20240118170751341](images/image-20240118170751341.png)
+![image-20240118170751341](./images/image-20240118170751341.png)
 
-![image-20240118170756811](images/image-20240118170756811.png)
+![image-20240118170756811](./images/image-20240118170756811.png)
 
 下载后的文件为.run文件
 
-![image-20240118170816356](images/image-20240118170816356.png)
+![image-20240118170816356](./images/image-20240118170816356.png)
 
 
 
@@ -117,21 +117,21 @@ https://blog.csdn.net/qq_36287702/article/details/122443262
 ./NVIDIA-Linux-xxxx.run -no-x-check -no-nouveau-check -no-opengl-files
 ```
 
-![image-20240118171551956](images/image-20240118171551956.png)
+![image-20240118171551956](./images/image-20240118171551956.png)
 
 在安装过程中可能会显示一个问题：
 
-![image-20240118171447939](images/image-20240118171447939.png)
+![image-20240118171447939](./images/image-20240118171447939.png)
 
 选择NO继续
 
 后面的直接yes直到安装完成
 
-![image-20240118171524115](images/image-20240118171524115.png)
+![image-20240118171524115](./images/image-20240118171524115.png)
 
 安装只后输入nvidai-smi，显示如下，则安装成功。
 
-![image-20240118172312008](images/image-20240118172312008.png)
+![image-20240118172312008](./images/image-20240118172312008.png)
 
 
 
@@ -203,7 +203,7 @@ sudo ./NVIDIA-Linux-xxxx.run
 
 如果出现以下问题，请重启计算机
 
-![image-20240118171732520](images/image-20240118171732520.png)
+![image-20240118171732520](./images/image-20240118171732520.png)
 
 
 
@@ -213,23 +213,23 @@ sudo ./NVIDIA-Linux-xxxx.run
 ./NVIDIA-Linux-xxxx.run -no-x-check -no-nouveau-check -no-opengl-files
 ```
 
-![image-20240118171551956](images/image-20240118171551956.png)
+![image-20240118171551956](./images/image-20240118171551956.png)
 
 
 
 在安装过程中可能会显示一个问题：
 
-![image-20240118171447939](images/image-20240118171447939.png)
+![image-20240118171447939](./images/image-20240118171447939.png)
 
 选择NO继续
 
 后面的直接yes直到安装完成
 
-![image-20240118171524115](images/image-20240118171524115.png)
+![image-20240118171524115](./images/image-20240118171524115.png)
 
 安装只后输入nvidai-smi，显示如下，则安装成功。
 
-![image-20240118172312008](images/image-20240118172312008.png)
+![image-20240118172312008](./images/image-20240118172312008.png)
 
 
 
