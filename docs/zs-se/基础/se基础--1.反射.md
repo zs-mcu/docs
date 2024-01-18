@@ -2,27 +2,38 @@
 
 ## 1.1 反射的概述：
 
-​	**专业的解释（了解一下）：**
+Reflection（反射）是被视为动态语言的关键，反射机制允许程序在执行期借助于Reflection API取得任何类的内部信息，并能直接操作任意对象的内部属性及方法。
 
-​       是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；
+Java反射机制提供的功能
 
-​       对于任意一个对象，都能够调用它的任意属性和方法；
+- 在运行时判断任意一个对象所属的类
 
-​       这种动态获取信息以及动态调用对象方法的功能称为Java语言的反射机制。
+- 在运行时构造任意一个类的对象
 
-​	**通俗的理解：（掌握）**
+- 在运行时判断任意一个类所具有的成员变量和方法
 
-* 利用**反射**创建的对象**可以无视修饰符**调用类里面的内容
+- 在运行时获取泛型信息
 
-* 可以跟**配置文件结合起来使用**，把要创建的对象信息和方法写在配置文件中。
+- 在运行时调用任意一个对象的成员变量和方法
 
-  读取到什么类，就创建什么类的对象
+- 在运行时处理注解
 
-  读取到什么方法，就调用什么方法
+- 生成动态代理
 
-  此时当需求变更的时候不需要修改代码，只要修改配置文件即可。
+  
 
+**java.lang.Class**:代表一个类
+**java.lang.reflect.Method:**代表类的方法
+**java.lang.reflect.Field:**代表类的成员变量
+**java.lang.reflect.Constructor:**代表类的构造器
 
+Class本身也是一个类
+Class 对象只能由系统建立对象
+一个加载的类在 JVM 中只会有一个Class实例
+一个Class对象对应的是一个加载到JVM中的一个.class文件
+每个类的实例都会记得自己是由哪个 Class 实例所生成
+通过Class可以完整地得到一个类中的所有被加载的结构
+Class类是Reflection的根源，针对任何你想动态加载、运行的类，唯有先获得相应的Class对象
 
 ## 1.2 反射学习内容
 
@@ -33,13 +44,12 @@
 * 利用反射如何获取成员变量（赋值，获取值）
 * 利用反射如何获取成员方法（运行）
 
-
-
-## 1.3 获取字节码文件对象（3种）
+## 1.3 获取字节码文件对象（4种）
 
 * 全限定名：`Class.forName("全类名")`**（最常用）**
 * 字面量获取：`类.class`  
 * 对象获取：`obj.getClass()`
+* classLoader获取：`classLoader.loadClass("全类名")`
 
 代码示例：
 
@@ -65,6 +75,10 @@ Student s = new Student();
 Class clazz3 = s.getClass();
 System.out.println(clazz1 == clazz2);//true
 System.out.println(clazz2 == clazz3);//true
+
+//4.classLoader获取
+ClassLoader cl = this.getClass().getClassLoader();
+Class clazz4 = cl.loadClass(“类的全类名”);
 ```
 
 
@@ -82,46 +96,6 @@ java文件：就是我们自己编写的java代码。
 而我们的反射获取的是什么？字节码文件对象，这个对象在内存中是唯一的。
 
 
-
-### class对象方法
-
-| 方法                                                         | 含义                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `newInstance()`                                              | "虚拟构造器"。使用`newInstance()`来创建的类，必须带有无参数的构造器 |
-|                                                              |                                                              |
-| `getName()`<br />`getCanonicalName()`                        | 完整类名                                                     |
-| `getSimpleName()`                                            | 类名                                                         |
-| `isInterface()`                                              | 判断是否是接口                                               |
-| `getInterfaces()`                                            | 返回实现类class数组                                          |
-| `getSuperclass()`                                            | 获得父类的Class对象                                          |
-|                                                              |                                                              |
-| `getConstructors()`<br />`getDeclaredConstructors()`<br />`getConstructor()`<br />`getDeclaredConstructor()` | 获取构造器                                                   |
-|                                                              |                                                              |
-| `getFields()`<br />`getDeclaredFields()`<br />`getField(String name)`<br />`getDeclaredField(String name)` | 获取成员变量                                                 |
-
-
-
-### 类的字面量
-
-`类.class`
-
-适用于：普通类、接口、数组、基本数据类型
-
-`TYPE`
-
-TYPE字段是引用字段，指向对应的基本数据类型的Class对象
-
-| ...等价于...  |                |
-| ------------- | -------------- |
-| boolean.class | Boolean.TYPE   |
-| char.class    | Character.TYPE |
-| byte.class    | Byte.TYPE      |
-| short.class   | Short.TYPE     |
-| int.class     | Integer.TYPE   |
-| long.class    | Long.TYPE      |
-| float.class   | Float.TYPE     |
-| double.class  | Double.TYPE    |
-| void.Class    | Void.TYPE      |
 
 
 
@@ -732,4 +706,12 @@ public class Teacher {
 }
 
 ```
+
+
+
+封装性：解决建议使用
+
+反射：我能不能的问题
+
+![OnJava第十九章_反射_01](./images/OnJava%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0_%E5%8F%8D%E5%B0%84_01.svg)
 

@@ -11,19 +11,19 @@ module.exports = [
   //{ text: 'zs-在线简历', link: '/resume/' , target: '_self', rel: '' },
   { text: 'zs-在线简历', link: '/resume/' , target: '_blank', rel: '' },
   {
-    "text": "zs-tool-小结",
+    "text": "zs-se",
     "items": [
       {
-        "text": "面经手册",
-        "link": "/zs-tool-小结/面经手册/面试--0.开篇"
+        "text": "io",
+        "link": "/zs-se/基础/"
       },
       {
-        "text": "网址收藏",
-        "link": "/zs-tool-小结/网址收藏/实用网址"
+        "text": "io",
+        "link": "/zs-se/设计模式/"
       },
       {
-        "text": "文件",
-        "link": "/zs-tool-小结/文件/"
+        "text": "io",
+        "link": "/zs-se/io/"
       }
     ]
   },
@@ -44,6 +44,25 @@ module.exports = [
       }
     ]
   },
+
+  {
+    "text": "zs-tool-小结",
+    "items": [
+      {
+        "text": "面经手册",
+        "link": "/zs-tool-小结/面经手册/面试--0.开篇"
+      },
+      {
+        "text": "网址收藏",
+        "link": "/zs-tool-小结/网址收藏/实用网址"
+      },
+      {
+        "text": "文件",
+        "link": "/zs-tool-小结/文件/"
+      }
+    ]
+  },
+  
   {
     "text": "zs-tool-框架",
     "items": [
@@ -76,15 +95,7 @@ module.exports = [
       },
     ]
   },
-  {
-    "text": "zs-se",
-    "items": [
-      {
-        "text": "io",
-        "link": "/zs-se/io/"
-      }
-    ]
-  },
+
   {
     "text": "zs-web",
     "items": [
