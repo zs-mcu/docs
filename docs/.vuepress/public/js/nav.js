@@ -14,11 +14,11 @@ module.exports = [
     "text": "zs-se",
     "items": [
       {
-        "text": "io",
+        "text": "基础",
         "link": "/zs-se/基础/"
       },
       {
-        "text": "io",
+        "text": "设计模式",
         "link": "/zs-se/设计模式/"
       },
       {
