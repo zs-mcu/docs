@@ -35,11 +35,22 @@ gantt
     axisFormat %s
     section vuepress
     完成   : 0, 100
-    section Linux
-    50%   : 0, 50
+    section Linux基本使用
+    完成   : 0, 100
+    section Linux系统管理
+    10%   : 0, 10
+    section Linux shell编程
+    10%   : 0, 10
     section spring
     10%   : 0, 10
-   
+    section se基础-反射
+    90%   : 0, 90
+    section se-设计模式-动态代理
+    计划开始   : 0, 0
+    section 面试整理
+    1%    : 0, 1
+    section: cloud-版本关系
+    完成   : 0, 100
 ```
 
 

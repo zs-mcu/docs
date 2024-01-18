@@ -14,6 +14,10 @@ module.exports = [
     "text": "zs-tool-小结",
     "items": [
       {
+        "text": "面经手册",
+        "link": "/zs-tool-小结/面经手册/面试--0.开篇"
+      },
+      {
         "text": "网址收藏",
         "link": "/zs-tool-小结/网址收藏/实用网址"
       },
