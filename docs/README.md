@@ -30,30 +30,25 @@ footer: Copyright © 2023-present 小邵子
 
 ```mermaid
 gantt
-    title 内容整理进度
-    dateFormat X
-    axisFormat %s
-    section vuepress
-    完成   : 0, 100
-    section Linux基本使用
-    完成   : 0, 100
-    section se基础-反射
-    完成   : 0, 100
-    section se-设计模式-动态代理
-    完成   : 0, 100
-    section cloud-版本关系
-    完成   : 0, 100
-
-    section Linux系统管理
-    10%   : 0, 10
-    section Linux shell编程
-    10%   : 0, 10
-    section spring
-    10%   : 0, 10
-    
-    section 面试整理
-    1%    : 0, 1
- 
+  title 博客整理进度
+  dateFormat X
+  axisFormat %s
+  section vuepress
+  vuepress   : done,0,100
+  section Linux
+  基本使用   : done,0,100
+  系统管理   : crit,0,10
+  shell编程 : crit,0,20
+  section se-基础
+  反射   :  done,0, 100
+  section se-设计模式
+  动态代理   : done,0, 100
+  section spring-cloud
+  cloud-版本关系   : done,0, 100
+  section spring
+  手撕源码   : crit,0, 1
+  section 面试整理
+  面试开篇 : active,0, 1
 ```
 
 
