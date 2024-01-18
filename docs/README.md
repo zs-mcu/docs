@@ -49,7 +49,7 @@ gantt
     计划开始   : 0, 0
     section 面试整理
     1%    : 0, 1
-    section: cloud-版本关系
+    section cloud-版本关系
     完成   : 0, 100
 ```
 
