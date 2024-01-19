@@ -45,6 +45,7 @@ module.exports = [
           { text: '虚拟化', link: "/zs-use/linux/虚拟化/" },
         ]
       },
+      { "text": "IDEA", "link": "/zs-use/idea/" },
       { "text": "Git", "link": "/zs-use/git/" },
       { "text": "env", "link": "/zs-use/env/" },
     ]

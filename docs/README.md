@@ -45,6 +45,8 @@ gantt
   section se-设计模式
   设计模式-动态代理   : done,0, 100
   设计模式-UML类图   : done,0,100
+  设计模式-模板方法   : active,0,50
+
 
   section spring-cloud
   cloud-版本关系    : done,0, 100

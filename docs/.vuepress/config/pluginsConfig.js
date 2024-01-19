@@ -21,6 +21,15 @@ function isChinese(char) {
 const sortFn = (Afile, Bfile) => {
   let a=Afile.filename
   let b=Bfile.filename
+
+  console.log(a,'zs===================')
+  if (a === "README") {
+    return -1
+  }
+  if (b === "README") {
+    return 1
+  }
+
   // 数字排在字符串前面
   if (typeof a === 'number' && typeof b === 'string') {
     return -1
