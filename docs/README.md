@@ -41,8 +41,11 @@ gantt
   Linux-shell编程   : crit,0,20
   section se-基础
   se-反射           :  done,0, 100
+
   section se-设计模式
   设计模式-动态代理   : done,0, 100
+  设计模式-UML类图   : done,0,100
+
   section spring-cloud
   cloud-版本关系    : done,0, 100
   section spring
