@@ -5,7 +5,7 @@ heroImage: /assets/img/wx.jpg
 # 主标题
 heroText: 悠闲的线程池
 # 副标题
-tagline: 包括：vuepress使用，科学上网
+tagline: 包括：vuepress使用，科学上网，Linux，java，web
 # 按钮
 actionText: 开始阅读 →
 actionLink: /guide/
@@ -34,23 +34,23 @@ gantt
   dateFormat X
   axisFormat %s
   section vuepress
-  vuepress   : done,0,100
+  vuepress        : done,0,100
   section Linux
-  基本使用   : done,0,100
-  系统管理   : crit,0,10
-  shell编程 : crit,0,20
+  Linux-基本使用    : done,0,100
+  Linux-系统管理    : crit,0,10
+  Linux-shell编程   : crit,0,20
   section se-基础
-  反射   :  done,0, 100
+  se-反射           :  done,0, 100
   section se-设计模式
-  动态代理   : done,0, 100
+  设计模式-动态代理   : done,0, 100
   section spring-cloud
-  cloud-版本关系   : done,0, 100
+  cloud-版本关系    : done,0, 100
   section spring
-  手撕源码   : crit,0, 1
+  手撕源码          : crit,0, 1
   section 面试整理
-  面试开篇 : active,0, 1
+  面试开篇          : active,0, 1
   section web-project
-  魔术卡片 : done,0,100
+  魔术卡片          : done,0,100
 ```
 
 
