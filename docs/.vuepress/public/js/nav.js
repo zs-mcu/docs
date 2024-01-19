@@ -83,6 +83,7 @@ module.exports = [
           {text: '基本使用', link: "/zs-use/linux/基本使用/"},
           {text: '常见问题', link: "/zs-use/linux/常见问题/"}, 
           {text: 'shell编程', link: "/zs-use/linux/shell编程/"},
+          {text: '虚拟化', link: "/zs-use/linux/虚拟化/"},
         ]
       },
       {
