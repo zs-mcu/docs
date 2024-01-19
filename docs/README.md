@@ -23,11 +23,7 @@ footer: Copyright © 2023-present 小邵子
 <img alt="Static Badge" src="https://img.shields.io/badge/java-CV%E6%94%BB%E5%9F%8E%E7%8B%AE%F0%9F%A6%81-red">
 
 🎉身为一名次高级全烂开发工程师的自我修养,拿来主义的践行者🎉
-
 </center>
-
-
-
 ```mermaid
 gantt
   title 博客整理进度
@@ -57,9 +53,6 @@ gantt
   section web-project
   魔术卡片          : done,0,100
 ```
-
-
-
 
 ::: tip 待整理博客
 大文件上传问题
