@@ -18,6 +18,9 @@ features:
   details: 心怀天下，声色犬码。生有热烈，藏与俗常。
 footer: Copyright © 2023-present 小邵子
 ---
+
+<iframe src="//player.bilibili.com/player.html?aid=390191459&bvid=BV1id4y1b7zj&cid=893112311&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 <center>
 <img alt="Static Badge" src="https://img.shields.io/badge/java-%E4%BA%8C%E6%89%8B%E7%A8%8B%E5%BA%8F%E5%91%98%F0%9F%90%92-blue">
 <img alt="Static Badge" src="https://img.shields.io/badge/java-CV%E6%94%BB%E5%9F%8E%E7%8B%AE%F0%9F%A6%81-red">
