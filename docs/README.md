@@ -19,14 +19,14 @@ features:
 footer: Copyright © 2023-present 小邵子
 ---
 
-<iframe src="//player.bilibili.com/player.html?aid=390191459&bvid=BV1id4y1b7zj&cid=893112311&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 
 <center>
 <img alt="Static Badge" src="https://img.shields.io/badge/java-%E4%BA%8C%E6%89%8B%E7%A8%8B%E5%BA%8F%E5%91%98%F0%9F%90%92-blue">
 <img alt="Static Badge" src="https://img.shields.io/badge/java-CV%E6%94%BB%E5%9F%8E%E7%8B%AE%F0%9F%A6%81-red">
-
-🎉身为一名次高级全烂开发工程师的自我修养,拿来主义的践行者🎉
+<p>🎉身为一名次高级全烂开发工程师的自我修养,拿来主义的践行者🎉</p>
 </center>
+
 ```mermaid
 gantt
   title 博客整理进度
@@ -40,14 +40,11 @@ gantt
   Linux-shell编程   : crit,0,20
   section se-基础
   se-反射           :  done,0, 100
-
   section se-设计模式
   设计模式-动态代理   : done,0, 100
   设计模式-UML类图   : done,0,100
   设计模式-模板方法   : done,0,100
-  设计模式-命令模式   : crit,0,0
-
-
+  设计模式-命令模式   : done,0,100
   section spring-cloud
   cloud-版本关系    : done,0, 100
   section spring
@@ -57,6 +54,9 @@ gantt
   section web-project
   魔术卡片          : done,0,100
 ```
+
+
+
 
 ::: tip 待整理博客
 大文件上传问题

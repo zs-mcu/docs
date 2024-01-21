@@ -22,7 +22,7 @@ const sortFn = (Afile, Bfile) => {
   let a=Afile.filename
   let b=Bfile.filename
 
-  console.log(a,'zs===================')
+  //console.log(a,'zs===================')
   if (a === "README") {
     return -1
   }
