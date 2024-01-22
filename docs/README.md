@@ -32,27 +32,39 @@ gantt
   title 博客整理进度
   dateFormat X
   axisFormat %s
-  section vuepress
+
+  section tool
   vuepress        : done,0,100
+  报表            :active,0,0
+
   section Linux
   Linux-基本使用    : done,0,100
   Linux-系统管理    : crit,0,10
   Linux-shell编程   : crit,0,20
+
   section se-基础
   se-反射           :  done,0, 100
+  se-内部类         : active,0,0
+
   section se-设计模式
   设计模式-动态代理   : done,0, 100
   设计模式-UML类图   : done,0,100
   设计模式-模板方法   : done,0,100
   设计模式-命令模式   : done,0,100
+  设计模式-访问者模式 : done,0,100
+
+
   section spring-cloud
   cloud-版本关系    : done,0, 100
+
   section spring
   手撕源码          : crit,0, 1
+
   section 面试整理
   面试开篇          : active,0, 1
   section web-project
   魔术卡片          : done,0,100
+  
 ```
 
 
