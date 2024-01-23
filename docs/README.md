@@ -65,6 +65,7 @@ gantt
 
   section web-project
   魔术卡片          : done,0,100
+  模拟gpt4光标跟随   : done,0,100
 
   section tool-java报表
   jxl入门导出       :done,0,100
