@@ -28,7 +28,8 @@ module.exports = [
   {
     "text": "zs-tool-框架",
     "items": [
-      { "text": "Vuepress", "link": "/zs-tool-框架/vuepress/" }
+      { "text": "Vuepress", "link": "/zs-tool-框架/vuepress/" },
+      { "text": "Vuepress", "link": "/zs-tool-框架/java报表/" }
     ]
   },
   {

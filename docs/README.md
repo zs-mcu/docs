@@ -33,9 +33,8 @@ gantt
   dateFormat X
   axisFormat %s
 
-  section tool
+  section tool-vuepress
   vuepress        : done,0,100
-  报表            :active,0,0
 
   section Linux
   Linux-基本使用    : done,0,100
@@ -53,6 +52,7 @@ gantt
   设计模式-命令模式   : done,0,100
   设计模式-访问者模式 : done,0,100
 
+  
 
   section spring-cloud
   cloud-版本关系    : done,0, 100
@@ -62,8 +62,13 @@ gantt
 
   section 面试整理
   面试开篇          : active,0, 1
+
   section web-project
   魔术卡片          : done,0,100
+
+  section tool-java报表
+  jxl入门导出       :done,0,100
+  poi入门          :crit,0,0
   
 ```
 
