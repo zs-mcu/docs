@@ -33,8 +33,14 @@ gantt
   dateFormat X
   axisFormat %s
 
-  section tool-vuepress
+  section tool-框架-vuepress
   vuepress        : done,0,100
+
+  section too-小结
+  面试-开篇          : active,0, 100
+
+  消息推送-SSE      : done,0, 100
+
 
   section Linux
   Linux-基本使用    : done,0,100
@@ -61,8 +67,6 @@ gantt
   section spring
   手撕源码          : crit,0, 1
 
-  section 面试整理
-  面试开篇          : active,0, 1
 
   section web-project
   魔术卡片          : done,0,100

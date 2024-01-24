@@ -217,13 +217,13 @@ public class Main {
 
 
 
-<img src="images/image-20240115160743641.png" alt="image-20240115160743641" style="zoom:50%;" />
+<img src="./images/image-20240115160743641.png" alt="image-20240115160743641" style="zoom:50%;" />
 
 - flatMap 元素映射为流
 
   把每个元素转换流，吧转换之后的多个流合并成大的流
 
-<img src="images/image-20240115160945251.png" alt="image-20240115160945251" style="zoom:50%;" />
+<img src="./images/image-20240115160945251.png" alt="image-20240115160945251" style="zoom:50%;" />
 
 
 
@@ -273,11 +273,11 @@ SpringFlux基于 Reactor，默认使用容器是 Netty，Netty是高性能的 NI
 
 BIO
 
-<img src="images/image-20240115161505518.png" alt="image-20240115161505518" style="zoom:50%;" />
+<img src="./images/image-20240115161505518.png" alt="image-20240115161505518" style="zoom:50%;" />
 
 NIO
 
-<img src="images/image-20240115161543747.png" alt="image-20240115161543747" style="zoom:50%;" />
+<img src="./images/image-20240115161543747.png" alt="image-20240115161543747" style="zoom:50%;" />
 
 （2）SpringWebFlux执行过程和 SpringMVC相似
 
