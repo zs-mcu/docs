@@ -1,4 +1,4 @@
-# fetch-webFlux--0.1.流式响应-demo01
+# fetch--0.1.入门案例01
 
 ![fetch-webflux](./images/fetch-webflux.gif)
 

@@ -1,10 +1,12 @@
-# SSE--1.1.java-demo01
+# SSE--1.1.入门案例01
+
+## SSE通讯
 
 ![sse-01](./images/sse-01.gif)
 
 
 
-## 工程结构
+### 工程结构
 
 ```tex
 .
@@ -24,7 +26,7 @@
 
 
 
-## 前端核心实现
+### 前端核心实现
 
 ```js
 //创建SSE对象连接
@@ -196,7 +198,7 @@ ui.doms.closeSSE.addEventListener('click', function() {
 </html>
 ```
 
-## 后端核心实现
+### 后端核心实现
 
 ```xml
 <parent>
@@ -317,6 +319,234 @@ public class SseController {
         }
         return "success";
     }
+}
+```
+
+
+
+
+
+## 消息监听
+
+![sse-02](./images/sse-02.gif)
+
+### 前端核心
+
+```js
+// 监听SSE消息
+ui.doms.listenSSE.addEventListener('click', function () {
+    if (!ui.uiData.evtSource) {
+        return
+    }
+    // 监听指定事件类型消息
+    ui.uiData.evtSource.addEventListener("chat", ui.addElementToUIFunc);
+})
+// 关闭监听
+ui.doms.closeListen.addEventListener('click', (event) => {
+    if (!ui.uiData.evtSource) {
+        return
+    }
+    // 监听指定事件类型消息
+    ui.uiData.evtSource.removeEventListener("chat", ui.addElementToUIFunc);
+})
+```
+
+### 前端完整代码
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 指定字符集 -->
+    <meta charset="UTF-8">
+    <!-- 使用Edge最新的浏览器的渲染方式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport视口：网页可以根据设置的宽度自动进行适配，在浏览器的内部虚拟一个容器，容器的宽度与设备的宽度相同。
+    width: 默认宽度与设备的宽度相同
+    initial-scale: 初始的缩放比，为1:1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SSE</title>
+</head>
+<body>
+<button class="open-sse-button" type="button">开启SSE连接</button>
+<button class="close-sse-button" type="button">关闭SSE连接</button>
+<button class="send-sse-button" type="button">发送数据</button>
+<button class="listen-sse-button" type="button">监听SSE</button>
+<button class="close-listen-button" type="button">关闭监听</button>
+<button class="send-listen-button" type="button">发送SSE监听数据</button>
+<hr style="margin: 2px; padding: 0px 0px;"/>
+<ul id="list"></ul>
+</body>
+<script>
+    class UIData {
+        constructor() {
+            this.evtSource = void 0;
+        }
+    }
+
+    class UI {
+        constructor() {
+            this.uiData = new UIData();
+            this.doms = {
+                openSSE: document.querySelector('.open-sse-button'),
+                closeSSE: document.querySelector('.close-sse-button'),
+                listenSSE: document.querySelector('.listen-sse-button'),
+                closeListen: document.querySelector('.close-listen-button'),
+                sendSSE: document.querySelector('.send-sse-button'),
+                sendListen: document.querySelector('.send-listen-button'),
+                ulList: document.querySelector('#list')
+            };
+            this.listenEvent();
+        }
+
+        // 监听各种事件
+        listenEvent() {
+
+        }
+
+
+        addElementToUI(text) {
+            var html = this.doms.ulList.innerHTML;
+            html += `
+            <li>
+                ${text}
+            </li>
+            `
+            this.doms.ulList.innerHTML = html;
+        }
+        addElementToUIFunc(event) {
+            var html = ui.doms.ulList.innerHTML;
+            html += `
+            <li>
+                ${event.data}
+            </li>
+            `
+            ui.doms.ulList.innerHTML = html;
+        }
+    }
+
+    var ui = new UI();
+
+    //开启SSE
+    ui.doms.openSSE.addEventListener('click', function () {
+        if (ui.uiData.evtSource) {
+            return
+        }
+        let openurl = `/sse/events/${Date.now()}`
+        const evtSource = new EventSource(openurl);
+        ui.addElementToUI(`发起连接：${evtSource.url}`)
+        ui.uiData.evtSource = evtSource;
+        evtSource.onmessage = (event) => {
+            ui.addElementToUI(`接收到消息: ${event.data}`)
+        };
+        evtSource.onopen = (event) => {
+            console.log('建立连接...')
+        };
+        evtSource.onerror = (event) => {
+            console.error("发生错误：", event);
+        };
+    });
+    //关闭SSE
+    ui.doms.closeSSE.addEventListener('click', function () {
+        if (!ui.uiData.evtSource) {
+            return
+        }
+        ui.addElementToUI(`关闭连接: ${ui.uiData.evtSource.url}`)
+        ui.uiData.evtSource.close();
+        ui.uiData.evtSource = void 0;
+    })
+    //发送数据
+    ui.doms.sendSSE.addEventListener('click', function () {
+        if (!ui.uiData.evtSource) {
+            return
+        }
+        let url = ui.uiData.evtSource.url;
+        url = url.replace('/events', '/sender');
+        fetch(url, {
+            method: 'GET', // or 'POST', 'PUT', etc.
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then(response => {
+                if (response.ok) {
+                    //return response.json(); // 解析响应体为JSON
+                    return response.text(); // 解析响应体为文本
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .then(data => console.log(data))
+            .catch((error) => console.error('Error:', error)); // promise is rejected with an error
+    })
+
+    // 监听SSE消息
+    ui.doms.listenSSE.addEventListener('click', function () {
+        if (!ui.uiData.evtSource) {
+            return
+        }
+        // 监听指定事件类型消息
+        ui.uiData.evtSource.addEventListener("chat", ui.addElementToUIFunc);
+    })
+    // 关闭监听
+    ui.doms.closeListen.addEventListener('click', (event) => {
+        if (!ui.uiData.evtSource) {
+            return
+        }
+        // 监听指定事件类型消息
+        ui.uiData.evtSource.removeEventListener("chat", ui.addElementToUIFunc);
+    })
+    //发送数据
+    ui.doms.sendListen.addEventListener('click', function () {
+        if (!ui.uiData.evtSource) {
+            return
+        }
+        let url = ui.uiData.evtSource.url;
+        url = url.replace('/events', '/listen');
+        fetch(url, {
+            method: 'GET', // or 'POST', 'PUT', etc.
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then(response => {
+                if (response.ok) {
+                    //return response.json(); // 解析响应体为JSON
+                    return response.text(); // 解析响应体为文本
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .then(data => console.log(data))
+            .catch((error) => console.error('Error:', error)); // promise is rejected with an error
+    })
+
+</script>
+</html>
+
+```
+
+
+
+### 后端核心
+
+```java
+@GetMapping("/listen/{id}")
+public String listen(@PathVariable("id") String id) throws Exception {
+    SseEmitter emitter = this.sse.get(id) ;
+    if (emitter != null) {
+        SseEmitter.SseEventBuilder builder = SseEmitter.event() ;
+        // 指定事件类型
+        builder.name("chat") ;
+        String msg = "随机消息 - " + new Random().nextInt(10000000);
+        builder.data(msg) ;
+        try {
+            emitter.send(builder) ;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    return "success" ;
 }
 ```
 
