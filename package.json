@@ -19,7 +19,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "bash deploy.sh",
-    "docs:nav": "vuepress nav docs"
+    "docs:nav": "vuepress nav docs",
+    "docs:cname": "bash cname.sh"
   },
   "dependencies": {
     "@vssue/api-github-v4": "^1.4.7",
