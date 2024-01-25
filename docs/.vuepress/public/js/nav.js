@@ -20,7 +20,7 @@ module.exports = [
     "text": "zs-tool-小结",
     "items": [
       { "text": "面经手册", "link": "/zs-tool-小结/面经手册/面试--0.开篇" },
-      { "text": "网址收藏", "link": "/zs-tool-小结/网址收藏/实用网址" },
+      { "text": "网址收藏", "link": "/zs-tool-小结/网址收藏/实用网站" },
       { "text": "文件", "link": "/zs-tool-小结/文件/" }
     ]
   },
@@ -57,6 +57,12 @@ module.exports = [
     "items": [
       { "text": "tool-小结", "link": "/zs-web/tool-小结/" },
       { "text": "project", "link": "/zs-web/project/html/" }
+    ]
+  },
+  {
+    "text": "zs-project",
+    "items": [
+      { "text": "mallchat", "link": "/zs-project/mallchat/" },
     ]
   },
 ];
