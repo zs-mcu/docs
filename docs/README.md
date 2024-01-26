@@ -39,9 +39,10 @@ gantt
   section too-小结
   面试-开篇          : active,0, 100
 
-  消息推送-SSE      : done,0, 100
-  消息推送-fetch-webflux : done,0,100
-  消息推送-长轮询 : 0,0
+  消息推送-SSE-入门      : done,0, 100
+  消息推送-fetch-webflux-入门 : done,0,100
+  消息推送-长轮询-入门 : 0,100
+  消息推送-websocket-入门 : 0,100
 
 
   section Linux
