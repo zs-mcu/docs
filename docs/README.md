@@ -50,6 +50,18 @@ gantt
 
 
 
+  section Linux
+  Linux-基本使用    : done,0,100
+  Linux-系统管理    : crit,0,10
+  Linux-shell编程   : crit,0,20
+
+
+
+  section spring
+  手撕源码          : crit,0, 1
+
+
+
 
 
   section tool-框架-vuepress
@@ -58,7 +70,7 @@ gantt
 
 
 
-  section too-小结
+  section tool-小结
   面试-开篇          : active,0, 100
 
   消息推送-SSE-入门      : done,0, 100
@@ -73,22 +85,12 @@ gantt
 
 
 
-  section Linux
-  Linux-基本使用    : done,0,100
-  Linux-系统管理    : crit,0,10
-  Linux-shell编程   : crit,0,20
-
-
-  
 
   section spring-cloud
   cloud-版本关系    : done,0, 100
 
 
 
-
-  section spring
-  手撕源码          : crit,0, 1
 
 
   section web-project
