@@ -36,7 +36,7 @@ gantt
   section se-基础
   se-反射           :  done,0, 100
   se-内部类         :  done,0,100
-  se-jdk8-CompletableFuture: active,0,0
+  JUC-completableFuture: done,0,100
 
   section se-设计模式
   UML类图   : done,0,100
