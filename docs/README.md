@@ -33,6 +33,25 @@ gantt
   dateFormat X
   axisFormat %s
 
+  section se-基础
+  se-反射           :  done,0, 100
+  se-内部类         :  done,0,100
+  se-jdk8-CompletableFuture
+
+  section se-设计模式
+  UML类图   : done,0,100
+  结构型--7.动态代理   : done,0, 100
+  行为型--1.模板方法   : done,0,100
+  行为型--2.命令模式   : done,0,100
+  行为型--3.访问者模式 : done,0,100
+  行为型--8.解释器模式 : active,0,50
+  行为型--9.状态模式  : done,0,100
+
+
+
+
+
+
   section tool-框架-vuepress
   vuepress        : done,0,100
 
@@ -43,6 +62,8 @@ gantt
   消息推送-fetch-webflux-入门 : done,0,100
   消息推送-长轮询-入门 : 0,100
   消息推送-websocket-入门 : 0,100
+  消息推送-websocket-netty等实现方式:0,100
+  消息推送-websocket-redis广播集群原理:0,100
 
 
   section Linux
@@ -50,18 +71,7 @@ gantt
   Linux-系统管理    : crit,0,10
   Linux-shell编程   : crit,0,20
 
-  section se-基础
-  se-反射           :  done,0, 100
-  se-内部类         :  done,0,100
 
-  section se-设计模式
-  UML类图   : done,0,100
-  结构型--7.动态代理   : done,0, 100
-  行为型--1.模板方法   : done,0,100
-  行为型--2.命令模式   : done,0,100
-  行为型--3.访问者模式 : done,0,100
-  行为型--8.解释器模式 : active,0,50
-  行为型--9.状态模式  : done,0,100
   
 
   section spring-cloud
