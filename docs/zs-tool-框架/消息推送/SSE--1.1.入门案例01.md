@@ -328,6 +328,8 @@ public class SseController {
 
 ## 消息监听
 
+**注意：**默认是“message”事件，因为它可以捕获没有 event 字段的事件， * 以及具有特定类型 `event：message` 的事件。* 它不会触发任何其他类型的事件。
+
 ![sse-02](./images/sse-02.gif)
 
 ### 前端核心
