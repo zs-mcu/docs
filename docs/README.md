@@ -36,7 +36,7 @@ gantt
   section se-基础
   se-反射           :  done,0, 100
   se-内部类         :  done,0,100
-  se-jdk8-CompletableFuture
+  se-jdk8-CompletableFuture: active,0,0
 
   section se-设计模式
   UML类图   : done,0,100
@@ -55,6 +55,9 @@ gantt
   section tool-框架-vuepress
   vuepress        : done,0,100
 
+
+
+
   section too-小结
   面试-开篇          : active,0, 100
 
@@ -64,6 +67,10 @@ gantt
   消息推送-websocket-入门 : 0,100
   消息推送-websocket-netty等实现方式:0,100
   消息推送-websocket-redis广播集群原理:0,100
+  消息推送-websocket-wss-nginx配置:active,0,0
+
+
+
 
 
   section Linux
@@ -77,6 +84,9 @@ gantt
   section spring-cloud
   cloud-版本关系    : done,0, 100
 
+
+
+
   section spring
   手撕源码          : crit,0, 1
 
@@ -85,12 +95,19 @@ gantt
   魔术卡片          : done,0,100
   模拟gpt4光标跟随   : done,0,100
 
+
+
+
   section tool-java报表
   jxl入门导出       :done,0,100
   poi入门          :crit,0,0
 
+
+
+
   section use
   maven-自定义archetype:done,0,100
+  maven-nexus的Linux安装:done,0,100
   使用工具方式下载抖音,youtube,微信视频号,b站视频内容:done,0,100
   
 ```
