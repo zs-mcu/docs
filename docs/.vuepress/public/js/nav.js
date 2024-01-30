@@ -50,6 +50,9 @@ module.exports = [
       { "text": "IDEA", "link": "/zs-use/idea/" },
       { "text": "Git", "link": "/zs-use/git/" },
       { "text": "env", "link": "/zs-use/env/" },
+      { "text": "maven", "link": "/zs-use/maven/自定义archetype-01" },
+      { "text": "下载视频", "link": "/zs-use/下载视频/下载器" },
+
     ]
   },
   {

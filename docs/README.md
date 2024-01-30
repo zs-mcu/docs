@@ -78,6 +78,10 @@ gantt
   section tool-java报表
   jxl入门导出       :done,0,100
   poi入门          :crit,0,0
+
+  section use
+  maven-自定义archetype:done,0,100
+  使用工具方式下载抖音,youtube,微信视频号,b站视频内容:done,0,100
   
 ```
 
