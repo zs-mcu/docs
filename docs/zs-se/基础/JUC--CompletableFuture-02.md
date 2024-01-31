@@ -45,7 +45,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
  测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131113428755.png)
+![](./images/csdn-completableFuture-02-0.png)
 
 ###  2. runAsync
 
@@ -86,7 +86,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131113441427.png)
+![](./images/csdn-completableFuture-02-1.png)
 
 ### 3.获取任务结果的方法
 
@@ -156,7 +156,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131113428766.png)   ![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758103.png)
+![](./images/csdn-completableFuture-02-2.png)   ![](./images/csdn-completableFuture-02-3.png)
 
 从上面代码和测试结果我们发现thenApply和thenApplyAsync区别在于，使用thenApply方法时子任务与父任务使用的是同一个线程，而thenApplyAsync在子任务中是另起一个线程执行任务，并且thenApplyAsync可以自定义线程池，默认的使用ForkJoinPool.commonPool()线程池。
 
@@ -203,7 +203,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131113428755-6672068.png) ![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758247.png)从上面代码和测试结果我们发现thenAccep和thenAccepAsync区别在于，使用thenAccep方法时子任务与父任务使用的是同一个线程，而thenAccepAsync在子任务中可能是另起一个线程执行任务，并且thenAccepAsync可以自定义线程池，默认的使用ForkJoinPool.commonPool()线程池。
+![](./images/csdn-completableFuture-02-4.png) ![](./images/csdn-completableFuture-02-5.png)从上面代码和测试结果我们发现thenAccep和thenAccepAsync区别在于，使用thenAccep方法时子任务与父任务使用的是同一个线程，而thenAccepAsync在子任务中可能是另起一个线程执行任务，并且thenAccepAsync可以自定义线程池，默认的使用ForkJoinPool.commonPool()线程池。
 
 ### 3.thenRun和thenRunAsync
 
@@ -247,9 +247,9 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
  测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16.png)
+![](./images/csdn-completableFuture-02-6.png)
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758189.png)
+![](./images/csdn-completableFuture-02-7.png)
 
 从上面代码和测试结果我们发现thenRun和thenRunAsync区别在于，使用thenRun方法时子任务与父任务使用的是同一个线程，而thenRunAsync在子任务中可能是另起一个线程执行任务，并且thenRunAsync可以自定义线程池，默认的使用ForkJoinPool.commonPool()线程池。
 
@@ -282,7 +282,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758280.png) 
+![](./images/csdn-completableFuture-02-8.png) 
 
  whenCompleteAsync和whenComplete区别也是whenCompleteAsync可能会另起一个线程执行任务，并且thenRunAsync可以自定义线程池，默认的使用ForkJoinPool.commonPool()线程池。
 
@@ -314,7 +314,7 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果 ：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758105.png)
+![](./images/csdn-completableFuture-02-9.png)
 
 三、多任务组合处理 
 ----------
@@ -387,11 +387,11 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758218.png) 
+![](./images/csdn-completableFuture-02-10.png) 
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758279.png)
+![](./images/csdn-completableFuture-02-11.png)
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758376.png) 
+![](./images/csdn-completableFuture-02-12.png) 
 
 ### 2.applyToEither、acceptEither和runAfterEither
 
@@ -496,9 +496,9 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果： 
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758334.png)
+![](./images/csdn-completableFuture-02-13.png)
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758362.png)从上面可以看出cf1任务完成需要2秒，cf2任务完成需要5秒，使用applyToEither组合两个任务时，只要有其中一个任务完成时，就会执行cf3任务，显然cf1任务先完成了并且将自己任务的结果传值给了cf3任务，cf3任务中打印了接收到cf1任务完成，接着完成自己的任务，并返回cf3任务完成；acceptEither和runAfterEither类似，acceptEither会将cf1任务的结果作为cf3任务的入参，但cf3任务完成时并无返回值；runAfterEither不会将cf1任务的结果作为cf3任务的入参，它是没有任务入参，执行完自己的任务后也并无返回值。
+![](./images/csdn-completableFuture-02-14.png)从上面可以看出cf1任务完成需要2秒，cf2任务完成需要5秒，使用applyToEither组合两个任务时，只要有其中一个任务完成时，就会执行cf3任务，显然cf1任务先完成了并且将自己任务的结果传值给了cf3任务，cf3任务中打印了接收到cf1任务完成，接着完成自己的任务，并返回cf3任务完成；acceptEither和runAfterEither类似，acceptEither会将cf1任务的结果作为cf3任务的入参，但cf3任务完成时并无返回值；runAfterEither不会将cf1任务的结果作为cf3任务的入参，它是没有任务入参，执行完自己的任务后也并无返回值。
 
 ### 3.allOf / anyOf 
 
@@ -590,9 +590,9 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 测试结果：
 
-![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758467.png)
+![](./images/csdn-completableFuture-02-15.png)
 
- ![](./images/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5pCs56CW6ICB5Yac5bel,size_20,color_FFFFFF,t_70,g_se,x_16-20240131112758418.png)
+ ![](./images/csdn-completableFuture-02-16.png)
 
   
 
