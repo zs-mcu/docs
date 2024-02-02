@@ -60,7 +60,7 @@ module.exports = [
     "items": [
       { "text": "tool-小结", "link": "/zs-web/tool-小结/" },
       { "text": "project", "link": "/zs-web/project/html/" },
-      { "text": "node", "link": "/zs-web/node/淘宝镜像源SSL过期" }
+      { "text": "node", "link": "/zs-web/node/nvm--安装" }
     ]
   },
   {
