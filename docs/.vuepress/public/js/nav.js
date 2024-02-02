@@ -59,7 +59,8 @@ module.exports = [
     "text": "zs-web",
     "items": [
       { "text": "tool-小结", "link": "/zs-web/tool-小结/" },
-      { "text": "project", "link": "/zs-web/project/html/" }
+      { "text": "project", "link": "/zs-web/project/html/" },
+      { "text": "node", "link": "/zs-web/node/淘宝镜像源SSL过期" }
     ]
   },
   {
