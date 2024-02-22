@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>设计模式--3.3.2.行为型--命令模式.md | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.aa271813.css" as="style"><link rel="preload" href="/assets/js/app.cbe17422.js" as="script"><link rel="preload" href="/assets/js/2.15992fb1.js" as="script"><link rel="preload" href="/assets/js/1.31c72f24.js" as="script"><link rel="preload" href="/assets/js/61.5e2092ae.js" as="script"><link rel="preload" href="/assets/js/94.3ddb3f94.js" as="script"><link rel="prefetch" href="/assets/js/10.d88f57f2.js"><link rel="prefetch" href="/assets/js/100.09f87582.js"><link rel="prefetch" href="/assets/js/101.bd4902ee.js"><link rel="prefetch" href="/assets/js/102.7794236f.js"><link rel="prefetch" href="/assets/js/103.94f3b85b.js"><link rel="prefetch" href="/assets/js/104.93052cb4.js"><link rel="prefetch" href="/assets/js/105.53d49f2d.js"><link rel="prefetch" href="/assets/js/106.d9d600a7.js"><link rel="prefetch" href="/assets/js/107.a2e0585d.js"><link rel="prefetch" href="/assets/js/108.a5d1ea0d.js"><link rel="prefetch" href="/assets/js/109.057c3ed5.js"><link rel="prefetch" href="/assets/js/11.d808416d.js"><link rel="prefetch" href="/assets/js/110.24f5b2c3.js"><link rel="prefetch" href="/assets/js/111.a845cfe0.js"><link rel="prefetch" href="/assets/js/112.95bffc8b.js"><link rel="prefetch" href="/assets/js/113.7e9d339e.js"><link rel="prefetch" href="/assets/js/114.afd8847b.js"><link rel="prefetch" href="/assets/js/115.7bcd7ef4.js"><link rel="prefetch" href="/assets/js/116.e8b0b3f4.js"><link rel="prefetch" href="/assets/js/117.5766aea7.js"><link rel="prefetch" href="/assets/js/118.f085f324.js"><link rel="prefetch" href="/assets/js/119.42467116.js"><link rel="prefetch" href="/assets/js/12.dea2a954.js"><link rel="prefetch" href="/assets/js/120.f7c9f793.js"><link rel="prefetch" href="/assets/js/121.ffe38f86.js"><link rel="prefetch" href="/assets/js/122.ff9e9f64.js"><link rel="prefetch" href="/assets/js/123.9e6f8e0b.js"><link rel="prefetch" href="/assets/js/124.eadb93ff.js"><link rel="prefetch" href="/assets/js/125.cfc7e0ca.js"><link rel="prefetch" href="/assets/js/126.44756681.js"><link rel="prefetch" href="/assets/js/127.e31e5867.js"><link rel="prefetch" href="/assets/js/128.5261f587.js"><link rel="prefetch" href="/assets/js/129.c74afbe3.js"><link rel="prefetch" href="/assets/js/13.f5a6822a.js"><link rel="prefetch" href="/assets/js/130.31788a0f.js"><link rel="prefetch" href="/assets/js/131.18accfab.js"><link rel="prefetch" href="/assets/js/132.fb58e7b8.js"><link rel="prefetch" href="/assets/js/133.9e3e404f.js"><link rel="prefetch" href="/assets/js/134.54d82cfc.js"><link rel="prefetch" href="/assets/js/135.2c640ffb.js"><link rel="prefetch" href="/assets/js/136.6c6fb014.js"><link rel="prefetch" href="/assets/js/137.80cba220.js"><link rel="prefetch" href="/assets/js/138.ed6014b8.js"><link rel="prefetch" href="/assets/js/139.41c1b571.js"><link rel="prefetch" href="/assets/js/14.3b2c5041.js"><link rel="prefetch" href="/assets/js/140.2afee9b4.js"><link rel="prefetch" href="/assets/js/141.731b0b35.js"><link rel="prefetch" href="/assets/js/142.cd71afc8.js"><link rel="prefetch" href="/assets/js/143.7248cd37.js"><link rel="prefetch" href="/assets/js/144.aba9ac5a.js"><link rel="prefetch" href="/assets/js/145.83e18a23.js"><link rel="prefetch" href="/assets/js/146.a6dec6d4.js"><link rel="prefetch" href="/assets/js/147.f2bdc6c9.js"><link rel="prefetch" href="/assets/js/148.2854a172.js"><link rel="prefetch" href="/assets/js/149.bd8e13cc.js"><link rel="prefetch" href="/assets/js/15.c151efe5.js"><link rel="prefetch" href="/assets/js/150.cdfc7980.js"><link rel="prefetch" href="/assets/js/151.c68fde75.js"><link rel="prefetch" href="/assets/js/152.741d5054.js"><link rel="prefetch" href="/assets/js/153.e5543d8b.js"><link rel="prefetch" href="/assets/js/154.edabae24.js"><link rel="prefetch" href="/assets/js/155.0362a1b3.js"><link rel="prefetch" href="/assets/js/156.26ce507d.js"><link rel="prefetch" href="/assets/js/157.33d17a46.js"><link rel="prefetch" href="/assets/js/158.636c2567.js"><link rel="prefetch" href="/assets/js/159.be18e98d.js"><link rel="prefetch" href="/assets/js/16.a337737a.js"><link rel="prefetch" href="/assets/js/160.c70d29fe.js"><link rel="prefetch" href="/assets/js/161.82c7bacc.js"><link rel="prefetch" href="/assets/js/162.bd5efa61.js"><link rel="prefetch" href="/assets/js/163.1a844b6a.js"><link rel="prefetch" href="/assets/js/164.7481e490.js"><link rel="prefetch" href="/assets/js/165.44c55976.js"><link rel="prefetch" href="/assets/js/166.766ec397.js"><link rel="prefetch" href="/assets/js/167.d9381765.js"><link rel="prefetch" href="/assets/js/168.47e5746f.js"><link rel="prefetch" href="/assets/js/169.06969166.js"><link rel="prefetch" href="/assets/js/17.c986baee.js"><link rel="prefetch" href="/assets/js/170.b9512e4e.js"><link rel="prefetch" href="/assets/js/171.c0f0070c.js"><link rel="prefetch" href="/assets/js/172.8b6063fe.js"><link rel="prefetch" href="/assets/js/173.39577760.js"><link rel="prefetch" href="/assets/js/174.7105396a.js"><link rel="prefetch" href="/assets/js/175.1f992819.js"><link rel="prefetch" href="/assets/js/176.1597fb8c.js"><link rel="prefetch" href="/assets/js/177.29c04f29.js"><link rel="prefetch" href="/assets/js/178.928072c2.js"><link rel="prefetch" href="/assets/js/179.6638fee4.js"><link rel="prefetch" href="/assets/js/18.37a3ecf0.js"><link rel="prefetch" href="/assets/js/180.11e9f5db.js"><link rel="prefetch" href="/assets/js/181.d4f74725.js"><link rel="prefetch" href="/assets/js/182.9d970b0e.js"><link rel="prefetch" href="/assets/js/183.f42e4e45.js"><link rel="prefetch" href="/assets/js/184.cb1e6b4d.js"><link rel="prefetch" href="/assets/js/185.3bba6841.js"><link rel="prefetch" href="/assets/js/186.06cf3002.js"><link rel="prefetch" href="/assets/js/187.344e02d5.js"><link rel="prefetch" href="/assets/js/188.13803cf3.js"><link rel="prefetch" href="/assets/js/189.22f69880.js"><link rel="prefetch" href="/assets/js/19.3b3de3e8.js"><link rel="prefetch" href="/assets/js/190.bbcba4be.js"><link rel="prefetch" href="/assets/js/191.e3993e40.js"><link rel="prefetch" href="/assets/js/192.0f14a81c.js"><link rel="prefetch" href="/assets/js/193.9e34851c.js"><link rel="prefetch" href="/assets/js/194.2c750424.js"><link rel="prefetch" href="/assets/js/195.faa12875.js"><link rel="prefetch" href="/assets/js/196.2baa8e12.js"><link rel="prefetch" href="/assets/js/197.c1460866.js"><link rel="prefetch" href="/assets/js/198.267efced.js"><link rel="prefetch" href="/assets/js/199.ebfdcc1c.js"><link rel="prefetch" href="/assets/js/20.a2c54f4c.js"><link rel="prefetch" href="/assets/js/200.81f83f7e.js"><link rel="prefetch" href="/assets/js/201.efe0e386.js"><link rel="prefetch" href="/assets/js/202.1fe90dd8.js"><link rel="prefetch" href="/assets/js/203.dd60e7f5.js"><link rel="prefetch" href="/assets/js/204.4ac7d6d3.js"><link rel="prefetch" href="/assets/js/205.9b76ec77.js"><link rel="prefetch" href="/assets/js/206.0409a6e1.js"><link rel="prefetch" href="/assets/js/207.7021b828.js"><link rel="prefetch" href="/assets/js/208.f04a75bd.js"><link rel="prefetch" href="/assets/js/209.cd6231cb.js"><link rel="prefetch" href="/assets/js/21.13f63883.js"><link rel="prefetch" href="/assets/js/210.f706fcf6.js"><link rel="prefetch" href="/assets/js/211.c11cd1cb.js"><link rel="prefetch" href="/assets/js/212.62040b0f.js"><link rel="prefetch" href="/assets/js/213.b388a783.js"><link rel="prefetch" href="/assets/js/214.e4d65386.js"><link rel="prefetch" href="/assets/js/215.e68b02c2.js"><link rel="prefetch" href="/assets/js/216.9c64b41b.js"><link rel="prefetch" href="/assets/js/217.142d140b.js"><link rel="prefetch" href="/assets/js/218.92203faf.js"><link rel="prefetch" href="/assets/js/219.90450133.js"><link rel="prefetch" href="/assets/js/22.40c34874.js"><link rel="prefetch" href="/assets/js/220.fa62c0b7.js"><link rel="prefetch" href="/assets/js/221.23269abd.js"><link rel="prefetch" href="/assets/js/222.f2e22c9d.js"><link rel="prefetch" href="/assets/js/223.6717e175.js"><link rel="prefetch" href="/assets/js/224.b2947298.js"><link rel="prefetch" href="/assets/js/225.0fb3cdf3.js"><link rel="prefetch" href="/assets/js/226.9026d717.js"><link rel="prefetch" href="/assets/js/227.c9b50792.js"><link rel="prefetch" href="/assets/js/228.a360cea2.js"><link rel="prefetch" href="/assets/js/229.d02ace92.js"><link rel="prefetch" href="/assets/js/23.96b9f259.js"><link rel="prefetch" href="/assets/js/230.da6ea071.js"><link rel="prefetch" href="/assets/js/231.0e952506.js"><link rel="prefetch" href="/assets/js/232.e66f2782.js"><link rel="prefetch" href="/assets/js/233.fb8d4cbd.js"><link rel="prefetch" href="/assets/js/234.2d501451.js"><link rel="prefetch" href="/assets/js/235.ef4fa5a1.js"><link rel="prefetch" href="/assets/js/236.125eaa23.js"><link rel="prefetch" href="/assets/js/237.37ea6eba.js"><link rel="prefetch" href="/assets/js/238.b5b24421.js"><link rel="prefetch" href="/assets/js/24.a684a35c.js"><link rel="prefetch" href="/assets/js/25.3b1a5d6a.js"><link rel="prefetch" href="/assets/js/26.cfc408aa.js"><link rel="prefetch" href="/assets/js/27.c0a74a04.js"><link rel="prefetch" href="/assets/js/28.75d427a3.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.6ef6c3dc.js"><link rel="prefetch" href="/assets/js/30.90084c11.js"><link rel="prefetch" href="/assets/js/31.66cfc04d.js"><link rel="prefetch" href="/assets/js/32.d2214fef.js"><link rel="prefetch" href="/assets/js/33.dd4c04e2.js"><link rel="prefetch" href="/assets/js/34.108dd376.js"><link rel="prefetch" href="/assets/js/35.a46e83ba.js"><link rel="prefetch" href="/assets/js/36.21e0806d.js"><link rel="prefetch" href="/assets/js/37.ce0c2db9.js"><link rel="prefetch" href="/assets/js/38.5c50b81d.js"><link rel="prefetch" href="/assets/js/39.81a32cdb.js"><link rel="prefetch" href="/assets/js/4.38b41bc2.js"><link rel="prefetch" href="/assets/js/40.cd7a3499.js"><link rel="prefetch" href="/assets/js/41.03cdf809.js"><link rel="prefetch" href="/assets/js/42.da820bbf.js"><link rel="prefetch" href="/assets/js/43.24947ef8.js"><link rel="prefetch" href="/assets/js/44.59906853.js"><link rel="prefetch" href="/assets/js/45.8d790dde.js"><link rel="prefetch" href="/assets/js/46.6610ce92.js"><link rel="prefetch" href="/assets/js/47.7596d834.js"><link rel="prefetch" href="/assets/js/48.aeaad78b.js"><link rel="prefetch" href="/assets/js/49.7760f132.js"><link rel="prefetch" href="/assets/js/5.5f6b4cae.js"><link rel="prefetch" href="/assets/js/50.cc648af5.js"><link rel="prefetch" href="/assets/js/51.05c971b2.js"><link rel="prefetch" href="/assets/js/52.bf7c7130.js"><link rel="prefetch" href="/assets/js/53.49771c5a.js"><link rel="prefetch" href="/assets/js/54.25fddb48.js"><link rel="prefetch" href="/assets/js/55.0798fc12.js"><link rel="prefetch" href="/assets/js/56.861e54a4.js"><link rel="prefetch" href="/assets/js/57.56cd2e00.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.d7be41c7.js"><link rel="prefetch" href="/assets/js/6.7450495f.js"><link rel="prefetch" href="/assets/js/60.61cf1679.js"><link rel="prefetch" href="/assets/js/62.98b3ec9e.js"><link rel="prefetch" href="/assets/js/63.b394abaf.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.579c211b.js"><link rel="prefetch" href="/assets/js/66.130ad959.js"><link rel="prefetch" href="/assets/js/67.c6f164d2.js"><link rel="prefetch" href="/assets/js/68.f8dfa622.js"><link rel="prefetch" href="/assets/js/69.bbfb7183.js"><link rel="prefetch" href="/assets/js/7.585024b7.js"><link rel="prefetch" href="/assets/js/70.068e2b7f.js"><link rel="prefetch" href="/assets/js/71.1c82053d.js"><link rel="prefetch" href="/assets/js/72.b4f34b4c.js"><link rel="prefetch" href="/assets/js/73.cfe8b346.js"><link rel="prefetch" href="/assets/js/74.b29f4bb7.js"><link rel="prefetch" href="/assets/js/75.2074843d.js"><link rel="prefetch" href="/assets/js/76.5f01d8f5.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.7b9806f0.js"><link rel="prefetch" href="/assets/js/79.83537fb7.js"><link rel="prefetch" href="/assets/js/80.baa92e95.js"><link rel="prefetch" href="/assets/js/81.779b05da.js"><link rel="prefetch" href="/assets/js/82.0b583a01.js"><link rel="prefetch" href="/assets/js/83.0a593829.js"><link rel="prefetch" href="/assets/js/84.8e1d35cd.js"><link rel="prefetch" href="/assets/js/85.15610f16.js"><link rel="prefetch" href="/assets/js/86.2885f94c.js"><link rel="prefetch" href="/assets/js/87.b2cfb11c.js"><link rel="prefetch" href="/assets/js/88.ec93e3dd.js"><link rel="prefetch" href="/assets/js/89.741e1a62.js"><link rel="prefetch" href="/assets/js/90.a6258842.js"><link rel="prefetch" href="/assets/js/91.53a4d057.js"><link rel="prefetch" href="/assets/js/92.2abc9ead.js"><link rel="prefetch" href="/assets/js/93.e48b2d1b.js"><link rel="prefetch" href="/assets/js/95.491e295f.js"><link rel="prefetch" href="/assets/js/96.2d501bdd.js"><link rel="prefetch" href="/assets/js/97.9a69b8d0.js"><link rel="prefetch" href="/assets/js/98.f7dae478.js"><link rel="prefetch" href="/assets/js/99.6d7f62ac.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.f9aa4dd3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa271813.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>设计模式</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-se/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" aria-current="page" class="sidebar-link">说明</a></li><li><a href="/zs-se/设计模式/设计模式--0.Java 设计模式内容介绍.html" class="sidebar-link">设计模式--0.Java 设计模式内容介绍</a></li><li><a href="/zs-se/设计模式/设计模式--1.UML类图.html" class="sidebar-link">设计模式--1.UML类图</a></li><li><a href="/zs-se/设计模式/设计模式--2.设计模式概述.html" class="sidebar-link">设计模式--2.设计模式概述</a></li><li><a href="/zs-se/设计模式/设计模式--3.2.7.结构型--代理模式.html" class="sidebar-link">设计模式--3.2.7.结构型--代理模式</a></li><li><a href="/zs-se/设计模式/设计模式--3.3.1.行为型--模板方法.html" class="sidebar-link">设计模式--3.3.2.行为型--模板方法</a></li><li><a href="/zs-se/设计模式/设计模式--3.3.2.行为型--命令模式.html" class="active sidebar-link">设计模式--3.3.2.行为型--命令模式.md</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-se/设计模式/设计模式--3.3.2.行为型--命令模式.html#智能生活项目需求" class="sidebar-link">智能生活项目需求</a></li><li class="sidebar-sub-header"><a href="/zs-se/设计模式/设计模式--3.3.2.行为型--命令模式.html#命令模式基本介绍" class="sidebar-link">命令模式基本介绍</a></li><li class="sidebar-sub-header"><a href="/zs-se/设计模式/设计模式--3.3.2.行为型--命令模式.html#命令模式的原理类图" class="sidebar-link">命令模式的原理类图</a></li><li class="sidebar-sub-header"><a href="/zs-se/设计模式/设计模式--3.3.2.行为型--命令模式.html#命令模式解决智能生活项目" class="sidebar-link">命令模式解决智能生活项目</a></li><li class="sidebar-sub-header"><a href="/zs-se/设计模式/设计模式--3.3.2.行为型--命令模式.html#spring框架jdbctemplate应用的源码分析" class="sidebar-link">spring框架JdbcTemplate应用的源码分析</a></li></ul></li><li><a href="/zs-se/设计模式/设计模式--3.3.3.行为型--访问者模式.html" class="sidebar-link">设计模式--3.3.3.行为型--访问者模式</a></li><li><a href="/zs-se/设计模式/设计模式--3.3.9.行为型--状态模式.html" class="sidebar-link">设计模式--3.3.9.行为型--状态模式</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="设计模式-3-3-2-行为型-命令模式-md"><a href="#设计模式-3-3-2-行为型-命令模式-md" class="header-anchor">#</a> 设计模式--3.3.2.行为型--命令模式.md</h1> <h2 id="智能生活项目需求"><a href="#智能生活项目需求" class="header-anchor">#</a> 智能生活项目需求</h2> <p>看一个具体的需求</p> <p><img src="/assets/img/image-20240121152840650.c9b7b724.png" alt="image-20240121152840650"></p> <ol><li>我们买了一套智能家电，有照明灯、风扇、冰箱、洗衣机，我们只要在手机上安装 app 就可以控制对这些家电
+工作。</li> <li>这些智能家电来自不同的厂家，我们不想针对每一种家电都安装一个 App，分别控制，我们希望只要一个 app
+就可以控制全部智能家电。</li> <li>要实现一个 app 控制所有智能家电的需要，则每个智能家电厂家都要提供一个统一的接口给 app 调用，这时 就
+可以考虑使用命令模式。</li> <li>命令模式可将“动作的请求者”从“动作的执行者”对象中解耦出来.</li> <li>在我们的例子中，动作的请求者是手机 app，动作的执行者是每个厂商的一个家电产品</li></ol> <h2 id="命令模式基本介绍"><a href="#命令模式基本介绍" class="header-anchor">#</a> 命令模式基本介绍</h2> <ol><li><p>命令模式（Command Pattern）：在软件设计中，我们经常需要向某些对象发送请求，但是并不知道请求的接收
+者是谁，也不知道被请求的操作是哪个，
+我们只需在程序运行时指定具体的请求接收者即可，此时，可以使用命令模式来进行设计</p></li> <li><p>命名模式使得请求发送者与请求接收者消除彼此之间的耦合，让对象之间的调用关系更加灵活，实现解耦。</p></li> <li><p>在命名模式中，会将一个请求封装为一个对象，以便使用不同参数来表示不同的请求(即命名)，同时命令模式
+也支持可撤销的操作。</p></li> <li><p>通俗易懂的理解：将军发布命令，士兵去执行。其中有几个角色：将军（命令发布者）、士兵（命令的具体执
+行者）、命令(连接将军和士兵)。
+Invoker 是调用者（将军），Receiver 是被调用者（士兵），MyCommand 是命令，实现了 Command 接口，持
+有接收对象</p></li></ol> <h2 id="命令模式的原理类图"><a href="#命令模式的原理类图" class="header-anchor">#</a> 命令模式的原理类图</h2> <p><img src="/assets/img/command-yuanli-01.4892d706.png" alt="command-yuanli-01"></p> <p>对原理类图的说明-即(命名模式的角色及职责)</p> <ol><li>Invoker 是调用者角色</li> <li>Command: 是命令角色，需要执行的所有命令都在这里，可以是接口或抽象类</li> <li>Receiver: 接受者角色，知道如何实施和执行一个请求相关的操作</li> <li>ConcreteCommand: 将一个接受者对象与一个动作绑定，调用接受者相应的操作，实现 execute</li></ol> <h2 id="命令模式解决智能生活项目"><a href="#命令模式解决智能生活项目" class="header-anchor">#</a> 命令模式解决智能生活项目</h2> <p>应用实例要求</p> <ol><li><p>编写程序，使用命令模式 完成前面的智能家电项目</p></li> <li><p>思路分析和图解</p> <p><img src="/assets/img/command-anli-01.1d5bb0c6.png" alt="command-anli-01"></p></li> <li><p>代码实现</p></li></ol> <blockquote><p>Command接口</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zs<span class="token punctuation">.</span>design<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+
+<span class="token comment">//创建命令接口</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+    <span class="token comment">//执行动作(操作)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//撤销动作(操作)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><blockquote><p>NoCommand</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+* 没有任何命令，即空执行: 用于初始化每个按钮, 当调用空命令时，对象什么都不做
+* 其实，这样是一种设计模式, 可以省掉对空判断
+* @author Administrator
+*/</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">NoCommand</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>灯具命令执行者角色</p> <p>LightReceiver</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LightReceiver</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot; 电灯打开了.. &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot; 电灯关闭了.. &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>灯具命令</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LightOffCommand</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 聚合 LightReceiver</span>
+    <span class="token class-name">LightReceiver</span> light<span class="token punctuation">;</span>
+    <span class="token comment">// 构造器</span>
+    <span class="token keyword">public</span> <span class="token class-name">LightOffCommand</span><span class="token punctuation">(</span><span class="token class-name">LightReceiver</span> light<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>light <span class="token operator">=</span> light<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 调用接收者的方法</span>
+        light<span class="token punctuation">.</span><span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 调用接收者的方法</span>
+        light<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LightOnCommand</span> <span class="token keyword">implements</span> <span class="token class-name">Command</span> <span class="token punctuation">{</span>
+    <span class="token comment">//聚合 LightReceiver</span>
+    <span class="token class-name">LightReceiver</span> light<span class="token punctuation">;</span>
+    <span class="token comment">//构造器</span>
+    <span class="token keyword">public</span> <span class="token class-name">LightOnCommand</span><span class="token punctuation">(</span><span class="token class-name">LightReceiver</span> light<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>light <span class="token operator">=</span> light<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//调用接收者的方法</span>
+        light<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//调用接收者的方法</span>
+        light<span class="token punctuation">.</span><span class="token function">off</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>控制器</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>zs<span class="token punctuation">.</span>design<span class="token punctuation">.</span>command</span><span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RemoteController</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// 开 按钮的命令数组</span>
+    <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token punctuation">]</span> onCommands<span class="token punctuation">;</span>
+    <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token punctuation">]</span> offCommands<span class="token punctuation">;</span>
+
+    <span class="token comment">// 执行撤销的命令</span>
+    <span class="token class-name">Command</span> undoCommand<span class="token punctuation">;</span>
+
+    <span class="token comment">// 构造器，完成对按钮初始化</span>
+    <span class="token keyword">public</span> <span class="token class-name">RemoteController</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        onCommands <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        offCommands <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Command</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            onCommands<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NoCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            offCommands<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NoCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 给我们的按钮设置你需要的命令</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token keyword">int</span> no<span class="token punctuation">,</span> <span class="token class-name">Command</span> onCommand<span class="token punctuation">,</span> <span class="token class-name">Command</span> offCommand<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        onCommands<span class="token punctuation">[</span>no<span class="token punctuation">]</span> <span class="token operator">=</span> onCommand<span class="token punctuation">;</span>
+        offCommands<span class="token punctuation">[</span>no<span class="token punctuation">]</span> <span class="token operator">=</span> offCommand<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 按下开按钮</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onButtonWasPushed</span><span class="token punctuation">(</span><span class="token keyword">int</span> no<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// no 0</span>
+        <span class="token comment">// 找到你按下的开的按钮， 并调用对应方法</span>
+        onCommands<span class="token punctuation">[</span>no<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 记录这次的操作，用于撤销</span>
+        undoCommand <span class="token operator">=</span> onCommands<span class="token punctuation">[</span>no<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 按下关按钮</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">offButtonWasPushed</span><span class="token punctuation">(</span><span class="token keyword">int</span> no<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// no 0</span>
+        <span class="token comment">// 找到你按下的关的按钮， 并调用对应方法</span>
+        offCommands<span class="token punctuation">[</span>no<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 记录这次的操作，用于撤销</span>
+        undoCommand <span class="token operator">=</span> offCommands<span class="token punctuation">[</span>no<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 按下撤销按钮</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">undoButtonWasPushed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        undoCommand <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">NoCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        undoCommand<span class="token punctuation">.</span><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>客户端</p></blockquote> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Client</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//使用命令设计模式，完成通过遥控器，对电灯的操作</span>
+        <span class="token comment">//创建电灯的对象(接受者)</span>
+        <span class="token class-name">LightReceiver</span> lightReceiver <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LightReceiver</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//创建电灯相关的开关命令</span>
+        <span class="token class-name">LightOnCommand</span> lightOnCommand <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LightOnCommand</span><span class="token punctuation">(</span>lightReceiver<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">LightOffCommand</span> lightOffCommand <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LightOffCommand</span><span class="token punctuation">(</span>lightReceiver<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//需要一个遥控器</span>
+        <span class="token class-name">RemoteController</span> remoteController <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RemoteController</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//给我们的遥控器设置命令, 比如 no = 0 是电灯的开和关的操作</span>
+        remoteController<span class="token punctuation">.</span><span class="token function">setCommand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> lightOnCommand<span class="token punctuation">,</span> lightOffCommand<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;--------按下灯的开按钮-----------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        remoteController<span class="token punctuation">.</span><span class="token function">onButtonWasPushed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;--------按下灯的关按钮-----------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        remoteController<span class="token punctuation">.</span><span class="token function">offButtonWasPushed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;--------按下撤销按钮-----------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        remoteController<span class="token punctuation">.</span><span class="token function">undoButtonWasPushed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="spring框架jdbctemplate应用的源码分析"><a href="#spring框架jdbctemplate应用的源码分析" class="header-anchor">#</a> spring框架JdbcTemplate应用的源码分析</h2> <p><img src="/assets/img/spring-jdbcTemplate-01.6b6e5f9e.png" alt="spring-jdbcTemplate-01"></p> <p><img src="/assets/img/spring-jdbcTemplate-02.766e3533.png" alt="spring-jdbcTemplate-02"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月22日星期一晚上7点55分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-se/设计模式/设计模式--3.3.1.行为型--模板方法.html" class="prev">
+        设计模式--3.3.2.行为型--模板方法
+      </a></span> <span class="next"><a href="/zs-se/设计模式/设计模式--3.3.3.行为型--访问者模式.html">
+        设计模式--3.3.3.行为型--访问者模式
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.cbe17422.js" defer></script><script src="/assets/js/2.15992fb1.js" defer></script><script src="/assets/js/1.31c72f24.js" defer></script><script src="/assets/js/61.5e2092ae.js" defer></script><script src="/assets/js/94.3ddb3f94.js" defer></script>
+  </body>
+</html>

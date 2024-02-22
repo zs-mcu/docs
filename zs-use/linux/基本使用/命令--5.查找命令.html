@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令--5.查找命令 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.aa271813.css" as="style"><link rel="preload" href="/assets/js/app.cbe17422.js" as="script"><link rel="preload" href="/assets/js/2.15992fb1.js" as="script"><link rel="preload" href="/assets/js/1.31c72f24.js" as="script"><link rel="preload" href="/assets/js/72.b4f34b4c.js" as="script"><link rel="preload" href="/assets/js/94.3ddb3f94.js" as="script"><link rel="prefetch" href="/assets/js/10.d88f57f2.js"><link rel="prefetch" href="/assets/js/100.09f87582.js"><link rel="prefetch" href="/assets/js/101.bd4902ee.js"><link rel="prefetch" href="/assets/js/102.7794236f.js"><link rel="prefetch" href="/assets/js/103.94f3b85b.js"><link rel="prefetch" href="/assets/js/104.93052cb4.js"><link rel="prefetch" href="/assets/js/105.53d49f2d.js"><link rel="prefetch" href="/assets/js/106.d9d600a7.js"><link rel="prefetch" href="/assets/js/107.a2e0585d.js"><link rel="prefetch" href="/assets/js/108.a5d1ea0d.js"><link rel="prefetch" href="/assets/js/109.057c3ed5.js"><link rel="prefetch" href="/assets/js/11.d808416d.js"><link rel="prefetch" href="/assets/js/110.24f5b2c3.js"><link rel="prefetch" href="/assets/js/111.a845cfe0.js"><link rel="prefetch" href="/assets/js/112.95bffc8b.js"><link rel="prefetch" href="/assets/js/113.7e9d339e.js"><link rel="prefetch" href="/assets/js/114.afd8847b.js"><link rel="prefetch" href="/assets/js/115.7bcd7ef4.js"><link rel="prefetch" href="/assets/js/116.e8b0b3f4.js"><link rel="prefetch" href="/assets/js/117.5766aea7.js"><link rel="prefetch" href="/assets/js/118.f085f324.js"><link rel="prefetch" href="/assets/js/119.42467116.js"><link rel="prefetch" href="/assets/js/12.dea2a954.js"><link rel="prefetch" href="/assets/js/120.f7c9f793.js"><link rel="prefetch" href="/assets/js/121.ffe38f86.js"><link rel="prefetch" href="/assets/js/122.ff9e9f64.js"><link rel="prefetch" href="/assets/js/123.9e6f8e0b.js"><link rel="prefetch" href="/assets/js/124.eadb93ff.js"><link rel="prefetch" href="/assets/js/125.cfc7e0ca.js"><link rel="prefetch" href="/assets/js/126.44756681.js"><link rel="prefetch" href="/assets/js/127.e31e5867.js"><link rel="prefetch" href="/assets/js/128.5261f587.js"><link rel="prefetch" href="/assets/js/129.c74afbe3.js"><link rel="prefetch" href="/assets/js/13.f5a6822a.js"><link rel="prefetch" href="/assets/js/130.31788a0f.js"><link rel="prefetch" href="/assets/js/131.18accfab.js"><link rel="prefetch" href="/assets/js/132.fb58e7b8.js"><link rel="prefetch" href="/assets/js/133.9e3e404f.js"><link rel="prefetch" href="/assets/js/134.54d82cfc.js"><link rel="prefetch" href="/assets/js/135.2c640ffb.js"><link rel="prefetch" href="/assets/js/136.6c6fb014.js"><link rel="prefetch" href="/assets/js/137.80cba220.js"><link rel="prefetch" href="/assets/js/138.ed6014b8.js"><link rel="prefetch" href="/assets/js/139.41c1b571.js"><link rel="prefetch" href="/assets/js/14.3b2c5041.js"><link rel="prefetch" href="/assets/js/140.2afee9b4.js"><link rel="prefetch" href="/assets/js/141.731b0b35.js"><link rel="prefetch" href="/assets/js/142.cd71afc8.js"><link rel="prefetch" href="/assets/js/143.7248cd37.js"><link rel="prefetch" href="/assets/js/144.aba9ac5a.js"><link rel="prefetch" href="/assets/js/145.83e18a23.js"><link rel="prefetch" href="/assets/js/146.a6dec6d4.js"><link rel="prefetch" href="/assets/js/147.f2bdc6c9.js"><link rel="prefetch" href="/assets/js/148.2854a172.js"><link rel="prefetch" href="/assets/js/149.bd8e13cc.js"><link rel="prefetch" href="/assets/js/15.c151efe5.js"><link rel="prefetch" href="/assets/js/150.cdfc7980.js"><link rel="prefetch" href="/assets/js/151.c68fde75.js"><link rel="prefetch" href="/assets/js/152.741d5054.js"><link rel="prefetch" href="/assets/js/153.e5543d8b.js"><link rel="prefetch" href="/assets/js/154.edabae24.js"><link rel="prefetch" href="/assets/js/155.0362a1b3.js"><link rel="prefetch" href="/assets/js/156.26ce507d.js"><link rel="prefetch" href="/assets/js/157.33d17a46.js"><link rel="prefetch" href="/assets/js/158.636c2567.js"><link rel="prefetch" href="/assets/js/159.be18e98d.js"><link rel="prefetch" href="/assets/js/16.a337737a.js"><link rel="prefetch" href="/assets/js/160.c70d29fe.js"><link rel="prefetch" href="/assets/js/161.82c7bacc.js"><link rel="prefetch" href="/assets/js/162.bd5efa61.js"><link rel="prefetch" href="/assets/js/163.1a844b6a.js"><link rel="prefetch" href="/assets/js/164.7481e490.js"><link rel="prefetch" href="/assets/js/165.44c55976.js"><link rel="prefetch" href="/assets/js/166.766ec397.js"><link rel="prefetch" href="/assets/js/167.d9381765.js"><link rel="prefetch" href="/assets/js/168.47e5746f.js"><link rel="prefetch" href="/assets/js/169.06969166.js"><link rel="prefetch" href="/assets/js/17.c986baee.js"><link rel="prefetch" href="/assets/js/170.b9512e4e.js"><link rel="prefetch" href="/assets/js/171.c0f0070c.js"><link rel="prefetch" href="/assets/js/172.8b6063fe.js"><link rel="prefetch" href="/assets/js/173.39577760.js"><link rel="prefetch" href="/assets/js/174.7105396a.js"><link rel="prefetch" href="/assets/js/175.1f992819.js"><link rel="prefetch" href="/assets/js/176.1597fb8c.js"><link rel="prefetch" href="/assets/js/177.29c04f29.js"><link rel="prefetch" href="/assets/js/178.928072c2.js"><link rel="prefetch" href="/assets/js/179.6638fee4.js"><link rel="prefetch" href="/assets/js/18.37a3ecf0.js"><link rel="prefetch" href="/assets/js/180.11e9f5db.js"><link rel="prefetch" href="/assets/js/181.d4f74725.js"><link rel="prefetch" href="/assets/js/182.9d970b0e.js"><link rel="prefetch" href="/assets/js/183.f42e4e45.js"><link rel="prefetch" href="/assets/js/184.cb1e6b4d.js"><link rel="prefetch" href="/assets/js/185.3bba6841.js"><link rel="prefetch" href="/assets/js/186.06cf3002.js"><link rel="prefetch" href="/assets/js/187.344e02d5.js"><link rel="prefetch" href="/assets/js/188.13803cf3.js"><link rel="prefetch" href="/assets/js/189.22f69880.js"><link rel="prefetch" href="/assets/js/19.3b3de3e8.js"><link rel="prefetch" href="/assets/js/190.bbcba4be.js"><link rel="prefetch" href="/assets/js/191.e3993e40.js"><link rel="prefetch" href="/assets/js/192.0f14a81c.js"><link rel="prefetch" href="/assets/js/193.9e34851c.js"><link rel="prefetch" href="/assets/js/194.2c750424.js"><link rel="prefetch" href="/assets/js/195.faa12875.js"><link rel="prefetch" href="/assets/js/196.2baa8e12.js"><link rel="prefetch" href="/assets/js/197.c1460866.js"><link rel="prefetch" href="/assets/js/198.267efced.js"><link rel="prefetch" href="/assets/js/199.ebfdcc1c.js"><link rel="prefetch" href="/assets/js/20.a2c54f4c.js"><link rel="prefetch" href="/assets/js/200.81f83f7e.js"><link rel="prefetch" href="/assets/js/201.efe0e386.js"><link rel="prefetch" href="/assets/js/202.1fe90dd8.js"><link rel="prefetch" href="/assets/js/203.dd60e7f5.js"><link rel="prefetch" href="/assets/js/204.4ac7d6d3.js"><link rel="prefetch" href="/assets/js/205.9b76ec77.js"><link rel="prefetch" href="/assets/js/206.0409a6e1.js"><link rel="prefetch" href="/assets/js/207.7021b828.js"><link rel="prefetch" href="/assets/js/208.f04a75bd.js"><link rel="prefetch" href="/assets/js/209.cd6231cb.js"><link rel="prefetch" href="/assets/js/21.13f63883.js"><link rel="prefetch" href="/assets/js/210.f706fcf6.js"><link rel="prefetch" href="/assets/js/211.c11cd1cb.js"><link rel="prefetch" href="/assets/js/212.62040b0f.js"><link rel="prefetch" href="/assets/js/213.b388a783.js"><link rel="prefetch" href="/assets/js/214.e4d65386.js"><link rel="prefetch" href="/assets/js/215.e68b02c2.js"><link rel="prefetch" href="/assets/js/216.9c64b41b.js"><link rel="prefetch" href="/assets/js/217.142d140b.js"><link rel="prefetch" href="/assets/js/218.92203faf.js"><link rel="prefetch" href="/assets/js/219.90450133.js"><link rel="prefetch" href="/assets/js/22.40c34874.js"><link rel="prefetch" href="/assets/js/220.fa62c0b7.js"><link rel="prefetch" href="/assets/js/221.23269abd.js"><link rel="prefetch" href="/assets/js/222.f2e22c9d.js"><link rel="prefetch" href="/assets/js/223.6717e175.js"><link rel="prefetch" href="/assets/js/224.b2947298.js"><link rel="prefetch" href="/assets/js/225.0fb3cdf3.js"><link rel="prefetch" href="/assets/js/226.9026d717.js"><link rel="prefetch" href="/assets/js/227.c9b50792.js"><link rel="prefetch" href="/assets/js/228.a360cea2.js"><link rel="prefetch" href="/assets/js/229.d02ace92.js"><link rel="prefetch" href="/assets/js/23.96b9f259.js"><link rel="prefetch" href="/assets/js/230.da6ea071.js"><link rel="prefetch" href="/assets/js/231.0e952506.js"><link rel="prefetch" href="/assets/js/232.e66f2782.js"><link rel="prefetch" href="/assets/js/233.fb8d4cbd.js"><link rel="prefetch" href="/assets/js/234.2d501451.js"><link rel="prefetch" href="/assets/js/235.ef4fa5a1.js"><link rel="prefetch" href="/assets/js/236.125eaa23.js"><link rel="prefetch" href="/assets/js/237.37ea6eba.js"><link rel="prefetch" href="/assets/js/238.b5b24421.js"><link rel="prefetch" href="/assets/js/24.a684a35c.js"><link rel="prefetch" href="/assets/js/25.3b1a5d6a.js"><link rel="prefetch" href="/assets/js/26.cfc408aa.js"><link rel="prefetch" href="/assets/js/27.c0a74a04.js"><link rel="prefetch" href="/assets/js/28.75d427a3.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.6ef6c3dc.js"><link rel="prefetch" href="/assets/js/30.90084c11.js"><link rel="prefetch" href="/assets/js/31.66cfc04d.js"><link rel="prefetch" href="/assets/js/32.d2214fef.js"><link rel="prefetch" href="/assets/js/33.dd4c04e2.js"><link rel="prefetch" href="/assets/js/34.108dd376.js"><link rel="prefetch" href="/assets/js/35.a46e83ba.js"><link rel="prefetch" href="/assets/js/36.21e0806d.js"><link rel="prefetch" href="/assets/js/37.ce0c2db9.js"><link rel="prefetch" href="/assets/js/38.5c50b81d.js"><link rel="prefetch" href="/assets/js/39.81a32cdb.js"><link rel="prefetch" href="/assets/js/4.38b41bc2.js"><link rel="prefetch" href="/assets/js/40.cd7a3499.js"><link rel="prefetch" href="/assets/js/41.03cdf809.js"><link rel="prefetch" href="/assets/js/42.da820bbf.js"><link rel="prefetch" href="/assets/js/43.24947ef8.js"><link rel="prefetch" href="/assets/js/44.59906853.js"><link rel="prefetch" href="/assets/js/45.8d790dde.js"><link rel="prefetch" href="/assets/js/46.6610ce92.js"><link rel="prefetch" href="/assets/js/47.7596d834.js"><link rel="prefetch" href="/assets/js/48.aeaad78b.js"><link rel="prefetch" href="/assets/js/49.7760f132.js"><link rel="prefetch" href="/assets/js/5.5f6b4cae.js"><link rel="prefetch" href="/assets/js/50.cc648af5.js"><link rel="prefetch" href="/assets/js/51.05c971b2.js"><link rel="prefetch" href="/assets/js/52.bf7c7130.js"><link rel="prefetch" href="/assets/js/53.49771c5a.js"><link rel="prefetch" href="/assets/js/54.25fddb48.js"><link rel="prefetch" href="/assets/js/55.0798fc12.js"><link rel="prefetch" href="/assets/js/56.861e54a4.js"><link rel="prefetch" href="/assets/js/57.56cd2e00.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.d7be41c7.js"><link rel="prefetch" href="/assets/js/6.7450495f.js"><link rel="prefetch" href="/assets/js/60.61cf1679.js"><link rel="prefetch" href="/assets/js/61.5e2092ae.js"><link rel="prefetch" href="/assets/js/62.98b3ec9e.js"><link rel="prefetch" href="/assets/js/63.b394abaf.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.579c211b.js"><link rel="prefetch" href="/assets/js/66.130ad959.js"><link rel="prefetch" href="/assets/js/67.c6f164d2.js"><link rel="prefetch" href="/assets/js/68.f8dfa622.js"><link rel="prefetch" href="/assets/js/69.bbfb7183.js"><link rel="prefetch" href="/assets/js/7.585024b7.js"><link rel="prefetch" href="/assets/js/70.068e2b7f.js"><link rel="prefetch" href="/assets/js/71.1c82053d.js"><link rel="prefetch" href="/assets/js/73.cfe8b346.js"><link rel="prefetch" href="/assets/js/74.b29f4bb7.js"><link rel="prefetch" href="/assets/js/75.2074843d.js"><link rel="prefetch" href="/assets/js/76.5f01d8f5.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.7b9806f0.js"><link rel="prefetch" href="/assets/js/79.83537fb7.js"><link rel="prefetch" href="/assets/js/80.baa92e95.js"><link rel="prefetch" href="/assets/js/81.779b05da.js"><link rel="prefetch" href="/assets/js/82.0b583a01.js"><link rel="prefetch" href="/assets/js/83.0a593829.js"><link rel="prefetch" href="/assets/js/84.8e1d35cd.js"><link rel="prefetch" href="/assets/js/85.15610f16.js"><link rel="prefetch" href="/assets/js/86.2885f94c.js"><link rel="prefetch" href="/assets/js/87.b2cfb11c.js"><link rel="prefetch" href="/assets/js/88.ec93e3dd.js"><link rel="prefetch" href="/assets/js/89.741e1a62.js"><link rel="prefetch" href="/assets/js/90.a6258842.js"><link rel="prefetch" href="/assets/js/91.53a4d057.js"><link rel="prefetch" href="/assets/js/92.2abc9ead.js"><link rel="prefetch" href="/assets/js/93.e48b2d1b.js"><link rel="prefetch" href="/assets/js/95.491e295f.js"><link rel="prefetch" href="/assets/js/96.2d501bdd.js"><link rel="prefetch" href="/assets/js/97.9a69b8d0.js"><link rel="prefetch" href="/assets/js/98.f7dae478.js"><link rel="prefetch" href="/assets/js/99.6d7f62ac.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.f9aa4dd3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa271813.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="sidebar-link">命令--4.文件操作管理</a></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="active sidebar-link">命令--5.查找命令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--5.查找命令.html#whereis命令" class="sidebar-link">whereis命令</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--5.查找命令.html#which命令" class="sidebar-link">which命令</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--5.查找命令.html#locate命令" class="sidebar-link">locate命令</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--5.查找命令.html#find命令" class="sidebar-link">find命令</a></li></ul></li><li><a href="/zs-use/linux/基本使用/命令--6.用户|组.html" class="sidebar-link">命令--6.用户、组</a></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="sidebar-link">命令--10.挂载</a></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="sidebar-link">命令--13.时间日期</a></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="sidebar-link">命令--16.vim编辑器</a></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="sidebar-link">系统管理--3.2.系统管理-定时任务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令-5-查找命令"><a href="#命令-5-查找命令" class="header-anchor">#</a> 命令--5.查找命令</h1> <h2 id="whereis命令"><a href="#whereis命令" class="header-anchor">#</a> whereis命令</h2> <p><code>which 命令</code> ：找出命令的绝对路径</p> <p><code>whereis 命令</code> ：找出命令的路径以及文档手册信息</p> <p>​		whereis是搜索系统命令的命令（像绕口令一样），也就是说，whereis命令不能搜索普通文件，而只能搜索系统命令。whereis命令的基本信息如下。</p> <ul><li>命令名称：whereis。</li> <li>功能描述：查找二进制命令、源文件和帮助文档的命令。</li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima ~]</span><span class="token comment"># whereis mkdir</span>
+mkdir: <span class="token operator">/</span>usr/bin/mkdir <span class="token operator">/</span>usr/share/man/man1/mkdir<span class="token punctuation">.</span>1<span class="token punctuation">.</span>gz <span class="token operator">/</span>usr/share/man/man1p/mkdir<span class="token punctuation">.</span>1p<span class="token punctuation">.</span>gz
+<span class="token operator">/</span>usr/share/man/man2/mkdir<span class="token punctuation">.</span>2<span class="token punctuation">.</span>gz <span class="token operator">/</span>usr/share/man/man3p/mkdir<span class="token punctuation">.</span>3p<span class="token punctuation">.</span>gz
+</code></pre></div><h2 id="which命令"><a href="#which命令" class="header-anchor">#</a> which命令</h2> <p><code>which 命令</code> ：找出命令的绝对路径</p> <p><code>whereis 命令</code> ：找出命令的路径以及文档手册信息</p> <p>which也是搜索系统命令的命令。</p> <ul><li>命令名称：which。</li> <li>功能描述：列出命令的所在路径。</li></ul> <p>和whereis命令的区别在于：</p> <ul><li>whereis命令可以在查找到二进制命令的同时，查找到帮助文档的位置；</li> <li>而which命令在查找到二进制命令的同时，如果这个命令有别名，则还可以找到别名命令。</li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima ~]</span><span class="token comment"># which mkdir</span>
+<span class="token operator">/</span>usr/bin/mkdir
+</code></pre></div><h2 id="locate命令"><a href="#locate命令" class="header-anchor">#</a> locate命令</h2> <h3 id="基本用法"><a href="#基本用法" class="header-anchor">#</a> 基本用法</h3> <p>locate命令才是可以按照文件名搜索普通文件的命令。</p> <ul><li>优点：按照数据库搜索，搜索速度快，消耗资源小。数据库位置<code>/var/lib/mlocate/mlocate.db</code>，
+可以使用<code>updatedb</code>命令强制更新数据库。</li> <li>缺点：只能按照文件名来搜索文件，而不能执行更复杂的搜索，比如按照权限、大小、修改时间等搜索文件。</li></ul> <p>locate命令的基本信息如下。</p> <ul><li>所在路径：/usr/bin/locate。</li> <li>执行权限：所有用户。</li> <li>功能描述：按照文件名搜索文件。</li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># locate hello.sh </span>
+locate: 无法执行 stat <span class="token punctuation">(</span><span class="token punctuation">)</span> `<span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>lib/mlocate/mlocate<span class="token punctuation">.</span>db': 没有那个文件或目录
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># updatedb</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># locate hello.sh</span>
+<span class="token operator">/</span>root/hello<span class="token punctuation">.</span>sh
+</code></pre></div><h3 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h3> <blockquote><p><code>/etc/updatedb.conf</code></p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[jysp@jysp media]</span>$ vim <span class="token operator">/</span>etc/updatedb<span class="token punctuation">.</span>conf
+<span class="token comment"># 开启搜索限制，也就是让这个配置文件生效</span>
+PRUNE_BIND_MOUNTS = <span class="token string">&quot;yes&quot;</span>
+<span class="token comment"># 在locate执行搜索时，禁止搜索这些文件系统类型</span>
+PRUNEFS = <span class="token string">&quot;9p afs anon_inodefs auto autofs bdev binfmt_misc cgroup cifs coda configfs cpuset debugfs devpts ecryptfs exofs fuse fuse.sshfs fusectl gfs gfs2 gpfs hugetlbfs inotifyfs iso9660 jffs2 lustre mqueue ncpfs nfs nfs4 nfsd pipefs proc ramfs rootfs rpc_pipefs securityfs selinuxfs sfs sockfs sysfs tmpfs ubifs udf usbfs fuse.glusterfs ceph fuse.ceph&quot;</span>
+<span class="token comment"># 在locate执行搜索时，禁止搜索带有这些扩展名的文件</span>
+PRUNENAMES = <span class="token string">&quot;.git .hg .svn&quot;</span>
+<span class="token comment"># 在locate执行搜索时，禁止搜索这些系统目录</span>
+PRUNEPATHS = <span class="token string">&quot;/afs /media /mnt /net /sfs /tmp /udev /var/cache/ccache /var/lib/yum/yumdb /var/spool/cups /var/spool/squid /var/tmp /var/lib/ceph&quot;</span>
+</code></pre></div><h2 id="find命令"><a href="#find命令" class="header-anchor">#</a> find命令</h2> <blockquote><p>在目录中搜索文件。</p> <p><code>find 命令</code>：<strong>精确</strong>查找，磁盘搜索，IO读写，cpu开销大</p></blockquote> <p><strong>根据需求</strong>查找出来直接输出到屏幕</p> <p>find 查找路径 选项 关键字</p> <table><thead><tr><th>常见选项</th> <th>含义</th> <th>备注</th></tr></thead> <tbody><tr><td><font color="red">-name</font></td> <td>按照文件名查找文件</td> <td></td></tr> <tr><td><font color="red">-iname</font></td> <td>按照文件名忽略大小写查找</td> <td></td></tr> <tr><td><font color="red">-size</font></td> <td>按照文件大小来查找</td> <td>+1M 大于1M -1M 小于1M 1M 等于1M</td></tr> <tr><td><font color="red">-type</font></td> <td>按照文件类型来查找</td> <td></td></tr> <tr><td><font color="red">-mtime</font></td> <td>按文件修改时间来查找文件</td> <td>-n指n天以内，+n指n天以前</td></tr> <tr><td>-atime</td> <td>按文件访问时间来查</td> <td></td></tr> <tr><td>-ctime</td> <td>按文件创建时间来查找文件</td> <td></td></tr> <tr><td>-perm</td> <td>按照文件权限来查找文件</td> <td></td></tr> <tr><td></td> <td></td> <td></td></tr></tbody></table> <h3 id="按照文件名搜索"><a href="#按照文件名搜索" class="header-anchor">#</a> 按照文件名搜索</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+选项：
+	<span class="token operator">-</span>name：	按照文件名搜索
+	<span class="token operator">-</span>iname：	按照文件名搜索，不区分文件名大小写
+	<span class="token operator">-</span>inum：	按照inode号搜索
+</code></pre></div><blockquote><p>文件名搜索示例</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima ~]</span><span class="token comment"># find /test -name &quot;file1&quot;</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># find /test -iname &quot;file1&quot;</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># find /etc -name &quot;*.conf&quot;</span>
+</code></pre></div><h3 id="按照文件大小搜索"><a href="#按照文件大小搜索" class="header-anchor">#</a> 按照文件大小搜索</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+
+选项：
+	<span class="token operator">-</span>size <span class="token punctuation">[</span><span class="token operator">+</span><span class="token punctuation">|</span><span class="token operator">-</span><span class="token punctuation">]</span>大小：按照指定大小搜索文件
+
+注意：<span class="token operator">-</span>size <span class="token operator">-</span>1M 当文件中没有小于1M的文件的时候，会变成查找<span class="token operator">-</span>size <span class="token operator">-</span>1k
+</code></pre></div><p>这里的“+”的意思是搜索比指定大小还要大的文件，“-”的意思是搜索比指定大小还要小的文件。</p> <p>find命令的单位：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># man find</span>
+
+<span class="token operator">-</span>size n<span class="token namespace">[cwbkMG]</span>
+              File uses n units of space<span class="token punctuation">.</span>  The following suffixes can be used:
+			  <span class="token comment">#这是默认单位，如果单位为b或不写单位，则按照512Byte搜索</span>
+              `b<span class="token string">'    for 512-byte blocks (this is the default if no suffix is used)
+			  #搜索单位是c，按照字节搜索
+              `c'</span>    <span class="token keyword">for</span> bytes
+			  <span class="token comment">#搜索单位是w，按照双字节（中文）搜索</span>
+              `w<span class="token string">'    for two-byte words
+			  #按照KB单位搜索，必须是小写的k
+              `k'</span>    <span class="token keyword">for</span> Kilobytes <span class="token punctuation">(</span>units of 1024 bytes<span class="token punctuation">)</span>
+			  <span class="token comment">#按照MB单位搜索，必须是大写的M</span>
+              `M<span class="token string">'    for Megabytes (units of 1048576 bytes)
+			  #按照GB单位搜索，必须是大写的G
+              `G'</span>    <span class="token keyword">for</span> Gigabytes <span class="token punctuation">(</span>units of 1073741824 bytes<span class="token punctuation">)</span>
+
+              The  size  does  not count indirect blocks<span class="token punctuation">,</span> but it does count blocks in sparse files that are not actually allocated<span class="token punctuation">.</span>  Bear in mind that the `<span class="token operator">%</span>k<span class="token string">' and
+              `%b'</span> format specifiers of <span class="token operator">-</span>printf handle sparse files differently<span class="token punctuation">.</span>  The `b' suffix always denotes 512-byte blocks and never 1 Kilobyte blocks<span class="token punctuation">,</span>  which
+              is different to the behaviour of <span class="token operator">-</span><span class="token function">ls</span><span class="token punctuation">.</span>
+
+</code></pre></div><blockquote><p>文件大小示例</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f -size +1M</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f -size -1M</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f -size -1024k</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f -size 9M</span>
+</code></pre></div><h3 id="按照修改时间搜索"><a href="#按照修改时间搜索" class="header-anchor">#</a> 按照修改时间搜索</h3> <p>Linux中的文件有访问时间（atime）、数据修改时间（mtime）、状态修改时间（ctime）这三个时间，我们也可以按照时间来搜索文件。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+选项：
+<span class="token operator">-</span>atime <span class="token punctuation">[</span><span class="token operator">+</span><span class="token punctuation">|</span><span class="token operator">-</span><span class="token punctuation">]</span>时间：按照文件访问时间搜索
+<span class="token operator">-</span>mtime <span class="token punctuation">[</span><span class="token operator">+</span><span class="token punctuation">|</span><span class="token operator">-</span><span class="token punctuation">]</span>时间：按照文件数据修改时间搜索
+<span class="token operator">-</span>ctime <span class="token punctuation">[</span><span class="token operator">+</span><span class="token punctuation">|</span><span class="token operator">-</span><span class="token punctuation">]</span>时间：按照文件状态修改时间搜索
+</code></pre></div><p>这三个时间的区别我们在stat命令中已经解释过了，这里用mtime数据修改时间来举例，重点说说“[+-]”时间的含义。</p> <ul><li>-5：代表5天内修改的文件。</li> <li>5：代表前5～6天那一天修改的文件。</li> <li>+5：代表6天前修改的文件。</li></ul> <p>我们画一个时间轴，来解释一下，如图</p> <p><img src="/assets/img/image-20231221095856219.35037add.png" alt="image-20231221095856219"></p> <img src="/assets/img/image-20231101091106875.6e4103ba.png" alt="image-20231101091106875"> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima test]</span><span class="token comment"># find ./ -type f -mtime +2</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find ./ -type f -mtime -2</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find ./ -type f -mtime 2</span>
+注意：这里的天数需要满24小时为一天的
+find <span class="token punctuation">.</span><span class="token operator">/</span> <span class="token operator">-</span><span class="token function">type</span> f <span class="token operator">-</span>daystart <span class="token operator">-</span>mtime <span class="token operator">+</span>2
+</code></pre></div><h3 id="按照权限搜索"><a href="#按照权限搜索" class="header-anchor">#</a> 按照权限搜索</h3> <p>命令格式。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+选项：
+    <span class="token operator">-</span>perm  权限模式：查找文件权限刚好等于“权限模式”的文件
+    <span class="token operator">-</span>perm <span class="token operator">-</span>权限模式：查找文件权限全部包含“权限模式”的文件
+    <span class="token operator">-</span>perm <span class="token operator">+</span>权限模式：查找文件权限包含“权限模式”的任意一个权限的文件
+</code></pre></div><h3 id="按照所有者和所属组搜索"><a href="#按照所有者和所属组搜索" class="header-anchor">#</a> 按照所有者和所属组搜索</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+选项：
+<span class="token operator">-</span>uid 用户ID：	按照用户ID查找所有者是指定ID的文件
+<span class="token operator">-</span>gid 组ID：	 按照用户组ID查找所属组是指定ID的文件
+<span class="token operator">-</span>user 用户名：	按照用户名查找所有者是指定用户的文件
+<span class="token operator">-</span><span class="token function">group</span> 组名：	按照组名查找所属组是指定用户组的文件
+<span class="token operator">-</span>nouser：	 查找没有所有者的文件
+</code></pre></div><p>按照所有者和所属组搜索时，“-nouser”选项比较常用，主要用于查找垃圾文件。</p> <p>只有一种情况例外，那就是外来文件。比如光盘和U盘中的文件如果是由Windows复制的，在Linux中查看就是没有所有者的文件；再比如手工源码包安装的文件，也有可能没有所有者</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima test]</span><span class="token comment"># find . -user heima -group heima -type f</span>
+一般省略 <span class="token operator">-</span>a: find <span class="token punctuation">.</span> <span class="token operator">-</span>user heima <span class="token operator">-</span>a <span class="token operator">-</span><span class="token function">group</span> heima <span class="token operator">-</span>a <span class="token operator">-</span><span class="token function">type</span> f 代表同时满足
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f -perm 644</span>
+</code></pre></div><h3 id="按照文件类型搜索"><a href="#按照文件类型搜索" class="header-anchor">#</a> 按照文件类型搜索</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+选项：
+	<span class="token operator">-</span><span class="token function">type</span> d：查找目录
+	<span class="token operator">-</span><span class="token function">type</span> f：查找普通文件
+	<span class="token operator">-</span><span class="token function">type</span> l：查找软链接文件
+</code></pre></div><blockquote><p>文件类型示例</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@heima ~]</span><span class="token comment"># find /usr/bin/ -type l		查找连接</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># find /dev -type b			查找块设备</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># cd /test</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type d			查找目录</span>
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f			查找文件</span>
+</code></pre></div><h3 id="逻辑运算符"><a href="#逻辑运算符" class="header-anchor">#</a> 逻辑运算符</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容</span>
+选项：
+	<span class="token operator">-</span>a：		and逻辑与
+	<span class="token operator">-</span>o：		or逻辑或
+	<span class="token operator">-not</span>：	not逻辑非
+</code></pre></div><p>1）-a：and逻辑与</p> <p>find命令也支持逻辑运算符选项，其中-a代表逻辑与运算，也就是-a的两个条件都成立，find搜索的结果才成立。举个例子：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment">#在当前目录下搜索大于2KB，并且文件类型是普通文件的文件</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># find . -size +2k -a -type f</span>
+
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -user heima -group heima -type f</span>
+一般省略 <span class="token operator">-</span>a: find <span class="token punctuation">.</span> <span class="token operator">-</span>user heima <span class="token operator">-</span>a <span class="token operator">-</span><span class="token function">group</span> heima <span class="token operator">-</span>a <span class="token operator">-</span><span class="token function">type</span> f 代表同时满足
+<span class="token namespace">[root@heima test]</span><span class="token comment"># find . -type f -perm 644</span>
+</code></pre></div><p>2）-o：or逻辑或</p> <p>-o选项代表逻辑或运算，也就是-o的两个条件只要其中一个成立，find命令就可以找到结果。例如：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment">#在当前目录下搜索文件名要么是cangls的文件，要么是bols的文件</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># find . -name cangels -o -name bols</span>
+</code></pre></div><p>3）-not：not逻辑非</p> <p>-not是逻辑非，也就是取反的意思。举个例子：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment">#在当前目录下搜索文件名不是cangls的文件</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># find . -not -name cangls</span>
+</code></pre></div><h3 id="其他选项"><a href="#其他选项" class="header-anchor">#</a> 其他选项</h3> <p><strong>根据需求</strong>查找出来后<font color="red">执行某个动作(命令)</font></p> <p><code>find 路径 选项 关键字 动作</code></p> <table><thead><tr><th>常见动作</th> <th>说明</th></tr></thead> <tbody><tr><td>-exec</td> <td>对查找到的文件<font color="red">直接</font>执行该参数后的shell命令</td></tr> <tr><td>-ok</td> <td>对查找到的文件<font color="red">询问式</font>执行该参数后的shell命令</td></tr> <tr><td>-delete</td> <td>删除查找到的文件</td></tr> <tr><td>-ls</td> <td>列出查找到的文件,详细信息</td></tr> <tr><td>-print</td> <td>打印出查找到的文件（默认选项）</td></tr> <tr><td></td> <td></td></tr></tbody></table> <p>1）-exec选项</p> <p>这里我们主要讲解两个选项“-exec”和“-ok”，这两个选项的基本作用非常相似。我们先来看看“-exec”选项的格式。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># find 搜索路径 [选项] 搜索内容 -exec 命令2 {} \;</span>
+</code></pre></div><p>其次，这个选项的作用其实是把find命令的结果交给由“-exec”调用的命令2来处理。“{}”就代表find命令的查找结果。</p> <p>2）-ok选项</p> <p>“-ok”选项和“-exec”选项的作用基本一致，区别在于：“-exec”的命令2会直接处理，而不询问；“-ok”的命令2在处理前会先询问用户是否这样处理，在得到确认命令后，才会执行。</p> <p><strong>举例说明：</strong></p> <p><code>-delete</code></p> <p><img src="/assets/img/image-20231101092241384.a3e5ae1f.png" alt="image-20231101092241384"></p> <p><code>-exec | -ok</code></p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>语法结构：
+注意：
+1<span class="token punctuation">.</span> <span class="token operator">-</span>exec或者<span class="token operator">-</span>ok后面写完命令必须以空格反斜杠\<span class="token punctuation">;</span>结尾（ \<span class="token punctuation">;</span>）
+2<span class="token punctuation">.</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>表示find命令所找出来的内容
+
+find <span class="token operator">/</span>test/ <span class="token operator">-</span><span class="token function">type</span> f <span class="token operator">-</span>ok <span class="token function">cp</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token operator">/</span>tmp \<span class="token punctuation">;</span>
+</code></pre></div><p><img src="/assets/img/image-20231101092827303.de8472d0.png" alt="image-20231101092827303"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月5日星期五上午11点23分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="prev">
+        命令--4.文件操作管理
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/命令--6.用户|组.html">
+        命令--6.用户、组
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.cbe17422.js" defer></script><script src="/assets/js/2.15992fb1.js" defer></script><script src="/assets/js/1.31c72f24.js" defer></script><script src="/assets/js/72.b4f34b4c.js" defer></script><script src="/assets/js/94.3ddb3f94.js" defer></script>
+  </body>
+</html>

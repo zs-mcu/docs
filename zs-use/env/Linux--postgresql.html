@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>postgresql安装 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.aa271813.css" as="style"><link rel="preload" href="/assets/js/app.cbe17422.js" as="script"><link rel="preload" href="/assets/js/2.15992fb1.js" as="script"><link rel="preload" href="/assets/js/1.31c72f24.js" as="script"><link rel="preload" href="/assets/js/111.a845cfe0.js" as="script"><link rel="preload" href="/assets/js/94.3ddb3f94.js" as="script"><link rel="prefetch" href="/assets/js/10.d88f57f2.js"><link rel="prefetch" href="/assets/js/100.09f87582.js"><link rel="prefetch" href="/assets/js/101.bd4902ee.js"><link rel="prefetch" href="/assets/js/102.7794236f.js"><link rel="prefetch" href="/assets/js/103.94f3b85b.js"><link rel="prefetch" href="/assets/js/104.93052cb4.js"><link rel="prefetch" href="/assets/js/105.53d49f2d.js"><link rel="prefetch" href="/assets/js/106.d9d600a7.js"><link rel="prefetch" href="/assets/js/107.a2e0585d.js"><link rel="prefetch" href="/assets/js/108.a5d1ea0d.js"><link rel="prefetch" href="/assets/js/109.057c3ed5.js"><link rel="prefetch" href="/assets/js/11.d808416d.js"><link rel="prefetch" href="/assets/js/110.24f5b2c3.js"><link rel="prefetch" href="/assets/js/112.95bffc8b.js"><link rel="prefetch" href="/assets/js/113.7e9d339e.js"><link rel="prefetch" href="/assets/js/114.afd8847b.js"><link rel="prefetch" href="/assets/js/115.7bcd7ef4.js"><link rel="prefetch" href="/assets/js/116.e8b0b3f4.js"><link rel="prefetch" href="/assets/js/117.5766aea7.js"><link rel="prefetch" href="/assets/js/118.f085f324.js"><link rel="prefetch" href="/assets/js/119.42467116.js"><link rel="prefetch" href="/assets/js/12.dea2a954.js"><link rel="prefetch" href="/assets/js/120.f7c9f793.js"><link rel="prefetch" href="/assets/js/121.ffe38f86.js"><link rel="prefetch" href="/assets/js/122.ff9e9f64.js"><link rel="prefetch" href="/assets/js/123.9e6f8e0b.js"><link rel="prefetch" href="/assets/js/124.eadb93ff.js"><link rel="prefetch" href="/assets/js/125.cfc7e0ca.js"><link rel="prefetch" href="/assets/js/126.44756681.js"><link rel="prefetch" href="/assets/js/127.e31e5867.js"><link rel="prefetch" href="/assets/js/128.5261f587.js"><link rel="prefetch" href="/assets/js/129.c74afbe3.js"><link rel="prefetch" href="/assets/js/13.f5a6822a.js"><link rel="prefetch" href="/assets/js/130.31788a0f.js"><link rel="prefetch" href="/assets/js/131.18accfab.js"><link rel="prefetch" href="/assets/js/132.fb58e7b8.js"><link rel="prefetch" href="/assets/js/133.9e3e404f.js"><link rel="prefetch" href="/assets/js/134.54d82cfc.js"><link rel="prefetch" href="/assets/js/135.2c640ffb.js"><link rel="prefetch" href="/assets/js/136.6c6fb014.js"><link rel="prefetch" href="/assets/js/137.80cba220.js"><link rel="prefetch" href="/assets/js/138.ed6014b8.js"><link rel="prefetch" href="/assets/js/139.41c1b571.js"><link rel="prefetch" href="/assets/js/14.3b2c5041.js"><link rel="prefetch" href="/assets/js/140.2afee9b4.js"><link rel="prefetch" href="/assets/js/141.731b0b35.js"><link rel="prefetch" href="/assets/js/142.cd71afc8.js"><link rel="prefetch" href="/assets/js/143.7248cd37.js"><link rel="prefetch" href="/assets/js/144.aba9ac5a.js"><link rel="prefetch" href="/assets/js/145.83e18a23.js"><link rel="prefetch" href="/assets/js/146.a6dec6d4.js"><link rel="prefetch" href="/assets/js/147.f2bdc6c9.js"><link rel="prefetch" href="/assets/js/148.2854a172.js"><link rel="prefetch" href="/assets/js/149.bd8e13cc.js"><link rel="prefetch" href="/assets/js/15.c151efe5.js"><link rel="prefetch" href="/assets/js/150.cdfc7980.js"><link rel="prefetch" href="/assets/js/151.c68fde75.js"><link rel="prefetch" href="/assets/js/152.741d5054.js"><link rel="prefetch" href="/assets/js/153.e5543d8b.js"><link rel="prefetch" href="/assets/js/154.edabae24.js"><link rel="prefetch" href="/assets/js/155.0362a1b3.js"><link rel="prefetch" href="/assets/js/156.26ce507d.js"><link rel="prefetch" href="/assets/js/157.33d17a46.js"><link rel="prefetch" href="/assets/js/158.636c2567.js"><link rel="prefetch" href="/assets/js/159.be18e98d.js"><link rel="prefetch" href="/assets/js/16.a337737a.js"><link rel="prefetch" href="/assets/js/160.c70d29fe.js"><link rel="prefetch" href="/assets/js/161.82c7bacc.js"><link rel="prefetch" href="/assets/js/162.bd5efa61.js"><link rel="prefetch" href="/assets/js/163.1a844b6a.js"><link rel="prefetch" href="/assets/js/164.7481e490.js"><link rel="prefetch" href="/assets/js/165.44c55976.js"><link rel="prefetch" href="/assets/js/166.766ec397.js"><link rel="prefetch" href="/assets/js/167.d9381765.js"><link rel="prefetch" href="/assets/js/168.47e5746f.js"><link rel="prefetch" href="/assets/js/169.06969166.js"><link rel="prefetch" href="/assets/js/17.c986baee.js"><link rel="prefetch" href="/assets/js/170.b9512e4e.js"><link rel="prefetch" href="/assets/js/171.c0f0070c.js"><link rel="prefetch" href="/assets/js/172.8b6063fe.js"><link rel="prefetch" href="/assets/js/173.39577760.js"><link rel="prefetch" href="/assets/js/174.7105396a.js"><link rel="prefetch" href="/assets/js/175.1f992819.js"><link rel="prefetch" href="/assets/js/176.1597fb8c.js"><link rel="prefetch" href="/assets/js/177.29c04f29.js"><link rel="prefetch" href="/assets/js/178.928072c2.js"><link rel="prefetch" href="/assets/js/179.6638fee4.js"><link rel="prefetch" href="/assets/js/18.37a3ecf0.js"><link rel="prefetch" href="/assets/js/180.11e9f5db.js"><link rel="prefetch" href="/assets/js/181.d4f74725.js"><link rel="prefetch" href="/assets/js/182.9d970b0e.js"><link rel="prefetch" href="/assets/js/183.f42e4e45.js"><link rel="prefetch" href="/assets/js/184.cb1e6b4d.js"><link rel="prefetch" href="/assets/js/185.3bba6841.js"><link rel="prefetch" href="/assets/js/186.06cf3002.js"><link rel="prefetch" href="/assets/js/187.344e02d5.js"><link rel="prefetch" href="/assets/js/188.13803cf3.js"><link rel="prefetch" href="/assets/js/189.22f69880.js"><link rel="prefetch" href="/assets/js/19.3b3de3e8.js"><link rel="prefetch" href="/assets/js/190.bbcba4be.js"><link rel="prefetch" href="/assets/js/191.e3993e40.js"><link rel="prefetch" href="/assets/js/192.0f14a81c.js"><link rel="prefetch" href="/assets/js/193.9e34851c.js"><link rel="prefetch" href="/assets/js/194.2c750424.js"><link rel="prefetch" href="/assets/js/195.faa12875.js"><link rel="prefetch" href="/assets/js/196.2baa8e12.js"><link rel="prefetch" href="/assets/js/197.c1460866.js"><link rel="prefetch" href="/assets/js/198.267efced.js"><link rel="prefetch" href="/assets/js/199.ebfdcc1c.js"><link rel="prefetch" href="/assets/js/20.a2c54f4c.js"><link rel="prefetch" href="/assets/js/200.81f83f7e.js"><link rel="prefetch" href="/assets/js/201.efe0e386.js"><link rel="prefetch" href="/assets/js/202.1fe90dd8.js"><link rel="prefetch" href="/assets/js/203.dd60e7f5.js"><link rel="prefetch" href="/assets/js/204.4ac7d6d3.js"><link rel="prefetch" href="/assets/js/205.9b76ec77.js"><link rel="prefetch" href="/assets/js/206.0409a6e1.js"><link rel="prefetch" href="/assets/js/207.7021b828.js"><link rel="prefetch" href="/assets/js/208.f04a75bd.js"><link rel="prefetch" href="/assets/js/209.cd6231cb.js"><link rel="prefetch" href="/assets/js/21.13f63883.js"><link rel="prefetch" href="/assets/js/210.f706fcf6.js"><link rel="prefetch" href="/assets/js/211.c11cd1cb.js"><link rel="prefetch" href="/assets/js/212.62040b0f.js"><link rel="prefetch" href="/assets/js/213.b388a783.js"><link rel="prefetch" href="/assets/js/214.e4d65386.js"><link rel="prefetch" href="/assets/js/215.e68b02c2.js"><link rel="prefetch" href="/assets/js/216.9c64b41b.js"><link rel="prefetch" href="/assets/js/217.142d140b.js"><link rel="prefetch" href="/assets/js/218.92203faf.js"><link rel="prefetch" href="/assets/js/219.90450133.js"><link rel="prefetch" href="/assets/js/22.40c34874.js"><link rel="prefetch" href="/assets/js/220.fa62c0b7.js"><link rel="prefetch" href="/assets/js/221.23269abd.js"><link rel="prefetch" href="/assets/js/222.f2e22c9d.js"><link rel="prefetch" href="/assets/js/223.6717e175.js"><link rel="prefetch" href="/assets/js/224.b2947298.js"><link rel="prefetch" href="/assets/js/225.0fb3cdf3.js"><link rel="prefetch" href="/assets/js/226.9026d717.js"><link rel="prefetch" href="/assets/js/227.c9b50792.js"><link rel="prefetch" href="/assets/js/228.a360cea2.js"><link rel="prefetch" href="/assets/js/229.d02ace92.js"><link rel="prefetch" href="/assets/js/23.96b9f259.js"><link rel="prefetch" href="/assets/js/230.da6ea071.js"><link rel="prefetch" href="/assets/js/231.0e952506.js"><link rel="prefetch" href="/assets/js/232.e66f2782.js"><link rel="prefetch" href="/assets/js/233.fb8d4cbd.js"><link rel="prefetch" href="/assets/js/234.2d501451.js"><link rel="prefetch" href="/assets/js/235.ef4fa5a1.js"><link rel="prefetch" href="/assets/js/236.125eaa23.js"><link rel="prefetch" href="/assets/js/237.37ea6eba.js"><link rel="prefetch" href="/assets/js/238.b5b24421.js"><link rel="prefetch" href="/assets/js/24.a684a35c.js"><link rel="prefetch" href="/assets/js/25.3b1a5d6a.js"><link rel="prefetch" href="/assets/js/26.cfc408aa.js"><link rel="prefetch" href="/assets/js/27.c0a74a04.js"><link rel="prefetch" href="/assets/js/28.75d427a3.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.6ef6c3dc.js"><link rel="prefetch" href="/assets/js/30.90084c11.js"><link rel="prefetch" href="/assets/js/31.66cfc04d.js"><link rel="prefetch" href="/assets/js/32.d2214fef.js"><link rel="prefetch" href="/assets/js/33.dd4c04e2.js"><link rel="prefetch" href="/assets/js/34.108dd376.js"><link rel="prefetch" href="/assets/js/35.a46e83ba.js"><link rel="prefetch" href="/assets/js/36.21e0806d.js"><link rel="prefetch" href="/assets/js/37.ce0c2db9.js"><link rel="prefetch" href="/assets/js/38.5c50b81d.js"><link rel="prefetch" href="/assets/js/39.81a32cdb.js"><link rel="prefetch" href="/assets/js/4.38b41bc2.js"><link rel="prefetch" href="/assets/js/40.cd7a3499.js"><link rel="prefetch" href="/assets/js/41.03cdf809.js"><link rel="prefetch" href="/assets/js/42.da820bbf.js"><link rel="prefetch" href="/assets/js/43.24947ef8.js"><link rel="prefetch" href="/assets/js/44.59906853.js"><link rel="prefetch" href="/assets/js/45.8d790dde.js"><link rel="prefetch" href="/assets/js/46.6610ce92.js"><link rel="prefetch" href="/assets/js/47.7596d834.js"><link rel="prefetch" href="/assets/js/48.aeaad78b.js"><link rel="prefetch" href="/assets/js/49.7760f132.js"><link rel="prefetch" href="/assets/js/5.5f6b4cae.js"><link rel="prefetch" href="/assets/js/50.cc648af5.js"><link rel="prefetch" href="/assets/js/51.05c971b2.js"><link rel="prefetch" href="/assets/js/52.bf7c7130.js"><link rel="prefetch" href="/assets/js/53.49771c5a.js"><link rel="prefetch" href="/assets/js/54.25fddb48.js"><link rel="prefetch" href="/assets/js/55.0798fc12.js"><link rel="prefetch" href="/assets/js/56.861e54a4.js"><link rel="prefetch" href="/assets/js/57.56cd2e00.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.d7be41c7.js"><link rel="prefetch" href="/assets/js/6.7450495f.js"><link rel="prefetch" href="/assets/js/60.61cf1679.js"><link rel="prefetch" href="/assets/js/61.5e2092ae.js"><link rel="prefetch" href="/assets/js/62.98b3ec9e.js"><link rel="prefetch" href="/assets/js/63.b394abaf.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.579c211b.js"><link rel="prefetch" href="/assets/js/66.130ad959.js"><link rel="prefetch" href="/assets/js/67.c6f164d2.js"><link rel="prefetch" href="/assets/js/68.f8dfa622.js"><link rel="prefetch" href="/assets/js/69.bbfb7183.js"><link rel="prefetch" href="/assets/js/7.585024b7.js"><link rel="prefetch" href="/assets/js/70.068e2b7f.js"><link rel="prefetch" href="/assets/js/71.1c82053d.js"><link rel="prefetch" href="/assets/js/72.b4f34b4c.js"><link rel="prefetch" href="/assets/js/73.cfe8b346.js"><link rel="prefetch" href="/assets/js/74.b29f4bb7.js"><link rel="prefetch" href="/assets/js/75.2074843d.js"><link rel="prefetch" href="/assets/js/76.5f01d8f5.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.7b9806f0.js"><link rel="prefetch" href="/assets/js/79.83537fb7.js"><link rel="prefetch" href="/assets/js/80.baa92e95.js"><link rel="prefetch" href="/assets/js/81.779b05da.js"><link rel="prefetch" href="/assets/js/82.0b583a01.js"><link rel="prefetch" href="/assets/js/83.0a593829.js"><link rel="prefetch" href="/assets/js/84.8e1d35cd.js"><link rel="prefetch" href="/assets/js/85.15610f16.js"><link rel="prefetch" href="/assets/js/86.2885f94c.js"><link rel="prefetch" href="/assets/js/87.b2cfb11c.js"><link rel="prefetch" href="/assets/js/88.ec93e3dd.js"><link rel="prefetch" href="/assets/js/89.741e1a62.js"><link rel="prefetch" href="/assets/js/90.a6258842.js"><link rel="prefetch" href="/assets/js/91.53a4d057.js"><link rel="prefetch" href="/assets/js/92.2abc9ead.js"><link rel="prefetch" href="/assets/js/93.e48b2d1b.js"><link rel="prefetch" href="/assets/js/95.491e295f.js"><link rel="prefetch" href="/assets/js/96.2d501bdd.js"><link rel="prefetch" href="/assets/js/97.9a69b8d0.js"><link rel="prefetch" href="/assets/js/98.f7dae478.js"><link rel="prefetch" href="/assets/js/99.6d7f62ac.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.f9aa4dd3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aa271813.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link router-link-active">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link router-link-active">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Env</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/env/" aria-current="page" class="sidebar-link">说明</a></li><li><a href="/zs-use/env/Linux--postgresql.html" aria-current="page" class="active sidebar-link">postgresql安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/env/Linux--postgresql.html#源码安装" class="sidebar-link">源码安装</a></li></ul></li><li><a href="/zs-use/env/Linux--python3安装.html" class="sidebar-link">python3安装</a></li><li><a href="/zs-use/env/mac软件安装.html" class="sidebar-link">mac软件安装</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="postgresql安装"><a href="#postgresql安装" class="header-anchor">#</a> postgresql安装</h1> <blockquote><p>参考：</p> <p>https://www.postgresql.org/download/</p> <p>https://www.postgresql.org/download/linux/redhat/</p> <p>https://blog.csdn.net/wang_xiangjun/article/details/133122868</p> <p>https://www.modb.pro/db/636662</p> <p>https://blog.csdn.net/qq_45673244/article/details/133848969</p></blockquote> <h2 id="源码安装"><a href="#源码安装" class="header-anchor">#</a> 源码安装</h2> <blockquote><p>源码包下载地址</p></blockquote> <p>https://www.postgresql.org/ftp/source/v16.0/</p> <p><img src="/assets/img/image-20231227230528402.fe2b8ad8.png" alt="image-20231227230528402"></p> <blockquote><p>安装依赖包
+执行以下命令安装所需依赖包：</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> perl-ExtUtils-Embed readline-devel zlib-devel pam-devel libxml2-devel libxslt-devel openldap-devel python-devel gcc-c++ openssl-devel cmake
+</code></pre></div><blockquote><p>安装postgreSQL</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token number">1</span><span class="token punctuation">)</span>、在根目录下新建pgsql文件夹，并将pgsql的压缩包放入里边。
+<span class="token comment"># 笔者在这里把文件夹创建到root下了，建议创建到根目录</span>
+<span class="token function">mkdir</span> /pgsql
+<span class="token punctuation">[</span>root@bogon pgsql<span class="token punctuation">]</span><span class="token comment"># ls</span>
+postgresql-16.0  postgresql-16.0.tar.gz
+<span class="token punctuation">[</span>root@bogon pgsql<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/root/pgsql
+
+<span class="token number">2</span>）、解压压缩包
+<span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> postgresql-16.0.tar.gz
+
+<span class="token number">3</span>）、进入加压后的文件夹
+<span class="token punctuation">[</span>root@bogon ~<span class="token punctuation">]</span><span class="token comment"># cd pgsql/postgresql-16.0</span>
+<span class="token punctuation">[</span>root@bogon postgresql-16.0<span class="token punctuation">]</span><span class="token comment"># ls</span>
+aclocal.m4  config.log     configure     contrib    doc          GNUmakefile.in  INSTALL   meson.build        README
+config      config.status  configure.ac  COPYRIGHT  GNUmakefile  HISTORY         Makefile  meson_options.txt  src
+
+<span class="token number">4</span>、编译postgresql源码
+./configure <span class="token parameter variable">--prefix</span><span class="token operator">=</span>/pgsql/postgresql --without-icu
+
+
+<span class="token number">5</span>、编译安装
+root@bogon postgresql-16.0<span class="token punctuation">]</span><span class="token comment"># make &amp;&amp; make install</span>
+编译安装结束没有报错证明安装成功；至此已完成postgresql的安装。进入/pgsql/postgresql目录可以看到安装后的postgresql文件。
+<span class="token punctuation">[</span>root@bogon postgresql-16.0<span class="token punctuation">]</span><span class="token comment"># cd /pgsql/postgresql/</span>
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># ls</span>
+bin  include  lib  share
+
+</code></pre></div><p><strong>注意：笔者在这里碰到编译报错，由于版本比较新也没有查到相关处理方法，索性就按照提示操作，禁用icu模块支持。–without-icu</strong></p> <p><img src="/assets/img/9eceb744bd074c37a81905de738e9a35.748ecf1b.png" alt="在这里插入图片描述"></p> <table><thead><tr><th>选项</th> <th>描述</th></tr></thead> <tbody><tr><td>–prefix=prefix</td> <td>安装到prefix指定目录；默认为/usr/local/pgsql</td></tr> <tr><td>–bindir=dir</td> <td>安装应用程序到dir;默认为prefix/bin</td></tr> <tr><td>–with-docdir=dir</td> <td>安装文档到dir;默认为prefix/doc</td></tr> <tr><td>–with-pgport=port</td> <td>设置默认服务端网络连接服务TCP端口号</td></tr> <tr><td>–with-tcl</td> <td>服务端提供Tcl存储过程支持</td></tr> <tr><td>–with-perl</td> <td>服务端提供perl存储过程支持</td></tr> <tr><td>–with-python</td> <td>服务端提供Python存储过程支持</td></tr></tbody></table> <p>五、创建用户组postgre并创建用户postgre</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># groupadd postgres</span>
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># useradd -g postgres postgres</span>
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># id postgres</span>
+<span class="token assign-left variable">uid</span><span class="token operator">=</span><span class="token number">1001</span><span class="token punctuation">(</span>postgres<span class="token punctuation">)</span> <span class="token assign-left variable">gid</span><span class="token operator">=</span><span class="token number">1001</span><span class="token punctuation">(</span>postgres<span class="token punctuation">)</span> <span class="token assign-left variable">groups</span><span class="token operator">=</span><span class="token number">1001</span><span class="token punctuation">(</span>postgres<span class="token punctuation">)</span>
+</code></pre></div><p>六、创建postgresql数据库的数据主目录并修改文件所有者</p> <p>数据库主目录可根据实际情况而创建，这里我们把主目录放在</p> <div class="language-shell extra-class"><pre class="language-shell"><code>/pgsql/postgresql/data/目录下：
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># mkdir data</span>
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># chown postgres:postgres data</span>
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># ls -al</span>
+total <span class="token number">16</span>
+drwxr-xr-x <span class="token number">7</span> root     root       <span class="token number">68</span> Sep <span class="token number">19</span> <span class="token number">16</span>:23 <span class="token builtin class-name">.</span>
+drwxr-xr-x <span class="token number">3</span> root     root       <span class="token number">24</span> Sep <span class="token number">19</span> <span class="token number">16</span>:20 <span class="token punctuation">..</span>
+drwxr-xr-x <span class="token number">2</span> root     root     <span class="token number">4096</span> Sep <span class="token number">19</span> <span class="token number">16</span>:20 bin
+drwxr-xr-x <span class="token number">2</span> postgres postgres    <span class="token number">6</span> Sep <span class="token number">19</span> <span class="token number">16</span>:23 data
+drwxr-xr-x <span class="token number">6</span> root     root     <span class="token number">4096</span> Sep <span class="token number">19</span> <span class="token number">16</span>:20 include
+drwxr-xr-x <span class="token number">4</span> root     root     <span class="token number">4096</span> Sep <span class="token number">19</span> <span class="token number">16</span>:20 lib
+drwxr-xr-x <span class="token number">6</span> root     root     <span class="token number">4096</span> Sep <span class="token number">19</span> <span class="token number">16</span>:20 share
+</code></pre></div><p>七、配置环境变量</p> <div class="language-shell extra-class"><pre class="language-shell"><code>进入home/postgre目录可以看到.bash_profile文件。
+编辑修改.bash_profile文件。
+<span class="token punctuation">[</span>root@bogon postgres<span class="token punctuation">]</span><span class="token comment"># vi .bash_profile </span>
+
+<span class="token comment"># .bash_profile</span>
+
+<span class="token comment"># Get the aliases and functions</span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> ~/.bashrc <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+        <span class="token builtin class-name">.</span> ~/.bashrc
+<span class="token keyword">fi</span>
+
+<span class="token comment"># User specific environment and startup programs</span>
+
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token environment constant">$HOME</span>/.local/bin:<span class="token environment constant">$HOME</span>/bin
+
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">PGHOME</span><span class="token operator">=</span>/pgsql/postgresql
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">PGDATA</span><span class="token operator">=</span>/pgsql/postgresql/data
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token environment constant">$HOME</span>/bin:<span class="token variable">$PGHOME</span>/bin
+<span class="token builtin class-name">export</span> <span class="token environment constant">PATH</span>
+~        
+
+
+在.bash_profile文件中新增加内容如下：
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">PGHOME</span><span class="token operator">=</span>/pgsql/postgresql
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">PGDATA</span><span class="token operator">=</span>/pgsql/postgresql/data
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token environment constant">$HOME</span>/bin:<span class="token variable">$PGHOME</span>/bin
+</code></pre></div><p>编辑修改.bash_profile文件然后保存。执行以下命令，使环境变量生效
+<code>[root@bogon postgres]# source .bash_profile</code></p> <p>八、切换到postgre用户，并使用initdb初始化数据库</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@bogon postgres<span class="token punctuation">]</span><span class="token comment"># su - postgres</span>
+<span class="token punctuation">[</span>postgres@bogon ~<span class="token punctuation">]</span>$ initdb
+The files belonging to this database system will be owned by user <span class="token string">&quot;postgres&quot;</span><span class="token builtin class-name">.</span>
+This user must also own the server process.
+The database cluster will be initialized with locale <span class="token string">&quot;en_US.UTF-8&quot;</span><span class="token builtin class-name">.</span>
+The default database encoding has accordingly been <span class="token builtin class-name">set</span> to <span class="token string">&quot;UTF8&quot;</span><span class="token builtin class-name">.</span>
+The default text search configuration will be <span class="token builtin class-name">set</span> to <span class="token string">&quot;english&quot;</span><span class="token builtin class-name">.</span>
+Data page checksums are disabled.
+fixing permissions on existing directory /pgsql/postgresql/data <span class="token punctuation">..</span>. ok
+creating subdirectories <span class="token punctuation">..</span>. ok
+selecting dynamic shared memory implementation <span class="token punctuation">..</span>. posix
+selecting default max_connections <span class="token punctuation">..</span>. <span class="token number">100</span>
+selecting default shared_buffers <span class="token punctuation">..</span>. 128MB
+selecting default <span class="token function">time</span> zone <span class="token punctuation">..</span>. Asia/Shanghai
+creating configuration files <span class="token punctuation">..</span>. ok
+running bootstrap script <span class="token punctuation">..</span>. ok
+performing post-bootstrap initialization <span class="token punctuation">..</span>. ok
+initdb: warning: enabling <span class="token string">&quot;trust&quot;</span> authentication <span class="token keyword">for</span> <span class="token builtin class-name">local</span> connections
+initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next <span class="token function">time</span> you run initdb.
+Success. You can now start the database server using:
+pg_ctl <span class="token parameter variable">-D</span> /pgsql/postgresql/data <span class="token parameter variable">-l</span> logfile start
+</code></pre></div><p>可以看到/pgsql/postgresql/data</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@bogon opt<span class="token punctuation">]</span><span class="token comment"># cd /pgsql/postgresql/</span>
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># ls</span>
+bin  data  include  lib  share
+<span class="token punctuation">[</span>root@bogon postgresql<span class="token punctuation">]</span><span class="token comment"># cd data/</span>
+<span class="token punctuation">[</span>root@bogon data<span class="token punctuation">]</span><span class="token comment"># ls</span>
+base    pg_commit_ts  pg_hba.conf    pg_logical    pg_notify    pg_serial     pg_stat      pg_subtrans  pg_twophase  pg_wal   postgresql.auto.conf
+global  pg_dynshmem   pg_ident.conf  pg_multixact  pg_replslot  pg_snapshots  pg_stat_tmp  pg_tblspc    PG_VERSION   pg_xact  postgresql.conf
+</code></pre></div><p>九、配置服务</p> <div class="language-shell extra-class"><pre class="language-shell"><code>修改/pgsql/postgresql/data/目录下的两个问价
+Postgresql.conf 配置postgreSQL数据库服务的相应参数
+pg_hba.conf  配置对数据库的访问权限
+listen_addresses <span class="token operator">=</span> <span class="token string">'*'</span>      <span class="token comment"># what IP address(es) to listen on;</span>
+<span class="token comment"># comma-separated list of addresses;</span>
+<span class="token comment"># defaults to 'localhost'; use '*' for all</span>
+<span class="token comment"># (change requires restart)</span>
+<span class="token comment">#port = 5432               # (change requires restart)</span>
+max_connections <span class="token operator">=</span> <span class="token number">100</span>                   <span class="token comment"># (change requires resta</span>
+</code></pre></div><blockquote><p>其中，参数“listen_addresses”表示监听的IP地址，默认是在localhost处监听，也就是127.0.0.1的IP地址上监听，只接受来自本机的localhost的连接请求，这会让远程的主机无法登陆这台数据库，如果想从其他的机器上登陆这台数据库，需要把监听地址改为实际网络的地址，一种简单的方法是，将行开头的#号去掉，把这个地址改为*，表示在本地的所有地址上监听。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>[root@bogon data]# vim pg_hba.conf
+找到最下面这一行，这样局域网的人才能访问，红色为新添加内容。
+# IPv4 local connections:
+host    all      all             0.0.0.0/0               trust
+host    all     all             127.0.0.1/32            trust
+``
+pg_hba.conf文件新增内容如下：
+host    all      all             0.0.0.0/0               trust
+
+
+</code></pre></div><p>十、设置postgresql开机自启动</p> <p>PostgreSQL的开机自启动脚本位于postgreSQL源码目录的contrib/start-scripts路径下。<br>
+Linux文件即为Linux系统上的启动脚本</p> <div class="language- extra-class"><pre class="language-text"><code>[root@bogon start-scripts]# pwd
+/root/pgsql/postgresql-16.0/contrib/start-scripts
+[root@bogon start-scripts]# ls
+freebsd  linux  macos
+1）	切换为root用户，修改Linux文件属性，添加X属性
+[root@bogon start-scripts]# chmod a+x linux
+2）	复制Linux文件到/etc/init.d目录下，更名为postgresql
+[root@bogon start-scripts]# cp linux /etc/init.d/postgresql
+3）	修改/etc/init.d/postgresql文件的两个变量
+Prefix设置为postgresql的安装路径：/pgsql/postgresql
+PGDATA设置为postgresql的数据目录路径：&quot;/pgsql/postgresql/data&quot;
+4）	设置postgresql服务开启自启动
+[root@bogon start-scripts]# chkconfig --add postgresql
+查看开机自启服务设置成功
+[root@bogon start-scripts]# chkconfig 
+postgresql     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+5)执行service postgresql start，启动postgreSQL服务
+[root@bogon start-scripts]# service postgresql start
+Starting PostgreSQL: ok
+查看postgresql服务监听
+[root@bogon start-scripts]# ps -elf |grep postgres
+4 S root      17527   7286  0  80   0 - 47969 do_wai 16:26 pts/0    00:00:00 su - postgres
+4 S postgres  17528  17527  0  80   0 - 28886 n_tty_ 16:26 pts/0    00:00:00 -bash
+0 S postgres  17653      1  0  80   0 - 68572 ep_pol 16:35 ?        00:00:00 /pgsql/postgresql/bin/postgres -D /pgsql/postgresql/data
+1 S postgres  17654  17653  0  80   0 - 68607 ep_pol 16:35 ?        00:00:00 postgres: checkpointer 
+1 S postgres  17655  17653  0  80   0 - 68605 ep_pol 16:35 ?        00:00:00 postgres: background writer 
+1 S postgres  17657  17653  0  80   0 - 68605 ep_pol 16:35 ?        00:00:00 postgres: walwriter 
+1 S postgres  17658  17653  0  80   0 - 68974 ep_pol 16:35 ?        00:00:00 postgres: autovacuum launcher 
+1 S postgres  17659  17653  0  80   0 - 68969 ep_pol 16:35 ?        00:00:00 postgres: logical replication launcher 
+0 S root      17663  17574  0  80   0 - 28202 pipe_w 16:36 pts/1    00:00:00 grep --color=auto postgres
+
+</code></pre></div><p>十一、开始测试</p> <div class="language- extra-class"><pre class="language-text"><code>[root@bogon postgres]# su – postgres
+[postgres@bogon ~]$ psql
+
+</code></pre></div><p>1． 创建数据库用户<br>
+2． 赋予账号权限<br>
+3． 新建数据库<br>
+4． 退出</p> <div class="language- extra-class"><pre class="language-text"><code>postgres=# create user pg password 'pg';
+CREATE ROLE
+postgres=# ALTER ROLE pg SUPERUSER;
+ALTER ROLE
+postgres=# create database pg;
+CREATE DATABASE
+postgres=# \q
+
+</code></pre></div><ol><li>重新登陆数据库</li> <li>输入密码</li> <li>显示数据库</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[postgres@bogon ~]$ psql -U pg -d pg -h 192.168.0.244
+pg=# \l
+                         List of databases
+ Name    |  Owner   | Encoding | Locale Provider |   Collate   |    Ctype    | ICU Locale | ICU Rules |   Access privileges   
+-----------+----------+----------+-----------------+----- 
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2023年12月27日星期三晚上11点30分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/env/" class="prev router-link-active">
+        说明
+      </a></span> <span class="next"><a href="/zs-use/env/Linux--python3安装.html">
+        python3安装
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.cbe17422.js" defer></script><script src="/assets/js/2.15992fb1.js" defer></script><script src="/assets/js/1.31c72f24.js" defer></script><script src="/assets/js/111.a845cfe0.js" defer></script><script src="/assets/js/94.3ddb3f94.js" defer></script>
+  </body>
+</html>
