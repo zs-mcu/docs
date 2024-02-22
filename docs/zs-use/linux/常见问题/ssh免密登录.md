@@ -1,6 +1,4 @@
----
-title: 'SSH免密登录'
----
+ 
 
 #### SSH 三步解决免密登录
 
@@ -70,3 +68,58 @@ ssh root@192.168.1.101 -p 10022
 scp -P 10022 -r "./dist" xiaoshaozi@192.168.1.101:/home/xiaoshaozi/workspace
 ```
 
+
+
+
+
+## 常见错误
+
+### 无法上传秘钥
+
+> 上传报错
+
+```sh
+miyufeng@MacBook-Pro .ssh % ssh-copy-id -i ~/.ssh/linux_106_rsa_ssh.pub root@106.14.41.60
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/miyufeng/.ssh/linux_106_rsa_ssh.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ERROR: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ERROR: It is also possible that a host key has just been changed.
+ERROR: The fingerprint for the ECDSA key sent by the remote host is
+ERROR: SHA256:kXtnmnqUFcE/btiDu5sFkCInUpwU2dgLTPyuyBtxUsw.
+ERROR: Please contact your system administrator.
+ERROR: Add correct host key in /Users/miyufeng/.ssh/known_hosts to get rid of this message.
+ERROR: Offending ECDSA key in /Users/miyufeng/.ssh/known_hosts:1
+ERROR: ECDSA host key for 106.14.41.60 has changed and you have requested strict checking.
+ERROR: Host key verification failed.
+
+miyufeng@MacBook-Pro .ssh % ssh-copy-id -i ~/.ssh/linux_106_rsa_ssh.pub root@106.14.41.60 -p 22
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/Users/miyufeng/.ssh/linux_106_rsa_ssh.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ERROR: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ERROR: It is also possible that a host key has just been changed.
+ERROR: The fingerprint for the ECDSA key sent by the remote host is
+ERROR: SHA256:kXtnmnqUFcE/btiDu5sFkCInUpwU2dgLTPyuyBtxUsw.
+ERROR: Please contact your system administrator.
+ERROR: Add correct host key in /Users/miyufeng/.ssh/known_hosts to get rid of this message.
+ERROR: Offending ECDSA key in /Users/miyufeng/.ssh/known_hosts:1
+ERROR: ECDSA host key for 106.14.41.60 has changed and you have requested strict checking.
+ERROR: Host key verification failed.
+```
+
+**解决方法一：** 清除本地[**缓存**](https://www.lsjlt.com/tag/缓存/)证书
+
+执行  `ssh-keygen -R IP地址`
+
+**解决方法二：**在.ssh/known_hosts中删除对应ip
+
+执行vi .ssh/known_hosts 找到并删除
