@@ -13,3 +13,21 @@ a
 1docs/zs-use/linux/shell编程/5、流程控制.md,e/7/e71cba8772d7d4e7219f6c30ce9cf658e5fbd328
 a
 1docs/zs-use/linux/shell编程/6、文本处理.md,8/d/8d7e53abddaeae83c1320647aac21e269f1cfd6e
+e
+5docs/zs-use/linux/shell编程/实战脚本简述01.md,5/6/56702225654bd5528f8bccb5dc39711a5a545888
+e
+5docs/zs-use/linux/shell编程/实战脚本示例01.md,6/a/6a875da032f3e9e553f67a63e974bf6bd9580bf9
+e
+5docs/zs-use/linux/shell编程/实战脚本示例02.md,8/5/85dbc6df62ad312e09a68c287cbc2d657be1de1b
+e
+5docs/zs-use/linux/shell编程/实战脚本示例03.md,5/8/58c6810f462bb4c7b3eca8990b0c1fe29b8fcb56
+e
+5docs/zs-use/linux/shell编程/实战脚本示例04.md,c/4/c4745077e8234f33b949f30e2b49a71ae002c246
+e
+5docs/zs-use/linux/shell编程/实战脚本示例05.md,b/7/b728cc2483ee64bfd212eb3c0500c335b47cd1b7
+e
+5docs/zs-use/linux/shell编程/实战脚本示例06.md,2/8/289282c952c1366c863c89a456723646cac6ecc2
+\
+,docs/zs-use/linux/shell编程/工具--cut.md,9/e/9eb0d65454b90fdbd6ecd64fae2248236ae92397
+9
+	deploy.sh,b/e/be94fd40f0c4b440044c3f852e44fd2a75f7b3cc
