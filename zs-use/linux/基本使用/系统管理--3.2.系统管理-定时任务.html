@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>系统管理--3.2.系统管理-定时任务 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/57.30c0bc43.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/10.1fd06a28.js"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/147.84a3f5ba.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/201.93a4981d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/21.32f2cda6.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/89.9635bbaf.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/91.4fadbd0f.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="sidebar-link">命令--4.文件操作管理</a></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="sidebar-link">命令--5.查找命令</a></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="sidebar-link">命令--10.挂载</a></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="sidebar-link">命令--13.时间日期</a></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="sidebar-link">命令--16.vim编辑器</a></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="active sidebar-link">系统管理--3.2.系统管理-定时任务</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html#at一次性执行定时任务" class="sidebar-link">at一次性执行定时任务</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html#crontab循环执行定时任务" class="sidebar-link">crontab循环执行定时任务</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html#系统的crontab设置" class="sidebar-link">系统的crontab设置</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html#anacron" class="sidebar-link">anacron</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="系统管理-3-2-系统管理-定时任务"><a href="#系统管理-3-2-系统管理-定时任务" class="header-anchor">#</a> 系统管理--3.2.系统管理-定时任务</h1> <h2 id="at一次性执行定时任务"><a href="#at一次性执行定时任务" class="header-anchor">#</a> at一次性执行定时任务</h2> <h3 id="_1-、at服务管理与访问控制"><a href="#_1-、at服务管理与访问控制" class="header-anchor">#</a> 1)、at服务管理与访问控制</h3> <p>at命令要想正确执行，需要atd服务的支持。atd服务是独立的服务，所以启动的命令是：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># service atd start</span>
+正在启动 atd：						<span class="token punctuation">[</span>确定<span class="token punctuation">]</span>
+</code></pre></div><p>如果想要让atd服务开机时自动启动，可以使用如下命令：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># chkconfig atd on</span>
+</code></pre></div><p>atd服务启动之后，at命令才可以正常使用，不过我们还要学习下at命令的访问控制。
+这里的访问控制指的是允许哪些用户使用at命令设定定时任务，或者不允许哪些用户使用at命令。
+大家可以想象成为设定黑名单或设定白名单，这样更容易理解。
+at的访问控制是依靠<code>/etc/at.allow</code>文件（白名单）和<code>/etc/at.deny</code>文件（黑名单）这两个文件来实现的，具体规则如下：</p> <ul><li>如果系统中有<code>/etc/at.allow</code>文件，那么只有写入<code>/etc/at.allow</code>文件（白名单）中的用户可以使用at命令，其他用户不能使用at命令（<code>/etc/at.deny</code>文件会被忽略，也就是说同一个用户既写入<code>/etc/at.allow</code>文件，也写入<code>/etc/at.deny</code>文件，那么这个用户是可以使用at命令的，因为<code>/etc/at.allow</code>文件优先级更高。）</li> <li>如果系统中没有<code>/etc/at.allow</code>文件，只有<code>/etc/at.deny</code>文件，那么写入<code>/etc/at.deny</code>文件（黑名单）中的用户不能使用at命令，其他用户可以使用at命令。不过这个文件对root用户不生效。</li> <li>如果系统中这两个文件都不存在，那么只有root用户可以使用at命令。</li></ul> <p>系统中默认时只有/etc/at.deny文件，而且这个文件是空的，这样的话系统中所有的用户都可以使用at命令。
+不过如果我们打算控制用户的at命令权限，把用户写入/etc/at.deny文件即可</p> <p><code>/etc/at.allow</code>文件的权限更高，如果<code>/etc/at.allow</code>文件存在，则<code>/etc/at.deny</code>文件失效。
+<code>/etc/at.allow</code>管理行为更加严格，因为只有写入这个文件的用户才能使用at命令，如果需要禁用at命令的用户较多，则可以把少数用户写入这个文件。<code>/etc/at.deny</code>文件的管理较为松散，如果允许使用at命令的用户较多，则可以把禁用的用户写入这个文件。不过这两个文件都不能对root用户生效。</p> <h3 id="_2-、at命令"><a href="#_2-、at命令" class="header-anchor">#</a> 2）、at命令</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># at [选项] 时间</span>
+选项：
+	-m：			当at工作完成后，无论是否命令有输出，都用email通知执行at命令的用户
+	<span class="token parameter variable">-c</span> 工作号：	  显示该at工作的实际内容
+	
+时间：
+	at支持的时间格式如下：
+	HH:MM										在指定的“小时:分钟”执行命令，例如：02:30	
+	HH:MM YYYY-MM-DD							在指定的“小时:分钟年月日”执行，例如02:30 <span class="token number">2018</span>-07-25
+	HH:MM<span class="token punctuation">[</span>am<span class="token operator">|</span>pm<span class="token punctuation">]</span> <span class="token punctuation">[</span>month<span class="token punctuation">]</span> <span class="token punctuation">[</span>date<span class="token punctuation">]</span>					在指定的“小时:分钟<span class="token punctuation">[</span>上午下午<span class="token punctuation">]</span><span class="token punctuation">[</span>月<span class="token punctuation">]</span><span class="token punctuation">[</span>日<span class="token punctuation">]</span>”执行，例如02:30 July <span class="token number">25</span>
+	HH:MM<span class="token punctuation">[</span>am<span class="token operator">|</span>pm<span class="token punctuation">]</span> + <span class="token punctuation">[</span>minutes<span class="token operator">|</span>hours<span class="token operator">|</span>days<span class="token operator">|</span>weeks<span class="token punctuation">]</span>	在指定的时间“再加多久执行”，例如now + <span class="token number">5</span> minutes，05am +2 hours
+</code></pre></div><p>at命令只要指定正确的时间，就可以输入需要在指定时间执行的命令了，这个命令可以是系统命令，也可以是shell脚本。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>例子1：
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cat /root/hello.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;hello world!!&quot;</span>
+
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># at now +2 minutes</span>
+at<span class="token operator">&gt;</span> /root/hello.sh <span class="token operator">&gt;&gt;</span> /root/hello.log
+<span class="token comment">#执行hello.sh脚本，并把输出写入/root/hello.log文件</span>
+at<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>EOT<span class="token operator">&gt;</span>		<span class="token operator">&lt;</span>-使用ctrl+d保存at任务
+job <span class="token number">8</span> at <span class="token number">2018</span>-07-2520:54	<span class="token operator">&lt;</span>-这是第8个at任务，会在2018年7月25日20:54分执行
+
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># at -c 8</span>
+<span class="token comment">#查询第8个at任务的内容</span>
+…省略部分内容…			<span class="token operator">&lt;</span>-主要是定义系统的环境变量
+/root/hello.sh <span class="token operator">&gt;&gt;</span> /root/hello.log
+<span class="token comment">#可以看到at执行的任务</span>
+
+
+例子2：
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># at 02:00 2018-07-26</span>
+at<span class="token operator">&gt;</span> /bin/sync
+at<span class="token operator">&gt;</span> /sbin/shutdown <span class="token parameter variable">-h</span> now
+at<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>EOT<span class="token operator">&gt;</span>
+job <span class="token number">9</span> at <span class="token number">2018</span>-07-26 02:00
+
+<span class="token comment">#在指定的时间关机。在一个at任务中，是可以执行多个系统命令的</span>
+</code></pre></div><h3 id="_3-、其他at管理命令"><a href="#_3-、其他at管理命令" class="header-anchor">#</a> 3）、其他at管理命令</h3> <p>at还有查询和删除命令</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># atq</span>
+<span class="token comment">#查询当前服务器上的at工作</span>
+
+例如：
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># atq</span>
+<span class="token number">9</span>	<span class="token number">2018</span>-07-26  02:00 a root
+<span class="token comment">#说明root用户有一个at任务在2018年7月26日的02:00执行，工作号是9</span>
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#atrm [工作号]</span>
+<span class="token comment">#删除指定的at任务</span>
+
+
+例如：
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># atrm 9</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># atq</span>
+<span class="token comment">#删除9号at任务，再查询就没有at任务存在了</span>
+</code></pre></div><h2 id="crontab循环执行定时任务"><a href="#crontab循环执行定时任务" class="header-anchor">#</a> crontab循环执行定时任务</h2> <p>了解系统计划任务相关文件</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>d/
+<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>d/0hourly 	系统每小时第一分钟需要执行的任务
+<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>deny 			用户拒绝列表（在该文件中的用户不能使用cron服务）
+<span class="token operator">/</span>etc/crontab 			该文件的作用相当于<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>d/下面的某一个文件，可以定义系统计划任务
+
+<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>monthly/ 		存放系统每个月需要执行的脚本
+<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>weekly/ 		存放系统每周需要执行的脚本
+<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>daily/ 		存放系统每天需要执行的脚本
+<span class="token operator">/</span>etc/cron<span class="token punctuation">.</span>hourly/ 		存放系统每小时需要执行的脚本
+<span class="token operator">/</span><span class="token keyword">var</span><span class="token operator">/</span>spool/cron 		这个目录用来存放各个用户自己设定的定时任务，普通用户没有权限直接访问
+</code></pre></div><p><img src="/assets/img/image-20231215155152978.a62a7e0e.png" alt="image-20231215155152978"></p> <p>计划任务的周期编写</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@rhel8 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/crontab</span>
+<span class="token assign-left variable"><span class="token environment constant">SHELL</span></span><span class="token operator">=</span>/bin/bash
+默认的shell，告诉系统使用哪个shell
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span>/sbin:/bin:/usr/sbin:/usr/bin
+定义命令的路径
+<span class="token assign-left variable">MAILTO</span><span class="token operator">=</span>root
+结果以邮件的形式发送给root（不管是正确还是错误结果），如果MAILTO<span class="token operator">=</span><span class="token string">&quot;&quot;</span>代表不会发邮件给任何人。
+<span class="token comment"># For details see man 4 crontabs</span>
+
+<span class="token comment"># Example of job definition:</span>
+<span class="token comment"># .---------------- minute (0 - 59)</span>
+<span class="token comment"># | .------------- hour (0 - 23)</span>
+<span class="token comment"># | | .---------- day of month (1 - 31)</span>
+<span class="token comment"># | | | .------- month (1 - 12) OR jan,feb,mar,apr ...</span>
+<span class="token comment"># | | | | .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat</span>
+<span class="token comment"># | | | | |</span>
+<span class="token comment"># * * * * * user-name command to be executed</span>
+前5个字段分别表示：
+	分钟：0-59
+	小时：0-23
+	日期：1-31
+	月份：1-12
+	星期：0-7（0表示周日或者7表示周日）
+
+* 	每个单位的第一个
+,	不连续时间
+-	代办连续时间范围
+*/n	每隔n个单位执行一次
+
+
+<span class="token number">5</span> * * * *		每小时的第五分钟
+05 * * * *		每小时的第五分钟
+<span class="token number">20</span> 08 * * *		每天8点20分
+<span class="token number">45</span> <span class="token number">22</span> * * *		每天22点45分
+00 06 * <span class="token number">12</span> *	<span class="token number">12</span>月每天的6点
+
+03 01 * * <span class="token number">7</span>		每周日的1点03分
+<span class="token number">0</span> <span class="token number">17</span> * * <span class="token number">1</span>		每周1的17点0分
+
+
+还可以用一些特殊符号：
+, 		表示分割，间隔
+- 		表示一个段
+/n 		表示每个n的单位执行一次
+
+*/5 * * * *		每隔5分钟执行一次
+<span class="token number">0</span> <span class="token number">5</span> <span class="token number">1,15</span> * *	每月1号和15号的凌晨5点0分
+03 03,06 <span class="token number">1</span>-15 * *	每隔月的 <span class="token number">1</span>号到15号的 <span class="token number">3</span>点03分和6点03分 执行任务
+
+礼拜1和礼拜3每隔2个小时去执行一个任务
+00 */2 * * <span class="token number">1,3</span>
+
+每个月的1号-15号，和25号的早上8:00到晚上6:00每隔2小时执行一个任务
+00 08-18/2 <span class="token number">1</span>-15,25 * *
+
+以下4行是rhel5里的配置；rhel6看不到，但是也生效
+红帽5在/etc/crontab文件下有，之后的都没有但生效
+01 * * * * 		root run-parts /etc/cron.hourly/	每小时的第1分钟root执行目录里的脚本
+02 04 * * * 	root run-parts /etc/cron.daily/		每天的4点2分
+<span class="token number">22</span> 04 * * <span class="token number">7</span> 	root run-parts /etc/cron.weekly/	每周日4点22分
+<span class="token number">42</span> 04 <span class="token number">1</span> * * 	root run-parts /etc/cron.monthly/	每月1号4点42分
+
+注意：
+run-parts：
+crond用这个工具来执行某个目录下所有的可执行脚本，定时任务中的每小时/每天/每周/每月任务就是通过这个工具来触发的.
+</code></pre></div><h3 id="_1-、crond服务管理与访问控制"><a href="#_1-、crond服务管理与访问控制" class="header-anchor">#</a> 1）、crond服务管理与访问控制</h3> <p>crontab命令是需要crond服务支持的，crond服务同样是独立的服务</p> <p>crontab命令和at命令类似，也是通过<code>/etc/cron.allow</code>和<code>/etc/cron.deny</code>文件来限制某些用户是否可以使用<code>crontab</code>命令的。
+而且原则也非常相似：</p> <ul><li>当系统中有<code>/etc/cron.allow</code>文件时，只有写入此文件的用户可以使用<code>crontab</code>命令，没有写入的用户不能使用<code>crontab</code>命令。
+同样如果有此文件，<code>/etc/cron.deny</code>文件会被忽略，<code>/etc/cron.allow</code>文件的优先级更高。</li> <li>当系统中只有<code>/etc/cron.deny</code>文件时，则写入此文件的用户不能使用<code>crontab</code>命令，没有写入文件的用户可以使用<code>crontab</code>命令。</li></ul> <p>这个规则基本和at的规则一直，同样<code>/etc/cron.allow</code>文件的优先级比<code>/etc/cron.deny</code>文件的优先级高，Linux中默认只有<code>/etc/cron.deny</code>文件。</p> <h3 id="_2-、用户的crontab设置"><a href="#_2-、用户的crontab设置" class="header-anchor">#</a> 2）、用户的crontab设置</h3> <p>每个用户都可以实现自己的crontab定时任务，只要是使用这个用户身份执行“<code>crontab -e</code>”命令即可，当然这个用户不能加入<code>/etc/cron.deny</code>文件中。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># crontab [选项]</span>
+选项：
+    -e：编辑crontab定时任务
+    -l：查询crontab任务
+    -r：删除当前用户所有的crontab任务，如果有多个任务，只想删除一个，可以所以用“crontab -e”
+    <span class="token parameter variable">-u</span> 用户名：修改或删除其他用户的crontab任务。只有root可用
+    
+    
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#crontab -e</span>
+<span class="token comment">#进入crontab编辑界面。会打开vim编辑你的工作。</span>
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>例子1：让系统每隔5分钟，就向/tmp/test文件中写入一行“11”，验证一下系统定时任务是否会执行
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># crontab -e</span>
+*/5 * * * * /bin/echo <span class="token string">&quot;11&quot;</span> <span class="token operator">&gt;&gt;</span> /tmp/test
+
+
+例子2：在系统在每周二的凌晨5点05分重启一次
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># crontab -e</span>
+<span class="token number">5</span> <span class="token number">5</span> * * <span class="token number">2</span> /sbin/shutdown <span class="token parameter variable">-r</span> now
+
+
+例子3：在每月的1号，10号，15号的凌晨3点30分都定时执行日志备份脚本autobak.sh
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># crontab -e</span>
+<span class="token number">30</span> <span class="token number">3</span> <span class="token number">1,10</span>,15 * * /root/sh/autobak.sh
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># crontab -l</span>
+<span class="token comment">#查看root用户的crontab任务</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># crontab -r</span>
+<span class="token comment">#删除root用户所有的定时任务，如果只想删除某一个定时任务</span>
+<span class="token comment">#可以“crontab -e”进入编辑模式手工删除</span>
+</code></pre></div><h3 id="_3-、crontab的注意事项"><a href="#_3-、crontab的注意事项" class="header-anchor">#</a> 3）、crontab的注意事项</h3> <p>在书写crontab定时任务时，需要注意几个注意事项，这里我们再强调下：</p> <ul><li>六个选项都不能为空，必须填写。如果不确定使用“<code>*</code>”代表任意时间；</li> <li>crontab定时任务，最小有效时间是分钟，最大时间范围是月。像2018年某时执行，3点30分30秒这样的时间都不能识别；</li> <li>在定义时间时，日期和星期最好不要在一条定时任务中出现，因为它们都是以天作为单位，非常容易让管理员混乱；</li> <li>在定时任务中，不管是直接写命令，还是在脚本中写命令，最好都是用绝对路径。有时相对路径的命令会报错。</li></ul> <h2 id="系统的crontab设置"><a href="#系统的crontab设置" class="header-anchor">#</a> 系统的crontab设置</h2> <p>“crontab -e”是每个用户执行的命令，也就是说不同的用户身份可以执行自己的定时任务。</p> <p>可是有些定时任务需要系统执行，这时我们就需要编辑/etc/crontab这个配置文件了。</p> <p>当然，并不是说写入/etc/crontab配置文件中的定时任务执行时，不需要用户身份，而是“crontab -e”命令定义定时任务时，默认用户身份是当前登录用户。</p> <p>而修改/etc/crontab配置文件时，定时任务的执行着身份是可以手工指定的。</p> <p>这样定时任务的执行会更加灵活，修改起来也更加方便。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token assign-left variable"><span class="token environment constant">SHELL</span></span><span class="token operator">=</span>/bin/bash
+<span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span>/sbin:/bin:/usr/sbin:/usr/bin
+<span class="token assign-left variable">MAILTO</span><span class="token operator">=</span>root
+
+<span class="token comment"># For details see man 4 crontabs</span>
+
+<span class="token comment"># Example of job definition:</span>
+<span class="token comment"># .---------------- minute (0 - 59)</span>
+<span class="token comment"># |  .------------- hour (0 - 23)</span>
+<span class="token comment"># |  |  .---------- day of month (1 - 31)</span>
+<span class="token comment"># |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...</span>
+<span class="token comment"># |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat</span>
+<span class="token comment"># |  |  |  |  |</span>
+<span class="token comment"># *  *  *  *  * user-name  command to be executed</span>
+<span class="token comment"># 分 时 日 月  周 执行者身份  命令</span>
+</code></pre></div><p>在CentOS 6.x中，<code>/etc/crontab</code>这个文件也发生了变化，在CentOS 5.x中这个文件的内容大概是这个样子：</p> <p><img src="/assets/img/image-20240109114400900.3af6b879.png" alt="image-20240109114400900"></p> <p>在CentOS5.x版本中，/etc/crontab文件会使用run-parts脚本执行/etc/cron.{daily,weekly,monthly}目录中的所有文件。这个run-parts其实是一个shell脚本，保存在/usr/bin/run-parts，它的作用就是把其后面跟随的目录中的所有可执行文件依次执行。也就是说，如果我们想让某个脚本在每天都执行一次，可以不用手工去写定时任务，而只需要给这个脚本赋予执行权限，并把它放入/etc/cron.daily/目录中。这样这个脚本就会在每天的凌晨4点02分执行了。</p> <p>可是在CentOS 6.x版本中，/etc/crontab文件中不再有相关的段落，那么是否run-ptars这种定时任务执行方法不可用了呢？我们看到/etc/crontab中有一句提示，让我们“man 4 crontabs”来查看帮助，那么我们就看看这个帮助吧！在这个帮助中，明确写明了“在旧版本的crontab配置文件中，是通过run-parts脚本来调用cron.{daily,weekly,monthly}目录，定时执行这些目录中的脚本。在当前系统中，为了避免cron和anacron之间产生冲突，只要anacron已经安装，就使用anacron来执行这些目录中的脚本。具体可以查看anacron（8）的帮助。”。对于anacron的用法，我们下一个小节来介绍。</p> <p>其实对我们用户来讲，我们并不需要知道这个定时任务到底是由哪个程序调用的。我们需要知道的事情是如何使用系统的crontab设置。这个新老版本的CentOS没有区别，配置方法都有两种：</p> <ul><li><p>第一种方法就是我刚刚说过的，把你需要定时执行的工作写成脚本程序，并赋予执行权限，然后直接把这个脚本复制到/etc/cron.{daily,weekly,monthly}目录中的任意一个。比如我需要让某个脚本每周执行，那么就把这个脚本复制到/etc/cron.weekly/目中中。这样这个脚本就会每周执行一次，具体的执行时间要参考anacron的配置。</p></li> <li><p>第二种方法就是修改/etc/crontab这个配置文件，自己加入自己的定时任务，不过需要注意指定脚本的执行者身份。例如：</p></li></ul> <p><img src="/assets/img/image-20240109113400666.1aa6c22c.png" alt="image-20240109113400666"></p> <p>只要保存/etc/crontab文件，这个定时任务就可以执行了，当然要确定crond服务是运行的。</p> <p>这两种方法都是可以使用的，具体看个人的习惯吧！不过要想修改/etc/crontab文件，当然我要是root用户才可以，普通不能修改，只能使用用户身份的crontab命令。</p> <h2 id="anacron"><a href="#anacron" class="header-anchor">#</a> anacron</h2> <p>anacron是用来干什么的呢？我们的Linux服务器如果不是24小时开机的，那么刚好在关机的时间段之内有系统定时任务（cron）需要执行，那么这些定时任务是不会执行的。也就是说，假设我们需要在凌晨5点05分执行系统的日志备份，但是我们的Linux服务器不是24小时开机的，在晚上需要关机，白天上班之后才会再次开机。这个定时任务的执行时间我们的服务器刚好没有开机，那么这个任务就不会执行了。anacron就是用来解决这个问题的。</p> <p>anacron会使用一天，七天，一个月作为检测周期，用来判断是否有定时任务在关机之后没有执行，如果有这样的任务，anacron会在特定的时间重新执行这些定时任务。那么anacron是如何判断这些定时任务已经超过了执行时间呢？在系统的/var/spool/anacron/目录中存在cron.{daily,weekly,monthly}文件，这些文件中都保存着anacron上次执行时的时间。anacron会去读取这些文件中的时间，然后和当前时间做比较，若果两个时间的差值超过了anacron的指定时间差值（一般是1天，7天和一个月），就说明有定时任务漏掉了没有被执行，这时anacron会介入而执行这个漏掉的定时任务，从而保证在关机时没有被执行的定时任务不会被漏掉。</p> <p>在CentOS 6.x中，我们使用cronie-anacron取代了vixie-cron软件包。而且在原先的CentOS版本中/etc/cron.{daily,weekly,monthly}这些目录中的定时任务会同时被cron和anacron调用，这样非常容易出现重复执行同一个定时任务的错误。在现在的CentOS6.x中 ，/etc/cron.{daily,weekly,monthly}目录中的定时任务程序只会被anacron调用，从而保证这些定时任务只会在每天、每周或每月被定时执行一次，而不会重复执行。这也是我们在上一个小节中介绍的CentOS 6.x的变化之一。</p> <p>在CentOS 6.x中anacron还有一个变化，anacron不再是单独的服务，而变成了系统命令。也就是说我们不再可以使用“service anacron restart”命令来管理anacron服务了。而是需要使用anacron命令来管理anacron工作，具体命令如下：</p> <p><img src="/assets/img/image-20240109113816518.afc9ee15.png" alt="image-20240109113816518"></p> <p>在我们当前的Linux中，其实不需要执行任何anacron命令，只需要配置好/etc/anacrontab文件，系统就会依赖这个文件中的设定来通过anacron执行定时任务。那么关键就是/etc/anacrontab文件的内容了，这个文件如下：</p> <p><img src="/assets/img/image-20240109113911526.b528eae9.png" alt="image-20240109113911526"></p> <p>这个文件中“RANDOM_DELAY”定义的是最大随机延迟，也就是说cron.daily任务如果超过1天没有执行，并不会马上执行，而是先延迟强制延迟时间之后，再延迟随机延迟时间之后再执行命令。“START_HOURS_RANGE”定义anacron的执行时间范围，anacron只会在这个时间范围之内执行。</p> <p>我们用cron.daily工作来说明下/etc/anacrontab的执行过程：</p> <ul><li><p>首先读取/var/spool/anacron/cron.daily中的上一次anacron执行的时间；</p></li> <li><p>和当前时间比较，如果两个时间的差值超过1天，就执行cron.daily工作；</p></li> <li><p>执行这个工作只能在03:00-22:00之间；</p></li> <li><p>执行工作时强制延迟时间为5分钟，再随机延迟0-45分钟时间；</p></li> <li><p>使用nice命令指定默认优先级，使用run-parts脚本执行/etc/cron.daily目录中的所有可执行文件。</p></li></ul> <p>大家发现了吧，/etc/cron.{daily,weekly,monthly}中的脚本，在当前的Linux中是被anacron调用的，不再依靠cron服务。不过anacron不用设置多余的配置，我们只需要把需要定时执行的脚本放入/etc/cron.{daily,weekly,monthly}目录当中，就会每天、每周或每月执行，而且也不再需要启动anacron服务了。我们如果做修改的话，只用修改/etc/anacrontab配置文件即可。比如我更加习惯让定时任务在凌晨03:00-05:00执行，就可以如下修改：</p> <p><img src="/assets/img/image-20240109114254512.6dfdad54.png" alt="image-20240109114254512"></p> <p>这样我们所有放入/etc/cron.{daily,weekly,monthly}目录中的脚本都会在指定时间运行了，而且也不怕服务器万一关机的情况了。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月9日星期二下午1点46分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="prev">
+        系统管理--3.1.系统管理
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/服务管理--NFS.html">
+        网络服务—NFS
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/57.30c0bc43.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>

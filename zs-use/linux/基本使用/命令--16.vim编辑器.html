@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令--16.vim编辑器 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/91.4fadbd0f.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/10.1fd06a28.js"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/147.84a3f5ba.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/201.93a4981d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/21.32f2cda6.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/57.30c0bc43.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/89.9635bbaf.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="sidebar-link">命令--4.文件操作管理</a></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="sidebar-link">命令--5.查找命令</a></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="sidebar-link">命令--10.挂载</a></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="sidebar-link">命令--13.时间日期</a></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="active sidebar-link">命令--16.vim编辑器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html#vim工作模式" class="sidebar-link">vim工作模式</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html#基本使用" class="sidebar-link">基本使用</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html#vim其他功能" class="sidebar-link">vim其他功能</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html#可视化模式" class="sidebar-link">可视化模式</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html#高频命令" class="sidebar-link">高频命令</a></li></ul></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="sidebar-link">系统管理--3.2.系统管理-定时任务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令-16-vim编辑器"><a href="#命令-16-vim编辑器" class="header-anchor">#</a> 命令--16.vim编辑器</h1> <ul><li>Linux平台下的<strong>文本编辑器：</strong> emacs、nano、gedit、<font color="red"><strong>vi</strong>、<strong>vim</strong></font></li></ul> <p>vi（visual editor）编辑器通常被简称为vi，它是Linux和Unix系统上最基本的文本编辑器，类似于Windows 系统下的记事本。学会它后，我们将在Linux 的世界里游刃有余。</p> <ul><li><p>为什么要学习vim？</p> <ol><li><p>所有的Unix like系统都会<strong>内置</strong>vi文本编辑器，其他的文本编辑器则不一定会存在</p></li> <li><p>很多软件的编辑接口都会主动调用vi</p></li> <li><p>vim具有<font color="red">程序编辑</font>的能力，可以主动以字体颜色辨别语法的正确性，方便程序设计</p></li> <li><p>程序简单，编辑速度快</p></li> <li><p>vim是vi的升级版</p></li></ol></li></ul> <h2 id="vim工作模式"><a href="#vim工作模式" class="header-anchor">#</a> vim工作模式</h2> <p>vim工作在三种模式之下：</p> <p><img src="/assets/img/image-20231221124344179.26159b8c.png" alt="image-20231221124344179"></p> <p>命令模式：是主要使用快捷键的模式，是我们后面学习的重点。命令模式想要进入输入模式，可以使用以下的方式：</p> <p><img src="/assets/img/image-20231102110923623.a695ccd7.png" alt="image-20231102110923623"></p> <p>输入模式：主要用于文本编辑，和记事本类似，输入数据就好。</p> <p>末行模式（编辑模式）：</p> <div class="language- extra-class"><pre class="language-text"><code>:w				保存不退出
+	:w 新文件名	 文件另存为
+:q				不保存退出
+:wq				保存退出
+:!				强制
+	:q!			强制不保存退出，用于修改文件之后，不保存数据退出。
+	:wq!		强制保存退出，当文件的所有者或者root用户，对文件没有写权限的时候，强制写入数据使用
+:x				在文件没有修改的情况下，表示直接退出（等价于:q），在文件修改的情况下等价于（:wq）
+</code></pre></div><h2 id="基本使用"><a href="#基本使用" class="header-anchor">#</a> 基本使用</h2> <p>问：命令行可以干什么？</p> <p>答：可以进行一些基本的复制、删除、跳转、撤销、移动等操作</p> <table><thead><tr><th>命令</th> <th>含义</th> <th>备注</th></tr></thead> <tbody><tr><td>yy</td> <td>复制光标所在行</td> <td>3yy表示复制3行</td></tr> <tr><td>p(小写p)</td> <td>光标所在行后面粘贴</td> <td></td></tr> <tr><td>P(大写P)</td> <td>光标所在行前面粘贴</td> <td></td></tr> <tr><td>gg</td> <td>光标快速跳到文件首行，并且定位到首字符</td> <td>3gg表示快速跳到文件第3行行首字符</td></tr> <tr><td>G</td> <td>光标快速跳到文件尾行，并且定位到首字符</td> <td></td></tr> <tr><td>home</td> <td>跳转到行首</td> <td>Shift+6 即 ^ 符号表示行首</td></tr> <tr><td>end</td> <td>跳转到行尾</td> <td>Shitf+4 即 $ 符号表示行尾</td></tr> <tr><td>dd</td> <td>删除光标所在行</td> <td>3dd表示删除3行（包括光标所在行</td></tr> <tr><td>d^</td> <td>从光标位置删至行首，不包括光标位</td> <td></td></tr> <tr><td>d$</td> <td>从光标位置删至行尾，包括光标位，与D作用相同</td> <td></td></tr> <tr><td>dG</td> <td>删除光标所在行以及下面所有行</td> <td></td></tr> <tr><td>dgg</td> <td>删除光标所在行以及上面所有行</td> <td></td></tr> <tr><td>x(小写)</td> <td>删除光标所在字符后面一个字符，3x删除3个字符</td> <td>类似于windows下的delete键</td></tr> <tr><td>X(大写)</td> <td>删除光标所在字符前面一个字符，3X删除3个字符</td> <td>类似windows下的backspace键</td></tr> <tr><td>u</td> <td>撤销操作</td> <td>ctrl+r 取消撤销</td></tr> <tr><td></td> <td></td> <td></td></tr></tbody></table> <h3 id="移动光标"><a href="#移动光标" class="header-anchor">#</a> 移动光标</h3> <p>1）上下左右移动光标</p> <div class="language- extra-class"><pre class="language-text"><code>h	j	k	l
+←	↓	↑	→
+</code></pre></div><p>2）把光标移动到文件头或尾</p> <div class="language- extra-class"><pre class="language-text"><code>gg	文件头
+G	文件尾
+</code></pre></div><p>3）移动到行首或行尾</p> <div class="language- extra-class"><pre class="language-text"><code>^	行首
+$	行尾
+</code></pre></div><p>4）移动到指定行</p> <div class="language- extra-class"><pre class="language-text"><code>:n	到第n行
+</code></pre></div><h3 id="删除或剪切"><a href="#删除或剪切" class="header-anchor">#</a> 删除或剪切</h3> <p>1）删除字母</p> <div class="language- extra-class"><pre class="language-text"><code>x	删除单个字母
+nx	删除n个字母
+
+
+n是数字，如果打算从光标位置删除连续的10个字母，可以使用“10x”即可。
+删除字母并不符合使用习惯，我们更习惯在编辑模式中，用“Backspace”键删除字母。
+</code></pre></div><p>2）删除整行或剪切</p> <div class="language- extra-class"><pre class="language-text"><code>dd		删除单行
+ndd		删除多行
+:n1,n2d	删除指定范围的行
+
+删除整行或多行，这是比较常用的删除方法。
+这里的dd快捷键既是删除，也是剪切。
+删除内容放入了剪切板，如果不粘贴就是删除，如果粘贴就是剪切。粘贴方法如下：
+
+p		 粘贴到光标后
+P(大)	粘贴到光标前
+
+
+
+:1,8d 	删掉文本的1到8行
+</code></pre></div><p>3）从光标所在行删除到文件尾</p> <div class="language- extra-class"><pre class="language-text"><code>dG	从光标所在行删除到文件尾
+</code></pre></div><h3 id="复制"><a href="#复制" class="header-anchor">#</a> 复制</h3> <div class="language- extra-class"><pre class="language-text"><code>yy	复制单行
+nyy	复制多行
+
+复制之后的粘贴，依然可以使用p键或P（大）键
+</code></pre></div><h3 id="撤销"><a href="#撤销" class="header-anchor">#</a> 撤销</h3> <div class="language- extra-class"><pre class="language-text"><code>u			撤销
+ctrl + r	反撤销
+
+“u”键能一直撤销到文件打开时的状态，类似Windows下“ctrl+z”键的作用。
+“ctrl+r”能一直反撤销到最后一次操作状态，类似Windows下“ctrl+y”键的作用。
+</code></pre></div><h3 id="替换"><a href="#替换" class="header-anchor">#</a> 替换</h3> <div class="language- extra-class"><pre class="language-text"><code>r	替换光标所在处的字符
+R	从光标所在处开始替换字符，按ESC结束
+
+“r”键替换单一字符，不用进入输入模式，实际使用时，比进入输入模式删除后再修改，要方便。
+</code></pre></div><h3 id="vim配置文件"><a href="#vim配置文件" class="header-anchor">#</a> vim配置文件</h3> <p>这次末行模式参数设置，多数需要在vim中才能生效。</p> <table><thead><tr><th>设置参数</th> <th>含义</th></tr></thead> <tbody><tr><td><code>:set nu</code><br><code>:set number</code><br><code>:set nonu</code><br></td> <td>显示与取消行号。</td></tr> <tr><td><code>:syntax on</code><br><code>syntax off</code></td> <td>是否依据语法显示相关的颜色帮助。<br>在Vim中修改相关的配置文件或Shell脚本文件时（如前面示例的脚本/etc/init.d/sshd），<br>默认会显示相应的颜色，用来帮助排错。<br>如果觉得颜色产生了干扰，则可以取消此设置</td></tr> <tr><td><code>:set hlsearch</code><br><code>:set nohlsearch</code></td> <td>设置是否将查找的字符串高亮显示。默认是set hlsearch高亮显示</td></tr> <tr><td><code>:set ruler</code><br><code>:set noruler</code></td> <td>设置是否显示右下角的状态栏。默认是set ruler显示</td></tr> <tr><td><code>:set showmode</code><br><code>:set noshowmode</code></td> <td>设置是否在左下角显示如”--INSERT--“之类的状态栏。默认是set showmode显示</td></tr> <tr><td><code>:set list</code><br><code>:set nolist</code></td> <td>设置是否显示隐藏字符（Tab键用”<code>^I</code>“表示，回车键用”<code>$</code>“表示）。<br>默认是nolist显示。如果使用set list显示隐藏字符，类似”cat -A 文件名“。</td></tr></tbody></table> <p>vim支持更多的设置参数，可以通过“:set all”进行查看。</p> <p>大家会发现，这些设置参数都只是临时生效，一旦关闭文件再打开，又需要重新输入。如果想要永久生效，需要手工建立vim的配置文件“<code>~/.vimrc</code>”,把你需要的参数写入配置文件就永久生效了。</p> <p>补充：Windows下回车符在Linux中是用“<code>^M$</code>”符。这样会导致Windows下编辑的程序脚本，无法在Linux中执行。这时可以通过命令“dos2unix”，把Windows格式转为Linux格式，当然反过来“unix2dos”命令就是把Linux格式转为Windows格式。这两个命令默认没有安装，需要手工安装才能使用。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>全局配置 <span class="token operator">/</span>etc/vimrc
+单用户配置 ~<span class="token operator">/</span><span class="token punctuation">.</span>vimrc
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># vim ~/.vimrc</span>
+ <span class="token function">set</span> nu
+ 
+
+永久设置行号
+<span class="token function">echo</span> <span class="token string">&quot;set number&quot;</span> &gt;&gt; <span class="token operator">/</span>etc/vimrc
+</code></pre></div><h3 id="查找"><a href="#查找" class="header-anchor">#</a> 查找</h3> <div class="language- extra-class"><pre class="language-text"><code>/查找内容	从光标行向上查找
+?查找内容	从光标行向下搜索
+n			上一个
+N			下一个
+
+搜索摸索
+:/root n往下匹配;N往上匹配
+</code></pre></div><h3 id="替换-2"><a href="#替换-2" class="header-anchor">#</a> 替换</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code>:1<span class="token punctuation">,</span>10s/old/new/g	替换1到10行的所有old为new
+:<span class="token operator">%</span>s/old/new/g		替换整个文件的old为new
+
+
+替换模式
+:<span class="token operator">%</span>s/root/ROOT/ 全文搜索<span class="token punctuation">,</span>替换每一行匹配到的第一个关键字
+:<span class="token operator">%</span>s/root/ROOT/g 全文搜索<span class="token punctuation">,</span>替换每一行所有匹配的关键字
+:<span class="token operator">%</span>s/root/ROOT/<span class="token function">gc</span> 交互式替换
+:<span class="token operator">%</span>s/\<span class="token operator">/</span>sbin\<span class="token operator">/</span>nologin/\<span class="token operator">/</span>bin\<span class="token operator">/</span>bash/ \转义符
+:<span class="token operator">%</span>s<span class="token comment">#/sbin/nologin#/bin/bash#g 更换分隔符</span>
+:7s/shutdown/SHUTDOWN/g 只替换第7行的内容
+</code></pre></div><p>替换字符串，(注释<code>#</code>)前十行</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>:1<span class="token punctuation">,</span>10s/^<span class="token operator">/</span><span class="token comment">#/g	注释1到10行</span>
+:1<span class="token punctuation">,</span>10s/^<span class="token comment">#//g	取消注释</span>
+</code></pre></div><p>替换字符串，（注释<code>//</code>）前十行</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>:1<span class="token punctuation">,</span>10s/^<span class="token operator">/</span>\<span class="token operator">/</span>\<span class="token operator">/</span><span class="token operator">/</span>g		注释1到10行
+:1<span class="token punctuation">,</span>10s/^\<span class="token operator">/</span>\<span class="token operator">/</span><span class="token operator">/</span><span class="token operator">/</span>g		取消注释
+</code></pre></div><h2 id="vim其他功能"><a href="#vim其他功能" class="header-anchor">#</a> vim其他功能</h2> <h3 id="在vim中导入其他文件内容或命令结果"><a href="#在vim中导入其他文件内容或命令结果" class="header-anchor">#</a> 在vim中导入其他文件内容或命令结果</h3> <h4 id="导入其他文件内容"><a href="#导入其他文件内容" class="header-anchor">#</a> 导入其他文件内容</h4> <div class="language-powershell extra-class"><pre class="language-powershell"><code>:r 文件名		把文件内容导入光标位置
+
+:r <span class="token operator">/</span>tmp/5<span class="token punctuation">.</span>txt 	在光标所在行下面读取<span class="token operator">/</span>tmp/5<span class="token punctuation">.</span>txt文件内容
+:3r <span class="token operator">/</span>tmp/5<span class="token punctuation">.</span>txt 	在当前文本的第3行后读取<span class="token operator">/</span>tmp/5<span class="token punctuation">.</span>txt文件
+</code></pre></div><p>可以把其他文件的内容导入到光标所在位置</p> <h4 id="保存内容到文件内"><a href="#保存内容到文件内" class="header-anchor">#</a> 保存内容到文件内</h4> <div class="language-powershell extra-class"><pre class="language-powershell"><code>地址定位
+:1<span class="token punctuation">,</span>5 w <span class="token operator">/</span>tmp/5<span class="token punctuation">.</span>txt 	<span class="token comment">#保存前5行内容到/tmp/5.txt</span>
+</code></pre></div><h4 id="在vim中执行系统命令"><a href="#在vim中执行系统命令" class="header-anchor">#</a> 在vim中执行系统命令</h4> <div class="language- extra-class"><pre class="language-text"><code>:!命令		在vim中执行系统命令
+</code></pre></div><p>这里只是在vim中执行系统命令，但并不把系统命令的结果写入到文件中。主要用于在文件编辑中，查看系统信息，如时间。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>:n! command 用命令的执行结果替换第n行内容
+:nr <span class="token operator">!</span>command 在第n行下面读取命令所执行的结果
+</code></pre></div><h3 id="导入命令结果"><a href="#导入命令结果" class="header-anchor">#</a> 导入命令结果</h3> <div class="language- extra-class"><pre class="language-text"><code>:r !命令		在vim中执行系统命令，并吧命令结果导入光标所在行
+</code></pre></div><p>在vim中执行系统命令，并吧命令结果导入光标所在行。</p> <h3 id="设定快捷键"><a href="#设定快捷键" class="header-anchor">#</a> 设定快捷键</h3> <div class="language- extra-class"><pre class="language-text"><code>:map 快捷键 快捷键执行的命令		自定义快捷键
+</code></pre></div><p>vim允许自定义快捷键，常用的自定义快捷键如下：</p> <div class="language- extra-class"><pre class="language-text"><code>:map ^P I#&lt;ESC&gt;		按”ctrl+p“时，在行首加入注释
+:map ^B ^x			按”ctrl+b“时，删除行首第一个字母（删除注释）
+</code></pre></div><p>注意：<code>^P</code>快捷键不能手工输入，需要执行<code>ctrl+V+P</code>来定义，或<code>ctrl+V</code>,然后<code>ctrl+P</code>。<code>^B</code>快捷键也一样</p> <h3 id="字符替换"><a href="#字符替换" class="header-anchor">#</a> 字符替换</h3> <div class="language- extra-class"><pre class="language-text"><code>:ab 源字符 替换为字符		字符替换
+</code></pre></div><p>在vim编辑中，有时候需要频繁输入某一个长字符串（比如邮箱），这时使用字符串替换，能增加输入效率，例如：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>:ab mymail shenchao@163<span class="token punctuation">.</span>com 	当碰到“mymail”时，转变为邮箱
+</code></pre></div><p>注意：“源字符”不应设置的太短，否则有可能影响输入。</p> <h3 id="多文件打开"><a href="#多文件打开" class="header-anchor">#</a> 多文件打开</h3> <p>在vim中可以同时打开两个文件，只要执行如下命令：</p> <div class="language- extra-class"><pre class="language-text"><code>[root@xiaoshaozi ~]# vim -o abc bcd
+[root@xiaoshaozi ~]# vim -O abc bcd
+
+#-o		小写o会上下分屏打开两个文件
+#-O		大写O会左右分屏打开两个文件
+
+切换窗口
+	-o(小)	ctrl+w  上下键
+	-O(大)	ctrl+w  左右键
+</code></pre></div><p>这样可以同时打开两个文件，方便操作。</p> <p><img src="/assets/img/image-20231221144330415.f7780b21.png" alt="image-20231221144330415"></p> <h3 id="vim打开文件"><a href="#vim打开文件" class="header-anchor">#</a> vim打开文件</h3> <div class="language-powershell extra-class"><pre class="language-powershell"><code>vim 文件名			 	<span class="token comment"># 默认会进入命令行模式</span>
+vim <span class="token operator">+</span>n 文件名			<span class="token comment"># 打开指定的文件，并且将光标移动到指定行</span>
+vim <span class="token operator">+</span><span class="token operator">/</span>关键字 文件名	  <span class="token comment"># 打开指定的文件，并且高亮显示关键词</span>
+
+
+<span class="token comment"># rm -rf /tmp/*</span>
+<span class="token comment"># cp /etc/passwd /tmp/</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># vim /tmp/passwd</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># vim +5 /tmp/passwd</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># vim +/shutdown /tmp/passwd</span>
+</code></pre></div><h3 id="取消高亮"><a href="#取消高亮" class="header-anchor">#</a> 取消高亮</h3> <div class="language- extra-class"><pre class="language-text"><code>取消高亮
+:noh （no highlight）
+</code></pre></div><h3 id="多窗口编辑问题"><a href="#多窗口编辑问题" class="header-anchor">#</a> 多窗口编辑问题</h3> <p><font color="red">当两个终端同时打开或者意外结束文件时，会产生一个.swap文件 （交换文件）</font></p> <h4 id="举例说明"><a href="#举例说明" class="header-anchor">#</a> 举例说明：</h4> <p>你在两个终端同时打开/tmp/passwd文件，会产生/tmp/.passwd.swp。这时，有六个按钮可以使用：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>O<span class="token punctuation">(</span>pen <span class="token keyword">for</span> <span class="token function">Read-Only</span><span class="token punctuation">)</span>:	打开成只读文件。
+E<span class="token punctuation">(</span>dit<span class="token punctuation">)</span>:		 用正常方式打开要编辑的文件，并不会载入暂存文件的内容。这很容易出现两个用户相互改变对方的文件的问题。
+R<span class="token punctuation">(</span>ecover<span class="token punctuation">)</span>：	加载暂存文件的内容。
+D<span class="token punctuation">(</span>elete<span class="token punctuation">)</span>：	如果你确定这个暂存文件是没有用的，则可以删除。
+Q<span class="token punctuation">(</span>uit<span class="token punctuation">)</span>：		不进行任何操作，回到命令行。
+A<span class="token punctuation">(</span>bort<span class="token punctuation">)</span>：	忽略这个编辑行为，和Q类似。
+
+需要注意的是：
+这个暂存文件不会因为你结束vim后自动删除，必须要手动删除。否则每次打开对应的文件时都会出现这样的提示。
+</code></pre></div><p>使用<code>ctrl + z</code>接收当前终端vim编辑产生零时文件</p> <p>使用<code>fg</code>命令重新进入继续编辑</p> <h2 id="可视化模式"><a href="#可视化模式" class="header-anchor">#</a> 可视化模式</h2> <p>按键：ctrl + v（可视块）或V（可视行），然后按下↑ ↓ ← →方向键来选中需要</p> <p>复制的区块，按下y 键进行复制（不要按下yy），最后按下p 键粘贴</p> <p>退出可视模式按下Esc</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># 快速注释</span>
+ctrl <span class="token operator">+</span> v
+选中区块
+I
+输入文字
+esc
+
+<span class="token comment"># 快速删除</span>
+ctrl <span class="token operator">+</span> v
+选中区块
+d
+</code></pre></div><h2 id="高频命令"><a href="#高频命令" class="header-anchor">#</a> 高频命令</h2> <div class="language-powershell extra-class"><pre class="language-powershell"><code>命令行模式：
+<span class="token comment"># 复制一行</span>
+yyp
+<span class="token comment"># 删除行</span>
+dd
+<span class="token comment"># 撤回</span>
+u
+<span class="token comment"># 取消撤回</span>
+ctrl <span class="token operator">+</span> r
+<span class="token comment"># 文件末尾</span>
+G
+<span class="token comment"># 文件首位</span>
+gg
+<span class="token comment"># 行首</span>
+^
+<span class="token comment"># 行末</span>
+$
+
+
+
+
+<span class="token comment"># 挂起shell</span>
+Ctrl <span class="token operator">+</span> z  
+fg重新进入vim
+
+
+<span class="token comment"># 快速注释</span>
+ctrl <span class="token operator">+</span> v
+选中区块
+I
+输入文字
+esc
+
+<span class="token comment"># 快速删除</span>
+ctrl <span class="token operator">+</span> v
+选中区块
+d
+
+
+<span class="token comment"># 选择复制</span>
+v
+选中区
+y
+p
+
+
+底行模式：
+临时设置行号
+:<span class="token function">set</span> number 或 :<span class="token function">set</span> nu
+
+
+搜索摸索
+:<span class="token operator">/</span>root n往下匹配<span class="token punctuation">;</span>N往上匹配
+:<span class="token operator">%</span>s/root/ROOT/<span class="token function">gc</span> 交互式替换
+取消高亮
+:noh （no highlight）
+
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月8日星期一下午2点56分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/命令--15.echo.html" class="prev">
+        命令--15.echo
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html">
+        系统管理--1.启动引导与修复
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/91.4fadbd0f.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>

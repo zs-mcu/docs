@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>实战脚本示例01 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/201.93a4981d.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/10.1fd06a28.js"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/147.84a3f5ba.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/21.32f2cda6.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/57.30c0bc43.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/89.9635bbaf.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/91.4fadbd0f.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>shell编程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/shell%E7%BC%96%E7%A8%8B/" aria-current="page" class="sidebar-link">说明</a></li><li><a href="/zs-use/linux/shell编程/1、hello world.html" class="sidebar-link">1、hello world</a></li><li><a href="/zs-use/linux/shell编程/2、base基本功能.html" class="sidebar-link">2、base基本功能</a></li><li><a href="/zs-use/linux/shell编程/3、变量和运算符.html" class="sidebar-link">3、变量和运算符</a></li><li><a href="/zs-use/linux/shell编程/4、条件判断.html" class="sidebar-link">4、条件判断</a></li><li><a href="/zs-use/linux/shell编程/5、流程控制.html" class="sidebar-link">5、流程控制</a></li><li><a href="/zs-use/linux/shell编程/6、数组.html" class="sidebar-link">6、数组</a></li><li><a href="/zs-use/linux/shell编程/工具--cut.html" class="sidebar-link">工具--cut</a></li><li><a href="/zs-use/linux/shell编程/实战脚本简述01.html" class="sidebar-link">实战脚本简述</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例01.html" class="active sidebar-link">实战脚本示例01</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例02.html" class="sidebar-link">实战脚本示例02</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例03.html" class="sidebar-link">/zs-use/linux/shell编程/实战脚本示例03.html</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例04.html" class="sidebar-link">实战脚本示例04</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例05.html" class="sidebar-link">实战脚本示例</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例06.html" class="sidebar-link">实战脚本示例06</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="实战脚本示例01"><a href="#实战脚本示例01" class="header-anchor">#</a> 实战脚本示例01</h1> <blockquote><p>CentOS7.9 软件安装脚本</p> <p>nginx</p> <p>redis</p> <p>rabbitmq</p> <p>等等</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 执行用户判断：</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># 只允许使用root用户执行</span>
+<span class="token comment"># 判断当前用户是否为root</span>
+<span class="token comment">#################################################</span>
+<span class="token assign-left variable">user</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">env</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token environment constant">USER</span> <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;=&quot;</span> <span class="token parameter variable">-f</span> <span class="token number">2</span><span class="token variable">)</span></span>
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$user</span>&quot;</span> <span class="token operator">!=</span> <span class="token string">&quot;root&quot;</span> <span class="token punctuation">]</span>
+<span class="token keyword">then</span>
+	<span class="token builtin class-name">echo</span> <span class="token string">&quot;请使用root用户执行该脚本。切换root命令：su - root&quot;</span>
+	<span class="token builtin class-name">exit</span> <span class="token number">0</span>
+<span class="token keyword">fi</span>
+<span class="token function">sleep</span> <span class="token number">1</span>
+
+<span class="token assign-left variable">homepwd</span><span class="token operator">=</span>/home/jysp
+
+
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 安装环境校验：</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># 判断jysp用户是否存在</span>
+<span class="token comment"># 判断jysp文件夹是否存在</span>
+<span class="token comment"># 进入对应的安装文件夹内</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">filepwd-check</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token function">id</span> <span class="token string">'jysp'</span> <span class="token operator">&amp;&gt;</span>/dev/null
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token variable">$?</span> <span class="token parameter variable">-eq</span> <span class="token number">0</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token string">&quot;用户'jysp'不存在。&quot;</span>
+       <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+  <span class="token keyword">fi</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;<span class="token variable">$homepwd</span>&quot;</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token string">&quot;jysp文件夹不存在&quot;</span>
+      <span class="token builtin class-name">exit</span> <span class="token number">1</span>
+  <span class="token keyword">fi</span>
+
+  <span class="token assign-left variable">mariadbfile</span><span class="token operator">=</span><span class="token punctuation">(</span>boost-program-options-1.53.0-28.el7.x86_64.rpm galera-25.3.37-1.el7.centos.x86_64.rpm MariaDB-client-10.3.36-1.el7.centos.x86_64.rpm MariaDB-common-10.3.36-1.el7.centos.x86_64.rpm MariaDB-compat-10.3.36-1.el7.centos.x86_64.rpm MariaDB-server-10.3.36-1.el7.centos.x86_64.rpm expect-5.45-14.el7_1.x86_64.rpm my.cnf tcl-8.5.13-8.el7.x86_64.rpm<span class="token punctuation">)</span>
+  <span class="token assign-left variable">rabbitfile</span><span class="token operator">=</span><span class="token punctuation">(</span>erlang-23.3.4.4-1.el7.x86_64.rpm rabbitmq-server-3.7.8-1.el7.noarch.rpm<span class="token punctuation">)</span>
+  <span class="token assign-left variable">redisfile</span><span class="token operator">=</span><span class="token punctuation">(</span>redis.tar.gz redis.conf redis-server.service<span class="token punctuation">)</span>
+  <span class="token assign-left variable">influxfile</span><span class="token operator">=</span><span class="token punctuation">(</span>influxdb-1.8.3.x86_64.rpm<span class="token punctuation">)</span>
+  <span class="token assign-left variable">vsftpfile</span><span class="token operator">=</span><span class="token punctuation">(</span>vsftpd-3.0.2-29.el7_9.x86_64.rpm vsftpd.tar.gz<span class="token punctuation">)</span>
+  <span class="token assign-left variable">nginxfile</span><span class="token operator">=</span><span class="token punctuation">(</span>ssl.tar.gz nginx.conf nginx-1.14.2-1.el7_4.ngx.x86_64.rpm<span class="token punctuation">)</span>
+
+  <span class="token comment"># case in 校验</span>
+  <span class="token keyword">case</span> <span class="token variable">$1</span> <span class="token keyword">in</span>
+    mariadb<span class="token punctuation">)</span>
+     <span class="token assign-left variable">ds</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;<span class="token variable">${mariadbfile<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>&quot;</span><span class="token punctuation">)</span>
+     <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/MariaDB-10.3
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========MariaDB-10.3==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+     <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    rabbitmq<span class="token punctuation">)</span>
+     <span class="token assign-left variable">ds</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;<span class="token variable">${rabbitfile<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>&quot;</span><span class="token punctuation">)</span>
+     <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/RabbitMQ
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========RabbitMQ==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+     <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    redis<span class="token punctuation">)</span>
+      <span class="token assign-left variable">ds</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;<span class="token variable">${redisfile<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>&quot;</span><span class="token punctuation">)</span>
+      <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/Redis
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========Redis==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+      <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    influxdb<span class="token punctuation">)</span>
+     <span class="token assign-left variable">ds</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;<span class="token variable">${influxfile<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>&quot;</span><span class="token punctuation">)</span>
+     <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/InfluxDB
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========InfluxDB==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+     <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    vsftpd<span class="token punctuation">)</span>
+     <span class="token assign-left variable">ds</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;<span class="token variable">${vsftpfile<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>&quot;</span><span class="token punctuation">)</span>
+     <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/VSFTPD
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========VSFTPD==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+         <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    nginx<span class="token punctuation">)</span>
+      <span class="token assign-left variable">ds</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;<span class="token variable">${nginxfile<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>&quot;</span><span class="token punctuation">)</span>
+      <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/Nginx
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========Nginx==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token keyword">esac</span>
+
+  <span class="token comment"># 循环输出文件名称到屏幕</span>
+  <span class="token keyword">for</span> <span class="token for-or-select variable">value</span> <span class="token keyword">in</span> <span class="token variable">${ds<span class="token punctuation">[</span>*<span class="token punctuation">]</span>}</span>
+    <span class="token keyword">do</span>
+      <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token string">&quot;<span class="token variable">$value</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[32m    <span class="token variable">$value</span> ---OK<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+        <span class="token function">sleep</span> <span class="token number">1</span>
+      <span class="token keyword">else</span>
+        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m    <span class="token variable">$value</span> ---NO<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+        <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+      <span class="token keyword">fi</span>
+    <span class="token keyword">done</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 检测服务是否运行</span>
+<span class="token comment">################################################</span>
+<span class="token comment">#</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">check_server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">&quot;&quot;</span>
+  <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========<span class="token variable">$1</span>==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m<span class="token variable">$1</span>::<span class="token entity" title="\e">\e</span>[0m <span class="token variable"><span class="token variable">`</span>systemctl show $1 <span class="token parameter variable">--property</span> ActiveState <span class="token operator">|</span> <span class="token function">awk</span> <span class="token parameter variable">-F</span> <span class="token string">&quot;=&quot;</span> <span class="token string">'{print $2}'</span><span class="token variable">`</span></span>&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;rabbitmq-server.service&quot;</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31muser/role:<span class="token entity" title="\e">\e</span>[0m <span class="token variable"><span class="token variable">`</span>rabbitmqctl list_users <span class="token operator">|</span> <span class="token function">grep</span> jysp<span class="token variable">`</span></span>&quot;</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31mvhosts:<span class="token entity" title="\e">\e</span>[0m <span class="token variable"><span class="token variable">`</span>rabbitmqctl list_vhosts <span class="token operator">|</span> <span class="token function">grep</span> jysp<span class="token variable">`</span></span>&quot;</span>
+  <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;influxdb.service&quot;</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31mdata:<span class="token entity" title="\e">\e</span>[0m <span class="token variable"><span class="token variable">`</span>influx <span class="token parameter variable">-execute</span> <span class="token string">&quot;show databases;&quot;</span> <span class="token operator">|</span> <span class="token function">grep</span> ycxs<span class="token variable">`</span></span>&quot;</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31mstrategy:<span class="token entity" title="\n">\n</span><span class="token entity" title="\e">\e</span>[0m <span class="token variable"><span class="token variable">`</span>influx <span class="token parameter variable">-execute</span> <span class="token string">&quot;show retention policies on ycxs1000;&quot;</span><span class="token variable">`</span></span>&quot;</span>
+  <span class="token keyword">elif</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$1</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;mariadb.service&quot;</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31mDatabase:<span class="token entity" title="\n">\n</span><span class="token entity" title="\e">\e</span>[0m <span class="token variable"><span class="token variable">`</span>mysql <span class="token parameter variable">-uroot</span> <span class="token parameter variable">-pNari_jysp3.0</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;show databases;&quot;</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> mysql <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> information_schema <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> performance_schema <span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> Database<span class="token operator">|</span> <span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token builtin class-name">test</span><span class="token variable">`</span></span>&quot;</span>
+  <span class="token keyword">fi</span>
+  <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========<span class="token variable">$1</span>==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">&quot;&quot;</span>
+<span class="token punctuation">}</span>
+
+
+
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 2、MariaDB安装脚本</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># cd /home/jysp/rpm-install/MariaDB-10.3</span>
+<span class="token comment"># 安装rpm包依赖</span>
+<span class="token comment"># 创建 /var/log/mariadb 目录</span>
+<span class="token comment"># 拷贝 my.cnf 到 /etc/ 下</span>
+<span class="token comment"># 执行交互命令</span>
+<span class="token comment">#</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">mysql-install</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/MariaDB-10.3
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;yum localinstall -y --nogpgcheck boost-program-options-1.53.0-28.el7.x86_64.rpm galera-25.3.37-1.el7.centos.x86_64.rpm MariaDB-client-10.3.36-1.el7.centos.x86_64.rpm MariaDB-common-10.3.36-1.el7.centos.x86_64.rpm MariaDB-compat-10.3.36-1.el7.centos.x86_64.rpm MariaDB-server-10.3.36-1.el7.centos.x86_64.rpm expect-5.45-14.el7_1.x86_64.rpm tcl-8.5.13-8.el7.x86_64.rpm&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m MariaDB 安装失败，请检查！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+      <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;mkdir /var/log/mariadb&quot;</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;chown mysql:mysql /var/log/mariadb&quot;</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl enable mariadb.service&quot;</span>
+  <span class="token function">cp</span> <span class="token parameter variable">-f</span> my.cnf /etc/
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl start mariadb.service&quot;</span>
+  <span class="token function">sleep</span> <span class="token number">3</span>
+  <span class="token assign-left variable">mysqpid</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">cat</span> /var/lib/mysql/mariadb.pid<span class="token variable">`</span></span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> X<span class="token string">&quot;<span class="token variable">$mysqpid</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;X&quot;</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m mariadb 未运行，请排查！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+      <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+
+/usr/bin/expect <span class="token operator">&lt;&lt;-</span><span class="token string">EOF
+spawn mysql
+expect &quot;MariaDB \[(none)\]&gt;&quot;
+send &quot;update mysql.user set password=password('Nari_jysp3.0') where user='root';<span class="token entity" title="\r">\r</span>&quot;
+send &quot;GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Nari_jysp3.0' WITH GRANT OPTION;<span class="token entity" title="\r">\r</span>&quot;
+send &quot;update mysql.user set plugin = 'mysql_native_password' where User='root';<span class="token entity" title="\r">\r</span>&quot;
+send &quot;FLUSH PRIVILEGES;<span class="token entity" title="\r">\r</span>&quot;
+send &quot;create database nacos DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;<span class="token entity" title="\r">\r</span>&quot;
+send &quot;create database nari_jysp DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;<span class="token entity" title="\r">\r</span>&quot;
+send &quot;create database ycxs1000 DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;<span class="token entity" title="\r">\r</span>&quot;
+send &quot;FLUSH PRIVILEGES;<span class="token entity" title="\r">\r</span>&quot;
+send &quot;quit;<span class="token entity" title="\r">\r</span>&quot;
+expect eof
+EOF</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m MariaDB设置失败，请检查！！！ <span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 3、RabbitMQ安装脚本</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># cd /home/jysp/rpm-install/RabbitMQ</span>
+<span class="token comment"># 启动</span>
+<span class="token comment"># 配置rabbitmq:插件、虚拟机、用户</span>
+<span class="token comment"># 配置用户权限</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">rabbitmq-install</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/RabbitMQ
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;yum localinstall -y --nogpgcheck erlang-23.3.4.4-1.el7.x86_64.rpm rabbitmq-server-3.7.8-1.el7.noarch.rpm socat-1.7.3.2-2.el7.x86_64.rpm&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m rabbitmq 安装失败，请检查！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl start rabbitmq-server.service&quot;</span>
+  <span class="token assign-left variable">rastatus</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>systemctl status rabbitmq-server.service <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;active (running) &quot;</span><span class="token variable">`</span></span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;X<span class="token variable">$rastatus</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;X&quot;</span> <span class="token punctuation">]</span>
+  <span class="token keyword">then</span>
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m rabbitmq.servert 未运行，请排查！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+   <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl enable rabbitmq-server.service&quot;</span>
+  <span class="token assign-left variable">rabbitset</span><span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&quot;rabbitmq-plugins enable rabbitmq_management&quot;</span> <span class="token string">&quot;rabbitmqctl add_vhost jysp_vhost&quot;</span> <span class="token string">&quot;rabbitmqctl add_user jysp Nari_jysp3.0&quot;</span> <span class="token string">&quot;rabbitmqctl set_user_tags jysp administrator&quot;</span><span class="token punctuation">)</span>
+  <span class="token keyword">for</span><span class="token variable"><span class="token punctuation">((</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+  <span class="token keyword">do</span>
+    <span class="token variable">${rabbitset<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+      <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m <span class="token variable">${rabbitset<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span> 设置失败，请检查！！！ <span class="token entity" title="\e">\e</span>[0m&quot;</span>
+      <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+    <span class="token keyword">fi</span>
+    <span class="token function">sleep</span> <span class="token number">2</span>
+  <span class="token keyword">done</span>
+  rabbitmqctl set_permissions <span class="token parameter variable">-p</span> <span class="token string">&quot;jysp_vhost&quot;</span> jysp <span class="token string">&quot;.*&quot;</span> <span class="token string">&quot;.*&quot;</span> <span class="token string">&quot;.*&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m <span class="token variable">${influxset<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span> 设置失败，请检查！！！ <span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 4、redis安装脚本</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># cd /home/jysp/rpm-install/Redis</span>
+<span class="token comment"># 添加redis用户组</span>
+<span class="token comment"># 添加redis用户:</span>
+<span class="token comment">#    redis 用户名</span>
+<span class="token comment">#    -g redis 用户组</span>
+<span class="token comment">#    -d /var/lib/redis 用户家目录</span>
+<span class="token comment">#    -s nologin 不允许登录</span>
+<span class="token comment"># /etc/redis</span>
+<span class="token comment"># /var/log/redis</span>
+<span class="token comment">#</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">redis-install</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/Redis
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;groupadd redis&quot;</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;useradd -g redis -d /var/lib/redis -s /usr/sbin/nologin redis&quot;</span>
+  <span class="token function">mkdir</span> /etc/redis
+  <span class="token function">mkdir</span> /var/log/redis
+  <span class="token function">chown</span> redis:redis /var/log/redis
+  <span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> redis.tar.gz
+  <span class="token function">mv</span> <span class="token parameter variable">-f</span> bin/* /usr/bin/
+  <span class="token function">cp</span> redis.conf /etc/redis/redis.conf
+  <span class="token function">cp</span> redis-server.service /lib/systemd/system/
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl daemon-reload&quot;</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl start redis-server.service&quot;</span>
+  <span class="token assign-left variable">restatus</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>systemctl status redis-server.service <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;active (running) &quot;</span><span class="token variable">`</span></span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;X<span class="token variable">$restatus</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;X&quot;</span> <span class="token punctuation">]</span>
+  <span class="token keyword">then</span>
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m redis.service 未运行，请排查！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+   <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl enable redis-server.service&quot;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 5、influxdb安装脚本</span>
+<span class="token comment">################################################</span>
+<span class="token comment">#</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">influxdb-install</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/InfluxDB
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;yum localinstall -y --nogpgcheck influxdb-1.8.3.x86_64.rpm&quot;</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl start influxdb&quot;</span>
+  <span class="token assign-left variable">instatus</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span>systemctl status influxdb.service <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;active (running) &quot;</span><span class="token variable">`</span></span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;X<span class="token variable">$instatus</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;X&quot;</span> <span class="token punctuation">]</span>
+  <span class="token keyword">then</span>
+     <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m influxdb.service 未运行，请排查！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+   <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;systemctl enable influxdb.service&quot;</span>
+  <span class="token function">sleep</span> <span class="token number">5</span>
+  influx <span class="token parameter variable">-execute</span> <span class="token string">&quot;create user &quot;</span>root<span class="token string">&quot; with password 'Nari_jysp3.0' with all privileges;&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m <span class="token variable">${influxset<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span> 设置失败，请检查！！！ <span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  influx <span class="token parameter variable">-execute</span> <span class="token string">&quot;create database ycxs1000;&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m <span class="token variable">${influxset<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span> 设置失败，请检查！！！ <span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+  influx <span class="token parameter variable">-execute</span> <span class="token string">&quot;CREATE RETENTION POLICY &quot;</span>rp_rt_his_real<span class="token string">&quot; ON &quot;</span>ycxs1000<span class="token string">&quot; DURATION 370d REPLICATION 1;&quot;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$?</span>&quot;</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m <span class="token variable">${influxset<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span> 设置失败，请检查！！！ <span class="token entity" title="\e">\e</span>[0m&quot;</span>
+  <span class="token builtin class-name">exit</span> <span class="token number">0</span>
+  <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 6、vsftpd安装脚本</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># cd /home/jysp/rpm-install/VSFTPD</span>
+<span class="token comment"># 安装 vsftpd-3.0.2-29.el7_9.x86_64.rpm</span>
+<span class="token comment"># 解压 vsftpd.tar.gz</span>
+<span class="token comment"># 删除 /etc/vsftpd 目录</span>
+<span class="token comment"># 移动 vsftpd 目录到 /etc/</span>
+<span class="token comment"># 创建 /home/jysp/ftps</span>
+<span class="token comment"># 创建 /var/log/vsftpd</span>
+<span class="token comment">#</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">function</span> <span class="token function-name function">vsftpd-install</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+ <span class="token builtin class-name">cd</span> <span class="token variable">$homepwd</span>/rpm-install/VSFTPD
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;yum localinstall -y --nogpgcheck vsftpd-3.0.2-29.el7_9.x86_64.rpm&quot;</span>
+ <span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> vsftpd.tar.gz <span class="token operator">&gt;&gt;</span> /dev/null
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;rm -rf /etc/vsftpd&quot;</span>
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;mv vsftpd /etc/&quot;</span>
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;mkdir /home/jysp/ftps&quot;</span>
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;chown jysp:jysp /home/jysp/ftps&quot;</span>
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;chmod 777 /home/jysp/ftps&quot;</span>
+ <span class="token function">sh</span> <span class="token parameter variable">-xc</span> <span class="token string">&quot;mkdir /var/log/vsftpd&quot;</span>
+ <span class="token assign-left variable">ip</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">ifconfig</span> -a<span class="token operator">|</span><span class="token function">grep</span> inet<span class="token operator">|</span><span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token number">127.0</span>.0.1<span class="token operator">|</span><span class="token function">grep</span> <span class="token parameter variable">-v</span> inet6<span class="token operator">|</span><span class="token function">grep</span> <span class="token parameter variable">-v</span> <span class="token number">192.168</span>.122.1<span class="token operator">|</span><span class="token function">awk</span> <span class="token string">'{print $2}'</span><span class="token operator">|</span><span class="token function">tr</span> <span class="token parameter variable">-d</span> <span class="token string">&quot;addr:&quot;</span><span class="token variable">)</span></span>
+ <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s/\(pasv_address=\).*/\1'</span><span class="token string">&quot;<span class="token variable">$ip</span>&quot;</span>'/g<span class="token string">' /etc/vsftpd/vsftpd.conf
+ sh -xc &quot;systemctl restart vsftpd.service&quot;
+ vsstatus=`systemctl status vsftpd.service | grep &quot;active (running) &quot;`
+ if [ &quot;X$vsstatus&quot; == &quot;X&quot; ]
+ then
+     echo -e &quot;\e[31m vsftpd.service 未运行，请排查！！！\e[0m&quot;
+	 exit 0
+ fi
+ sh -xc &quot;systemctl enable vsftpd.service&quot;
+}
+
+
+################################################
+# 7、nginx安装脚本
+################################################
+# cd /home/jysp/rpm-install/Nginx
+# 安装 nginx-1.14.2-1.el7_4.ngx.x86_64.rpm
+# 解压 ssl文件
+# 移动 ssl文件到 /etc/nginx 目录下
+# 拷贝 nginx.conf 文件到 /etc/nginx 目录下
+#
+#################################################
+function nginx-install(){
+  cd $homepwd/rpm-install/Nginx
+  sh -xc &quot;yum localinstall -y --nogpgcheck nginx-1.14.2-1.el7_4.ngx.x86_64.rpm&quot;
+  tar -zxvf ssl.tar.gz &gt;&gt; /dev/null
+  mv -f ssl /etc/nginx
+  cp -rf nginx.conf /etc/nginx
+  # sh -xc &quot;groupadd www-data&quot;
+  # sh -xc &quot;useradd -d /var/www -s /usr/sbin/nologin -g www-data www-data&quot;
+  sh -xc &quot;systemctl restart nginx.service&quot;
+  ngstatus=`systemctl status nginx.service | grep &quot;active (running) &quot;`
+  if [ &quot;X$ngstatus&quot; == &quot;X&quot; ]
+  then
+     echo -e &quot;\e[31m nginx.service 未运行，请排查！！！\e[0m&quot;
+   exit 0
+  fi
+  sh -xc &quot;systemctl enable nginx.service&quot;
+}
+
+
+
+################################################
+# setTable：
+################################################
+# \e[:颜色开始
+# \e[0m:颜色结束
+# 31m:红色
+#################################################
+function setTable(){
+  # 使用 column 按照“#”进行对齐 column -s &quot;#&quot; -t
+  # 利用awk命令替换掉以 +开头的行，并替换空格为 -
+  echo -e &quot;\e[31m&quot;$1&quot;\e[0m&quot;|column -s &quot;#&quot; -t|awk '</span><span class="token punctuation">{</span>if<span class="token punctuation">(</span><span class="token variable">$0</span> ~ /^+/<span class="token punctuation">)</span><span class="token punctuation">{</span>gsub<span class="token punctuation">(</span><span class="token string">&quot; &quot;</span>,<span class="token string">&quot;-&quot;</span>,<span class="token variable">$0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>print <span class="token variable">$0</span><span class="token punctuation">}</span>else<span class="token punctuation">{</span>print <span class="token variable">$0</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token string">'
+}
+
+function setTableRow(){
+  # 所有参数
+  local value=$*
+  # 获取参数个个数
+  local varCount=$#
+  # 计算表格边缘长度
+  local num=$(( $varCount * 2 + 1 ))
+
+  split=$(seq -s '</span>+<span class="token comment">#' $num | sed 's/[0-9]//g')+</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-z</span> <span class="token variable">$table</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+      <span class="token comment"># 上边框</span>
+      <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token entity" title="\n">\n</span><span class="token variable">${split}</span><span class="token entity" title="\n">\n</span>&quot;</span>
+      <span class="token comment"># 内容框</span>
+      <span class="token builtin class-name">local</span> tableRow
+      <span class="token keyword">for</span> <span class="token for-or-select variable">k</span> <span class="token keyword">in</span> <span class="token string">&quot;<span class="token variable">$@</span>&quot;</span>
+        <span class="token keyword">do</span>
+          <span class="token assign-left variable">tableRow</span><span class="token operator">=</span><span class="token variable">$tableRow</span><span class="token string">&quot;#<span class="token variable">$k</span>#|&quot;</span>
+        <span class="token keyword">done</span>
+      <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${table}</span>|<span class="token variable">$tableRow</span><span class="token entity" title="\n">\n</span>&quot;</span>
+      <span class="token comment"># 下边框</span>
+      <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${table}</span><span class="token variable">${split}</span><span class="token entity" title="\n">\n</span>&quot;</span>
+      <span class="token comment"># 上一个边框记录</span>
+      <span class="token assign-left variable">lastTabCount</span><span class="token operator">=</span><span class="token variable">$varCount</span>
+    <span class="token keyword">else</span>
+      <span class="token comment">#  判断是否需要增加边框</span>
+      <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$varCount</span> <span class="token parameter variable">-gt</span> <span class="token variable">$lastTabCount</span> <span class="token punctuation">]</span>
+        <span class="token keyword">then</span>
+          <span class="token comment"># 增加边框</span>
+          <span class="token builtin class-name">local</span> <span class="token assign-left variable">difCount</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $varCount <span class="token operator">-</span> $lastTabCount <span class="token variable">))</span></span>
+          <span class="token builtin class-name">local</span> <span class="token assign-left variable">difNum</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $difCount <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token variable">))</span></span>
+          <span class="token assign-left variable">difSplit</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">seq</span> <span class="token parameter variable">-s</span> <span class="token string">'+#'</span> $difNum <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">'s/[0-9]//g'</span><span class="token variable">)</span></span>+
+          <span class="token comment"># 删除原有后缀，增加长度</span>
+          <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${table<span class="token operator">%</span>+\\n}</span>&quot;</span>
+          <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${table}</span><span class="token variable">${difSplit}</span><span class="token entity" title="\n">\n</span>&quot;</span>
+      <span class="token keyword">fi</span>
+      <span class="token comment"># 内容框</span>
+      <span class="token builtin class-name">local</span> tableRow
+      <span class="token keyword">for</span> <span class="token for-or-select variable">k</span> <span class="token keyword">in</span> <span class="token string">&quot;<span class="token variable">$@</span>&quot;</span>
+        <span class="token keyword">do</span>
+          <span class="token assign-left variable">tableRow</span><span class="token operator">=</span><span class="token variable">$tableRow</span><span class="token string">&quot;#<span class="token variable">$k</span>#|&quot;</span>
+        <span class="token keyword">done</span>
+      <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${table}</span>|<span class="token variable">$tableRow</span><span class="token entity" title="\n">\n</span>&quot;</span>
+      <span class="token comment"># 下边框</span>
+      <span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable">${table}</span><span class="token variable">${split}</span><span class="token entity" title="\n">\n</span>&quot;</span>
+  <span class="token keyword">fi</span>
+<span class="token punctuation">}</span>
+
+
+
+
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 安装提示：</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># \e[:颜色开始</span>
+<span class="token comment"># \e[0m:颜色结束</span>
+<span class="token comment"># 31m:红色</span>
+<span class="token comment">#################################################</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m#######################开始安装######################<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m    该脚本程序只适用于规定的镜像，       <span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m    如果用于其他，请自行修改适配，       <span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m    且该脚本安装的软件已下载固定，       <span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m    如需修改，请自行修改或手动安装，     <span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m   ISO:CentOS-7-x86_64-DVD-2009.iso      <span class="token entity" title="\e">\e</span>[31m######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m#####################################################<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\n">\n</span>&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m#######################版本说明######################<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 表格方法：生成原理解析</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># 1、生成如下字符序列,作为表格边界</span>
+<span class="token comment"># \n+#+#+#+#+\n 如果是两列就生成4个占位符</span>
+<span class="token comment">#</span>
+<span class="token comment"># 2、字段行，已 &quot;|#内容#|&quot; 的格式来预处理</span>
+<span class="token comment"># \n+#+#+#+#+\n|#软件#|#版本#|\n</span>
+<span class="token comment">#</span>
+<span class="token comment"># 3、使用 column 按照“#”进行对齐 column -s &quot;#&quot; -t</span>
+<span class="token comment"># +  +     +  +     +</span>
+<span class="token comment"># |  软件  |  版本  |</span>
+<span class="token comment">#</span>
+<span class="token comment"># 4、利用awk命令替换掉以 + 开头的行，并替换空格为 -</span>
+<span class="token comment"># awk '{if($0 ~ /^+/){gsub(&quot; &quot;,&quot;-&quot;,$0);print $0}else{print $0}}'</span>
+<span class="token comment"># +--+-----+--+-----+</span>
+<span class="token comment"># |  软件  |  版本  |</span>
+<span class="token comment">#################################################</span>
+
+<span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+setTableRow <span class="token string">&quot;软件&quot;</span> <span class="token string">&quot;版本&quot;</span>
+setTableRow <span class="token string">&quot;MySQL版本&quot;</span> <span class="token string">&quot;MariaDB-10.3.36&quot;</span> <span class="token string">&quot;版本&quot;</span>
+setTableRow <span class="token string">&quot;erlang版本&quot;</span> <span class="token string">&quot;erlang-23.3.4.4&quot;</span>
+setTableRow <span class="token string">&quot;RabbitMQ版本&quot;</span> <span class="token string">&quot;RabbitMQ-3.7.8&quot;</span>
+setTableRow <span class="token string">&quot;Redis版本&quot;</span> <span class="token string">&quot;Redis-5.0.3&quot;</span>
+setTableRow <span class="token string">&quot;InfluxDB版本版本&quot;</span> <span class="token string">&quot;InfluxDB-1.8.3&quot;</span>
+setTableRow <span class="token string">&quot;VSFTPD版本&quot;</span> <span class="token string">&quot;VSFTPD-3.0.2&quot;</span>
+setTableRow <span class="token string">&quot;Nginx版本&quot;</span> <span class="token string">&quot;Nginx-1.14.2&quot;</span>
+setTable <span class="token variable">${table}</span>
+
+<span class="token comment">#echo -e &quot;1：安装全部组件\n2：安装Mariadb\n3: 安装Rabbitmq\n4: 安装redis\n5: 安装influxdb\n6: 安装vsftpd&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m#########################安装选择####################<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token assign-left variable">table</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+setTableRow <span class="token string">&quot;序号&quot;</span> <span class="token string">&quot;说明&quot;</span>
+setTableRow <span class="token string">&quot;1&quot;</span> <span class="token string">&quot;安装全部组件&quot;</span>
+setTableRow <span class="token string">&quot;2&quot;</span> <span class="token string">&quot;安装MariaDB&quot;</span>
+setTableRow <span class="token string">&quot;3&quot;</span> <span class="token string">&quot;安装RabbitMQ&quot;</span>
+setTableRow <span class="token string">&quot;4&quot;</span> <span class="token string">&quot;安装Redis&quot;</span>
+setTableRow <span class="token string">&quot;5&quot;</span> <span class="token string">&quot;安装InfluxDB&quot;</span>
+setTableRow <span class="token string">&quot;6&quot;</span> <span class="token string">&quot;安装VSFTPD&quot;</span>
+setTableRow <span class="token string">&quot;7&quot;</span> <span class="token string">&quot;安装Nginx&quot;</span>
+setTable <span class="token variable">${table}</span>
+
+
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 安装菜单显示：</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># while死循环，选择数字后跳出循环</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">while</span> <span class="token boolean">true</span>
+<span class="token keyword">do</span>
+  <span class="token builtin class-name">read</span> <span class="token parameter variable">-p</span> <span class="token string">&quot;请输入序号[1-7],选择需安装的组件序号:&quot;</span> serv
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;1&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;2&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;3&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;4&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;5&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;6&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;7&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;8&quot;</span> <span class="token punctuation">\</span>
+    <span class="token parameter variable">-o</span> <span class="token string">&quot;<span class="token variable">$serv</span>&quot;</span> <span class="token operator">==</span> <span class="token string">&quot;9&quot;</span> <span class="token punctuation">]</span>
+    <span class="token keyword">then</span>
+        <span class="token builtin class-name">break</span>
+    <span class="token keyword">fi</span>
+  <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m请正确输入序号[1-7]！！！<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+<span class="token keyword">done</span>
+
+<span class="token comment">################################################</span>
+<span class="token comment"># 选项判断：</span>
+<span class="token comment">################################################</span>
+<span class="token comment"># 1、安装全部</span>
+<span class="token comment"># 2、安装MariaDB</span>
+<span class="token comment"># 3、安装Rabbitmq</span>
+<span class="token comment"># 4、安装Redis</span>
+<span class="token comment"># 5、安装influxdb</span>
+<span class="token comment"># 6、安装vsftpd</span>
+<span class="token comment">#################################################</span>
+<span class="token keyword">case</span> <span class="token variable">$serv</span> <span class="token keyword">in</span>
+  <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token comment"># 校验文件类型</span>
+    <span class="token assign-left variable">dir</span><span class="token operator">=</span><span class="token punctuation">(</span>mariadb rabbitmq redis influxdb vsftpd nginx<span class="token punctuation">)</span>
+    <span class="token keyword">for</span><span class="token variable"><span class="token punctuation">((</span>num<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>num<span class="token operator">&lt;</span>${#dir[<span class="token operator">*</span>]}<span class="token punctuation">;</span>num<span class="token operator">++</span><span class="token punctuation">))</span></span>
+    <span class="token keyword">do</span>
+      filepwd-check <span class="token variable">${dir<span class="token punctuation">[</span>num<span class="token punctuation">]</span>}</span>
+    <span class="token keyword">done</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+
+    <span class="token comment"># 安装</span>
+    mysql-install
+    rabbitmq-install
+    redis-install
+    influxdb-install
+    vsftpd-install
+    nginx-install
+
+    <span class="token comment"># 检验服务状态</span>
+    <span class="token assign-left variable">ser</span><span class="token operator">=</span><span class="token punctuation">(</span>mariadb.service rabbitmq-server.service redis-server.service influxdb.service vsftpd.service nginx.service<span class="token punctuation">)</span>
+        <span class="token keyword">for</span><span class="token variable"><span class="token punctuation">((</span>i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>${#ser[<span class="token operator">*</span>]}<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">))</span></span>
+        <span class="token keyword">do</span>
+          check_server <span class="token variable">${ser<span class="token punctuation">[</span>i<span class="token punctuation">]</span>}</span>
+        <span class="token keyword">done</span>
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token number">2</span><span class="token punctuation">)</span>
+    filepwd-check mariadb
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    mysql-install
+    check_server mariadb.service
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token number">3</span><span class="token punctuation">)</span>
+    filepwd-check rabbitmq
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    rabbitmq-install
+    check_server rabbitmq-server.service
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token number">4</span><span class="token punctuation">)</span>
+    <span class="token comment">#  安装前检查</span>
+    filepwd-check redis
+    <span class="token comment"># 提示符</span>
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    <span class="token comment"># 执行安装</span>
+    redis-install
+    <span class="token comment"># 检测是否启动</span>
+    check_server redis-server.service
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token number">5</span><span class="token punctuation">)</span>
+    filepwd-check influxdb
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    influxdb-install
+    check_server influxdb.service
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token number">6</span><span class="token punctuation">)</span>
+    filepwd-check vsftpd
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    vsftpd-install
+    check_server vsftpd.service
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+  <span class="token number">7</span><span class="token punctuation">)</span>
+    filepwd-check nginx
+    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-e</span> <span class="token string">&quot;<span class="token entity" title="\e">\e</span>[31m######==========END==========######<span class="token entity" title="\e">\e</span>[0m&quot;</span>
+    nginx-install
+    check_server nginx.service
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2023年12月27日星期三晚上11点30分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/shell编程/实战脚本简述01.html" class="prev">
+        实战脚本简述
+      </a></span> <span class="next"><a href="/zs-use/linux/shell编程/实战脚本示例02.html">
+        实战脚本示例02
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/201.93a4981d.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>

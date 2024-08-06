@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>plantUML--问题 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/21.32f2cda6.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/10.1fd06a28.js"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/147.84a3f5ba.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/201.93a4981d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/57.30c0bc43.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/89.9635bbaf.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/91.4fadbd0f.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link router-link-active">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link router-link-active">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>插件</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/idea/%E6%8F%92%E4%BB%B6/" aria-current="page" class="sidebar-link">说明</a></li><li><a href="/zs-use/idea/插件/plantUML--问题.html" class="active sidebar-link">plantUML--问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/idea/插件/plantUML--问题.html#使用远程服务" class="sidebar-link">使用远程服务</a></li><li class="sidebar-sub-header"><a href="/zs-use/idea/插件/plantUML--问题.html#使用本地服务" class="sidebar-link">使用本地服务</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="plantuml-问题"><a href="#plantuml-问题" class="header-anchor">#</a> plantUML--问题</h1> <p><img src="/assets/img/image-20240120003105664.15ade026.png" alt="image-20240120003105664"></p> <p><img src="/assets/img/image-20240120005341469.9eaf4f39.png" alt="image-20240120005341469"></p> <h2 id="使用远程服务"><a href="#使用远程服务" class="header-anchor">#</a> 使用远程服务</h2> <h3 id="vscode"><a href="#vscode" class="header-anchor">#</a> vscode</h3> <img src="/assets/img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FpYW5odWFuXw==,size_16,color_FFFFFF,t_70.9784d6d3.png" alt="img" style="zoom:50%;"> <p>修改为</p> <img src="/assets/img/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FpYW5odWFuXw==,size_16,color_FFFFFF,t_70-20240120004023571.4e1c4cac.png" alt="img" style="zoom:50%;"> <h3 id="idea"><a href="#idea" class="header-anchor">#</a> Idea</h3> <p><img src="/assets/img/image-20240120013930476.3658dd23.png" alt="image-20240120013930476"></p> <h2 id="使用本地服务"><a href="#使用本地服务" class="header-anchor">#</a> 使用本地服务</h2> <blockquote><p><strong>安装Graphviz（</strong><a href="https://link.zhihu.com/?target=https%3A//graphviz.gitlab.io/download/" target="_blank" rel="noopener noreferrer">下载地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）</p></blockquote> <h3 id="windows-未亲测"><a href="#windows-未亲测" class="header-anchor">#</a> windows(未亲测)</h3> <p><strong>安装Graphviz（</strong><a href="https://link.zhihu.com/?target=https%3A//graphviz.gitlab.io/download/" target="_blank" rel="noopener noreferrer">下载地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）</p> <p>本文使用的是windows 64位的版本，下载完成之后双击安装（<em><strong>记住安装目录哈，后面需要</strong></em>）；</p> <p>本文安装到D盘下（D:\Program Files\Graphviz）</p> <img src="/assets/img/image-20240120005443012.9378a42b.png" alt="image-20240120005443012" style="zoom:50%;"> <img src="/assets/img/image-20240120011025466.eb9cbf89.png" alt="image-20240120011025466" style="zoom:50%;"> <p><img src="/assets/img/image-20240120005506369.30884c00.png" alt="image-20240120005506369"></p> <p><strong>实战画C4架构图</strong></p> <p><strong>下载C4-Model的lib库到本地，后续画图使用(</strong>*<a href="https://link.zhihu.com/?target=https%3A//github.com/plantuml-stdlib/C4-PlantUML" target="_blank" rel="noopener noreferrer">下载地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>*<strong>)</strong></p> <p>本文下载的是目前最新的版本v2.5.0</p> <p><img src="/assets/img/image-20240120005741170.f330e012.png" alt="image-20240120005741170"></p> <p>下载后解压，本文解压到D:\work\C4\ 目录下，实际上我们只需要根目录中的C4_开头的文件；</p> <p><img src="/assets/img/image-20240120005806270.2d150f47.png" alt="image-20240120005806270"></p> <p><strong>开始画C4架构图</strong></p> <div class="language- extra-class"><pre class="language-text"><code>@startuml
+!RELATIVE_INCLUDE=&quot;D:\work\C4\C4-PlantUML-2.5.0\&quot;
+!include D:\work\C4\C4-PlantUML-2.5.0\C4_Container.puml
+
+Person(admin, &quot;Administrator&quot;)
+System_Boundary(c1, &quot;Sample System&quot;) {
+    Container(web_app, &quot;Web Application&quot;, &quot;C#, ASP.NET Core 2.1 MVC&quot;, &quot;Allows users to compare multiple Twitter timelines&quot;)
+}
+System(twitter, &quot;Twitter&quot;)
+
+Rel(admin, web_app, &quot;Uses&quot;, &quot;HTTPS&quot;)
+Rel(web_app, twitter, &quot;Gets tweets from&quot;, &quot;HTTPS&quot;)
+@enduml
+</code></pre></div><blockquote><p>!RELATIVE_INCLUDE=&quot;D:\work\C4\C4-PlantUML-2.5.0&quot; 这段代码如果不设置，则默认会去<a href="https://link.zhihu.com/?target=https%3A//raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/" target="_blank" rel="noopener noreferrer">https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 访问对应版本的puml文件，如果网速不好会报错，所以还是建议设置成本地的资源；
+!include D:\work\C4\C4-PlantUML-2.5.0\C4_Container.puml 指定容器的资源文件路径</p></blockquote> <p><img src="/assets/img/image-20240120005851589.51896493.png" alt="image-20240120005851589"></p> <p>至于其他的语法说明，可以去C4-PlantUML 的<a href="https://link.zhihu.com/?target=https%3A//github.com/plantuml-stdlib/C4-PlantUML" target="_blank" rel="noopener noreferrer">Github地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>查询；</p> <h3 id="mac-使用本地服务"><a href="#mac-使用本地服务" class="header-anchor">#</a> mac（使用本地服务）</h3> <p>未安装 graphviz</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># macos</span>
+<span class="token comment"># 先下载 Graphviz，然后查看 dot 是否安装成功</span>
+brew <span class="token function">install</span> Graphviz
+dot <span class="token parameter variable">-version</span>
+
+
+<span class="token function">sudo</span> <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /opt/local/bin
+<span class="token function">sudo</span> <span class="token function">cp</span> /opt/homebrew/Cellar/graphviz/2.49.3/bin/dot /opt/local/bin
+</code></pre></div><p>重启 idea</p> <p>graphviz 官网地址： http://www.graphviz.org/download/</p> <h4 id="mac-m1-brew-install-graphviz报错-网络收集"><a href="#mac-m1-brew-install-graphviz报错-网络收集" class="header-anchor">#</a> Mac m1 brew install graphviz报错 (网络收集)</h4> <div class="language- extra-class"><pre class="language-text"><code>doubleq@doubleq ~ % brew install graphviz
+
+Running `brew update --auto-update`...
+Error: Cannot install in Homebrew on ARM processor in Intel default prefix (/usr/local)!
+Please create a new installation in /opt/homebrew using one of the
+&quot;Alternative Installs&quot; from:
+  https://docs.brew.sh/Installation
+You can migrate your previously installed formula list with:
+  brew bundle dump
+
+</code></pre></div><p>根据报错提示，需要将命令行从<a href="https://so.csdn.net/so/search?q=arm%E6%8C%87%E4%BB%A4%E9%9B%86&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">arm指令集<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>切换到x86指令集，因此在命令前加一个<code>arch -x86_64</code>即可正常安装</p> <div class="language- extra-class"><pre class="language-text"><code>arch -x86_64 brew install graphviz
+</code></pre></div><p>如果要在Python中运行<code>utils.plot_model(model)</code>，可能还需要一次重启。</p> <p>参考：https://medium.com/swlh/run-x86-terminal-apps-like-homebrew-on-your-new-m1-mac-73bdc9b0f343</p> <h3 id="动手安装失败过程记录"><a href="#动手安装失败过程记录" class="header-anchor">#</a> 动手安装失败过程记录</h3> <blockquote><p>系统信息</p></blockquote> <p><img src="/assets/img/image-20240120010930898.6cf0663c.png" alt="image-20240120010930898"></p> <blockquote><p>官网安装方式</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>/bin/bash -c &quot;$(curl -fsSL https://raw.GitHubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code># 进入Brew本地仓库，找到.git文件夹，然后打开config文件：
+cd &quot;$(brew --repo)&quot;
+
+# 在config文件中找到[remote &quot;origin&quot;]模块，将url修改为：url = Https://mirrors.aliyun.com/homebrew/brew.git
+vim .git/config
+
+修改后，文件格式如下：
+[core]  repositoryfORMatversion = 0  filemode = true  bare = false  logallrefupdates = true  symlinks = false  ignorecase = true  autocrlf = input[remote &quot;origin&quot;]  url = https://mirrors.aliyun.com/homebrew/brew.git  fetch = +refs/heads/*:refs/remotes/origin/*[branch &quot;master&quot;]  remote = origin  merge = refs/heads/master
+</code></pre></div><p>测试Brew是否工作正常</p> <div class="language- extra-class"><pre class="language-text"><code>brew update
+如果能看到以下输出，则说明Brew已经成功安装并且配置了国内镜像：
+Updated 1 tap (homebrew/core).==&gt; Updated Formulae...
+</code></pre></div><blockquote><p>国内脚本安装方式</p></blockquote> <p>https://blog.csdn.net/W_Fe5/article/details/134428377?spm=1001.2014.3001.5501</p> <div class="language- extra-class"><pre class="language-text"><code>/bin/zsh -c &quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&quot;
+</code></pre></div><p>该地址提供多个国内源地址</p> <p><img src="/assets/img/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAU2lieWxzZg==,size_20,color_FFFFFF,t_70,g_se,x_16.b336f19f.png" alt="img"></p> <blockquote><div class="language- extra-class"><pre class="language-text"><code>Warning: formula.json: update failed, falling back to cached version.
+Error: Cannot download non-corrupt https://formulae.brew.sh/api/formula.json!
+Error: Kernel.exit
+</code></pre></div></blockquote> <blockquote><p>brew install nginx报错Operation too slow. Less than 100 bytes/sec transferred the last 5 seconds</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>export HOMEBREW_NO_INSTALL_FROM_API=1
+</code></pre></div><blockquote><p>curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to raw.githubusercontent.com:443  Error: graphviz: Failed to download resource &quot;libx11.rb&quot;</p></blockquote> <p><img src="/assets/img/image-20240120011917242.931e5799.png" alt="image-20240120011917242"></p> <p>上科技</p> <p><img src="/assets/img/image-20240120011819789.1755216b.png" alt="image-20240120011819789"></p> <blockquote><p>Error: A newer Command Line Tools release is available.</p> <p>Update them from Software Update in System Preferences.</p></blockquote> <p><img src="/assets/img/image-20240120011954577.84883c3d.png" alt="image-20240120011954577"></p> <div class="language- extra-class"><pre class="language-text"><code>miyufeng@MacBook-Pro ~ % llvm-gcc --version
+Apple clang version 12.0.5 (clang-1205.0.22.11)
+Target: x86_64-apple-darwin20.3.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+miyufeng@MacBook-Pro ~ % 
+</code></pre></div><p>https://developer.apple.com/download/all/</p> <p><img src="/assets/img/image-20240120011636133.98f7b92f.png" alt="image-20240120011636133"></p> <p><img src="/assets/img/image-20240120011714993.e5621562.png" alt="image-20240120011714993"></p> <p>访问 : https://developer.apple.com/download/more/</p> <p>去下载最新的<code>Command Line Tools for Xcode 12.5 beta</code>入下图</p> <blockquote><p>完成报文</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code>miyufeng@MacBook-Pro ~ % brew <span class="token function">install</span> graphviz
+Warning: You are using macOS <span class="token number">11</span>.
+We <span class="token punctuation">(</span>and Apple<span class="token punctuation">)</span> <span class="token keyword">do</span> not provide support <span class="token keyword">for</span> this old version.
+It is expected behaviour that some formulae will fail to build <span class="token keyword">in</span> this old version.
+It is expected behaviour that Homebrew will be buggy and slow.
+Do not create any issues about this on Homebrew<span class="token string">'s GitHub repositories.
+Do not create any issues even if you think this message is unrelated.
+Any opened issues will be immediately closed without response.
+Do not ask for help from Homebrew or its maintainers on social media.
+You may ask for help in Homebrew'</span>s discussions but are unlikely to receive a response.
+Try to figure out the problem yourself and submit a fix as a pull request.
+We will review it but may or may not accept it.
+
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> graphviz: doxygen, python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests, python-tabulate, sphinx-doc, jpeg-xl, ninja, meson, libsodium, lua, ncurses, berkeley-db@5, gdbm, perl, autoconf, libssh2, libgit2, z3, llvm, rust, ruby, vim, libvmaf, yasm, aom, libavif, gd, glib, jasper, netpbm, gts, xorgproto, libxau, libxdmcp, xcb-proto, libxcb, util-macros, xtrans, libx11, libxext, libxrender, lzo, pixman, cairo, gdk-pixbuf, fribidi, graphite2, gobject-introspection, harfbuzz, pango and librsvg
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching doxygen
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/24a15b0996cf9739b75d02b460418caeffff0781bed5863865de9aefb11fb77d--doxygen.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://doxygen.nl/files/doxygen-1.10.0.src.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/57ac36faf2c88ea162775e6223fd62edc274d310dbbbf486fb730b16b3d0ea1a--doxygen-1.10.0.src.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/749bbc537869aeb8582a7d6433d6f40e85b411f62593aaf7e0ae1032ae16b648--python@3.11.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/6d2fb
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/2322057182c6bb73dfe09e098010168a5a9d0712a89cee86d2c5ddb11052137e--3.11-sysconfig.diff
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/a1618
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/5fea40db1cb33001d6ab42c76fc28693ce292532c6ed6f89dd3154dac29167bb--3.10-distutils-scheme.diff
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c4/e6/c1ac50fe3eebb38
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/839df6b8e58f6ef46c0ebc33871e2b489d13182f2bf3bc2b56d90105181d04b9--flit_core-3.9.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1f/7f/4da15e07ccd11c8
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/a1ddf9e52c9a8fe75212d70a357f96cf367e70e22377cc9dfcaa20a96cc9c0e0--pip-23.3.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4b/d9/d0cf66484b7e28a
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/7a906866f4634a5422362200ce21b315c747b23f769ab867eee3560f0fb5b29b--setuptools-69.0.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b0/b4/bc2baae3970c282
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/dc136e605b75d715777b384e9d3de56ba92e05f28a38d3781ca332969e5e72b8--wheel-0.42.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://www.python.org/ftp/python/3.11.7/Python-3.11.7.tgz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/5ba08911f318adee9027b1d563857d05ec6f1a19fcf960884db72e42e52cd1a8--Python-3.11.7.tgz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> docutils: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching docutils
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/5838df242d76d886fab71bc8592b2e7d36ee75cc4a8476e53bc575f402d5748b--docutils.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://downloads.sourceforge.net/project/docutils/docutils/0.20
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/843f96fc0be572750995ce1ef90118c1956086c462a39e2f211f124301e3a3a1--docutils-0.20.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-flit-core: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-flit-core
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/515babbda4501c91d7799a7c76cd7f1b3e83125d75f9cbe21c48814bc4524bf9--python-flit-core.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c4/e6/c1ac50fe3eebb38
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/839df6b8e58f6ef46c0ebc33871e2b489d13182f2bf3bc2b56d90105181d04b9--flit_core-3.9.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-packaging: python@3.11 and python-flit-core
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-packaging
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/e3ec422cabfe647405377c98c49c6afa430d7de271342ab55e289f2c27634f50--python-packaging.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fb/2b/9b9c33ffed44ee9
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/9d7d2aa4ba81f8928729aade5f00d3f4b0f28b47e86172b82572f01e0f3d6f34--packaging-23.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-pathspec: python@3.11 and python-flit-core
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-pathspec
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/e54b9ac26066f8ad3b7b285bab114d5470e7a927fe4615cc8a4c88cc24b26de4--python-pathspec.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ca/bc/f35b8446f4531a7
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ccfc7d92462262825087899a1226cad29ba695c7c57210887120ee59b7a349b3--pathspec-0.12.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-typing-extensions: python@3.11 and python-flit-core
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-typing-extensions
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/04297613aec4b54edc16b6dd52eb738c6d33b69c646d3be552503793cabe9979--python-typing-extensions.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/0c/1d/eb26f5e75100d53
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/246e971161d08a556e1042cb36552401fb368ee0ccd4464487eb21cdb2d16d31--typing_extensions-4.9.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-setuptools-scm: python@3.11, python-flit-core, python-packaging and python-typing-extensions
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-setuptools-scm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/f4607b85a0ee0ad65ff81f60889c7e6ef23a8a7e492bfefa43994a3be063a9d7--python-setuptools-scm.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/eb/b1/0248705f10f6de5
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/cdca6eaa7fdada79a66e000c3dc1adebddd96b6b16d55b16b97792de26a778c3--setuptools-scm-8.0.4.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-pluggy: python@3.11, python-flit-core, python-packaging, python-typing-extensions and python-setuptools-scm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-pluggy
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/e96e1f546a229c311d24d27c037b8848dc6bc953eecb3fdfa3c959139459d14b--python-pluggy.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/36/51/04defc761583568
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/26d2ffe2e1bb5f900de09aea227b29cbc7025b768c829f6bde8b2236cba00491--pluggy-1.3.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-trove-classifiers: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-trove-classifiers
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/e69d19f498e42c3c5df4c792ea23f78ac4fd4fd1e22c51d44aaf5881e1b8e7d5--python-trove-classifiers.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/44/e4/9de7cda4a03a996
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/6d252c9a90b8d6a905a14ef0006fa13d62fb564ca4f9f470d83c578b9d0a6cd4--trove-classifiers-2024.1.8.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-hatchling: python@3.11, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy and python-trove-classifiers
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-hatchling
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/a5fa394260767700ab5ba62a4148eb2f140bf91bded5ecfa3d397c7c9512c4b4--python-hatchling.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/37/4a/986d35164e2033d
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/f95a1ff11b6fa51db04a297e5c4c16a78dc595b0f52557ef277ffbddcab949a1--editables-0.5.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fb/2b/9b9c33ffed44ee9
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/9d7d2aa4ba81f8928729aade5f00d3f4b0f28b47e86172b82572f01e0f3d6f34--packaging-23.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ca/bc/f35b8446f4531a7
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ccfc7d92462262825087899a1226cad29ba695c7c57210887120ee59b7a349b3--pathspec-0.12.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/36/51/04defc761583568
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/26d2ffe2e1bb5f900de09aea227b29cbc7025b768c829f6bde8b2236cba00491--pluggy-1.3.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3d/14/fe9a127564317f1
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/09f380e4051b1fd55b49af38d8a8bc2374fe2377baae26be79f9e1c6a84bca8c--trove-classifiers-2023.11.29.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fd/4a/8196e79c0d6e5eb
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/063e900f664aa897b2ab83437d720f6eb849f37bff3e9411cdddcedf21cad896--hatchling-1.21.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> pygments: python@3.11, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers and python-hatchling
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching pygments
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/c1ac9fec393b1be558b4217a5a685c6df25842d4df736a27ffc497a0afe079d0--pygments.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/55/59/8bccf4157baf25e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/c2dfc0b992035dbafaa9c5c52670f31475c2835f3958dfa05ac840d3d89e5a23--pygments-2.17.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-markupsafe: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-markupsafe
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/da5afe994016b2151b5d87c5d7d67f10345ec2d52f4e44fe5f054591ff8c8bf8--python-markupsafe.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6d/7c/59a3248f411813f
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/63977516113ec5e29e0456a66712484bf0279ff145f659359014f40dc4a65ba6--MarkupSafe-2.1.3.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-jinja: python@3.11 and python-markupsafe
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-jinja
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d5cc9863d7ec96f40896f0a5d064b26015eacfa0144e494eab4ed7c220bbaaf4--python-jinja.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b2/5e/3a21abf3cd467d7
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/f6928bc6de9db31bbd7e7476c28575b6f9310eb39697143a66f1cf55f73a0bb1--Jinja2-3.1.3.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-certifi: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-certifi
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/62b7db7e610706b3e170e04dcfd2f1b107c8e4b39b0becfbbfbaa0ff63f32df2--python-certifi.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d4/91/c89518dd4fe1f3a
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/0686d4b1fa39220facdc3da0febf2189f1337d61214f50327804889d640ac6ff--certifi-2023.11.17.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-charset-normalizer: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-charset-normalizer
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/25a53b160de51d08ae0674a33ff5940e81e7bea29a773052689a02aedbc70628--python-charset-normalizer.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/63/09/c1bc53dab74b181
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/bde996f836d603fb77954c69ab6e0b3d39183de35b2c9491a337baf635c5f1db--charset-normalizer-3.3.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-idna: python@3.11 and python-flit-core
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-idna
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/8a016830e41c5fcb637b3d5c45c7f6e199077de748a581c3a06d6c27b3204afb--python-idna.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bf/3f/ea4b9117521a1e9
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/112295d7309613d28fc84aa0ca9373703c370af24af05a97d415563adf995217--idna-3.6.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-urllib3: python@3.11, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers and python-hatchling
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-urllib3
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/b71114540814b2c5b44bbd67f372af0f5b4ec4622284fd73eaa47b78c5deac3c--python-urllib3.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/36/dd/a6b232f449e1bc7
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/67e6683a2dd2c824fe30a37cb5ced783a39febfb6e6d2785abfb319e4ce1b046--urllib3-2.1.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-requests: python@3.11, python-certifi, python-charset-normalizer, python-flit-core, python-idna, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling and python-urllib3
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-requests
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/e773d6cb65116e4c6c0885bee4d1ba133ac259e097799d275eea98a690f80eca--python-requests.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/9d/be/10918a2eac4ae9f
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/91b12b2653c78816995714b52781ee70e3584d7a04a3f7c5ea1b86b74b6f9e9c--requests-2.31.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> python-tabulate: python@3.11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching python-tabulate
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/283ced8f23d55bf5470082b0fd7a13a10e78bbf913352aec49025d7878a907ee--python-tabulate.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ec/fe/802052aecb21e37
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/b1ab9113dce9c40ea02b9ff339fd8f2f67e32df66b14cfdfa3b2b1eaf6147cac--tabulate-0.9.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> sphinx-doc: python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests and python-tabulate
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching sphinx-doc
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/248270088b2cbbdddf287aa5b63258374fc8ac792f6e6aec0eaec1e3314d10e2--sphinx-doc.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/94/71/a8ee96d1fd95ca0
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d5174e56260d7dce513f00e8bd508574e4bbab6ad0adf2744ff4791c8187fe6a--alabaster-0.7.13.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e2/80/cfbe44a9085d112
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/0a39f3e36f63aa2b4d8fa7590fbe0840e2322db0166dd4a0998c42741a7a7cbe--Babel-2.14.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a7/84/62473fb57d61e31
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/45ad40518ccfc5536d2d0c62642fc6984f2d6d914ea1f04cf38b2846d55d3e2b--imagesize-1.4.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5f/ed/5ca4b2e90f4b078
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/170e957314451a4f92611e46f2129e96b70a421cad687ded4b7b9192b9619fb2--numpydoc-1.6.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/44/7b/af302bebf22c749
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/8dfcc491cbe0fbd3ef52a9645b55c6522e2e89c22d997618ab51f80cabf55b5a--snowballstemmer-2.2.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1c/5a/fce19be5d4db26e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/a17bd81c7823c88504857d5a5980dbef198687e19250fa93dda6c3ce667305ee--sphinxcontrib_applehelp-1.0.7.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2e/f2/6425b6db37e7c22
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d4a03591ff6e36aedeb6e5f1766c44201494b68ea31da45a2afc2fc212d8b186--sphinxcontrib_devhelp-1.0.5.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fd/2d/abf5cd4cc1d5cd9
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/0bbb928358abb44a2b5ed9af507989ee7a107f558cf1d6eff4640659c7923e42--sphinxcontrib_htmlhelp-2.0.4.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b2/e8/9ed3830aeed71f1
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/72efa0fd978bb73454f7f93e31cf3d32cc3e3d3908f006a026f0391681f5d71a--sphinxcontrib-jsmath-1.0.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4f/a2/53129fc967ac840
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/bfebd3f69ef7c02da216101563c0373c099aabde971a1c574b6988d5eb5ef3b4--sphinxcontrib_qthelp-1.0.6.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5c/41/df4cd017e8234de
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/bd039cb8418d8f1052e9b4fb6366a8b058ea9fdfc0079ed44c07ef3b926fc431--sphinxcontrib_serializinghtml-1.1.9.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://pypi.tuna.tsinghua.edu.cn/packages/73/8e/6e51da4b26665b4
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/78e7ddaaa58862f6ce89aaf1bf7747746084a4710de4285572f7ae27f1960a01--sphinx-7.2.6.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> jpeg-xl: doxygen, python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests, python-tabulate and sphinx-doc
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching jpeg-xl
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/5b8fc61b227640c39af64aa1bbc14f79bd82db70797040eab5b4f85c40b5e3e3--jpeg-xl.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Cloning https://github.com/webmproject/sjpeg.git
+Updating /Users/miyufeng/Library/Caches/Homebrew/jpeg-xl--sjpeg--git
+origin/HEAD <span class="token builtin class-name">set</span> to master
+refs/remotes/origin/master
+<span class="token operator">==</span><span class="token operator">&gt;</span> Checking out revision e5ab13008bb214deb66d5f3e17ca2f8dbff150bf
+HEAD is now at e5ab130 Merge pull request <span class="token comment">#119 from szabadka/master</span>
+HEAD is now at e5ab130 Merge pull request <span class="token comment">#119 from szabadka/master</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/libjxl/libjxl/archive/refs/tags/v0.9.1.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/10dae9c34f85af44df3590bbf57cc7304cafc4472671544a7710391811c70b47--libjxl-0.9.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching ninja
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/ninja-1.11.1.big_su
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/bf460e1a8a94ae5f6272a53203db06ccc1d95654530def5e175b6c8135481f5b--ninja-1.11.1.big_sur.bottle.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching meson
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/meson-1.3.1.all.bot
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/28d09db99626491092dc294a01938da34c1322e2805772486c7ed1f69b60314d--meson-1.3.1.all.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libsodium
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ce7541331d0147933cbc2bf95be1b418d5863ac06207a50ca757ecca2a4f99ca--libsodium.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://download.libsodium.org/libsodium/releases/libsodium-1.0.
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/33d4c319ba604c918c50d1455bbfe3b80c34ad88a20101bc535a10174afa1335--libsodium-1.0.19.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching lua
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/lua-5.4.6.big_sur.b
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/565145b52b3fc9e9044ed376b3581d3fd6557a419b46eeb9f5f153a9307a1555--lua-5.4.6.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching ncurses
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/ncurses-6.4.big_sur
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/80cee1de08b663d52e8d7135461a7fe876ccae02d49bd5cd6463423b96d365f0--ncurses-6.4.big_sur.bottle.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching berkeley-db@5
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/berkeley-db%405-5.3
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/a6410d31395d6eb0ec66fc677b250bc7e836b409d4b52dcda8474048b8679b48--berkeley-db@5-5.3.28_1.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching gdbm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/gdbm-1.23.big_sur.b
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/92e90fcf0e255b2d100adc9d4e1fd6bf93f149f28612fa8740b1dc1adfe1348b--gdbm-1.23.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching perl
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/297b052a35daae8389abe6d963e59f184352d5be18730ffbe9e611f749979216--perl.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://www.cpan.org/src/5.0/perl-5.38.2.tar.xz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/59059b1694745f54d6176394f8b422739d4e28ab01f02ad4a13ffa341ddd1561--perl-5.38.2.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching autoconf
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/c15c478b38a8272a0c56de168dc726be498dca4aadb986a2222420f3122668f9--autoconf.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.72.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/9a3697ed87a3692851abdc3ff90de3998d70e7ffafb4781984a7f200a19e1c43--autoconf-2.72.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libssh2
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/libssh2-1.11.0_1.bi
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d47eb51f958b7eec1519aa45d30c3c435a8629eef14ed66ca775fa26aa039e13--libssh2-1.11.0_1.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libgit2
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/libgit2-1.7.1.big_s
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/866336d55c0344766260a0df7f95fb033862a34ba06acf7159cdd4330ad401fe--libgit2-1.7.1.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching z3
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/f90d084840cd09c221e7d7305b75de57639cecc54b23a10b1b2f5d1fb3684460--z3.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/Z3Prover/z3/archive/refs/tags/z3-4.12.4.tar.g
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/7f4986a6b7c027372ebdf1affa351d5c892a1269886b858b162355da41b895a7--z3-z3-4.12.4.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> llvm: z3
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching llvm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/63a1bf028c74445d0a6bb583bab11af9f0e34a0c9950eb60b6b2224f00e21edf--llvm.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/23704
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/0a6947e1d87105ba00f3500f3e8cc81f2085adb907cfce8feac4478022cb266e--17.x-arm64-opt.patch
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/llvm/llvm-project/releases/download/llvmorg-1
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/0f45ee25df06c0fb1fa6d0d6df4677a9487c4b95f1020855dc61f95b532eb9c0--llvm-project-17.0.6.src.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> rust: z3 and llvm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching rust
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/dd9f877ce50ff6035b2c8b00e10d10ca97ef7951aed627cc2d9d8c6417af2d41--rust.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/rust-lang/cargo/archive/refs/tags/0.76.0.tar.
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/221fe93aa7e66ce065b653bc2868c69f06668026e8fad37f6150a9a9a62e814d--cargo-0.76.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://static.rust-lang.org/dist/2023-11-16/cargo-1.74.0-x86_64
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/a7bee9fc293b287688b09749e67f22f06704b2a439b44cc21cb4cd21e01db4cf--cargo-1.74.0-x86_64-apple-darwin.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://static.rust-lang.org/dist/rustc-1.75.0-src.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/7a2b7d1cd22034c707fba211e1a52300b51442e89be4e03d89e304fe2a8d913b--rustc-1.75.0-src.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> ruby: autoconf, z3, llvm and rust
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching ruby
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/47a540118df1beef83165a3c03a85ed9a997521e26a65dad9a19653888c81e39--ruby.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://rubygems.org/rubygems/rubygems-3.5.4.tgz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d32bb5b9ca64539e005ebc2f78ac9a5f1231fa063f2625c15c99babeca1e6d81--rubygems-3.5.4.tgz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.0.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/de83c59d4a835d69648b2cfd4a4db97bd16590236d6967dfd5beedc048ab1855--ruby-3.3.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> vim: libsodium, perl, autoconf, z3, llvm, rust and ruby
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching <span class="token function">vim</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/98a63f4f602ddac6b7fb4c483d601ed248dc05066231b9618474da182f44c226--vim.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/vim/vim/archive/refs/tags/v9.1.0.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/6a99a1c6e7e916e038eca15f8d78c7bc778c2a62651bbaa796052bbe296fb2ef--vim-9.1.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> libvmaf: libsodium, perl, autoconf, z3, llvm, rust, ruby and <span class="token function">vim</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libvmaf
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d552a14219d822aabae9022e6c0f81f0d98bf37ff970267246ee692660f62d5d--libvmaf.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/Netflix/vmaf/archive/refs/tags/v3.0.0.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/09a182a91f4cd9a0611fecb9449a5aea6875429b64bf39b3f327b24eb95dbc43--vmaf-3.0.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching yasm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/yasm-1.3.0_2.big_su
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/0b73f4a8a5e206f5e67986f07258c36574dfe41897e05cf302cfca787a89daea--yasm-1.3.0_2.big_sur.bottle.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> aom: doxygen, python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests, python-tabulate, sphinx-doc, jpeg-xl, libsodium, perl, autoconf, z3, llvm, rust, ruby, <span class="token function">vim</span> and libvmaf
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching aom
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/03e2f19bc6749fd3a326ca3f610e4720ac462ebb49f70381d980290e8092e943--aom.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://media.xiph.org/video/derf/y4m/bus_qcif_15fps.y4m
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ced756f9d1f53c598f4f2b5c3676f9a313d4102ac938a50a36d66ea7343e22bd--bus_qcif_15fps.y4m
+<span class="token operator">==</span><span class="token operator">&gt;</span> Cloning https://aomedia.googlesource.com/aom.git
+Updating /Users/miyufeng/Library/Caches/Homebrew/aom--git
+<span class="token operator">==</span><span class="token operator">&gt;</span> Checking out tag v3.8.0
+HEAD is now at b681eac839 Update CHANGELOG <span class="token keyword">for</span> libaom <span class="token number">3.8</span>.0
+HEAD is now at b681eac839 Update CHANGELOG <span class="token keyword">for</span> libaom <span class="token number">3.8</span>.0
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> libavif: doxygen, python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests, python-tabulate, sphinx-doc, jpeg-xl, libsodium, perl, autoconf, z3, llvm, rust, ruby, vim, libvmaf and aom
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libavif
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/2b214b110649237cdb0d10e7419f9550a8a1161edf613af89ebbe4b6d7a153c6--libavif.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.0.3
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ee0da4e1ed76f4741f5708eb4ceaf1215ecbaad0c9f28d579214c12ad038f615--libavif-1.0.3.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> gd: doxygen, python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests, python-tabulate, sphinx-doc, jpeg-xl, libsodium, perl, autoconf, z3, llvm, rust, ruby, vim, libvmaf, aom and libavif
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching gd
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/gd-2.3.3_6.big_sur.
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/bbdbdc0e0048bdc4d62c2e4b27439bbdd1501df4155bef3f7b22e82fe53ca909--gd-2.3.3_6.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching glib
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/941a9853cf978779b9dae1fb57f82af7072a55e9bbd62754dea0799faa534795--glib.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/43467
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/3cff797fba2e962ee6871405f3f9c105575e25520c4eeadd25ebfe6c746d3f15--hardcoded-paths.diff
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://download.gnome.org/sources/glib/2.78/glib-2.78.3.tar.xz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ff9a80b70b4e57c34b202cb0be4137c02317d088159cc34ec191b896257fc0f9--glib-2.78.3.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching jasper
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/05293ec2b26359b1fc78576a818b9ee3ce1dd8ecba48c427f58709d8130c8fb8--jasper.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/jasper-software/jasper/releases/download/vers
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/709737b58ef1701f953ecad64371e615ed00bb73140273e6f357bddf775b4da4--jasper-4.1.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> netpbm: jasper
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching netpbm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/87112ce208fafa992acd6d4b58588e6c2a9a9b1aafff30eaa3a672b8f20ec70c--netpbm.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Cloning https://svn.code.sf.net/p/netpbm/code/stable
+Updating /Users/miyufeng/Library/Caches/Homebrew/netpbm--svn
+<span class="token operator">==</span><span class="token operator">&gt;</span> Checking out <span class="token number">4822</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> gts: glib, jasper and netpbm
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching gts
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/gts-0.7.6_3.big_sur
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/069bc1a78e33d5a64ef8e69d65f10008691c220fb49462c971a92fff61429974--gts-0.7.6_3.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching xorgproto
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/xorgproto-2023.2.bi
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/8d231a0c17dcc9c3f1416bd3da23691eb7374eb7025716ab1045e5eeea002e21--xorgproto-2023.2.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libxau
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/libxau-1.0.11.big_s
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/3603bb9d6f77bdf3db3c14775d1a819072853709fe8b7186ae1036cdb9d3d92f--libxau-1.0.11.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libxdmcp
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/libxdmcp-1.1.4.big_
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/07c305a44c209d75535db78c5aca5ad89e02acda221d1712b156775868af8b30--libxdmcp-1.1.4.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching xcb-proto
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/xcb-proto-1.16.0.al
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/dd3af3c1189f5bfbcd69348b41572dc38459d3203980e2757765f83376643288--xcb-proto-1.16.0.all.bottle.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libxcb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/c1cbe724372835fcf610344e945e4be02e192c7827925778e19821e263bae80f--libxcb.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://xorg.freedesktop.org/archive/individual/lib/libxcb-1.16.
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/727dddf4e04c0611cdfea968cc375691595942339e442e8716fa3bd9549049c1--libxcb-1.16.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching util-macros
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/util-macros-1.20.0.
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/8bdf39b202c70f5bd4384b4a2857a073c8f85cbb534511ea8e34c8e5e88efc34--util-macros-1.20.0.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching xtrans
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/xtrans-1.5.0.all.bo
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/08847d758532c6a4f7989d3853ed1f8b160a67e9637c943219884202c159ff37--xtrans-1.5.0.all.bottle.2.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> libx11: libxcb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libx11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/be6bf6628bc9e880010c47822b2f9fa3c21dd65956c7c9d17dff4dfab5937f71--libx11.rb
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://www.x.org/archive/individual/lib/libX11-1.8.7.tar.gz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/dfd7993a89ca0991b36ac91ae831015fd92550c0ca94053fa896cdaa49b23f7b--libX11-1.8.7.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> libxext: libxcb and libx11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libxext
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/libxext-1.3.5.big_s
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/40d572fa5c3ece24aababef40bfd549a4c47f5f6eec3a1a110f140fbaae6170e--libxext-1.3.5.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> libxrender: libxcb and libx11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching libxrender
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/libxrender-0.9.11.b
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/4288765f0e5fe6b5c86fda40a442487c96aa22048777a4e2088052ef20937d3a--libxrender-0.9.11.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching lzo
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/lzo-2.10.big_sur.bo
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/fc1c2830d8139db5277e1a943a416b0840eaa08937b7aaf2d473f1d0310baa08--lzo-2.10.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching pixman
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/pixman-0.42.2.big_s
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/d5f3921c230d120e9654f2c9ed7df4413e0697b7ae4162a7f0f0715e475f364e--pixman-0.42.2.big_sur.bottle.1.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> cairo: glib, libxcb and libx11
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching cairo
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+<span class="token comment">######################################################################### 100.0%</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://cairographics.org/releases/cairo-1.18.0.tar.xz
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/64a9224202ec01f036561637599fe1749f87c4619b747d0143d97299cd458996--cairo-1.18.0.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> gdk-pixbuf: glib
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching gdk-pixbuf
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/gdk-pixbuf-2.42.10_
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/241eda424ca9a6f01faed99dba7018e33366eaa5feeba2cae4f199d8cf1b082f--gdk-pixbuf-2.42.10_1.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching fribidi
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/fribidi-1.0.13.big_
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/ac137160a3e76c1cc4f0f0bcb78d8794a02e83f59494c6696c4bda84e3299476--fribidi-1.0.13.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching graphite2
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/graphite2-1.3.14.bi
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/fb48f8f10501d642a8be70f6273fc86f268f77ca5d6153b6a0fb4f95b21d44f3--graphite2-1.3.14.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> gobject-introspection: glib, libxcb, libx11 and cairo
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching gobject-introspection
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+<span class="token comment">######################################################################### 100.0%</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://gitlab.gnome.org/tschoonj/gobject-introspection/-/commit
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/8b05b2a9de1da2191fe40b8fb80652d77efaa426382912d3d850e303bcf08d38--a7be304478b25271166cd92d110f251a8742d16b.diff
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://download.gnome.org/sources/gobject-introspection/1.78/go
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/c9bae6da8be051e9f93b8287293bed755097d06184a1b68c8f0b74c8eebc3241--gobject-introspection-1.78.1.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> harfbuzz: glib, libxcb, libx11, cairo and gobject-introspection
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching harfbuzz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+<span class="token comment">######################################################################### 100.0%</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/harfbuzz/harfbuzz/raw/fc0daafab0336b847ac1468
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/b0f20064588dc70dd5c74e36b842326d9dbbeacab35c63c3d900a8b34aaba98f--270b89df543a7e48e206a2d830c0e10e5265c630.ttf
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://github.com/harfbuzz/harfbuzz/archive/refs/tags/8.3.0.tar
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/1096cc02bd4f36f3a14498ff83285d3a72972d5239abc239bf5541f7dcc98aef--harfbuzz-8.3.0.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> pango: glib, libxcb, libx11, cairo, gobject-introspection and harfbuzz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching pango
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/pango-1.50.14.big_s
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/244f3ce4bb97e5a296f4029f14b7de16db19177ef681726bf4b44469538daa62--pango-1.50.14.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching dependencies <span class="token keyword">for</span> librsvg: glib, libxcb, libx11, cairo, gobject-introspection, harfbuzz, z3, llvm and rust
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching librsvg
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://raw.githubusercontent.com/Homebrew/homebrew-core/3f6970e
+<span class="token comment">######################################################################### 100.0%</span>
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://download.gnome.org/sources/librsvg/2.57/librsvg-2.57.1.t
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/460d64882a6a360b24bb8bc1e7861490ab46be3f77bdf020555114c137d29dcb--librsvg-2.57.1.tar.xz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Fetching graphviz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/graphviz-9.0.0.big_
+Already downloaded: /Users/miyufeng/Library/Caches/Homebrew/downloads/391f47e6ff149bb1c412a681479432da871247c342be1260f399bc47a574c2ef--graphviz-9.0.0.big_sur.bottle.tar.gz
+<span class="token operator">==</span><span class="token operator">&gt;</span> Installing dependencies <span class="token keyword">for</span> graphviz: doxygen, python@3.11, docutils, python-flit-core, python-packaging, python-pathspec, python-typing-extensions, python-setuptools-scm, python-pluggy, python-trove-classifiers, python-hatchling, pygments, python-markupsafe, python-jinja, python-certifi, python-charset-normalizer, python-idna, python-urllib3, python-requests, python-tabulate, sphinx-doc, jpeg-xl, ninja, meson, libsodium, lua, ncurses, berkeley-db@5, gdbm, perl, autoconf, libssh2, libgit2, z3, llvm, rust, ruby, vim, libvmaf, yasm, aom, libavif, gd, glib, jasper, netpbm, gts, xorgproto, libxau, libxdmcp, xcb-proto, libxcb, util-macros, xtrans, libx11, libxext, libxrender, lzo, pixman, cairo, gdk-pixbuf, fribidi, graphite2, gobject-introspection, harfbuzz, pango and librsvg
+<span class="token operator">==</span><span class="token operator">&gt;</span> Installing graphviz dependency: doxygen
+Warning: A newer Command Line Tools release is available.
+Update them from Software Update <span class="token keyword">in</span> System Preferences.
+
+If that doesn<span class="token string">'t show you any updates, run:
+  sudo rm -rf /Library/Developer/CommandLineTools
+  sudo xcode-select --install
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools for Xcode 13.2.1.
+
+==&gt; Downloading https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api/formul
+-=O=-                                                                       ###
+curl: (6) Could not resolve host: mirrors.tuna.tsinghua.edu.cn
+==&gt; Downloading https://formulae.brew.sh/api/formula.jws.json
+######################################################################### 100.0%
+==&gt; cmake -S . -B build -DPYTHON_EXECUTABLE=/usr/bin/python3
+Last 15 lines from /Users/miyufeng/Library/Logs/Homebrew/doxygen/01.cmake:
+-- Found Threads: TRUE  
+-- Looking for iconv_open
+-- Looking for iconv_open - not found
+-- Performing Test ICONV_COMPILES
+-- Performing Test ICONV_COMPILES - Success
+-- Found Iconv: /Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk/usr/lib/libiconv.tbd  
+-- One (and only one) of the ICONV_ACCEPTS_... tests must pass
+-- Performing Test ICONV_ACCEPTS_NONCONST_INPUT
+-- Performing Test ICONV_ACCEPTS_NONCONST_INPUT - Success
+-- Performing Test ICONV_ACCEPTS_CONST_INPUT
+-- Performing Test ICONV_ACCEPTS_CONST_INPUT - Failed
+-- Build spdlog: 1.11.0
+-- Build type: Release
+-- The javacc executable not found, using existing files
+-- Configuring incomplete, errors occurred!
+
+Do not report this issue to Homebrew/brew or Homebrew/homebrew-core!
+
+
+Error: You are using macOS 11.
+We (and Apple) do not provide support for this old version.
+It is expected behaviour that some formulae will fail to build in this old version.
+It is expected behaviour that Homebrew will be buggy and slow.
+Do not create any issues about this on Homebrew'</span>s GitHub repositories.
+Do not create any issues even <span class="token keyword">if</span> you think this message is unrelated.
+Any opened issues will be immediately closed without response.
+Do not ask <span class="token keyword">for</span> <span class="token builtin class-name">help</span> from Homebrew or its maintainers on social media.
+You may ask <span class="token keyword">for</span> <span class="token for-or-select variable">help</span> <span class="token keyword">in</span> Homebrew<span class="token string">'s discussions but are unlikely to receive a response.
+Try to figure out the problem yourself and submit a fix as a pull request.
+We will review it but may or may not accept it.
+
+
+Error: A newer Command Line Tools release is available.
+Update them from Software Update in System Preferences.
+
+If that doesn'</span>t show you any updates, run:
+  <span class="token function">sudo</span> <span class="token function">rm</span> <span class="token parameter variable">-rf</span> /Library/Developer/CommandLineTools
+  <span class="token function">sudo</span> xcode-select <span class="token parameter variable">--install</span>
+
+Alternatively, manually download them from:
+  https://developer.apple.com/download/all/.
+You should download the Command Line Tools <span class="token keyword">for</span> Xcode <span class="token number">13.2</span>.1.
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月20日星期六凌晨2点03分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/idea/%E6%8F%92%E4%BB%B6/" class="prev router-link-active">
+        说明
+      </a></span> <!----></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/21.32f2cda6.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>

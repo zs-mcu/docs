@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>3、变量和运算符 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/89.9635bbaf.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/10.1fd06a28.js"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/147.84a3f5ba.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/201.93a4981d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/21.32f2cda6.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/57.30c0bc43.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/91.4fadbd0f.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>shell编程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/shell%E7%BC%96%E7%A8%8B/" aria-current="page" class="sidebar-link">说明</a></li><li><a href="/zs-use/linux/shell编程/1、hello world.html" class="sidebar-link">1、hello world</a></li><li><a href="/zs-use/linux/shell编程/2、base基本功能.html" class="sidebar-link">2、base基本功能</a></li><li><a href="/zs-use/linux/shell编程/3、变量和运算符.html" class="active sidebar-link">3、变量和运算符</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#变量定义" class="sidebar-link">变量定义</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#变量的分类" class="sidebar-link">变量的分类</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#_1、用户自定义变量" class="sidebar-link">1、用户自定义变量</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#_2、环境变量" class="sidebar-link">2、环境变量</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#_3、位置参数变量" class="sidebar-link">3、位置参数变量</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#_4、预定义变量" class="sidebar-link">4、预定义变量</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#接收键盘输入" class="sidebar-link">接收键盘输入</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#shell的运算符" class="sidebar-link">Shell的运算符</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/shell编程/3、变量和运算符.html#环境变量配置文件" class="sidebar-link">环境变量配置文件</a></li></ul></li><li><a href="/zs-use/linux/shell编程/4、条件判断.html" class="sidebar-link">4、条件判断</a></li><li><a href="/zs-use/linux/shell编程/5、流程控制.html" class="sidebar-link">5、流程控制</a></li><li><a href="/zs-use/linux/shell编程/6、数组.html" class="sidebar-link">6、数组</a></li><li><a href="/zs-use/linux/shell编程/工具--cut.html" class="sidebar-link">工具--cut</a></li><li><a href="/zs-use/linux/shell编程/实战脚本简述01.html" class="sidebar-link">实战脚本简述</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例01.html" class="sidebar-link">实战脚本示例01</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例02.html" class="sidebar-link">实战脚本示例02</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例03.html" class="sidebar-link">/zs-use/linux/shell编程/实战脚本示例03.html</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例04.html" class="sidebar-link">实战脚本示例04</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例05.html" class="sidebar-link">实战脚本示例</a></li><li><a href="/zs-use/linux/shell编程/实战脚本示例06.html" class="sidebar-link">实战脚本示例06</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_3、变量和运算符"><a href="#_3、变量和运算符" class="header-anchor">#</a> 3、变量和运算符</h1> <h2 id="变量定义"><a href="#变量定义" class="header-anchor">#</a> 变量定义</h2> <p>在Bash中，在定义变量时，有一些规则需要遵守：</p> <ul><li><p>变量名称可以由<font color="red">字母、数字、下划线</font>组成，但是<font color="red">不能以数字开头</font>。</p></li> <li><p>变量的默认类型都是字符串型，如果要进行数值运算，则必修指定变量类型为数值型。</p></li> <li><p>变量用等号连接值，<font color="red"><strong>等号左右两侧不能有空格</strong></font>。</p></li> <li><p>变量的值如果有空格，需要使用单引号或双引号包括。
+如：<code>test=&quot;hello world!&quot;</code>
+其中双引号括起来的内容“$”、“\”和反引号都拥有特殊含义，而单引号括起来的内容都是普通字符。</p></li> <li><p>在变量的值中，可以使用“\”转义符。</p></li> <li><p>如果需要增加变量的值，那么可以进行变量值的叠加。不过变量需要用双引号包含&quot;<code>$变量名</code>&quot;或用<code>${变量名}</code>包含变量名。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># test=123</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># test=&quot;$test&quot;456</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $test</span>
+123456
+<span class="token comment">#叠加变量test，变量值变成了123456</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># test=${test}789</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $test</span>
+123456789
+<span class="token comment">#再叠加变量test，变量值编程了123456789</span>
+</code></pre></div><p>变量值的叠加可以使用两种格式：“<code>$变量名</code>”或<code>${变量名}</code></p></li> <li><p>如果是把命令的结果作为变量值赋予变量，则需要使用<code>反引号</code>或<code>$()</code>包含命令。例如：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># test=$(date)</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $test</span>
+2023年 12月 21日 星期四 15:43:49 CST
+</code></pre></div></li> <li><p>环境变量名建议大写，便于区分。</p></li></ul> <h2 id="变量的分类"><a href="#变量的分类" class="header-anchor">#</a> 变量的分类</h2> <ul><li><p><strong>用户自定义变量</strong>：这种变量是最常见的变量，由用户自由定义变量名和变量的值。</p></li> <li><p><strong>环境变量</strong>：这种变量中主要保存的是和系统操作环境相关的数据，比如当前登录用户，用户的家目录，命令的提示符等。
+环境变量的变量名可以自由定义，但是一般对系统起作用的环境变量的变量名是系统预先设定好的。</p></li> <li><p><strong>位置参数变量</strong>：这种变量主要是用来向脚本当中传递参数或数据的，变量名不能自定义，变量作用是固定的。</p></li> <li><p><strong>预定义变量</strong>：是Bash中已经定义好的变量，变量名不能自定义，变量作用也是固定的。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>				名称			作用			内容
+用户自定义变量	   自定义		   自定义		 自定义	
+环境变量
+	用户定义	 自定义		 自定义	   自定义
+	系统自带	 确定		 	 确定	  	 	自定义
+位置参数变量		确定			确定		   自定义
+预定义变量		确定			 确定			自定义
+</code></pre></div><h2 id="_1、用户自定义变量"><a href="#_1、用户自定义变量" class="header-anchor">#</a> 1、用户自定义变量</h2> <p>1）、变量定义</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment">#变量名不能用数字开头</span>
+<span class="token comment">#等号左右两侧不能有空格</span>
+<span class="token comment">#变量的值如果有空格，必须用引号包含</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># name=zs</span>
+</code></pre></div><p>2）、变量调用</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># echo $变量名</span>
+</code></pre></div><p>3）、变量查看</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># set [选项]</span>
+选项：
+	<span class="token operator">-</span>u:	如果设定此选项，调用未声明变量时会报错（默认无任何提示）
+	<span class="token operator">-</span>x:	如果设定此选项，在命令执行之前，会吧命令先输出一次
+
+<span class="token function">set</span> <span class="token operator">-</span>u 更为常用
+
+临时设置，如果需要永久设置，需要修改环境变量配置文件
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $age</span>
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># age=&quot;&quot;</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $age</span>
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># unset age</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $age</span>
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># set -u</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $age</span>
+<span class="token operator">-</span>bash: age: 为绑定变量
+</code></pre></div><p>查询环境变量</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># set</span>
+<span class="token comment">#直接使用set命令，会查询系统中所有的变量，包含用户自定义变量和环境变量</span>
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># env</span>
+<span class="token comment"># env看不到用户自定义变量，可以看到另一部分环境变量</span>
+</code></pre></div><p>4）、变量删除</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># unset 变量名</span>
+</code></pre></div><h2 id="_2、环境变量"><a href="#_2、环境变量" class="header-anchor">#</a> 2、环境变量</h2> <blockquote><p>环境变量可以在子shell中使用</p></blockquote> <p>1）、环境变量设置</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment">#使用export声明的变量即是环境变量</span>
+方式一：
+export 变量名=变量值
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># export ZS_AGE=&quot;18&quot;</span>
+方式二：
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># ZS_AGE=&quot;18&quot;</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># export ZS_AGE</span>
+</code></pre></div><p>2）、环境变量查询和删除</p> <p>env命令和set命令的区别是，set命令可以查看所有变量，而env命令只能查看环境变量。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># env | grep ZS_AGE</span>
+ZS_AGE=18
+</code></pre></div><p>3）、系统默认环境变量</p> <p><img src="/assets/img/image-20231221163741313.85159478.png" alt="image-20231221163741313"></p> <p>​		env命令可以查询到所有的环境变量，可是还有一些变量虽然不是环境变量，却是和Bash操作接口相关的变量，这些变量也对我们的Bash操作终端起到了重要的作用。</p> <p>这些变量就只能用set命令来查看了，我只列出重要的内容吧：</p> <p><img src="/assets/img/image-20231221163856981.4e12de7d.png" alt="image-20231221163856981"></p> <h3 id="path变量-系统查找命令的路径"><a href="#path变量-系统查找命令的路径" class="header-anchor">#</a> PATH变量：<font color="red">系统查找命令的路径</font></h3> <p>先查询下PATH环境变量的值：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $PATH</span>
+<span class="token operator">/</span>usr/local/sbin:<span class="token operator">/</span>usr/local/bin:<span class="token operator">/</span>usr/sbin:<span class="token operator">/</span>usr/bin:<span class="token operator">/</span>root/bin
+</code></pre></div><p>​		PATH变量的值是用“<code>:</code>”分割的路径，这些路径就是系统查找命令的路径。也就是说当我们输入了一个程序名，如果没有写入路径，系统就会到PATH变量定义的路径中去寻找，是否有可以执行的程序。如果找到则执行，否则会报“命令没有发现”的错误。</p> <p>​		那么是不是我们把自己的脚本拷贝到PATH变量定义的路径中，我们自己写的脚本也可以不输入路径而直接运行呢？</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># cp /root/sh/hello.sh /bin/</span>
+<span class="token comment">#拷贝hello.sh到/bin目录</span>
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># hello.sh</span>
+<span class="token comment">#hello.sh可以直接执行了</span>
+</code></pre></div><p>那么我们是不是可以修改PATH变量的值，而不是把程序脚本复制到<code>/bin/</code>目录中。当然是可以的，我们通过变量的叠加就可以实现了：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># PATH=&quot;$PATH&quot;:/root/sh</span>
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $PATH</span>
+</code></pre></div><p>当然我们这样定义的PATH变量只是临时生效，一旦重启或注销就会消失，如果想要永久生效，需要写入环境变量配置文件，我们在“环境变量配置文件”小节中再详细介绍。</p> <h3 id="ps1变量-命令提示符设置"><a href="#ps1变量-命令提示符设置" class="header-anchor">#</a> PS1变量：<font color="red">命令提示符设置</font></h3> <p>PS1是一个很有意思的变量（这可不是SONY的游戏机哦），是用来定义命令行的提示符的，可以按照我们自己的需求来定义自己喜欢的提示符。</p> <p>PS1可以支持以下这些选项：</p> <ul><li><code>\d</code>：显示日期，格式为<code>星期 月 日</code></li> <li><code>\H</code>：显示完整的主机名。如默认主机名<code>localhost.localdomain</code></li> <li><code>\h</code>：显示简写主机名。如默认主机名<code>localhost</code></li> <li><code>\t</code>：显示24小时制时间，格式为<code>HH:MM:SS</code></li> <li><code>\T</code>：显示12小时制时间，格式为<code>HH:MM:SS</code></li> <li><code>\A</code>：显示24小时制时间，格式为<code>HH:MM</code></li> <li><code>\@</code>：显示12小时制时间，格式为<code>HH:MM am/pm</code></li> <li><code>\u</code>：显示当前用户名</li> <li><code>\v</code>：显示Bash的版本信息</li> <li><code>\w</code>：显示当前所在目录的完整名称</li> <li><code>\W</code>：显示当前所在目录的最后一个目录</li> <li><code>\#</code>：执行的第几个命令</li> <li><code>\$</code>：提示符。如果是root用户会显示提示符为<code>#</code>，如果是普通用户会显示提示符为<code>$</code></li></ul> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi /]</span><span class="token comment"># echo $PS1</span>
+<span class="token punctuation">[</span>\u@\h \W<span class="token punctuation">]</span>\$
+<span class="token namespace">[root@xiaoshaozi /]</span><span class="token comment"># PS1='[\u@\H:\A \W]\$ '</span>
+<span class="token namespace">[root@xiaoshaozi:17:09 /]</span><span class="token comment"># </span>
+</code></pre></div><p>这里要小心，PS1变量的值要用单引号包含，否则设置不生效。</p> <p>对应永久环境变量配置文件: <code>/etc/bashrc</code></p> <h3 id="lang语系变量"><a href="#lang语系变量" class="header-anchor">#</a> LANG语系变量</h3> <p>LANG变量定义了Linux系统的主语系环境，这个变量的默认值是：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $LANG</span>
+zh_CN<span class="token punctuation">.</span>UTF-8
+</code></pre></div><p>这是因为我们Linux安装时，选择的是中文安装，所以默认的主语系变量是“zh_CN.UTF-8”。</p> <p>那么Linux中到底支持多少语系呢？我们可以使用以下命令查询：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># locale -a | wc -l</span>
+791
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># locale -a | more</span>
+</code></pre></div><h2 id="_3、位置参数变量"><a href="#_3、位置参数变量" class="header-anchor">#</a> 3、位置参数变量</h2> <table><thead><tr><th>位置参数变量</th> <th>作用</th></tr></thead> <tbody><tr><td><code>$n</code></td> <td>n为数字，<code>$0</code>代表命令本身，<code>$1-$9</code>代表第一到第九个参数，十以上的参数需要用大括号包含，如<code>${10}.</code></td></tr> <tr><td><code>$*</code></td> <td>这个变量代表命令行中所有的参数，<code>$*</code>把所有的参数看成一个整体</td></tr> <tr><td><code>$@</code></td> <td>这个变量也代表命令行中所有的参数，不过<code>$@</code>把每个参数区分对待</td></tr> <tr><td><code>$#</code></td> <td>这个变量代表命令行中所有参数的个数</td></tr></tbody></table> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token shebang important">#!/bin/bash</span>
+
+<span class="token comment"># 给a变量赋值 第1个参数</span>
+<span class="token assign-left variable">a</span><span class="token operator">=</span><span class="token variable">$1</span>
+<span class="token comment"># 给a变量赋值 第2个参数</span>
+<span class="token assign-left variable">b</span><span class="token operator">=</span><span class="token variable">$2</span>
+<span class="token comment"># sum=a+b</span>
+<span class="token comment"># shell中的变量默认是字符串类型，再后续运算符中详细介绍</span>
+<span class="token assign-left variable">sum</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span> $a <span class="token operator">+</span> $b <span class="token variable">))</span></span>
+<span class="token comment"># 打印sum变量值</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$sum</span>
+<span class="token comment"># 打印脚本本身</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$0</span>
+</code></pre></div><p>那么还有几个位置参数变量是干嘛的呢？我们在写个脚本来说明下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># ./parameter.sh </span>
+<span class="token variable">$*</span><span class="token builtin class-name">:</span> 
+<span class="token variable">$@</span><span class="token builtin class-name">:</span>
+<span class="token variable">$#</span><span class="token builtin class-name">:</span> <span class="token number">0</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># ./parameter.sh 11 22 33 44</span>
+<span class="token variable">$*</span><span class="token builtin class-name">:</span> <span class="token number">11</span> <span class="token number">22</span> <span class="token number">33</span> <span class="token number">44</span>
+<span class="token variable">$@</span><span class="token builtin class-name">:</span> <span class="token number">11</span> <span class="token number">22</span> <span class="token number">33</span> <span class="token number">44</span>
+<span class="token variable">$#</span><span class="token builtin class-name">:</span> <span class="token number">4</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># cat parameter.sh </span>
+<span class="token comment">#!/bin/bash</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">'$*'</span><span class="token builtin class-name">:</span> <span class="token string">&quot;<span class="token variable">$*</span>&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'$@'</span><span class="token builtin class-name">:</span> <span class="token string">&quot;<span class="token variable">$@</span>&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'$#'</span><span class="token builtin class-name">:</span> <span class="token string">&quot;<span class="token variable">$#</span>&quot;</span>
+</code></pre></div><p>那么“<code>$*</code>”和“<code>$@</code>”有区别吗？还是有区别的，<code>$*</code>会把接收的所有参数当成一个整体对待，而<code>$@</code>则会区分对待接收到的所有参数。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># cat ./parameter2.sh </span>
+<span class="token comment">#!/bin/bash</span>
+
+<span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
+        <span class="token keyword">do</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$i</span>&quot;</span>
+        <span class="token keyword">done</span>
+
+
+<span class="token builtin class-name">echo</span> <span class="token string">'==================='</span>
+
+<span class="token comment">#定义for循环，in后面有几个值，for会循环多少次，注意“$*”要用双引号括起来</span>
+<span class="token comment">#每次循环会把in后面的值赋予变量j</span>
+<span class="token comment">#Shell把$*中的所有参数看成是一个整体，所以这个for循环只会循环一次</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">j</span> <span class="token keyword">in</span> <span class="token string">&quot;<span class="token variable">$*</span>&quot;</span>
+        <span class="token keyword">do</span>
+        		<span class="token comment">#打印变量$i的值</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$j</span>&quot;</span>
+        <span class="token keyword">done</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">'==================='</span>
+
+<span class="token keyword">for</span> <span class="token for-or-select variable">k</span> <span class="token keyword">in</span> <span class="token string">&quot;<span class="token variable">$@</span>&quot;</span>
+        <span class="token keyword">do</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$k</span>&quot;</span>
+        <span class="token keyword">done</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">'==================='</span>
+
+
+
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># ./parameter2.sh a b c 1 2 3</span>
+<span class="token number">1</span>
+<span class="token number">2</span>
+<span class="token number">3</span>
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+a b c <span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span>
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+a
+b
+c
+<span class="token number">1</span>
+<span class="token number">2</span>
+<span class="token number">3</span>
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+</code></pre></div><h2 id="_4、预定义变量"><a href="#_4、预定义变量" class="header-anchor">#</a> 4、预定义变量</h2> <table><thead><tr><th>预定义变量</th> <th>作用</th></tr></thead> <tbody><tr><td><code>$?</code></td> <td>最后一次执行的命令的返回状态。<br>如果这个变量的值为0，证明上一个命令正确执行；<br>如果这个变量的值为非0（具体是哪个数，由命令自己来决定），则证明上一个命令执行不正确了。</td></tr> <tr><td><code>$$</code></td> <td>当前进程的进程号（PID）</td></tr> <tr><td><code>$!</code></td> <td>后台运行的最后一个进程的进程号（PID）</td></tr></tbody></table> <p>我们先来看看“<code>$?</code>”这个变量，看起来不好理解，我们还是举个例子：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># ls</span>
+count<span class="token punctuation">.</span>sh  file1  file2  file3  parameter2<span class="token punctuation">.</span>sh  parameter<span class="token punctuation">.</span>sh  sh  zs<span class="token punctuation">.</span>sh
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $?</span>
+0
+<span class="token comment">#预定义变量“$?”的值是0，证明上一个命令执行正确</span>
+
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># ls aaa</span>
+<span class="token function">ls</span>: 无法访问aaa: 没有那个文件或目录
+<span class="token namespace">[root@xiaoshaozi ~]</span><span class="token comment"># echo $?</span>
+2
+<span class="token comment">#当前目录中没有aaa文件，所以ls命令报错了</span>
+</code></pre></div><p>接下来我们来说明下“<code>$$</code>”和“<code>$!</code>”这两个预定义变量，我们写个脚本吧：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># vim variable.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;The current process is <span class="token variable">$$</span>&quot;</span>
+<span class="token comment"># 输出当前进程的PID</span>
+<span class="token comment"># 这个PID就是variable.sh这个脚本执行时，生成的进程的PID</span>
+
+<span class="token function">find</span> /root <span class="token parameter variable">-name</span> hello.sh <span class="token operator">&amp;</span>
+<span class="token comment"># 使用find命令在root目录下查找hello.sh文件</span>
+<span class="token comment"># 符号&amp;的意思是吧命令放入后台执行，工作管理我们系统管理章节介绍</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;The last one Daemon process is <span class="token variable">$!</span>&quot;</span>
+<span class="token comment"># 输出这个后台执行命令的进程的PID，也就是输出find命令的PID号</span>
+</code></pre></div><h2 id="接收键盘输入"><a href="#接收键盘输入" class="header-anchor">#</a> 接收键盘输入</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># read [选项] [变量名]</span>
+选项：
+	<span class="token parameter variable">-p</span>	“提示信息”：	  在等待read输入时，输出提示信息
+	<span class="token parameter variable">-t</span>	秒数：		 read命令会一直等待用户输入，使用此选项可以指定等待时间
+	<span class="token parameter variable">-n</span>	字符数：	read命令只接受指定的字符数，就会执行
+	-s：			  隐藏输入的数据，适用于机密信息的输入
+	
+变量名：
+	- 变量名可以自定义，如果不指定变量名，会把输入保存入默认变量<span class="token environment constant">REPLY</span>
+	- 如果只提供了一个变量名，则整个输入行赋予该变量
+	- 如果提供了一个以上的变量名，则输入行分为若干字，一个接一个地赋予各个变量，
+	  而命令行上如果提供了一个以上的变量名，则输入行分为若干字，一个接一个地赋予各个变量，而命令行上
+</code></pre></div><p>还是写个例子来解释下read命令：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># cat read.sh </span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">read</span> <span class="token parameter variable">-n</span> <span class="token number">5</span> <span class="token parameter variable">-s</span> <span class="token parameter variable">-t</span> <span class="token number">5</span> <span class="token parameter variable">-p</span> <span class="token string">&quot;Please input your name: &quot;</span> name age
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$name</span> ===== <span class="token variable">$age</span>&quot;</span>
+
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># bash read.sh</span>
+
+</code></pre></div><h2 id="shell的运算符"><a href="#shell的运算符" class="header-anchor">#</a> Shell的运算符</h2> <h3 id="_1-数值运算的方法"><a href="#_1-数值运算的方法" class="header-anchor">#</a> 1）数值运算的方法</h3> <p>那如果我需要进行数值运算，可以采用以下三种方法中的任意一种：</p> <ul><li><p>使用declare声明变量类型</p> <p>既然所有变量的默认类型是字符串型，那么只要我们把变量声明为整数型不就可以运算了吗？使用declare命令就可以实现声明变量的类型。命令如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare [+/-][选项] 变量名</span>
+选项:
+    -：给变量设定类型属性
+    +：取消变量的类型属性
+    -a：将变量声明为数组型
+    -i：将变量声明为整数型（integer）
+    -r：讲变量声明为只读变量。
+    	注意，一旦设置为只读变量，既不能修改变量的值，也不能删除变量，甚至不能通过+r取消只读属性
+    -x：将变量声明为环境变量
+    -p：显示指定变量的被声明的类型
+</code></pre></div><p>例子1：数值运算</p> <p>那我们只要把变量声明为整数型不就可以运算了吗？试试吧：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># a=1</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># b=2</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># c=$a+$b</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># echo $c</span>
+<span class="token number">1</span>+2
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># declare -i c=$a+$b</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># echo $c</span>
+<span class="token number">3</span>
+</code></pre></div><p>这样运算好麻烦啊，没有办法啊，Shell在数值运算这里确实是比较麻烦，习惯就好了-_-!。</p> <p>例子2：数组变量类型</p> <p>还是举个例子吧：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># declare -a name[0]=&quot;shen chao&quot;</span>
+
+由于太特殊，可以省略 <span class="token builtin class-name">declare</span> <span class="token parameter variable">-a</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># name[0]=&quot;shen chao&quot;</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># name[1]=&quot;li ming&quot;</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># name[2]=&quot;tong gang&quot;</span>
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># echo ${name}</span>
+shen chao
+<span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># echo ${name[*]}</span>
+shen chao li ming tong gang
+
+</code></pre></div><p>例子3：环境变量</p> <p>我们其实也可以使用<code>declare</code>命令把变量声明为环境变量，和<code>export</code>命令的作用是一样的：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># declare -x test=123</span>
+</code></pre></div><p>例子4：只读属性</p> <p>注意一旦给变量设定了只读属性，那么这个变量既不能修改变量的值，也不能删除变量，甚至不能使用“+r”选项取消只读属性。命令如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@xiaoshaozi ~<span class="token punctuation">]</span><span class="token comment"># declare -r test</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># test=456</span>
+-bash: test: <span class="token builtin class-name">readonly</span> variable
+<span class="token comment">#test变量的值就不能修改了</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare +r test</span>
+-bash: declare: test: <span class="token builtin class-name">readonly</span> variable
+<span class="token comment">#也不能取消只读属性</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># unset test</span>
+-bash: unset: test: cannot unset: <span class="token builtin class-name">readonly</span> variable
+<span class="token comment">#也不能删除变量</span>
+</code></pre></div><p>不过还好这个变量只是命令行声明的，所以只要重新登录或重启，这个变量就会消失了。</p> <p>例子5：查询变量属性和取消变量属性</p> <p>变量属性的查询使用“-p”选项，变量属性的取消使用“+”选项。命令如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare -p cc</span>
+<span class="token builtin class-name">declare</span> <span class="token parameter variable">-i</span> <span class="token assign-left variable">cc</span><span class="token operator">=</span><span class="token string">&quot;33&quot;</span>
+<span class="token comment">#cc变量是int型</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare -p name</span>
+<span class="token builtin class-name">declare</span> <span class="token parameter variable">-a</span> <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">'([0]=&quot;shen chao&quot; [1]=&quot;li ming&quot; [2]=&quot;tong gang&quot;)'</span>
+<span class="token comment">#name变量是数组型</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare -p test</span>
+<span class="token builtin class-name">declare</span> <span class="token parameter variable">-rx</span> <span class="token assign-left variable">test</span><span class="token operator">=</span><span class="token string">&quot;123&quot;</span>
+<span class="token comment">#test变量是环境变量和只读变量</span>
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare +x test</span>
+<span class="token comment">#取消test变量的环境变量属性</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># declare -p test</span>
+<span class="token builtin class-name">declare</span> <span class="token parameter variable">-r</span> <span class="token assign-left variable">test</span><span class="token operator">=</span><span class="token string">&quot;123&quot;</span>
+<span class="token comment">#注意，只读变量属性是不能取消的</span>
+</code></pre></div></li> <li><p>使用<code>expr</code>或<code>let</code>数值运算工具</p> <p>要想进行数值运算的第二种方法是使用expr命令，这种命令就没有declare命令复杂了。命令如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># aa=11</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># bb=22</span>
+<span class="token comment">#给变量aa和变量bb赋值</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># dd=$(expr $aa + $bb)</span>
+<span class="token comment">#dd的值是aa和bb的和。注意“+”号左右两侧必须有空格</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $dd</span>
+<span class="token number">33</span>
+</code></pre></div><p>使用expr命令进行运算时，要注意“+”号左右两侧必须有空格，否则运算不执行。</p> <p>至于let命令和expr命令基本类似，都是Linux中的运算命令，命令格式如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># aa=11</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># bb=22</span>
+<span class="token comment">#给变量aa和变量bb赋值</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># let ee=$aa+$bb</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $ee</span>
+<span class="token number">33</span>
+<span class="token comment">#变量ee的值是aa和bb的和</span>
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># n=20</span>
+<span class="token comment">#定义变量n</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># let n+=1</span>
+<span class="token comment">#变量n的值等于变量本身再加1</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $n</span>
+<span class="token number">21</span>
+</code></pre></div><p>expr命令和let命令大家可以按照习惯使用，不过let命令对格式要求要比expr命令宽松，所以推荐使用let命令进行数值运算。</p></li> <li><p>使用“<code>$((运算式))</code>”或“<code>$[运算式]</code>”方式运算</p> <p>其实这是一种方式“<code>$(())</code>”和“<code>$[]</code>”这两种括号按照个人习惯使用即可。命令如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># aa=11</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># bb=22</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># ff=$(( $aa+$bb ))</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $ff</span>
+<span class="token number">33</span>
+<span class="token comment">#变量ff的值是aa和bb的和</span>
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># gg=$[ $aa+$bb ]</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $gg</span>
+<span class="token number">33</span>
+<span class="token comment">#变量gg的值是aa和bb的和</span>
+</code></pre></div><p>这三种数值运算方式，大家可以按照自己的习惯来进行使用。不过我们推荐使用“<code>$((运算式))</code>”的方式</p></li></ul> <h3 id="_2-、shell常用运算符"><a href="#_2-、shell常用运算符" class="header-anchor">#</a> 2）、Shell常用运算符</h3> <table><thead><tr><th>优先级</th> <th>运算符</th> <th>说明</th></tr></thead> <tbody><tr><td>13</td> <td>-,+</td> <td>单目负、单目正</td></tr> <tr><td>12</td> <td>!,~</td> <td>逻辑非、按位取反或补码</td></tr> <tr><td>11</td> <td>* ,/ ,%</td> <td>乘、除、取模</td></tr> <tr><td>10</td> <td>+,-</td> <td>加、减</td></tr> <tr><td>9</td> <td>&lt;&lt; ,&gt;&gt;</td> <td>按位左移、按位右移</td></tr> <tr><td>8</td> <td>&lt; =,&gt; =,&lt; ,&gt;</td> <td>小于或等于、大于或等于、小于、大于</td></tr> <tr><td>7</td> <td>== ,!=</td> <td>等于、不等于</td></tr> <tr><td>6</td> <td>&amp;</td> <td>按位与</td></tr> <tr><td>5</td> <td>^</td> <td>按位异或</td></tr> <tr><td>4</td> <td>|</td> <td>按位或</td></tr> <tr><td>3</td> <td>&amp;&amp;</td> <td>逻辑与</td></tr> <tr><td>2</td> <td>||</td> <td>逻辑或</td></tr> <tr><td>1</td> <td>=,+=,-=,*=,/=,%=,&amp;=,^=,|=,&lt;&lt;=, &gt;&gt;=</td> <td>赋值、运算且赋值</td></tr></tbody></table> <p>运算符优先级表明在每个表达式或子表达式中哪一个运算对象首先被求值，数值越大优先级越高，具有较高优先级级别的运算符先于较低级别的运算符进行求值运算。</p> <p>例子1：加减乘除</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># aa=$(( (11+3)*3/2 ))</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $aa</span>
+<span class="token number">21</span>
+</code></pre></div><p>例子2：取模运算</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># bb=$(( 14%3 ))</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $bb</span>
+<span class="token number">2</span>
+</code></pre></div><p>例子3：逻辑与</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cc=$(( 1 &amp;&amp; 0 ))</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $cc</span>
+<span class="token number">0</span>
+</code></pre></div><h3 id="变量的测试与内容置换"><a href="#变量的测试与内容置换" class="header-anchor">#</a> 变量的测试与内容置换</h3> <table><thead><tr><th>变量置换方式</th> <th>变量y没有设置</th> <th>变量y为空值</th> <th>变量y设置值</th></tr></thead> <tbody><tr><td><code>x=${y-新值}</code></td> <td><code>x=新值</code></td> <td><code>x为空</code></td> <td><code>x=$y</code></td></tr> <tr><td><code>x=${y:-新值}</code></td> <td><code>x=新值</code></td> <td><code>x=新值</code></td> <td><code>x=$y</code></td></tr> <tr><td><code>x=${y+新值}</code></td> <td><code>x为空</code></td> <td><code>x=新值</code></td> <td><code>x=新值</code></td></tr> <tr><td><code>x=${y:+新值}</code></td> <td><code>x为空</code></td> <td><code>x为空</code></td> <td><code>x=新值</code></td></tr> <tr><td><code>x=${y=新值}</code></td> <td><code>x=新值</code><br><code>y=新值</code></td> <td><code>x=为空</code><br><code>y=值不变</code></td> <td><code>x=$y</code><br><code>y值不变</code></td></tr> <tr><td><code>x=${y:=新值}</code></td> <td><code>x=新值</code><br><code>y=新值</code></td> <td><code>x=新值</code><br><code>y=新值</code></td> <td><code>x=$y</code><br><code>y值不变</code></td></tr> <tr><td><code>x=${y?新值}</code></td> <td>新值输出到<br>标准错误输出（就是屏幕）</td> <td><code>x为空</code></td> <td><code>x=$y</code></td></tr> <tr><td><code>x=${y:?新值}</code></td> <td>新值输出到<br>标准错误输出</td> <td>新值输出到<br>标准错误输出</td> <td><code>x=$y</code></td></tr></tbody></table> <p>通过<code>set -u</code>可以让未定义变量报错</p> <p>如果大括号内没有“：”，则变量y是为空，还是没有设置，处理方法是不同的；如果大括号内有“：”，则变量y不论是为空，还是没有没有设置，处理方法是一样的。</p> <p>如果大括号内是“-”或“+”，则在改变变量x值的时候，变量y是不改变的；如果大括号内是“=”，则在改变变量x值的同时，变量y的值也会改变。</p> <p>如果大括号内是“？”，则当变量y不存在或为空时，会把“新值”当成报错输出到屏幕上。</p> <p>看的头都晕了吧，举几个例子说明下吧：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># unset y</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># x=${y-new}</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $x</span>
+new
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># echo $y</span>
+
+</code></pre></div><h2 id="环境变量配置文件"><a href="#环境变量配置文件" class="header-anchor">#</a> 环境变量配置文件</h2> <h3 id="source命令"><a href="#source命令" class="header-anchor">#</a> source命令</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># source 配置文件</span>
+或 
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># . 配置文件</span>
+</code></pre></div><h3 id="环境变量配置文件-2"><a href="#环境变量配置文件-2" class="header-anchor">#</a> 环境变量配置文件</h3> <p>1）、登录时生效的环境变量配置文件</p> <p>在Linux系统登录时主要生效的环境变量配置文件有以下五个：</p> <ul><li><code>/etc/profile</code></li> <li><code>/etc/profile.d/*.sh</code></li> <li><code>~/.bash_profile</code></li> <li><code>~/.bashrc</code></li> <li><code>/etc/bashrc</code></li></ul> <p>环境变量配置文件调用过程</p> <p><img src="/assets/img/image-20231226135232164.6edf5005.png" alt="image-20231226135232164"></p> <p>在用户登录过程先调用<code>/etc/profile</code>文件</p> <p>在这个环境变量配置文件中会定义这些默认环境变量：</p> <ul><li><p><code>USER</code>变量：根据登录的用户，给这个变量赋值（就是让USER变量的值是当前用户）。</p></li> <li><p><code>LOGNAME</code>变量：根据USER变量的值，给这个变量赋值。</p></li> <li><p><code>MAIL</code>变量：根据登录的用户，定义用户的邮箱为<code>/var/spool/mail/</code>用户名。</p></li> <li><p><code>PATH</code>变量：根据登录用户的UID是否为0，判断<code>PATH</code>变量是否包含<code>/sbin</code>、<code>/usr/sbin</code>和<code>/usr/local/sbin</code>这三个系统命令目录。</p></li> <li><p><code>HOSTNAME</code>变量：更加主机名，给这个变量赋值。</p></li> <li><p><code>HISTSIZE</code>变量：定义历史命令的保存条数。</p></li> <li><p><code>umask</code>：定义umask默认权限。注意<code>/etc/profile</code>文件中的<code>umask</code>权限是在“有用户登录过程（也就是输入了用户名和密码）”时才会生效。</p></li> <li><p>调用<code>/etc/profile.d/*.sh</code>文件，也就是调用<code>/etc/profile.d/</code>目录下所有以<code>.sh</code>结尾的文件。</p></li> <li><p>由<code>/etc/profile</code>文件调用<code>/etc/profile.d/*.sh</code>文件</p></li></ul> <p>这个目录中所有以<code>.sh</code>结尾的文件都会被<code>/etc/profile</code>文件调用，这里最常用的就是<code>lang.sh</code>文件，而这个文件又会调用<code>/etc/sysconfig/i18n</code>文件。<code>/etc/sysconfig/i18n</code>这个文件眼熟吗？就是我们前面讲过的默认语系配置文件啊。</p> <ul><li><p>由<code>/etc/profile</code>文件调用<code>~/.bash_profile</code>文件
+<code>~/.bash_profile</code>文件就没有那么复杂了，这个文件主要实现了两个功能：</p> <ul><li><p>调用了<code>~/.bashrc</code>文件。</p></li> <li><p>在<code>PATH</code>变量后面加入了“<code>:$HOME/bin</code>”这个目录。那也就是说，如果我们在自己的家目录中建立<code>bin</code>目录，然后把自己的脚本放入“<code>~/bin</code>”目录，就可以直接执行脚本，而不用通过目录执行了。</p></li></ul></li> <li><p>由<code>~/.bash_profile</code>文件调用<code>~/.bashrc</code>文件
+在<code>~/.bashrc</code>文件中主要实现了：</p> <ul><li>定义默认别名，所以超哥把自己定义的别名也放入了这个文件。</li> <li>调用<code>/etc/bashrc</code></li></ul></li> <li><p>由<code>~/.bashrc</code>调用了<code>/etc/bashrc</code>文件
+在/etc/bashrc文件中主要定义了这些内容：</p> <ul><li>PS1变量：也就是用户的提示符，如果我们想要永久修改提示符，就要在这个文件中修改</li> <li>umask：定义umask默认权限。这个文件中定义的umask是针对“没有登录过程（也就是不需要输入用户名和密码时，比如从一个终端切换到另一个终端，或进入子Shell）”时生效的。如果是“有用户登录过程”，则是/etc/profile文件中的umask生效。</li> <li>PATH变量：会给PATH变量追加值，当然也是在“没有登录过程”时才生效。</li> <li>调用<code>/etc/profile.d/*.sh</code>文件，这也是在“没有用户登录过程”是才调用。在“有用户登录过程”时，<code>/etc/profile.d/*.sh</code>文件已经被<code>/etc/profile</code>文件调用过了。</li></ul></li></ul> <p>这样这五个环境变量配置文件会被依次调用，那么如果是我们自己定义的环境变量应该放入哪个文件呢？如果你的修改是打算对所有用户生效的，那么可以放入<code>/etc/profile</code>环境变量配置文件；如果你的修改只是给自己使用的，那么可以放入<code>~/.bash_profile</code>或<code>~/.bashrc</code>这两个配置文件中的任一个。</p> <p>可是如果我们误删除了这些环境变量，比如删除了<code>/etc/bashrc</code>文件，或删除了<code>~/.bashrc</code>文件，那么这些文件中配置就会失效（<code>~/.bashrc</code>文件会调用<code>/etc/bashrc</code>文件）。那么我们的提示符就会变成：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>-bash-4.1<span class="token comment">#</span>
+</code></pre></div><p>2）、注销时生效的环境变量配置文件</p> <p>在用户退出登录时，只会调用一个环境变量配置文件，就是<code>~/.bash_logout</code>。这个文件默认没有写入任何内容，可是如果我们希望再退出登录时执行一些操作，比如清除历史命令，备份某些数据，就可以把命令写入这个文件。</p> <p>3）、其他配置文件</p> <p>还有一些环节变量配置文件，最常见的就是<code>~/bash_history</code>文件，也就是历史命令保存文件。这个文件已经讲过了，这里我们只是把它归入环境变量配置文件小节而已。</p> <h3 id="shell登录信息"><a href="#shell登录信息" class="header-anchor">#</a> Shell登录信息</h3> <p>1)、<code>/etc/issue</code></p> <p>我们在登录tty1-tty6这六个本地终端时，会有几行的欢迎界面。这些欢迎信息是保存在哪里的？可以修改吗？当然可以修改，这些欢迎信息是保存在/etc/issue文件中，我们查看下这个文件：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/issue</span>
+CentOS release <span class="token number">6.8</span> <span class="token punctuation">(</span>Final<span class="token punctuation">)</span>
+Kernel <span class="token punctuation">\</span>r on an <span class="token punctuation">\</span>m
+</code></pre></div><p>可以支持的转义符我们可以通过man agetty命令查询，在表中我们列出常见的转义符作用：</p> <table><thead><tr><th>转义符</th> <th>作用</th></tr></thead> <tbody><tr><td>\d</td> <td>显示当前系统日期</td></tr> <tr><td>\s</td> <td>显示操作系统名称</td></tr> <tr><td>\l</td> <td>显示登录的终端号，这个比较常用。</td></tr> <tr><td>\m</td> <td>显示硬件体系结构，如i386、i686等</td></tr> <tr><td>\n</td> <td>显示主机名</td></tr> <tr><td>\o</td> <td>显示域名</td></tr> <tr><td>\r</td> <td>显示内核版本</td></tr> <tr><td>\t</td> <td>显示当前系统时间</td></tr> <tr><td>\u</td> <td>显示当前登录用户的序列号</td></tr></tbody></table> <p>2)、<code>/etc/issue.net</code></p> <p><code>/etc/issue</code>是在本地终端登录是显示欢迎信息的，如果是远程登录（如ssh远程登录，或telnet远程登录）需要显示欢迎信息，则需要配置<code>/etc/issue.net</code>这个文件了。使用这个文件时由两点需要注意：</p> <ul><li>首先，在<code>/etc/issue</code>文件中支持的转义符，在<code>/etc/issue.net</code>文件中不能使用。</li> <li>其次，ssh远程登录是否显示<code>/etc/issue.net</code>件中的欢迎信息，是由ssh的配置文件决定的。</li></ul> <p>如果我们需要ssh远程登录可以查看<code>/etc/issue.net</code>的欢迎信息，那么首先需要修改ssh的配置文件<code>/etc/ssh/sshd_config</code>，加入如下内容：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/ssh/sshd_config</span>
+…省略部分输出…
+<span class="token comment"># no default banner path</span>
+<span class="token comment">#Banner none</span>
+Banner /etc/issue.net
+…省略部分输出…
+</code></pre></div><p>这样在ssh远程登录时，也可以显示欢迎信息，只是不再可以识别“\d”和“\l”等信息了</p> <p>3)、/etc/motd</p> <p>/etc/motd文件中也是显示欢迎信息的，这个文件和/etc/issue及/etc/issue.net文件的区别是：/etc/issue及/etc/issue.net是在用户登录之前显示欢迎信息，而/etc/motd是在用户输入用户名和密码，正确登录之后显示欢迎信息。在/etc/motd文件中的欢迎信息，不论是本地登录，还是远程登录都可以显示。</p> <h3 id="定义bash快捷键"><a href="#定义bash快捷键" class="header-anchor">#</a> 定义Bash快捷键</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># stty -a</span>
+<span class="token comment"># 查询所有的快捷键</span>
+</code></pre></div><p>那么这些快捷键可以更改吗？可以啊，只要执行：</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token namespace">[root@localhost ~]</span><span class="token comment"># stty 关键字 快捷键</span>
+
+例如：
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># stty intr ^p</span>
+<span class="token comment"># 定义ctrl+p快捷键为强制终止，“^”字符只要手工输入即可</span>
+
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># stty -a</span>
+speed 38400 baud<span class="token punctuation">;</span> rows 21<span class="token punctuation">;</span> columns 104<span class="token punctuation">;</span> line = 0<span class="token punctuation">;</span>
+intr = ^P<span class="token punctuation">;</span> quit = ^\<span class="token punctuation">;</span> <span class="token function">erase</span> = ^?<span class="token punctuation">;</span> <span class="token function">kill</span> = ^U<span class="token punctuation">;</span> eof = ^D<span class="token punctuation">;</span> eol = &lt;undef&gt;<span class="token punctuation">;</span> eol2 = &lt;undef&gt;<span class="token punctuation">;</span> swtch = &lt;undef&gt;<span class="token punctuation">;</span>
+<span class="token function">start</span> = ^Q<span class="token punctuation">;</span> stop = ^S<span class="token punctuation">;</span> susp = ^Z<span class="token punctuation">;</span> rprnt = ^R<span class="token punctuation">;</span> werase = ^W<span class="token punctuation">;</span> lnext = ^V<span class="token punctuation">;</span> flush = ^O<span class="token punctuation">;</span> min =1<span class="token punctuation">;</span>time = 0<span class="token punctuation">;</span>
+
+<span class="token comment"># 强制终止变成了ctrl+p快捷键</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年2月22日星期四晚上10点21分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/shell编程/2、base基本功能.html" class="prev">
+        2、base基本功能
+      </a></span> <span class="next"><a href="/zs-use/linux/shell编程/4、条件判断.html">
+        4、条件判断
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/89.9635bbaf.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>

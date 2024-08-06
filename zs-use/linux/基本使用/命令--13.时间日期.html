@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>命令--13.时间日期 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/10.1fd06a28.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/147.84a3f5ba.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/201.93a4981d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/21.32f2cda6.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/57.30c0bc43.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/89.9635bbaf.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/91.4fadbd0f.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Linux概述</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-use/linux/基本使用/shell--alias.html" class="sidebar-link">shell--alias</a></li><li><a href="/zs-use/linux/基本使用/shell--history.html" class="sidebar-link">shell--history命令</a></li><li><a href="/zs-use/linux/基本使用/shell--grep和管道符.html" class="sidebar-link">shell--grep和管道符</a></li><li><a href="/zs-use/linux/基本使用/shell--相关符号.html" class="sidebar-link">shell--相关符号</a></li><li><a href="/zs-use/linux/基本使用/命令--0.简易版.html" class="sidebar-link">命令--0.简易版</a></li><li><a href="/zs-use/linux/基本使用/命令--1.基本格式.html" class="sidebar-link">命令--1.基本格式</a></li><li><a href="/zs-use/linux/基本使用/命令--2.关机、重启.html" class="sidebar-link">命令--2.关机、重启</a></li><li><a href="/zs-use/linux/基本使用/命令--3.Linux帮助文档.html" class="sidebar-link">命令--3.Linux帮助文档</a></li><li><a href="/zs-use/linux/基本使用/命令--4.文件操作管理.html" class="sidebar-link">命令--4.文件操作管理</a></li><li><a href="/zs-use/linux/基本使用/命令--5.查找命令.html" class="sidebar-link">命令--5.查找命令</a></li><li><a href="/zs-use/linux/基本使用/命令--7.1.文件权限（普通）.html" class="sidebar-link">命令--7.1.文件权限(普通)</a></li><li><a href="/zs-use/linux/基本使用/命令--7.2.文件权限（高级）.html" class="sidebar-link">命令--7.2.文件权限（高级）</a></li><li><a href="/zs-use/linux/基本使用/命令--8.网络配置.html" class="sidebar-link">命令--8.网络配置</a></li><li><a href="/zs-use/linux/基本使用/命令--9.1.文件系统（查看）.html" class="sidebar-link">命令--9.1.文件系统（查看）</a></li><li><a href="/zs-use/linux/基本使用/命令--10.挂载.html" class="sidebar-link">命令--10.挂载</a></li><li><a href="/zs-use/linux/基本使用/命令--11.包管理工具.html" class="sidebar-link">命令--11.包管理工具</a></li><li><a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="sidebar-link">命令--12.打包压缩</a></li><li><a href="/zs-use/linux/基本使用/命令--13.时间日期.html" class="active sidebar-link">命令--13.时间日期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#时区设置" class="sidebar-link">时区设置</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#时间命令" class="sidebar-link">时间命令</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#时间同步ntp" class="sidebar-link">时间同步NTP</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#chrony和ntp" class="sidebar-link">chrony和ntp</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#内网chrony配置时间同步" class="sidebar-link">内网chrony配置时间同步</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#外网chrony配置时间同步" class="sidebar-link">外网chrony配置时间同步</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#时间不同步可能的原因" class="sidebar-link">[](https://blog.csdn.net/cuichongxin/article/details/123178318)时间不同步可能的原因</a></li><li class="sidebar-sub-header"><a href="/zs-use/linux/基本使用/命令--13.时间日期.html#timedatectl说明" class="sidebar-link">[](https://blog.csdn.net/cuichongxin/article/details/123178318)timedatectl说明</a></li></ul></li><li><a href="/zs-use/linux/基本使用/命令--14.痕迹.html" class="sidebar-link">命令--14.痕迹</a></li><li><a href="/zs-use/linux/基本使用/命令--15.echo.html" class="sidebar-link">命令--15.echo</a></li><li><a href="/zs-use/linux/基本使用/命令--16.vim编辑器.html" class="sidebar-link">命令--16.vim编辑器</a></li><li><a href="/zs-use/linux/基本使用/系统管理--1.启动引导与修复.html" class="sidebar-link">系统管理--1.启动引导与修复</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.1.系统管理.html" class="sidebar-link">系统管理--3.1.系统管理</a></li><li><a href="/zs-use/linux/基本使用/系统管理--3.2.系统管理-定时任务.html" class="sidebar-link">系统管理--3.2.系统管理-定时任务</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>服务管理</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="命令-13-时间日期"><a href="#命令-13-时间日期" class="header-anchor">#</a> 命令--13.时间日期</h1> <h2 id="时区设置"><a href="#时区设置" class="header-anchor">#</a> 时区设置</h2> <p>在<a href="https://so.csdn.net/so/search?q=Linux&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">Linux<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>系统中，默认使用的是UTC时间。</p> <p>即使在安装系统的时候，选择的时区是亚洲上海，Linux默认的BIOS时间（也称：硬件时间）也是<a href="https://so.csdn.net/so/search?q=UTC%E6%97%B6%E9%97%B4&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">UTC时间<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。
+在重启之后，系统时间会和硬件时间同步，如果两者不一致，会以硬件时间为标准进行时间的校准。所以，之前设置的时区和时间就失效了
+北京时间比UTC时间早8小时，以2023年1月1日0000UTC为例，UTC时间是零点，北京时间为2023年1月1日早上8点整。</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># 查看当前系统时间</span>
+date
+
+<span class="token comment"># 查看当前硬件时间</span>
+hwclock或clock
+
+<span class="token comment">#查看当前系统时区</span>
+date <span class="token operator">-</span>R
+
+
+
+<span class="token namespace">[root@jysp jysp]</span><span class="token comment"># date </span>
+2023年 12月 15日 星期五 09:14:28 CST
+
+<span class="token namespace">[root@jysp jysp]</span><span class="token comment"># hwclock</span>
+2023年12月15日 星期五 09时12分57秒  <span class="token operator">-</span>0<span class="token punctuation">.</span>179492 秒
+
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>R
+Fri<span class="token punctuation">,</span> 15 Dec 2023 09:12:23 <span class="token operator">+</span>0800
+
+</code></pre></div><h3 id="图形化设置"><a href="#图形化设置" class="header-anchor">#</a> 图形化设置</h3> <p>CentOS7如何图形化设置时区？</p> <p>这与图形化设置网络、设置主机名、设置新用户等，基本相同。过程简单，对于初学者比较友好。</p> <h4 id="_1-进入设置"><a href="#_1-进入设置" class="header-anchor">#</a> 1.进入设置</h4> <p>点击【应用程序】-&gt;【系统工具】-&gt;【设置】选项</p> <p><img src="/assets/img/8595981e68e85f1bbe6b00c1992fac2f.76471981.png" alt="https://img-blog.csdnimg.cn/img_convert/8595981e68e85f1bbe6b00c1992fac2f.png"></p> <h4 id="_2-找到时区"><a href="#_2-找到时区" class="header-anchor">#</a> 2.找到时区</h4> <p>点击【详细信息】-&gt;【日期和时间】</p> <p><img src="/assets/img/b072e4bc131649cdb2df78d6834fb2a5.78795f97.png" alt="img"></p> <h4 id="_3-操作认证"><a href="#_3-操作认证" class="header-anchor">#</a> 3.操作认证</h4> <p>点击【解锁】并输入密码进行【认证】</p> <p>Centos7不需要认证，而Centos8和ubuntu 修改时区时需要认证。按要求认证即可。</p> <h4 id="_4-自动设置"><a href="#_4-自动设置" class="header-anchor">#</a> 4.自动设置</h4> <p>开启【自动设置日期和时间】、【自动设置时区】选项</p> <p>根据情况，可决定是否开启自动设置。</p> <h3 id="tzselect"><a href="#tzselect" class="header-anchor">#</a> tzselect</h3> <p>用tzselect设置时区采用人机交互的形式，十分方便。</p> <p>命令中第一个字母t是时间time的简写;
+命令中第二个字母z是区域zone的简写。</p> <p>使用tzselect 设置时区，按照提示，一步步进行，没有难度。
+按照提示一路选择: 5) asia —-&gt; 9) china ——&gt; 1) beijing
+但成功设置后，会提示把时区变量作为全局变量添加到profile中</p> <p><img src="/assets/img/87aa5ddf8620438fbfd436049752fabb.3119d0ab.png" alt="img"></p> <p>1.可以采用命令追加形式</p> <div class="language- extra-class"><pre><code>echo “export TZ='Asia/Shanghai'”  &gt;&gt;/etc/profile
+</code></pre></div><p>2.可以采用vim 打开文件，在最后一行添加内容</p> <div class="language- extra-class"><pre><code>export  TZ='Asia/Shanghai'
+</code></pre></div><p>保存，退出
+完成对文件的修改后，并不能马上更改时区，仍然需要执行命令 source /etc/profile
+当执行source命令时，系统会退出当前bash，并重新登录。
+再重新查看时间与时区，已更新。</p> <h3 id="timedatectl"><a href="#timedatectl" class="header-anchor">#</a> timedatectl</h3> <p>timedatectl是一个命令行工具，它允许你查看或者修改系统的时间和日期。它在所有现代的基于 system 的 linux 系统中都可以使用。
+timedatectl 打印当前时区信息
+如果不带参数直接运行，会正常打印出时间信息。</p> <p>timedatectl 查看可以设置的时区</p> <div class="language- extra-class"><pre><code>timedatectl list-timezones
+</code></pre></div><p>带上list-timezones参数运行下，看到如下的结果：</p> <p>上面的结果展示不全， 往下翻找可以看到 Asia/Shanghai 这一行。</p> <p>不想全部看完，可按q退出查看。</p> <p>timedatectl 设置时区</p> <div class="language- extra-class"><pre><code>timedatectl set-timezone Asia/Shanghai
+</code></pre></div><h3 id="cp文件设置时区"><a href="#cp文件设置时区" class="header-anchor">#</a> cp文件设置时区</h3> <p>cp文件设置时区</p> <div class="language- extra-class"><pre><code>    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</code></pre></div><p>这种方式也可以设置时间，但是还是建议使用timedatectl工具。 因为timedatectl工具屏蔽了各个linux的差异性。vim修改时区文件</p> <h3 id="vim修改时区文件"><a href="#vim修改时区文件" class="header-anchor">#</a> vim修改时区文件</h3> <p>我们如何确定自己的时区是正确的？
+时区文件默认的是：/etc/localtime
+下面命令会把我们系统的时间还有时区显示出来</p> <p><img src="/assets/img/ee5cdd8bb35d4000b5b8c9b7875b3949.5a5d7439.png" alt="img"></p> <p>原文链接：https://blog.csdn.net/qq_36142959/article/details/132719285</p> <h2 id="时间命令"><a href="#时间命令" class="header-anchor">#</a> 时间命令</h2> <h3 id="_1、date命令-重点"><a href="#_1、date命令-重点" class="header-anchor">#</a> 1、date命令（重点）</h3> <p><code>date</code> :<strong>打印</strong>或者<strong>设置</strong>当前系统日期和时间</p> <p><code>date --help</code> 自己先求帮助</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>用法：date <span class="token punctuation">[</span>选项<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span><span class="token operator">+</span>格式<span class="token punctuation">]</span>
+　或：date <span class="token punctuation">[</span><span class="token operator">-</span>u<span class="token punctuation">|</span><span class="token operator">--</span>utc<span class="token punctuation">|</span><span class="token operator">--</span>universal<span class="token punctuation">]</span> <span class="token namespace">[MMDDhhmm[[CC]YY][.ss]]</span>
+Display the current time in the given FORMAT<span class="token punctuation">,</span> or <span class="token function">set</span> the system date<span class="token punctuation">.</span>
+ 
+Mandatory arguments to long options are mandatory <span class="token keyword">for</span> short options too<span class="token punctuation">.</span>
+  <span class="token operator">-</span>d<span class="token punctuation">,</span> <span class="token operator">--</span>date=STRING         display time described by STRING<span class="token punctuation">,</span> not <span class="token string">'now'</span>
+  <span class="token operator">-</span>f<span class="token punctuation">,</span> <span class="token operator">--</span>file=DATEFILE       like <span class="token operator">--</span>date once <span class="token keyword">for</span> each line of DATEFILE
+  <span class="token operator">-</span>I<span class="token namespace">[TIMESPEC]</span><span class="token punctuation">,</span> <span class="token operator">--</span>iso-8601<span class="token punctuation">[</span>=TIMESPEC<span class="token punctuation">]</span>  output date/time in ISO 8601 format<span class="token punctuation">.</span>
+                            TIMESPEC=<span class="token string">'date'</span> <span class="token keyword">for</span> date only <span class="token punctuation">(</span>the default<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                            <span class="token string">'hours'</span><span class="token punctuation">,</span> <span class="token string">'minutes'</span><span class="token punctuation">,</span> <span class="token string">'seconds'</span><span class="token punctuation">,</span> or <span class="token string">'ns'</span> <span class="token keyword">for</span> date
+                            and time to the indicated precision<span class="token punctuation">.</span>
+  <span class="token operator">-</span>r<span class="token punctuation">,</span> <span class="token operator">--</span>reference=文件          显示文件指定文件的最后修改时间
+  <span class="token operator">-</span>R<span class="token punctuation">,</span> <span class="token operator">--</span>rfc-2822                以RFC 2822格式输出日期和时间
+                                例如：2006年8月7日，星期一 12:34:56 <span class="token operator">-</span>0600
+      <span class="token operator">--</span>rfc-3339=TIMESPEC   output date and time in RFC 3339 format<span class="token punctuation">.</span>
+                            TIMESPEC=<span class="token string">'date'</span><span class="token punctuation">,</span> <span class="token string">'seconds'</span><span class="token punctuation">,</span> or <span class="token string">'ns'</span> <span class="token keyword">for</span>
+                            date and time to the indicated precision<span class="token punctuation">.</span>
+                            Date and time components are separated by
+                            a single space: 2006-08-07 12:34:56-06:00
+  <span class="token operator">-</span>s<span class="token punctuation">,</span> <span class="token operator">--</span><span class="token function">set</span>=STRING          <span class="token function">set</span> time described by STRING
+  <span class="token operator">-</span>u<span class="token punctuation">,</span> <span class="token operator">--</span>utc<span class="token punctuation">,</span> <span class="token operator">--</span>universal    print or <span class="token function">set</span> Coordinated Universal Time <span class="token punctuation">(</span>UTC<span class="token punctuation">)</span>
+      <span class="token operator">--</span>help            显示此帮助信息并退出
+      <span class="token operator">--</span>version         显示版本信息并退出
+
+给定的格式FORMAT 控制着输出，解释序列如下：
+
+  <span class="token operator">%</span><span class="token operator">%</span>    一个文字的 <span class="token operator">%</span>
+  <span class="token operator">%</span>a    当前locale 的星期名缩写<span class="token punctuation">(</span>例如： 日，代表星期日<span class="token punctuation">)</span>
+  <span class="token operator">%</span>A    当前locale 的星期名全称 <span class="token punctuation">(</span>如：星期日<span class="token punctuation">)</span>
+  <span class="token operator">%</span>b    当前locale 的月名缩写 <span class="token punctuation">(</span>如：一，代表一月<span class="token punctuation">)</span>
+  <span class="token operator">%</span>B    当前locale 的月名全称 <span class="token punctuation">(</span>如：一月<span class="token punctuation">)</span>
+  <span class="token operator">%</span>c    当前locale 的日期和时间 <span class="token punctuation">(</span>如：2005年3月3日 星期四 23:05:25<span class="token punctuation">)</span>
+  <span class="token operator">%</span>C    世纪；比如 <span class="token operator">%</span>Y，通常为省略当前年份的后两位数字<span class="token punctuation">(</span>例如：20<span class="token punctuation">)</span>
+  <span class="token operator">%</span>d    按月计的日期<span class="token punctuation">(</span>例如：01<span class="token punctuation">)</span>
+  <span class="token operator">%</span>D    按月计的日期；等于<span class="token operator">%</span>m/<span class="token operator">%</span>d/<span class="token operator">%</span>y
+  <span class="token operator">%</span>e    按月计的日期，添加空格，等于<span class="token operator">%</span>_d
+  <span class="token operator">%</span>F    完整日期格式，等价于 <span class="token operator">%</span>Y-<span class="token operator">%</span>m-<span class="token operator">%</span>d
+  <span class="token operator">%</span>g    ISO-8601 格式年份的最后两位 <span class="token punctuation">(</span>参见<span class="token operator">%</span>G<span class="token punctuation">)</span>
+  <span class="token operator">%</span>G    ISO-8601 格式年份 <span class="token punctuation">(</span>参见<span class="token operator">%</span>V<span class="token punctuation">)</span>，一般只和 <span class="token operator">%</span>V 结合使用
+  <span class="token operator">%</span>h    等于<span class="token operator">%</span>b
+  <span class="token operator">%</span>H    小时<span class="token punctuation">(</span>00-23<span class="token punctuation">)</span>
+  <span class="token operator">%</span>I    小时<span class="token punctuation">(</span>00-12<span class="token punctuation">)</span>
+  <span class="token operator">%</span>j    按年计的日期<span class="token punctuation">(</span>001-366<span class="token punctuation">)</span>
+  <span class="token operator">%</span>k   hour<span class="token punctuation">,</span> space padded <span class="token punctuation">(</span> 0<span class="token punctuation">.</span><span class="token punctuation">.</span>23<span class="token punctuation">)</span><span class="token punctuation">;</span> same as <span class="token operator">%</span>_H
+  <span class="token operator">%</span>l   hour<span class="token punctuation">,</span> space padded <span class="token punctuation">(</span> 1<span class="token punctuation">.</span><span class="token punctuation">.</span>12<span class="token punctuation">)</span><span class="token punctuation">;</span> same as <span class="token operator">%</span>_I
+  <span class="token operator">%</span>m   month <span class="token punctuation">(</span>01<span class="token punctuation">.</span><span class="token punctuation">.</span>12<span class="token punctuation">)</span>
+  <span class="token operator">%</span>M   minute <span class="token punctuation">(</span>00<span class="token punctuation">.</span><span class="token punctuation">.</span>59<span class="token punctuation">)</span>
+  <span class="token operator">%</span>n    换行
+  <span class="token operator">%</span>N    纳秒<span class="token punctuation">(</span>000000000-999999999<span class="token punctuation">)</span>
+  <span class="token operator">%</span>p    当前locale 下的<span class="token string">&quot;上午&quot;</span>或者<span class="token string">&quot;下午&quot;</span>，未知时输出为空
+  <span class="token operator">%</span>P    与<span class="token operator">%</span>p 类似，但是输出小写字母
+  <span class="token operator">%</span>r    当前locale 下的 12 小时时钟时间 <span class="token punctuation">(</span>如：11:11:04 下午<span class="token punctuation">)</span>
+  <span class="token operator">%</span>R    24 小时时间的时和分，等价于 <span class="token operator">%</span>H:<span class="token operator">%</span>M
+  <span class="token operator">%</span>s    自UTC 时间 1970-01-01 00:00:00 以来所经过的秒数
+  <span class="token operator">%</span>S    秒<span class="token punctuation">(</span>00-60<span class="token punctuation">)</span>
+  <span class="token operator">%</span>t    输出制表符 Tab
+  <span class="token operator">%</span>T    时间，等于<span class="token operator">%</span>H:<span class="token operator">%</span>M:<span class="token operator">%</span>S
+  <span class="token operator">%</span>u    星期，1 代表星期一
+  <span class="token operator">%</span>U    一年中的第几周，以周日为每星期第一天<span class="token punctuation">(</span>00-53<span class="token punctuation">)</span>
+  <span class="token operator">%</span>V    ISO-8601 格式规范下的一年中第几周，以周一为每星期第一天<span class="token punctuation">(</span>01-53<span class="token punctuation">)</span>
+  <span class="token operator">%</span>w    一星期中的第几日<span class="token punctuation">(</span>0-6<span class="token punctuation">)</span>，0 代表周一
+  <span class="token operator">%</span>W    一年中的第几周，以周一为每星期第一天<span class="token punctuation">(</span>00-53<span class="token punctuation">)</span>
+  <span class="token operator">%</span>x    当前locale 下的日期描述 <span class="token punctuation">(</span>如：12/31/99<span class="token punctuation">)</span>
+  <span class="token operator">%</span>X    当前locale 下的时间描述 <span class="token punctuation">(</span>如：23:13:48<span class="token punctuation">)</span>
+  <span class="token operator">%</span>y    年份最后两位数位 <span class="token punctuation">(</span>00-99<span class="token punctuation">)</span>
+  <span class="token operator">%</span>Y    年份
+  <span class="token operator">%</span>z <span class="token operator">+</span>hhmm              数字时区<span class="token punctuation">(</span>例如，<span class="token operator">-</span>0400<span class="token punctuation">)</span>
+  <span class="token operator">%</span>:z <span class="token operator">+</span>hh:mm            数字时区<span class="token punctuation">(</span>例如，<span class="token operator">-</span>04:00<span class="token punctuation">)</span>
+  <span class="token operator">%</span>::z <span class="token operator">+</span>hh:mm:ss        数字时区<span class="token punctuation">(</span>例如，<span class="token operator">-</span>04:00:00<span class="token punctuation">)</span>
+  <span class="token operator">%</span>:::z                 数字时区带有必要的精度 <span class="token punctuation">(</span>例如，<span class="token operator">-</span>04，<span class="token operator">+</span>05:30<span class="token punctuation">)</span>
+  <span class="token operator">%</span>Z                    按字母表排序的时区缩写 <span class="token punctuation">(</span>例如，EDT<span class="token punctuation">)</span>
+
+默认情况下，日期的数字区域以0 填充。
+The following optional flags may follow <span class="token string">'%'</span>:
+
+  <span class="token operator">-</span>  <span class="token punctuation">(</span>hyphen<span class="token punctuation">)</span> <span class="token keyword">do</span> not pad the field
+  _  <span class="token punctuation">(</span>underscore<span class="token punctuation">)</span> pad with spaces
+  0  <span class="token punctuation">(</span>zero<span class="token punctuation">)</span> pad with zeros
+  ^  use upper case <span class="token keyword">if</span> possible
+  <span class="token comment">#  use opposite case if possible</span>
+
+在任何标记之后还允许一个可选的域宽度指定，它是一个十进制数字。
+作为一个可选的修饰声明，它可以是E，在可能的情况下使用本地环境关联的
+表示方式；或者是O，在可能的情况下使用本地环境关联的数字符号。
+
+Examples:
+Convert seconds since the epoch <span class="token punctuation">(</span>1970-01-01 UTC<span class="token punctuation">)</span> to a date
+  $ date <span class="token operator">--</span>date=<span class="token string">'@2147483647'</span>
+
+Show the time on the west coast of the US <span class="token punctuation">(</span>use tzselect<span class="token punctuation">(</span>1<span class="token punctuation">)</span> to find TZ<span class="token punctuation">)</span>
+  $ TZ=<span class="token string">'America/Los_Angeles'</span> date
+
+Show the local time <span class="token keyword">for</span> 9AM next Friday on the west coast of the US
+  $ date <span class="token operator">--</span>date=<span class="token string">'TZ=&quot;America/Los_Angeles&quot; 09:00 next Fri'</span>
+
+GNU coreutils online help: &lt;http:<span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>gnu<span class="token punctuation">.</span>org/software/coreutils/&gt;
+请向&lt;http:<span class="token operator">/</span><span class="token operator">/</span>translationproject<span class="token punctuation">.</span>org/team/zh_CN<span class="token punctuation">.</span>html&gt; 报告date 的翻译错误
+要获取完整文档，请运行：info coreutils <span class="token string">'date invocation'</span>
+</code></pre></div><h4 id="_1-打印日期或时间"><a href="#_1-打印日期或时间" class="header-anchor">#</a> ① 打印日期或时间</h4> <div class="language-powershell extra-class"><pre class="language-powershell"><code>常用格式：
+    获取系统当前时间
+    yyyy-mm-dd
+	    date <span class="token operator">+</span><span class="token operator">%</span>F
+    	date <span class="token operator">+</span><span class="token operator">%</span>Y-<span class="token operator">%</span>m-<span class="token operator">%</span>d
+
+    yyyy-mm-dd HH:mm:ss
+	    date <span class="token operator">+</span><span class="token string">'%F %T'</span>
+    	date <span class="token operator">+</span><span class="token string">'%Y-%m-%d %H:%M:%S'</span>
+
+	获取非当前时间 days<span class="token punctuation">,</span>months<span class="token punctuation">,</span>years
+	yyyy-mm-dd
+		date <span class="token operator">-</span>d <span class="token string">'+3days'</span> <span class="token operator">+</span><span class="token string">'%F %T'</span>
+		date <span class="token operator">--</span>date=<span class="token string">'3days'</span> <span class="token operator">+</span><span class="token string">'%F %T'</span>
+		
+		date <span class="token operator">-</span>d <span class="token string">'-3days'</span> <span class="token operator">+</span><span class="token string">'%F %T'</span>
+		date <span class="token operator">-</span>d <span class="token string">'3days ago'</span> <span class="token operator">+</span><span class="token string">'%F %T'</span>
+		date <span class="token operator">--</span>date=<span class="token string">'-3days'</span> <span class="token operator">+</span><span class="token string">'%F %T'</span>
+
+
+
+打印系统当前日期或时间
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +%D</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +%F</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +%Y-%m-%d</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +%T</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +%X</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +'%F %X'</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date +%c</span>
+打印系统非当前日期或时间
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date -d '+3days' +%F</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date -d '-3days' +%F</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date -d '3days' +%F</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date -d '3days ago' +%F</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date --date='30days' +%F</span>
+
+
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">+</span><span class="token string">'%Y %m %d'</span>
+2023 11 01
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">+</span><span class="token operator">%</span>T
+10:32:06
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">+</span><span class="token operator">%</span>X
+10时32分14秒
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">+</span><span class="token operator">%</span>F <span class="token operator">%</span>X
+date: 额外的操作数 <span class="token string">&quot;%X&quot;</span>
+<span class="token keyword">Try</span> <span class="token string">'date --help'</span> <span class="token keyword">for</span> more information<span class="token punctuation">.</span>
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">+</span><span class="token string">'%F %X'</span>
+2023-11-01 10时32分30秒
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">+</span><span class="token operator">%</span>c
+2023年11月01日 星期三 10时33分10秒
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>d
+date：选项需要一个参数 <span class="token operator">--</span> d
+<span class="token keyword">Try</span> <span class="token string">'date --help'</span> <span class="token keyword">for</span> more information<span class="token punctuation">.</span>
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>d <span class="token string">'+3days'</span> <span class="token operator">+</span><span class="token operator">%</span>F
+2023-11-04
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>d <span class="token string">'+3days'</span> <span class="token operator">+</span><span class="token operator">%</span>c
+2023年11月04日 星期六 10时34分06秒
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>d <span class="token string">'-3days'</span> <span class="token operator">+</span><span class="token operator">%</span>F
+2023-10-29
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>d <span class="token string">'3days ago'</span> <span class="token operator">+</span><span class="token operator">%</span>F
+2023-10-29
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">-</span>d <span class="token string">'3days'</span> <span class="token operator">+</span><span class="token operator">%</span>F
+2023-11-04
+<span class="token namespace">[jysp@jysp ~]</span>$ date <span class="token operator">--</span>date=<span class="token string">'30days'</span> <span class="token operator">+</span><span class="token operator">%</span>F
+2023-12-01
+<span class="token namespace">[jysp@jysp ~]</span>$ 
+</code></pre></div><h4 id="_2-设置系统日期或时间"><a href="#_2-设置系统日期或时间" class="header-anchor">#</a> ② 设置系统日期或时间</h4> <div class="language-powershell extra-class"><pre class="language-powershell"><code>选项：<span class="token operator">-</span>s 设置当前系统时间，只有root权限才能设置，其他只能查看。
+date <span class="token operator">-</span>s 20200523 设置成20100523，这样会把具体时间设置成空00:00:00
+date <span class="token operator">-</span>s <span class="token string">&quot;01:01:01 2020-05-2&quot;</span> 这样可以设置全部时间
+date <span class="token operator">-</span>s <span class="token string">&quot;01:01:01 20200523&quot;</span> 这样可以设置全部时间
+date <span class="token operator">-</span>s <span class="token string">&quot;2020-05-23 01:01:01&quot;</span> 这样可以设置全部时间
+date <span class="token operator">-</span>s <span class="token string">&quot;20200523 01:01:01&quot;</span> 这样可以设置全部时间
+
+注意：
+红帽8，设置为过去的时间，过段时间会被重置为当前时间
+</code></pre></div><h3 id="_2、hwclock命令"><a href="#_2、hwclock命令" class="header-anchor">#</a> 2、hwclock命令</h3> <h4 id="_3-系统时间同步硬件时间"><a href="#_3-系统时间同步硬件时间" class="header-anchor">#</a> ③ 系统时间同步硬件时间</h4> <p><code>hwclock</code> :查看并且设置硬件时间</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>选项：
+<span class="token comment"># 设置系统时间：从硬件时间同步到系统时间</span>
+<span class="token operator">-</span>s<span class="token punctuation">,</span> <span class="token operator">--</span>hctosys <span class="token function">set</span> the system time <span class="token keyword">from</span> the RTC
+<span class="token comment"># 设置硬件时间：从系统时间同步到硬件时间</span>
+<span class="token operator">-</span>w<span class="token punctuation">,</span> <span class="token operator">--</span>systohc <span class="token function">set</span> the RTC <span class="token keyword">from</span> the system time
+<span class="token comment"># 查看硬件时间</span>
+<span class="token operator">-</span>l<span class="token punctuation">,</span> <span class="token operator">--</span>localtime the RTC timescale is Local
+
+
+举例说明：
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># hwclock --hctosys</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># hwclock</span>
+2019-06-23 18:44:10<span class="token punctuation">.</span>377920+08:00
+
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date</span>
+2019年 06月 23日 星期日 18:44:21 CST
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date -s &quot;20221010 12:12:12&quot;</span>
+2022年 10月 10日 星期一 12:12:12 CST
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># date</span>
+2022年 10月 10日 星期一 12:12:14 CST
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># hwclock</span>
+2019-06-23 18:45:01<span class="token punctuation">.</span>368135+08:00
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># hwclock --systohc</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># hwclock</span>
+2022-10-10 12:12:43<span class="token punctuation">.</span>179274+08:00
+</code></pre></div><h3 id="_3、timedatectl命令"><a href="#_3、timedatectl命令" class="header-anchor">#</a> 3、timedatectl命令</h3> <p><code>timedatectl</code></p> <p>查看当前时间、时区、NTP服务状态
+设置系统时间、硬件时间、时区</p> <blockquote><p>ntp服务</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># 从7开始就有</span>
+timedatectl <span class="token operator">-</span>h 设置和查看系统的时间和日期（设置时区以及开启或关闭ntp服务）
+
+<span class="token comment"># 查看当前时间</span>
+<span class="token namespace">[jysp@jysp ~]</span>$ timedatectl status
+      Local time: 三 2023-11-01 10:47:08 CST
+  Universal time: 三 2023-11-01 02:47:08 UTC
+        RTC time: 三 2023-11-01 02:47:42
+       Time zone: Asia/Shanghai <span class="token punctuation">(</span>CST<span class="token punctuation">,</span> <span class="token operator">+</span>0800<span class="token punctuation">)</span>
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+
+
+<span class="token comment"># 关闭NTP同步</span>
+timedatectl <span class="token function">set-ntp</span> no
+
+
+<span class="token comment"># 设置时间:系统时间、硬件时间</span>
+timedatectl <span class="token function">set-time</span> 2020-10-10
+timedatectl <span class="token function">set-time</span> 11:11:11
+timedatectl list-timezones
+timedatectl <span class="token function">set-timezone</span> xxx
+
+
+
+<span class="token comment"># 同步当前时间</span>
+<span class="token comment"># 6版本中</span>
+ntpdate
+
+<span class="token comment"># 8版本中</span>
+timedatectl <span class="token function">set-ntp</span> yes
+timedatectl status
+chronyc makestep
+</code></pre></div><h3 id="_4、cal命令-了解"><a href="#_4、cal命令-了解" class="header-anchor">#</a> 4、cal命令（了解）</h3> <p><code>cal</code> :查看日历</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>用法：
+ cal <span class="token punctuation">[</span>选项<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">[</span>日<span class="token punctuation">]</span> 月<span class="token punctuation">]</span> 年<span class="token punctuation">]</span>
+
+选项：
+ <span class="token operator">-</span>1<span class="token punctuation">,</span> <span class="token operator">--</span>one        只显示当前月份<span class="token punctuation">(</span>默认<span class="token punctuation">)</span>
+ <span class="token operator">-</span>3<span class="token punctuation">,</span> <span class="token operator">--</span>three      显示上个月、当月和下个月
+ <span class="token operator">-</span>s<span class="token punctuation">,</span> <span class="token operator">--</span>sunday     周日作为一周第一天
+ <span class="token operator">-</span>m<span class="token punctuation">,</span> <span class="token operator">--</span>monday     周一用为一周第一天
+ <span class="token operator">-</span>j<span class="token punctuation">,</span> <span class="token operator">--</span>julian     输出儒略日
+ <span class="token operator">-</span>y<span class="token punctuation">,</span> <span class="token operator">--</span>year       输出整年
+ <span class="token operator">-</span>V<span class="token punctuation">,</span> <span class="token operator">--</span>version    显示版本信息并退出
+ <span class="token operator">-</span>h<span class="token punctuation">,</span> <span class="token operator">--</span>help       显示此帮助并退出
+
+</code></pre></div><div class="language-powershell extra-class"><pre class="language-powershell"><code>cal 或者 cal <span class="token operator">-</span>1 		表示直接输出当前月份的日历
+cal <span class="token operator">-</span>3 				 表示输出上一个月<span class="token operator">+</span>本月<span class="token operator">+</span>下个月的日历
+cal <span class="token operator">-</span>y 年份 			表示输出某一个年份的日历
+</code></pre></div><h3 id="_5、tzselector-了解"><a href="#_5、tzselector-了解" class="header-anchor">#</a> 5、tzselector（了解）</h3> <p>用tzselect设置时区采用人机交互的形式，十分方便。</p> <p>命令中第一个字母t是时间time的简写;
+命令中第二个字母z是区域zone的简写。</p> <p>使用tzselect 设置时区，按照提示，一步步进行，没有难度。
+按照提示一路选择: 5) asia —-&gt; 9) china ——&gt; 1) beijing</p> <h3 id="综合应用"><a href="#综合应用" class="header-anchor">#</a> 综合应用</h3> <h4 id="_4-应用案例"><a href="#_4-应用案例" class="header-anchor">#</a> ④ 应用案例</h4> <blockquote><p>有时候我们需要用到当前的系统时间，如何调用？比如以当前系统日期命名创建目录或文件</p></blockquote> <div class="language-powershell extra-class"><pre class="language-powershell"><code>2020-10-10<span class="token punctuation">.</span>log<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz
+2020-10-11<span class="token punctuation">.</span>log<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz
+$<span class="token punctuation">(</span><span class="token punctuation">)</span>：括号里面的命令优先执行 	date <span class="token operator">+</span><span class="token operator">%</span>F 		2019-06-23
+`` ：引号里面的命令优先执行，不允许嵌套
+
+创建目录和文件，以当前系统日期命名
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># mkdir $(date +%F)</span>
+<span class="token namespace">[root@heima ~]</span><span class="token comment"># touch $(date -d '+3days' +%Y%m%d).log</span>
+</code></pre></div><h2 id="时间同步ntp"><a href="#时间同步ntp" class="header-anchor">#</a> 时间同步NTP</h2> <h3 id="_1、了解时间同步的重要性"><a href="#_1、了解时间同步的重要性" class="header-anchor">#</a> 1、了解时间同步的重要性</h3> <p>由于IT系统中，准确的计时非常重要，有很多种原因需要准确计时，如</p> <p>在网络传输中，数据包和日志需要准确的时间戳</p> <p>各种应用程序中，如订单信息，交易信息等都需要准确的时间戳</p> <p>在Linux系统中， Network Time Protocol (NTP)，NTP协议由在用户空间中运行的守护程序实现，即ntp和chrony。</p> <blockquote><p>红帽6以前使用ntp，红帽7ntp和chrony，红帽8 chrony</p></blockquote> <h3 id="_2、了解时间同步服务器"><a href="#_2、了解时间同步服务器" class="header-anchor">#</a> 2、了解时间同步服务器</h3> <p><img src="/assets/img/image-20231212192234556.8edef269.png" alt="image-20231212192234556"></p> <p><strong>查看可以提供时间同步的服务器：</strong></p> <p>http://www.ntp.org.cn/pool</p> <p><img src="/assets/img/image-20231215151614961.34de20b6.png" alt="image-20231215151614961"></p> <h3 id="_3、chrony如何同步自己系统时间"><a href="#_3、chrony如何同步自己系统时间" class="header-anchor">#</a> 3、chrony如何同步自己系统时间</h3> <blockquote><p>需要联网</p></blockquote> <p>（1）方式一：自动同步</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># 手动设置时间</span>
+date <span class="token operator">-</span>s <span class="token string">&quot;2020-10-10 10:10:10&quot;</span>
+
+<span class="token comment"># 查看chrony安装包</span>
+yum list<span class="token punctuation">|</span>grep chrony
+
+<span class="token comment"># 查看软件包，配置文件位置</span>
+rpm <span class="token operator">-</span>qc chrony
+</code></pre></div><p><img src="/assets/img/image-20231215152048615.8e70e435.png" alt="image-20231215152048615"></p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># 重启服务</span>
+systemctl restart chronyd<span class="token punctuation">.</span>service
+systemctl status chronyd<span class="token punctuation">.</span>service
+
+<span class="token comment"># 修改时间，测试自动同步</span>
+date <span class="token operator">-</span>s <span class="token string">&quot;2020-10-10 10:10:10&quot;</span>
+</code></pre></div><p>（2）方式二：手动临时同步</p> <p>临时指定ntp服务器同步</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>systemctl status chronyd<span class="token punctuation">.</span>service
+systemctl stop chronyd<span class="token punctuation">.</span>service
+
+chronyd <span class="token operator">-</span>q <span class="token string">&quot;server cn.ntp.org.cn iburst&quot;</span>
+</code></pre></div><h3 id="_4、chrony搭建时间同步服务"><a href="#_4、chrony搭建时间同步服务" class="header-anchor">#</a> 4、chrony搭建时间同步服务</h3> <h4 id="一-了解rhel7和rhel8区别"><a href="#一-了解rhel7和rhel8区别" class="header-anchor">#</a> ㈠ 了解RHEL7和RHEL8区别</h4> <ul><li><p>在RHEL7中，用户可以在<strong>ntp</strong>和<strong>chrony</strong>之间进行选择，以确保准确的计时。</p></li> <li><p>在RHEL8中，不再支持<strong>ntp</strong>,使用<strong>chronyd</strong>守护进程来实现NTP,默认已启用,从chrony软件包获得。</p></li> <li><p>chrony和ntp之间的差异</p> <ul><li><p>ntpd服务器在控制客户端访问方式上默认响应来自任何地址的请求，相对不安全chronyd默认不允许访问，要想提供时间同步服务端需要在allow中指定</p></li> <li><p>ntpd 和 chronyd 在系统时钟校正方面的默认行为也不同。</p></li> <li><p>客户端同步方式有差异</p></li></ul></li> <li><p>还有很多不同可以参考官方网站：https://chrony.tuxfamily.org/comparison.html</p></li></ul> <p><strong>总结：</strong></p> <p><strong>chrony</strong>在各种条件下表现良好，包括间歇性网络连接，高度拥挤的网络，温度变化（普通计算机时钟对温度敏感），以及不能连续运行或在虚拟机上运行的系统。</p> <h4 id="二-rhel8配置时间同步服务"><a href="#二-rhel8配置时间同步服务" class="header-anchor">#</a> ㈡ RHEL8配置时间同步服务</h4> <ol><li><p>关闭防火墙和selinux（实验）</p></li> <li><p>配置软件仓库</p></li> <li><p>软件三部曲</p> <ul><li><p>安装软件</p></li> <li><p>确认软件是否成功安装</p></li> <li><p>查看软件的文件列表（配置文件、程序本身、man手册）</p></li></ul></li> <li><p>了解配置文件（man 5 xxx.conf）</p></li> <li><p>根据需求通过修改配置文件来完成服务搭建</p></li> <li><p>启动服务，开机自启动</p></li> <li><p>测试验证</p></li></ol> <ul><li><p>时间同步服务器端</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token comment"># 防火墙</span>
+systemctl status firewalld<span class="token punctuation">.</span>service
+<span class="token comment"># selinux</span>
+getenforce
+<span class="token comment"># 软件仓库</span>
+dnf repolist
+<span class="token comment"># 查看软件包</span>
+rpm <span class="token operator">-</span>q chrony
+<span class="token comment"># 查看配置文件</span>
+rpm <span class="token operator">-</span>ql chrony
+
+
+
+<span class="token comment"># vim /etc/chrony.conf</span>
+<span class="token comment">#自己本身向谁来同步时间</span>
+pool cn<span class="token punctuation">.</span>ntp<span class="token punctuation">.</span>org<span class="token punctuation">.</span>cn iburst
+<span class="token comment">#允许哪些客户端来同步,192.168.159网段的ip/子网掩码24位</span>
+allow 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>159<span class="token punctuation">.</span>0/24
+
+重启服务
+systemctl restart chronyd<span class="token punctuation">.</span>service
+
+查看服务状态
+systemctl status chronyd<span class="token punctuation">.</span>service
+
+查看udp端口状态
+netstat <span class="token operator">-</span>nlup<span class="token punctuation">|</span>grep chronyd
+</code></pre></div></li> <li><p>客户端</p> <p>修改配置文件</p> <p><img src="/assets/img/image-20231215153721931.bfd6bf0d.png" alt="image-20231215153721931"></p> <div class="language-powershell extra-class"><pre class="language-powershell"><code>重启服务
+systemctl restart chronyd<span class="token punctuation">.</span>service
+
+查看当前客户端使用的源
+chronyc sources
+chronyc sourcestats
+chronyc sources <span class="token operator">-</span>v
+
+<span class="token namespace">[root@client ~]</span><span class="token comment"># chronyc sources</span>
+210 Number of sources = 1
+MS Name/IP address Stratum Poll Reach LastRx Last sample
+===============================================================================
+^? 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>159<span class="token punctuation">.</span>100 3 6 37 5 <span class="token operator">+</span>10766h<span class="token punctuation">[</span><span class="token operator">+</span>10766h<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">/</span><span class="token operator">-</span> 3872us
+
+手动同步时间，官方不建议使用
+<span class="token namespace">[root@client ~]</span><span class="token comment"># chronyc makestep</span>
+200 OK
+</code></pre></div></li></ul> <blockquote><p>*代办当前在使用的源</p></blockquote> <p><img src="/assets/img/image-20231215154114740.b1e65ac2.png" alt="image-20231215154114740"></p> <h3 id="_5、windows开启ntp服务功能"><a href="#_5、windows开启ntp服务功能" class="header-anchor">#</a> 5、windows开启ntp服务功能</h3> <p>（1）打开搜索<code>注册表</code>或<code>win+R 输入regedit</code></p> <p><img src="/assets/img/image-20231217151126643.0ff726cf.png" alt="image-20231217151126643"></p> <p><img src="/assets/img/image-20231217151159677.a67bf3c2.png" alt="image-20231217151159677"></p> <p>（2）设定授权时间服务器</p> <p>注册表路径： HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Config</p> <p>修改 AnnounceFlags 数a改为 5</p> <p><img src="/assets/img/image-20231217151244921.fbb34124.png" alt="image-20231217151244921"></p> <p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\NtpServer</p> <p>修改 Enabled 数值0修改为 1</p> <p><img src="/assets/img/image-20231217151505741.87de1aa9.png" alt="image-20231217151505741"></p> <p>（3）搜索<code>服务</code>或 <code>win+R 输入services.msc</code>打开服务面板</p> <p><img src="/assets/img/image-20231217151608656.64acd913.png" alt="image-20231217151608656"></p> <p><img src="/assets/img/image-20231217152042610.c7dbadb9.png" alt="image-20231217152042610"></p> <p>（4）启动服务</p> <p><img src="/assets/img/image-20231217152004513.63e9862b.png" alt="image-20231217152004513"></p> <p><img src="/assets/img/image-20231217152116922.2b69ba6a.png" alt="image-20231217152116922"></p> <p>服务的启停，需要使用管理员运行</p> <ul><li><p>net start w32time</p></li> <li><p>net stop w32time</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>Microsoft Windows [版本 10.0.19045.3693]
+(c) Microsoft Corporation。保留所有权利。
+
+C:\WINDOWS\system32&gt;net start w32time
+请求的服务已经启动。
+
+请键入 NET HELPMSG 2182 以获得更多的帮助。
+
+
+C:\WINDOWS\system32&gt;net stop w32time
+Windows Time 服务正在停止.
+Windows Time 服务已成功停止。
+
+
+C:\WINDOWS\system32&gt;net start w32time
+Windows Time 服务正在启动 .
+Windows Time 服务已经启动成功。
+</code></pre></div><p><img src="/assets/img/image-20231217160619817.b1842e4d.png" alt="image-20231217160619817"></p> <p><img src="/assets/img/image-20231217160649310.8da3d8f9.png" alt="image-20231217160649310"></p> <p>本机测试</p> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\miyufeng&gt;w32tm /stripchart /computer:127.0.0.1
+正在跟踪 127.0.0.1 [127.0.0.1:123]。
+当前时间是 2023/12/17 15:23:45。
+15:23:45, d:+00.0013197s o:+00.0004149s  [                           *                           ]
+15:23:47, d:+00.0006835s o:+00.0002398s  [                           *                           ]
+15:23:49, d:+00.0004796s o:+00.0000808s  [                           *                           ]
+</code></pre></div><p>（5）防火墙配置</p> <p><img src="/assets/img/image-20231217153111416.10ef5380.png" alt="image-20231217153111416"></p> <p><img src="/assets/img/image-20231217153615857.84b57d24.png" alt="image-20231217153615857"></p> <p><img src="/assets/img/image-20231217153655464.77ac41bf.png" alt="image-20231217153655464"></p> <p><img src="/assets/img/image-20231217153725692.2b4a3913.png" alt="image-20231217153725692"></p> <p><img src="/assets/img/image-20231217153815681.e39151a6.png" alt="image-20231217153815681"></p> <p><img src="/assets/img/image-20231217153833585.214a27f6.png" alt="image-20231217153833585"></p> <p><img src="/assets/img/image-20231217153905835.e296b32f.png" alt="image-20231217153905835"></p> <p>（6）局域网内设备时间同步测试</p> <p><img src="/assets/img/image-20231217152542151.bbd86644.png" alt="image-20231217152542151"></p> <p><img src="/assets/img/image-20231217154641860.848b127d.png" alt="image-20231217154641860"></p> <p><img src="/assets/img/image-20231217154707627.237b3e1d.png" alt="image-20231217154707627"></p> <h3 id="_6、ntp工具"><a href="#_6、ntp工具" class="header-anchor">#</a> 6、ntp工具</h3> <h4 id="ntp客户端"><a href="#ntp客户端" class="header-anchor">#</a> ntp客户端</h4> <p>1、安装ntp和<a href="https://so.csdn.net/so/search?q=ntpdate&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">ntpdate<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>两个rpm包。</p> <p>使用yum install ntp、yum install ntpdate命令执行安装操作（本次省略）</p> <p>2、配置ntp客户端文件【/etc/ntp.conf】中的server项, 只保留server的有效行（默认有3-4行server有效行去向公网同步时间，需注释掉）。如</p> <div class="language-shell extra-class"><pre class="language-shell"><code>server <span class="token number">172.29</span>.12.120  perfer      <span class="token comment">#提供ntp-server的主机地址</span>
+server  <span class="token number">172.29</span>.120.12 perfer  <span class="token punctuation">(</span>iburst）    <span class="token comment">#提供ntp-server的主机地址</span>
+</code></pre></div><p>#restrict default kod nomodify notrap nopeer noquery 注释此行内容  作为ntp服务器可注释掉（取消默认不行其他主机连接同步时间）</p> <p>server x.x.x.x iburst  同步时间服务ip  客户端只是配这个就可以</p> <p>3、启动ntpd服务、并添加至开机启动项。如</p> <p>启动服务</p> <div class="language-shell extra-class"><pre class="language-shell"><code>systemctl  start  ntpd        <span class="token comment">#启动ntpd服务</span>
+systemctl  start  ntpdate
+systemctl <span class="token builtin class-name">enable</span>  ntpd        <span class="token comment">#将ntpd添加到开机启动项</span>
+systemctl <span class="token builtin class-name">enable</span>  ntpdate
+systemctl is-enabled ntpd        <span class="token comment">#查看是否在开机启动项</span>
+systemctl is-enabled ntpdate
+systemctl list-unit-files <span class="token operator">|</span> <span class="token function">grep</span> ntp     <span class="token comment">#查看是否在开机启动项</span>
+systemctl status ntpd                     <span class="token comment">#查看ntpd服务的状态</span>
+</code></pre></div><p>4、验证</p> <div class="language-shell extra-class"><pre class="language-shell"><code> ntpq <span class="token parameter variable">-p</span>           <span class="token comment">#查看该主机使用的ntp-server情况和同步延时等信息；</span>
+ timedatectl      <span class="token comment">#查看ntpd服务或chronyd服务是否生效。</span>
+                  <span class="token comment">#只有centos7、redhat7、ubuntu14等以上（含）才有该命令；</span>
+</code></pre></div><p>5、其他配置（或添加时间同步的计划任务）
+使用ntpdate命令也可以执行<a href="https://so.csdn.net/so/search?q=ntp%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">ntp时间同步<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，不需要ntp客户的ntpd服务。如</p> <div class="language-shell extra-class"><pre class="language-shell"><code>ntpdate <span class="token number">172.29</span>.120.12     <span class="token comment">#向172.29.120.12的ntpserver主机同步本地系统时间。</span>
+ntpdate <span class="token parameter variable">-u</span> <span class="token number">172.29</span>.120.12  <span class="token comment">##同上，-u参数是可以在客户端ntpd服务启动时同时执行的命令。</span>
+</code></pre></div><p>计划任务中的时间同步，同样的效果。也可以和客户端的ntpd服务同时存在。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">crontab</span> <span class="token parameter variable">-l</span>
+<span class="token number">0</span> <span class="token number">0</span> * * <span class="token number">0</span> /usr/sbin/ntpdate <span class="token parameter variable">-u</span> <span class="token number">172.29</span>.120.12 <span class="token operator">||</span> /usr/sbin/ntpdate <span class="token parameter variable">-u</span> <span class="token number">172.29</span>.12.120
+</code></pre></div><p><img src="/assets/img/a5154481cf404ef5b1efdfd7da309fd5.64757174.png" alt="img"></p> <p>查看服务状态 ntpstat ntptime timedatectl 三个命令看状态</p> <p><img src="/assets/img/0294fa56ef7f43de9dac0d457ef683e1.37f6a827.png" alt="img"></p> <p>CentOS7下使用NTP遇到的问题
+问题1、在CentOS7下使用NTP时，客户端ntpd服务添加到开机启动项中了，但主机系统启动后ntpd服务还是停止状态（dead），无法正常启动。
+解决以上现象有两种方法 ，本人常用方法一的操作：
+方法一：
+1.通过命令 systemctl enable ntpd 设置NTP服务开机自启动。
+2.重启虚拟机后查看 服务运行状态 systemctl status ntpd ，发现服务并没有成功启动。
+3.查看chrony是否被设置为开机自启动。通过指令 systemctl is-enabled chronyd
+或systemctl list-unit-files | grep chrony 查看，发现这个服务已经被设置为开机自启动所以导致NTP服务的自启动失败。
+4.所以要把 chrony 的自启动去掉。执行指令 systemctl disable chronyd 。
+5.重启虚拟机， 执行 systemctl status ntpd ，问题解决。
+systemctl list-unit-files|grep ntpd
+systemctl list-unit-files|grep chrony
+<img src="/assets/img/070727556c8645febea27f4e38e8664c.ffa50c41.png" alt="img"></p> <p>方法二：
+需要开机自启动某服务，第一个想到的当然是开机启动自定义脚本。
+在Centos之前版本只要在 /etc/rc.d/rc.local 文件中加入 启动服务的命令，当虚拟机重启时就会执行该文件中的命令，服务也就启动了。但是但Centos7版本，这个文件的权限被降低了，所以当你打开这个文件时，注释中很友好的提示让你给这个文件赋权，以确保它有可执行权限。chmod +x /etc/rc.d/rc.local 。
+所以只要把指令写到这个文件中，就可以在开机时启动服务或者让虚拟机做其它事情。
+chmod +x /etc/rc.d/rc.local
+echo “systemctl start ntpd” &gt;&gt; !$
+<img src="/assets/img/7276c8a470bc4b3bb2fdd6c620796e67.d8bdd94a.png" alt="img"></p> <p>问题2、ntpdate命令执行报错，提示ntpd服务已经存在（ntpdate：the NTP socket is in use, exiting）
+报错的原因是因为客户端有ntpd服务在运行。因此需要继续执行，必须加-u参数，如
+update -u 172.29.120.12</p> <p><img src="/assets/img/8bfa9fb75e594d87b8c2180d404532a1.bdfb789f.png" alt="img"></p> <p>问题3、启动了ntpd服务，却未执行过同步时间操作。
+需要检查ntpd服务是否生效、并应用是否也生效了。如</p> <p><img src="/assets/img/76652e9d87664b2185a324938f6f670e.03fe3625.png" alt="img"></p> <p><img src="/assets/img/4e16252b5cd84eafbbc83a0a0017ebc5.1f67a664.png" alt="img"></p> <p>查看状态 ntpstat ntptime timedatectl</p> <p><img src="/assets/img/30c7ab2944db45fa8b14c8d9af4beb97.d8a11488.png" alt="img"></p> <p>1、npq -p 执行结果的参数解释</p> <p><img src="/assets/img/a2daf7d616f740b9b2d91f74238e0b8b.79837e92.png" alt="img"></p> <p>ntpq -p命令列出了所有作为时钟源校正过本地NTP服务器时钟上层NTP服务器的列表，每一列的含义分别如下：
+remote：响应请求的NTP服务器的名称（IP地址或域名），带“”的表示本地NTP服务器与该服务器同步
+refid：远程NTP服务器使用的上一级ntp服务器的IP地址
+st：远程NTP服务器的级别，由于NTP是层级结构，有顶端的服务器，多层的Relay Server再到客户端。所以服务器从高到低，级别可以设定为1~16级。为了减缓负荷和网络堵塞，原则上应该避免直接连接到级别为1的服务器。
+t：本地NTP服务器与远程NTP服务器的通信方式。u：单播；b：广播；I：本地
+when：上次成功请求后到现在的秒数
+poll：本地NTP服务器与远程NTP服务器同步的时间间隔。
+reach：这是一个八进制的值，用来测试衡量前八次查询是否成功和服务器连接。377表示都成功，0表示不成功
+delay：网络延时，单位为微秒（μs）
+offset：本地NTP服务器与远程NTP服务器的时间偏移，单位为毫秒（ms）。offset越接近于0，主机与NTP服务器的时间越接近
+jitter：查询偏差的分布值，用于表示远程NTP的网络延时是否稳定，单位为微秒（μs）*</p> <p>2、timedatectl 命令的讲解
+timedatectl输出解析</p> <p><img src="/assets/img/3a4b3cb754584716afd45624a089a3e7.dfb2195f.png" alt="img"></p> <p>1.1.Local time
+本地时间，初始值来自于RTC，由内核维护，系统启动之后和RTC就没有关系，通常等于RTC+时区值（如上图的本地时间=RTC+8）</p> <p>1.2.Universal time
+系统时间永远是UTC，在应用程序使用的时候转换为本地时间</p> <p>1.3.RTC（real-time clock）time
+指硬件时间，一般是主板上的特殊电路，专用用于记录时间，有电池供电，不受服务器和操作系统的开启关闭影响。也称作BIOS时间。
+需要注意的是：当/etc/sysconfig/clock 文件中 UTC=true时， BIOS 使用UTC时间； UTC=false时， BIOS 使用本地时间。
+hwclock --localtime #显示 BIOS 中实际的时间
+hwclock --systohc #根据系统时间设置硬件时间</p> <p>1.4.Time zone
+本地时区，即服务器所在的时区，在中国通常使用Asia/Shanghai
+timedatectl set-timezone “Asia/Shanghai” #设置时区为上海</p> <p>1.5.NTP enable
+状态为“yes”,表示开启NTP同步。
+网络时间协议，英文名称：Network Time Protocol（NTP）是用来使计算机时间同步化的一种协议，它可以使计算机对其服务器或时钟源（如石英钟，GPS等等)做同步化，它可以提供高精准度的时间校正。
+timedatectl set-ntp true #开启ntp同步
+timedatectl set-ntp false #禁止ntp同步</p> <p>1.6.NTP synchronized
+为“yes”,表示NTP同步完成。</p> <p>1.7.RTC in local TZ
+设置RTC时间，为&quot;no&quot;表示未设置
+timedatectl set-local-rtc 1 #将RTC设置为本地时间
+timedatectl set-local-rtc 0 #将RTC设置为UTC</p> <p>2.2、timedatectl常用命令
+timedatectl set-time 15:58:30 #只设置时间
+timedatectl set-time 20151120 #只设置日期
+timedatectl set-time ‘16:10:40 2015-11-20’ #设置时间和日期2.3 相关命令</p> <p>rpm -qi ntp 查看版本   最新</p> <p>date  系统时间
+clock  硬件时间</p> <p>date -s  设置系统时间
+clock  -w 系统时间同步到硬件时间</p> <p>ntpdate IP  同步ntp服务器时间</p> <p>chkconfig --list ntpd 查看开机启动</p> <p>chkconfig ntpd on  开机启动</p> <p>ntpq -p  客户端查看同步情况 *号代表同步成功
+ntpstat</p> <p>ps aux | grep ntpd  查看进程</p> <p>ss -ntul 看进程端口
+netstat -anp | grep   ntpd
+ss -ntulp  看进程端口</p> <p>crontab -l; echo &quot;*/60 * * * * /usr/sbin/ntpdate x.x.x.x(ntp服务器IP) &gt;&gt;/tmp/ntp.log  设置定时同步
+crontab -l   查看计划任务</p> <p>echo &quot;*/60 * * * * /usr/sbin/ntpdate x.x.x.x(ntp服务器IP) &gt;&gt;/tmp/ntp.log</p> <p><img src="/assets/img/image-20231217154906260.3fbc2eba.png" alt="image-20231217154906260"></p> <p><img src="/assets/img/image-20231217154921358.adb79d5e.png" alt="image-20231217154921358"></p> <p><img src="/assets/img/image-20231217154941982.d3852b87.png" alt="image-20231217154941982"></p> <p><img src="/assets/img/image-20231217154958333.a8ae5567.png" alt="image-20231217154958333"></p> <p><img src="/assets/img/image-20231217155016545.cc10010b.png" alt="image-20231217155016545"></p> <p><img src="/assets/img/image-20231217155035712.2c2a2f83.png" alt="image-20231217155035712"></p> <p><img src="/assets/img/image-20231217155055807.8726c221.png" alt="image-20231217155055807"></p> <p><img src="/assets/img/image-20231217155108228.77eee638.png" alt="image-20231217155108228"></p> <p><img src="/assets/img/image-20231217155157092.66d60ab1.png" alt="image-20231217155157092"></p> <p><img src="/assets/img/image-20231217155311252.2b24d225.png" alt="image-20231217155311252"></p> <p><img src="/assets/img/image-20231217155331604.6b97e43e.png" alt="image-20231217155331604"></p> <p><img src="/assets/img/image-20231217155437060.73d2c979.png" alt="image-20231217155437060"></p> <p><img src="/assets/img/image-20231217155421639.6f34a3b1.png" alt="image-20231217155421639"></p> <h2 id="chrony和ntp"><a href="#chrony和ntp" class="header-anchor">#</a> chrony和ntp</h2> <h3 id="chrony和ntp的区别"><a href="#chrony和ntp的区别" class="header-anchor">#</a> chrony和ntp的区别</h3> <ul><li>（1）chronyd做的比ntpd好的
+<ul><li>chronyd可以在时断时续访问参考时间源的环境下工作，而ntpd需要定期轮询参考时间源才能正常工作。</li> <li>即使网络拥塞时间更长，chronyd也可以运行良好。</li> <li>chronyd通常可以更快、更准确地同步时钟。</li> <li>chronyd能够快速适应晶体振荡器温度变化引起的时钟频率的突然变化，而ntpd可能需要很长时间才能稳定下来。</li> <li>在默认配置下，为了不影响其他正在运行的程序，chronyd从不在系统启动同步时钟之后执行时间步进。ntpd也可以配置为从不步进时间，但它必须使用不同的方法来调整时钟，这有一些缺点，包括对时钟精度的负面影响。</li> <li>chronyd可以在更大的范围内调整Linux系统上的时钟频率，这使得它甚至可以在时钟损坏或不稳定的机器上运行。例如，在一些虚拟机上。</li> <li>chronyd体积更小，占用的内存更少，而且只有在必要的时候才会唤醒CPU，这对于节能来说是更好的选择。</li></ul></li> <li>（2）chronyd能做的但ntpd做不到的
+<ul><li>chronyd提供了对孤立网络的支持，在孤立网络中，时间校正的唯一方法就是手动输入。例如，由管理员查看时钟。chronyd可以检查在不同的更新中修正的错误，从而估算出计算机增加或减少时间的速度，并在随后使用这个估算来调整计算机时钟。</li> <li>chronyd可以计算RTC时钟（在计算机关闭时保持时间的时钟）的增益和损耗率。它可以在系统启动时使用这些计算的数据，以及从RTC时钟获取的时间调整值来设置系统时间。RTC时钟设备目前仅在Linux系统上可用。<br>
+支持Linux上的硬件时间戳，允许在本地网络上进行非常精确的同步。</li></ul></li> <li>（3）ntpd做得到但chronyd做不到的
+<ul><li>ntpd支持NTP v4（RFC 5905）的所有同步模式，包括broadcast、multicast和manycast clients and servers模式。请注意，broadcast和multicast模式（即使有身份验证）与普通servers and clients模式相比，更不精确、更不安全，通常应避免使用。</li> <li>ntpd支持使用公钥加密的Autokey协议（RFC 5906）对服务器进行身份验证。注意，该协议已被证明是不安全的，可能会被Network Time Security（NTS）取代。</li> <li>ntpd包含很多参考时间源的驱动程序，而chronyd依赖于其他程序（例如gpsd），以使用共享内存（SHM）或Unix domain socket（SOCK）访问参考时间源的数据。</li></ul></li> <li>（4）chronyd与ntpd，该怎么选
+<ul><li>除了由不支持Chrony的工具管理或监视的系统，或者具有不能与Chrony一起使用的硬件参考时钟的系统之外，其他系统都应该首选Chrony。</li> <li>需要使用Autokey协议对数据包进行身份验证的系统只能使用ntpd，因为chronyd不支持这个协议。Autokey协议存在严重的安全问题，应避免使用该协议。使用对称密钥进行身份验证，而不是使用Autokey，这是chronyd和ntpd都支持的。Chrony支持更强的哈希函数，如SHA256和SHA512，而ntpd只能使用MD5和SHA1。</li></ul></li></ul> <h3 id="chrony的组成与端口说明"><a href="#chrony的组成与端口说明" class="header-anchor">#</a> chrony的组成与端口说明</h3> <ul><li><p>chrony 是由 守护进程 chronyd 以及 命令行工具 chronyc 组成的，具体如下图<br> <img src="/assets/img/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBALyrlrojmiqTlpbnnmoTnrJHlrrk=,size_20,color_FFFFFF,t_70,g_se,x_16.966239dc.png" alt="在这里插入图片描述"></p></li> <li><p>chronyd 在后台静默运行并通过 <code>123</code> 端口与时间服务器定时同步时间，默认的配置文件是 <code>/etc/chrony.conf</code></p></li> <li><p>chronyc 通过 <code>323</code> 端口与 chronyd 交互，可监控 chronyd 的性能并在运行时更改各种操作参数<br>
+chronyc 通过下面的方式访问 chronyd</p> <ul><li>1、通过 IPv4 或 IPv6 访问</li> <li>2、通过 Unix 域 socket, 但只能访问到本地的 chronyd，而且需要 root 用户或者 chrony 用户才能访问</li></ul></li> <li><p>chronyd和ntp一样，端口都是<code>udp</code></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# netstat -nulp | grep chro
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           8938/chronyd        
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           8938/chronyd        
+udp6       0      0 ::1:323                 :::*                                8938/chronyd        
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><ul><li>默认情况下，chronyc 先通过 Unix 域 socket 访问 chronyd，默认的 socket 文件是 <code>/var/run/chrony/chronyd.sock</code>, 如果失败（常见的原因是使用非 root 用户运行 chronyc ），将尝试通过 127.0.0.1 访问 chronyd</li></ul> <h3 id="chrony安装和命令管理说明"><a href="#chrony安装和命令管理说明" class="header-anchor">#</a> chrony安装和命令管理说明</h3> <ul><li>在新的 Linux 发行版（centos8、Ubuntu 20.04、Fedora 30）及以后的版本中，系统默认已经安装了 chrony，在这之前的版本是没有安装的，可以使用下面的命令进行安装<br> <code>yum install chrony -y</code></li> <li>安装完成后，chrony 服务默认会自动加到 systemctl 中管理，下面列出了一些常用的命令</li></ul> <div class="language- extra-class"><pre class="language-text"><code>#查询 chronyd 服务状态
+systemctl status chronyd     
+
+#启动 chronyd 服务
+systemctl start chronyd   
+
+#关闭 chronyd 服务
+systemctl stop chronyd   
+
+#重启 chronyd 服务
+systemctl restart chronyd   
+
+#设置 chronyd 服务开机自启
+systemctl enable chronyd
+systemctl daemon-reload
+
+</code></pre></div><h4 id="启动服务报错处理"><a href="#启动服务报错处理" class="header-anchor">#</a> 启动服务报错处理</h4> <p>另外，启动 chronyd 服务的时候如果出现下面截图中的错误，需要安装或者升级 <code>libsepol</code>、<code>policycoreutils-python</code>【最小化安装的系统可能会出现这种问题】
+查看日志或者执行<code>journalctl -xe</code>均可查看报错内容~</p> <ul><li><p>具体的问题说明详见<a href="https://bugzilla.redhat.com/show_bug.cgi?id=1592775" target="_blank" rel="noopener noreferrer">Red Hat Bugzilla – Bug 1592775<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>解决方法 安装 libsepol 和 policycoreutils-python
+<code>yum install libsepol policycoreutils-python -y</code></p></li></ul> <h3 id="chrony常用配置参数说明"><a href="#chrony常用配置参数说明" class="header-anchor">#</a> chrony常用配置参数说明</h3> <ul><li>守护进程 chronyd 的默认配置文件是 <code>/etc/chrony.conf</code>，其中可配置项很多，这里介绍一些常用的</li></ul> <table><thead><tr><th>配置项</th> <th>说明</th></tr></thead> <tbody><tr><td>server</td> <td>客户端需找哪个服务器询问当前时间</td></tr> <tr><td>pool</td> <td>同 server 配置项</td></tr> <tr><td>driftfile</td> <td>本地时钟和服务器时钟的预估漂移保存到哪个文件中</td></tr> <tr><td>makestep</td> <td>纠正客户端时间的步进参数</td></tr> <tr><td>rtcsync</td> <td>是否允许内核同步实时时钟</td></tr> <tr><td>allow</td> <td>允许客户端通过内网地址同步时钟</td></tr> <tr><td>local stratum 10</td> <td>开启，即使server指令种时间服务器不可用，也允许将本地时间作为标准时间授予其他客户端</td></tr> <tr><td>logdir</td> <td>日志目录</td></tr></tbody></table> <h3 id="chronyd常用命令说明"><a href="#chronyd常用命令说明" class="header-anchor">#</a> chronyd常用命令说明</h3> <ul><li>查看时间同步源状态： <code>chronyc sourcestats -v</code> 【-v是列出详细，可以不要】</li> <li>立即校准时间服务器：<code>chronyc tracking</code> 【配置的时候默认是自动校准的，一般用于服务端修改时间了，客户端立即校准用】</li> <li>启用NTP时间同步： <code>timedatectl set-ntp yes</code>【默认是启用的，timedatectl命令可以查看状态】</li> <li>查看客户端连接情况【服务端执行】：<code>chronyc clients</code></li> <li>列出ntp状态详细：<code>timedatectl</code><br>
+下面timedatectl说明中有详细介绍哈
+<ul><li>设置硬件时间<br>
+硬件时间默认为UTC： <code>timedatectl set-local-rtc 1/0</code> <ul><li>设置硬件时钟为本地时间：<code>timedatectl set-local-rtc 1</code></li> <li>设置硬件时钟为UTC时间：<code>timedatectl set-local-rtc 0</code></li></ul></li> <li>启用NTP时间同步： <code>timedatectl set-ntp yes</code></li> <li>开启 NTP：<code>timedatectl set-ntp true/flase</code></li> <li>校准时间服务器： <code>chronyc tracking</code></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# timedatectl 
+      Local time: Wed 2022-07-06 09:53:00 CST
+  Universal time: Wed 2022-07-06 01:53:00 UTC
+        RTC time: Wed 2022-07-06 01:44:58
+       Time zone: Asia/Shanghai (CST, +0800)  # 当前zone【我们要 +8 才正常】 最后timedatectl命令有说如何定义
+     NTP enabled: yes   # ntp是否启用
+NTP synchronized: yes  # 是否完成过一次ntp同步
+ RTC in local TZ: no    #是否启用rtc时间【我们为cst+8，所以这为no才是正常的】
+      DST active: n/a
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><h4 id="ntpdate客户端立即更新时间"><a href="#ntpdate客户端立即更新时间" class="header-anchor">#</a> ntpdate客户端立即更新时间</h4> <ul><li>立即更新时间，我们可以使用ntpdate<br>
+这个还是比较好用的，如果服务端时间更新了，客户端没有及时更新，可以执行这个命令<br>
+如下，我在服务端更新时间了</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# date
+2022年 03月 01日 星期二 01:10:04 CST
+[root@ccx_server128 ~]# timedatectl set-time &quot;2022-02-28 17:10:34&quot;
+Failed to set time: Automatic time synchronization is enabled
+[root@ccx_server128 ~]# timedatectl 
+      Local time: 二 2022-03-01 01:13:18 CST
+  Universal time: 一 2022-02-28 17:13:18 UTC
+        RTC time: 一 2022-02-28 17:13:18
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server128 ~]# timedatectl set-time &quot;2022-06-28 17:10:34&quot;
+Failed to set time: Automatic time synchronization is enabled
+[root@ccx_server128 ~]# timedatectl set-ntp no
+[root@ccx_server128 ~]# timedatectl set-time &quot;2022-02-28 17:13:55&quot;
+[root@ccx_server128 ~]# date
+2022年 02月 28日 星期一 17:13:57 CST
+[root@ccx_server128 ~]# timedatectl 
+      Local time: 一 2022-02-28 17:14:02 CST
+  Universal time: 一 2022-02-28 09:14:02 UTC
+        RTC time: 一 2022-02-28 09:14:02
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: no
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server128 ~]# timedatectl set-ntp yes
+[root@ccx_server128 ~]# 
+
+# 然后我去客户端立即获取。。。多香啊
+[root@ccx_server129 ~]# date
+Tue Mar  1 01:15:13 CST 2022
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# ntpdate 192.168.59.128
+28 Feb 17:15:37 ntpdate[46458]: step time server 192.168.59.128 offset -28789.784156 sec
+[root@ccx_server129 ~]# date
+Mon Feb 28 17:15:39 CST 2022
+[root@ccx_server129 ~]# 
+
+</code></pre></div><ul><li>当然，这也带来一个问题，好像chronyd状态出问题了，不是<code>^*</code>了，然后重启一下又恢复正常，所以，可能这个netdate和重启服务效果一样吧。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? ccx_server128                 0   6   377     -     +0ns[   +0ns] +/-    0ns
+[root@ccx_server129 ~]# systemctl restart chronyd #重启了
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? ccx_server128                10   6     1     2  -3874ns[-3874ns] +/-  106us
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ccx_server128                10   6     7     1  +1884ns[-7831ns] +/-   99us
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h2 id="内网chrony配置时间同步"><a href="#内网chrony配置时间同步" class="header-anchor">#</a> 内网chrony配置时间同步</h2> <h3 id="内网环境服务端配置"><a href="#内网环境服务端配置" class="header-anchor">#</a> 内网环境服务端配置</h3> <ul><li><p>守护进程 chronyd 既可作为客户端 与 服务器同步时间，又可作为一个服务器，接受其他客户端同步时间的请求</p></li> <li><p>下面以配置局域网时间服务器为例来说明 chronyd 的客户端和服务器的配置，虚拟机规划如下：</p></li></ul> <table><thead><tr><th>用途</th> <th>ip</th> <th>系统</th> <th>配置前系统时间</th></tr></thead> <tbody><tr><td>服务端ip</td> <td>192.168.59.128</td> <td>CentOS Linux release 7.6.1810 (Core)</td> <td>2022年 02月 28日 星期一 19:41:38 CST</td></tr> <tr><td>客户端ip</td> <td>192.168.59.129</td> <td>CentOS Linux release 7.6.1810 (Core)</td> <td>Mon Feb 28 06:46:54 EST 2022</td></tr></tbody></table> <ul><li>注：我上面2台虚拟机没有通公网的，所以我下面安装服务用的是本地源方式搭建。</li></ul> <h3 id="时区确定"><a href="#时区确定" class="header-anchor">#</a> 时区确定</h3> <ul><li>配置前先执行timedatectl 如果是UTC时间，如下<code>UTC，+0</code>，则需要修改时区</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 06:50:32 UTC
+  Universal time: Wed 2022-07-06 06:50:32 UTC
+        RTC time: Wed 2022-07-06 06:50:32
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><ul><li>修改方式为： <code>timedatectl set-timezone Asia/Shanghai</code>，修改后正确信息如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl set-timezone Asia/Shanghai
+[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 14:54:56 CST
+  Universal time: Wed 2022-07-06 06:54:56 UTC
+        RTC time: Wed 2022-07-06 06:54:56
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><h3 id="安装chrony"><a href="#安装chrony" class="header-anchor">#</a> 安装chrony</h3> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# yum install -y chrony
+[root@ccx_server128 ~]# 
+[root@ccx_server128 ~]# systemctl enable chronyd --now
+[root@ccx_server128 ~]# systemctl is-active chronyd
+active
+[root@ccx_server128 ~]# 
+</code></pre></div><h3 id="服务端配置"><a href="#服务端配置" class="header-anchor">#</a> 服务端配置</h3> <ul><li><p>安装 chrony 之后，默认的配置是客户端的启动配置的，要想作为一个时间服务器来运行的话， 需要在配置中增加 <code>allow</code> 配置项，它表示允许客户端通过该地址和服务器同步时间<br>
+默认配置文件：<code>/etc/chrony.conf</code></p></li> <li><p>另外，时间服务器的时间也需要从网络上其他的时间服务器进行同步，这里直接用默认的即可，具体的配置如下<br>
+【其实我没做啥修改，就把allow取消注释，然后加上服务端的ip即可】<br>
+我给没注释的代码都加上说明了，可以看看哦。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# cat /etc/chrony.conf 
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+#server 0.centos.pool.ntp.org iburst
+#server 1.centos.pool.ntp.org iburst
+#server 0.centos.pool.ntp.org iburst
+#server 1.centos.pool.ntp.org iburst
+#表示与本机IP同步时间，其他server注释或删除
+#注：内网环境必须这么做，否则其他会无法同步成功。 如果通公网，可以使用公网的服务器时间
+server 127.127.1.0
+
+# Record the rate at which the system clock gains/losses time.
+# 为了在下次启动时稳定的同步，系统时钟的预估漂移需要保存到指定的文件中
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+# 如果系统时钟由于某种原因与启动后的服务器时间相差甚远，允许 chronyd 
+# 通过步进而不是回转来快速纠正它，这个过程将花费很长时间
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+# 为了使客户端实时时钟接近服务器的时钟，以便下次时钟启动时更接近真实的时间
+# 增加了一种 rtcsync 模式，该模式下，系统时间会定期的拷贝到实时时钟里
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+# 允许指定网络的主机同步时间，不指定就是拒绝所有，且默认不开启。
+# 如果要允许所有则：  allow 0.0.0.0/24
+#如下，允许一个网段，如果有多个网段，则添加多个allow
+allow 192.168.59.0/24
+#allow ...
+
+# Serve time even if not synchronized to a time source.
+# 不去同步任何人的时间，时间同步服务级别
+# 开启后，即使server指令中时间服务器不可用，也允许将本地时间作为标准时间授予其他客户端
+#注：内网环境必须开，否则其他虚拟机无法同步时间
+local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+# chrony日志存放路径
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+[root@ccx_server128 ~]# 
+</code></pre></div><h4 id="pool说明"><a href="#pool说明" class="header-anchor">#</a> pool说明</h4> <ul><li>pool=server。 一般我们都直接用server，只是我这说明一下pool的意思罢了。</li> <li>pool 配置项
+<ul><li>客户端需要去时间服务器获取时间，配置文件中 server 和 pool 配置项表示时间服务器的地址，支持域名或者IP</li> <li>pool指的是进行时间同步的服务器IP地址或域名，作为服务器来说，其机器时间也需要从其他时间服务器同步，此时，服务器是作为一个客户端从网络服务器上获取时间</li> <li>建议配置多个时间服务器的地址，优先选择同步良好，网络稳定且靠近客户端的地址</li></ul></li></ul> <h4 id="防火墙设置"><a href="#防火墙设置" class="header-anchor">#</a> 防火墙设置</h4> <ul><li>注：chronyd和ntp一样端口是upd的而非tcp，都是依赖123端口通信的，323是chronyd之间通信用的，如果你放开了123端口别人连接不上，关闭防火墙又能连上了，那把323端口开放【理论不用开放这个的】</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]#  netstat -nulp | grep chro
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           11048/chronyd        
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           11048/chronyd        
+udp6       0      0 ::1:323                 :::*                                11048/chronyd        
+[root@ccx_server128 ~]#  
+
+</code></pre></div><ul><li>可以先查看防火墙状态，如果是关闭的，那么下面操作不用做了，我的是测试机，是可以直接关闭防火墙的【如果客户端已配置，则关闭服务端防火墙后，客户端重启 <code>systemctl restart chronyd</code>】<br>
+以firewalld为例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# ip a | grep 128
+    inet6 ::1/128 scope host 
+    inet 192.168.59.128/24 brd 192.168.59.255 scope global noprefixroute ens33
+[root@ccx_server128 ~]# systemctl is-active firewalld.service 
+active
+[root@ccx_server128 ~]# systemctl stop firewalld.service
+[root@ccx_server128 ~]# 
+[root@ccx_server128 ~]# systemctl is-active firewalld.service 
+inactive
+[root@ccx_server128 ~]# 
+
+</code></pre></div><ul><li>时间服务器如果有开启防火墙的话，需要开启 UDP 协议 的 123 端口，以允许客户端向服务器发送获取时间的请求<br>
+以firewalld为例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# firewall-cmd --permanent --add-port=123/udp
+success
+[root@ccx_server128 ~]# firewall-cmd --reload
+success
+
+</code></pre></div><ul><li>如果想要关闭防火墙的 123 端口，在服务器机器上执行下面的命令<br>
+以firewalld为例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# firewall-cmd --permanent --remove-port=123/udp
+success
+[root@ccx_server128 ~]# firewall-cmd --reload
+success
+
+</code></pre></div><ul><li>关于防火墙，我重新用一个新的ip搭建了个chronyd服务【和128一样的搭建方法】，将防火墙打开，测试客户端是否能正常同步，发现也能正常同步，防火墙不拦截嘛？【该测试仅用于参考】<br> <img src="/assets/img/995aec06c0984425adbb592efb684f5f.6c276f35.png" alt="在这里插入图片描述"></li></ul> <h4 id="重启chrony"><a href="#重启chrony" class="header-anchor">#</a> 重启chrony</h4> <ul><li>为使配置生效，需要重启 chronyd 服务</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# systemctl restart chronyd
+[root@ccx_server128 ~]# systemctl is-active chronyd
+active
+[root@ccx_server128 ~]# 
+
+</code></pre></div><ul><li>查看端口监听是否正常</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]#  netstat -nulp | grep chro
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           11048/chronyd        
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           11048/chronyd        
+udp6       0      0 ::1:323                 :::*                                11048/chronyd        
+[root@ccx_server128 ~]#  
+
+</code></pre></div><h4 id="服务端同步ntp服务器时间-时间模式调整"><a href="#服务端同步ntp服务器时间-时间模式调整" class="header-anchor">#</a> 服务端同步ntp服务器时间&amp;时间模式调整</h4> <ul><li>内网主机是以本机时间为准，所以没有同步网络时间的概念，但是可以通过最后面timedatectl命令调整本机时间，其他客户端会自动更新为本机时间的。</li></ul> <h4 id="查询ntp是否同步-查看同步的客户端信息"><a href="#查询ntp是否同步-查看同步的客户端信息" class="header-anchor">#</a> 查询ntp是否同步&amp;查看同步的客户端信息</h4> <ul><li><p>查看时间同步源状态： <code>chronyc sourcestats -v</code></p> <ul><li>因为我是本地源，所以是同步不成功的，这是正常的，这种情况就需要后面手动维护本机时间，确保客户端的时间能准确，也就是说，客户端的时间准不准确，就看自己平常咋维护服务端的时间了。<br> <img src="/assets/img/f77eda84e2924061873a3f47f4c54e36.3d3b82b5.png" alt="在这里插入图片描述"></li> <li>但是外网的不是这样，使用了ntp服务器时间，那么这就得有一条是同步成功的【具体看下面外网搭建】</li></ul></li> <li><p>服务端命令：<code>chronyc clients</code>【查看哪些ip连接我的ntp时间了】<br>
+注：我下面显示的是主机名而不是ip，是因为我添加解析了！！！如果没添加解析，显示的是ip。</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code># 注：要有客户端连了才有该信息，没人连是为空。
+[root@ccx_server128 ~]# chronyc clients
+Hostname                      NTP   Drop Int IntL Last     Cmd   Drop Int  Last
+===============================================================================
+ccx_server129                  16      0   6   -    15       0      0   -     -
+[root@ccx_server128 ~]# 
+[root@ccx_server128 ~]# cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.59.129 ccx_server129
+[root@ccx_server128 ~]# 
+
+</code></pre></div><h3 id="内网客户端配置"><a href="#内网客户端配置" class="header-anchor">#</a> 内网客户端配置</h3> <h4 id="时区确定-2"><a href="#时区确定-2" class="header-anchor">#</a> 时区确定</h4> <ul><li>配置前先执行timedatectl 如果是UTC时间，如下<code>UTC，+0</code>，则需要修改时区</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 06:50:32 UTC
+  Universal time: Wed 2022-07-06 06:50:32 UTC
+        RTC time: Wed 2022-07-06 06:50:32
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><ul><li>修改方式为： <code>timedatectl set-timezone Asia/Shanghai</code>，修改后正确信息如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl set-timezone Asia/Shanghai
+[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 14:54:56 CST
+  Universal time: Wed 2022-07-06 06:54:56 UTC
+        RTC time: Wed 2022-07-06 06:54:56
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><h4 id="安装chrony-2"><a href="#安装chrony-2" class="header-anchor">#</a> 安装chrony</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# yum install -y chrony
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# systemctl enable chronyd --now
+[root@ccx_server129 ~]# systemctl is-active chronyd
+active
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="客户端配置"><a href="#客户端配置" class="header-anchor">#</a> 客户端配置</h4> <ul><li>安装好 chrony 之后，编辑 <code>/etc/chrony.conf</code> 配置文件，客户端的配置比较简单<br>
+我给没注释的代码都加上说明了，可以看看哦。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# cat /etc/chrony.conf
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+# 同步时间的服务器 IP 或 域名
+# 这直接使用服务端的ip即可
+server 192.168.59.128 iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+
+# Record the rate at which the system clock gains/losses time.
+# 系统时钟的预估漂移保存到指定的文件中，是为了在下次启动时能稳定的同步
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+# 如果系统时钟由于某种原因与启动后的服务器时间相差甚远，允许 chronyd 
+# 通过步进而不是回转来快速纠正它
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+# 为了使客户端实时时钟接近服务器的时钟，以便下次时钟启动时更接近真实的时间
+# 增加了一种 rtcsync 模式，该模式下，系统时间会定期的拷贝到实时时钟里
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+#allow 192.168.0.0/16
+
+# Serve time even if not synchronized to a time source.
+#local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+# chrony日志存放路径
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="重启chrony-2"><a href="#重启chrony-2" class="header-anchor">#</a> <a href="https://blog.csdn.net/cuichongxin/article/details/123178318" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>重启chrony</h4> <ul><li>为使配置生效，需要重启 chronyd 服务</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# systemctl restart chronyd
+[root@ccx_server129 ~]# systemctl is-active chronyd
+active
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="查看服务器信息"><a href="#查看服务器信息" class="header-anchor">#</a> 查看服务器信息</h4> <ul><li>客户端查看连接情况命令：<code>chronyc sources -v</code>【加-v显示详细信息，可以不加】<br>
+如下，我没同步前时间为<code>15:28</code>，同步以后时间变成<code>23:22</code>了【和服务端一样】【如果没有自动同步可以执行<code>chronyc tracking</code>立即同步】<br>
+显示的是主机名而非ip是因为我添加解析了。。。没添加解析是显示的ip
+<ul><li><code>^?</code>同步失败</li> <li><code>^*</code> 同步成功【可能不是立即显示，反正只要Reach有值就表示成功了，状态需要等一会才能更新】</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# date
+Mon Feb 28 15:28:05 CST 2022
+[root@ccx_server129 ~]# systemctl restart chronyd
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? ccx_server128                10   6     3     0  +2317ns[+2317ns] +/-   90us
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? ccx_server128                10   6     3     1  +2317ns[+2317ns] +/-   90us
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^? ccx_server128                10   6     3     1  +2317ns[+2317ns] +/-   90us
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ccx_server128                10   6    17     0  -1762ns[-2940ns] +/-   92us
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ccx_server128                10   6    17     2  -1762ns[-2940ns] +/-   92us
+[root@ccx_server129 ~]# date
+Mon Feb 28 23:22:20 CST 2022
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# cat /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.59.128 ccx_server128
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# chronyc sources -v
+210 Number of sources = 1
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current synced, '+' = combined , '-' = not combined,
+| /   '?' = unreachable, 'x' = time may be in error, '~' = time too variable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ccx_server128                10   9   377   386    -15us[  -19us] +/-  133us
+[root@ccx_server129 ~]# 
+
+</code></pre></div><ul><li>而且，当时间同步成功以后，ntp服务这些全是yes<br>
+下面NTP synchronized状态如果为no，手动改为yes是不生效的。。成功以后状态会自动变成yes。<br>
+开启ntp命令是：<code>timedatectl set-ntp true/flase</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# timedatectl 
+      Local time: Mon 2022-02-28 23:38:32 CST
+  Universal time: Mon 2022-02-28 15:38:32 UTC
+        RTC time: Mon 2022-02-28 15:38:32
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC in local TZ: yes
+      DST active: n/a
+# 这个警告是因为我吧时间改为本地了，下面有说改回RTC的方法哈。
+Warning: The system is configured to read the RTC time in the local time zone.
+         This mode can not be fully supported. It will create various problems
+         with time zone changes and daylight saving time adjustments. The RTC
+         time is never updated, it relies on external facilities to maintain it.
+         If at all possible, use RTC in UTC by calling
+         'timedatectl set-local-rtc 0'.
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="没加解析的服务器端说明"><a href="#没加解析的服务器端说明" class="header-anchor">#</a> 没加解析的服务器端说明</h4> <ul><li><p>上面是因为我排错的过程中添加解析了，所以无论是客户端还是服务端看到的ip都是主机名。。。<br>
+我下面呢重新用一台没加解析的虚拟机做服务端，重新试一下效果哦。</p></li> <li><p>我这不对代码做解释了哦，具体的代码说明看上面哈~</p></li> <li><p>服务端配置</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ciserver ~]# ip a | grep 151
+    inet 192.168.59.151/24 brd 192.168.59.255 scope global noprefixroute ens33
+[root@ciserver ~]# cat /etc/chrony.conf 
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+#server 0.centos.pool.ntp.org iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+#server 192.168.59.128
+server 127.127.1.0
+
+# Record the rate at which the system clock gains/losses time.
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+#allow 192.168.0.0/16
+allow 192.168.59.0/24
+
+# Serve time even if not synchronized to a time source.
+local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+[root@ciserver ~]# 
+[root@ciserver ~]# systemctl restart chronyd
+[root@ciserver ~]# 
+[root@ciserver ~]# chronyc clients
+Hostname                      NTP   Drop Int IntL Last     Cmd   Drop Int  Last
+===============================================================================
+[root@ciserver ~]# 
+[root@ciserver ~]# date
+Mon Feb 28 17:54:19 CST 2022
+[root@ciserver ~]# 
+
+# 下面客户端配置完毕以后再回到服务端，可以看到客户端的ip了哦
+[root@ciserver ~]# chronyc clients
+Hostname                      NTP   Drop Int IntL Last     Cmd   Drop Int  Last
+===============================================================================
+192.168.59.129                  5      0   4   -    34       0      0   -     -
+[root@ciserver ~]# 
+
+</code></pre></div><ul><li>客户端<br>
+我还是用上面的那个客户端来做测试吧</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# cat /etc/chrony.conf
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+server 192.168.59.151 iburst
+#server 192.168.59.128 iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+
+# Record the rate at which the system clock gains/losses time.
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+#allow 192.168.0.0/16
+#allow 192.168.59.128
+#local stratum 10
+# Serve time even if not synchronized to a time source.
+#local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# date #之前服务端的时间
+Mon Feb 28 17:48:46 CST 2022
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# systemctl restart chronyd #重启
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# chronyc sources #生效了哦，同步成功了
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* 192.168.59.151               10   6    17     3  -1053ns[-1698ns] +/-  150us
+[root@ccx_server129 ~]#  #时间也变了
+[root@ccx_server129 ~]# date
+Mon Feb 28 17:54:56 CST 2022
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h2 id="外网chrony配置时间同步"><a href="#外网chrony配置时间同步" class="header-anchor">#</a> 外网chrony配置时间同步</h2> <h3 id="外网环境chrony服务端配置"><a href="#外网环境chrony服务端配置" class="header-anchor">#</a> 外网环境chrony服务端配置</h3> <h4 id="时区确定-3"><a href="#时区确定-3" class="header-anchor">#</a> 时区确定</h4> <ul><li>配置前先执行timedatectl 如果是UTC时间，如下<code>UTC，+0</code>，则需要修改时区</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 06:50:32 UTC
+  Universal time: Wed 2022-07-06 06:50:32 UTC
+        RTC time: Wed 2022-07-06 06:50:32
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><ul><li>修改方式为： <code>timedatectl set-timezone Asia/Shanghai</code>，修改后正确信息如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl set-timezone Asia/Shanghai
+[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 14:54:56 CST
+  Universal time: Wed 2022-07-06 06:54:56 UTC
+        RTC time: Wed 2022-07-06 06:54:56
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><h4 id="安装chrony-3"><a href="#安装chrony-3" class="header-anchor">#</a> 安装chrony</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# yum install -y chrony
+[root@ccx_server128 ~]# 
+[root@ccx_server128 ~]# systemctl enable chronyd --now
+[root@ccx_server128 ~]# systemctl is-active chronyd
+active
+[root@ccx_server128 ~]# 
+
+</code></pre></div><h4 id="服务端配置【国内常用的几个ntp服务器地址】"><a href="#服务端配置【国内常用的几个ntp服务器地址】" class="header-anchor">#</a> 服务端配置【国内常用的几个ntp服务器地址】</h4> <ul><li>国内NTP时间服务器：<br>
+验证是否能用： 在配置主机上ping下面域名，能ping通就可以用。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>#最常见、熟知的就是，www.pool.ntp.org/zone/cn
+ntp.ntsc.ac.cn #国家授时中心 网络授时服务器的域名
+cn.ntp.org.cn #中国
+edu.ntp.org.cn #中国教育网
+ntp1.aliyun.com #阿里云
+ntp2.aliyun.com #阿里云
+cn.pool.ntp.org #最常用的国内NTP服务器
+
+</code></pre></div><ul><li>外网配置很简单，也没啥讲究，配置文件<code>/etc/chrony.conf</code> 修改一个内容就行了，修改内容如下：<br>
+注：代码意思见上面内网环境中的服务端配置说明哈。</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 先在主机上ping一下，确定能ping通下面ntp服务器地址才行哈
+[root@yum-centos-dmz ~]# ping .cn.pool.ntp.org
+ping: .cn.pool.ntp.org: Name or service not known
+[root@yum-centos-dmz ~]# ping cn.pool.ntp.org
+PING cn.pool.ntp.org (219.216.128.25) 56(84) bytes of data.
+64 bytes from 219.216.128.25 (219.216.128.25): icmp_seq=1 ttl=44 time=80.5 ms
+64 bytes from 219.216.128.25 (219.216.128.25): icmp_seq=2 ttl=44 time=80.2 ms
+^C
+--- cn.pool.ntp.org ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 80.285/80.408/80.531/0.123 ms
+[root@yum-centos-dmz ~]# 
+
+#把配置文件下面四行注释掉：
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+#然后在下面添加这几行，也可以添加上面的ntp服务器地址
+server 0.cn.pool.ntp.org iburst
+server 1.cn.pool.ntp.org iburst
+server 2.cn.pool.ntp.org iburst
+server 3.cn.pool.ntp.org iburst
+
+# 添加下面内容，允许所有虚拟机连接
+allow 0.0.0.0/24
+
+# 取消注释下面行。外网环境下面如果不取消注释，可能chronyd服务无法同步，只有ntp可以同步，开了好。
+local stratum 10
+
+# 完整代码配置文件如下
+[root@yum-centos-dmz yum.repos.d]# cat /etc/chrony.conf 
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+#server 0.centos.pool.ntp.org iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+#一定要先ping，要确保地址能ping通才可以正常同步啊！！！！
+server cn.ntp.org.cn iburst
+server cn.pool.ntp.org iburst
+#server 0.cn.pool.ntp.org iburst
+#server 1.cn.pool.ntp.org iburst
+#server 2.cn.pool.ntp.org iburst
+#server 3.cn.pool.ntp.org iburst
+
+# Record the rate at which the system clock gains/losses time.
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+#allow 192.168.0.0/16
+allow 1.2.105.0/24
+allow 1.2.0.0/16
+
+# Serve time even if not synchronized to a time source.
+local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+[root@yum-centos-dmz yum.repos.d]#
+
+</code></pre></div><h4 id="防火墙设置-2"><a href="#防火墙设置-2" class="header-anchor">#</a> 防火墙设置</h4> <ul><li>引用上面内网中内容，方法一样。</li> <li>注：chronyd和ntp一样端口是upd的而非tcp，都是依赖123端口通信的，323是chronyd之间通信用的，如果你放开了123端口别人连接不上，关闭防火墙又能连上了，那把323端口开放【理论不用开放这个的】</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]#  netstat -nulp | grep chro
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           11048/chronyd        
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           11048/chronyd        
+udp6       0      0 ::1:323                 :::*                                11048/chronyd        
+[root@ccx_server128 ~]#  
+
+</code></pre></div><ul><li>可以先查看防火墙状态，如果是关闭的，那么下面操作不用做了，我的是测试机，是可以直接关闭防火墙的【如果客户端已配置，则关闭服务端防火墙后，客户端重启 <code>systemctl restart chronyd</code>】<br>
+以firewalld为例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# ip a | grep 128
+    inet6 ::1/128 scope host 
+    inet 192.168.59.128/24 brd 192.168.59.255 scope global noprefixroute ens33
+[root@ccx_server128 ~]# systemctl is-active firewalld.service 
+active
+[root@ccx_server128 ~]# systemctl stop firewalld.service
+[root@ccx_server128 ~]# 
+[root@ccx_server128 ~]# systemctl is-active firewalld.service 
+inactive
+[root@ccx_server128 ~]# 
+
+</code></pre></div><ul><li>时间服务器如果有开启防火墙的话，需要开启 UDP 协议 的 123 端口，以允许客户端向服务器发送获取时间的请求<br>
+以firewalld为例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# firewall-cmd --permanent --add-port=123/udp
+success
+[root@ccx_server128 ~]# firewall-cmd --reload
+success
+
+</code></pre></div><ul><li>如果想要关闭防火墙的 123 端口，在服务器机器上执行下面的命令<br>
+以firewalld为例</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# firewall-cmd --permanent --remove-port=123/udp
+success
+[root@ccx_server128 ~]# firewall-cmd --reload
+success
+
+</code></pre></div><h4 id="重启chrony-3"><a href="#重启chrony-3" class="header-anchor">#</a> 重启chrony</h4> <ul><li>为使配置生效，需要重启 chronyd 服务</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# systemctl restart chronyd
+[root@yum-centos-dmz ~]# systemctl is-active chronyd
+active
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><ul><li>查看端口监听是否正常</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# netstat -nulp | grep chro
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           14248/chronyd       
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           14248/chronyd       
+udp6       0      0 ::1:323                 :::*                                14248/chronyd       
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><h4 id="服务端同步ntp服务器时间-时间模式调整-2"><a href="#服务端同步ntp服务器时间-时间模式调整-2" class="header-anchor">#</a> 服务端同步ntp服务器时间&amp;时间模式调整</h4> <ul><li>理论上重启服务以后会自动同步时间的，如果没有自动同步，可以执行下面命令立即同步。<br>
+只要出现<code>^*</code>行就代表成功。【如果没有自动同步可以执行<code>chronyc tracking</code>立即同步】</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# chronyc sources -v
+210 Number of sources = 4
+
+  .-- Source mode  '^' = server, '=' = peer, '#' = local clock.
+ / .- Source state '*' = current synced, '+' = combined , '-' = not combined,
+| /   '?' = unreachable, 'x' = time may be in error, '~' = time too variable.
+||                                                 .- xxxx [ yyyy ] +/- zzzz
+||      Reachability register (octal) -.           |  xxxx = adjusted offset,
+||      Log2(Polling interval) --.      |          |  yyyy = measured offset,
+||                                \     |          |  zzzz = estimated error.
+||                                 |    |           \
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- electrode.felixc.at           3   6   377    31    -14us[  -14us] +/-  181ms
+^* 120.25.115.20                 2   6   146   164  -2455us[+2334us] +/-   35ms
+^- tick.ntp.infomaniak.ch        1   6   377    29  -3515us[-3515us] +/-  102ms
+^- makaki.miuku.net              2   6   377    30    -72ms[  -72ms] +/-  138ms
+[root@yum-centos-dmz ~]# chronyc sources 
+210 Number of sources = 4
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^- electrode.felixc.at           3   6   377     8    +30ms[  +30ms] +/-  153ms
+^* 120.25.115.20                 2   6   231    11  -3186us[-5099us] +/-   38ms
+^- tick.ntp.infomaniak.ch        1   6   377     7    -47ms[  -47ms] +/-  151ms
+^- makaki.miuku.net              2   6   377     7    -21ms[  -21ms] +/-   91ms
+[root@yum-centos-dmz ~]# 
+[root@yum-centos-dmz ~]# date
+Tue Jul  5 02:53:16 UTC 2022
+[root@yum-centos-dmz ~]#
+
+</code></pre></div><ul><li>理论上重启服务时间就自动同步的，但我看到虚拟机上的时间一直是2点过，而我本地的时间是10点过，不对啊，但同步又是成功的，后面我发现分和秒都和我本地对上的，想起了虚拟机是UTC模式啊，也就是没有+8.。。问题就在这。<br>
+所以我们就将UTC模式调整一下嘛【文章最后有说timedatectl命令的使用方式哈】</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# date
+Tue Jul  5 03:09:28 UTC 2022
+
+# 下面命令可以看到UTC是+0
+[root@yum-centos-dmz ~]# timedatectl 
+      Local time: Tue 2022-07-05 03:09:30 UTC
+  Universal time: Tue 2022-07-05 03:09:30 UTC
+        RTC time: Tue 2022-07-05 03:01:29
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC in local TZ: no
+      DST active: n/a
+[root@yum-centos-dmz ~]# 
+[root@yum-centos-dmz ~]# timedatectl list-timezones | grep hai
+Asia/Shanghai
+[root@yum-centos-dmz ~]# timedatectl set-timezone Asia/Shanghai
+
+# 调整为上海以后就UTC就变成+8了，正常了。
+[root@yum-centos-dmz ~]# timedatectl 
+      Local time: Tue 2022-07-05 11:10:33 CST
+  Universal time: Tue 2022-07-05 03:10:33 UTC
+        RTC time: Tue 2022-07-05 03:02:33
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC in local TZ: no
+      DST active: n/a
+
+# 再次查看时间，正常了，搞定。
+[root@yum-centos-dmz ~]# date
+Tue Jul  5 11:10:39 CST 2022
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><h4 id="查看同步的客户端信息"><a href="#查看同步的客户端信息" class="header-anchor">#</a> 查看同步的客户端信息</h4> <ul><li>服务端命令：<code>chronyc clients</code>【查看哪些ip连接我的ntp时间了】<br>
+注：我下面显示的是主机名而不是ip，是因为我添加解析了！！！如果没添加解析，显示的是ip。</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 注：要有客户端连了才有该信息，没人连是为空。
+[root@yum-centos-dmz ~]# chronyc clients
+Hostname                      NTP   Drop Int IntL Last     Cmd   Drop Int  Last
+===============================================================================
+ccx_server129                  16      0   6   -    15       0      0   -     -
+[root@yum-centos-dmz ~]#
+
+# 下面是别人连接以后【ip有修改】
+[root@yum-centos-dmz ~]# chronyc  clients
+Hostname                      NTP   Drop Int IntL Last     Cmd   Drop Int  Last
+===============================================================================
+1.2.102.47                   5      0   6   -    51       0      0   -     -
+1.2.105.58                   3      0   6   -   141       0      0   -     -
+1.2.105.39                   8      0   6   -     1       0      0   -     -
+1.2.102.36                   4      0   6   -    15       0      0   -     -
+1.2.102.16                   3      0   6   -    10       0      0   -     -
+1.2.102.54                   2      0   6   -    48       0      0   -     -
+1.2.102.55                   2      0   6   -    29       0      0   -     -
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><h3 id="外网客户端连接"><a href="#外网客户端连接" class="header-anchor">#</a> 外网客户端连接</h3> <h4 id="时区确定-4"><a href="#时区确定-4" class="header-anchor">#</a> 时区确定</h4> <ul><li>配置前先执行timedatectl 如果是UTC时间，如下<code>UTC，+0</code>，则需要修改时区</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 06:50:32 UTC
+  Universal time: Wed 2022-07-06 06:50:32 UTC
+        RTC time: Wed 2022-07-06 06:50:32
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><ul><li>修改方式为： <code>timedatectl set-timezone Asia/Shanghai</code>，修改后正确信息如下</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test21 ~]# timedatectl set-timezone Asia/Shanghai
+[root@test21 ~]# timedatectl 
+      Local time: Wed 2022-07-06 14:54:56 CST
+  Universal time: Wed 2022-07-06 06:54:56 UTC
+        RTC time: Wed 2022-07-06 06:54:56
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@test21 ~]# 
+
+</code></pre></div><h4 id="chronyd的方法连接"><a href="#chronyd的方法连接" class="header-anchor">#</a> chronyd的方法连接</h4> <h5 id="安装chrony-4"><a href="#安装chrony-4" class="header-anchor">#</a> 安装chrony</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# yum install -y chrony
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# systemctl enable chronyd --now
+[root@ccx_server129 ~]# systemctl is-active chronyd
+active
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h5 id="客户端配置-2"><a href="#客户端配置-2" class="header-anchor">#</a> 客户端配置</h5> <ul><li>安装好 chrony 之后，编辑 <code>/etc/chrony.conf</code> 配置文件，客户端的配置比较简单<br>
+我给没注释的代码都加上说明了，可以看看哦。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test ~]#  cat /etc/chrony.conf
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+# 同步时间的服务器 IP 或 域名
+# 这直接使用服务端的ip即可
+server 1.2.105.41 iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+
+# 其他配置默认不动即可。
+
+
+</code></pre></div><h5 id="重启chrony-4"><a href="#重启chrony-4" class="header-anchor">#</a> 重启chrony</h5> <ul><li>为使配置生效，需要重启 chronyd 服务</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test ~]#  systemctl restart chronyd
+[root@test ~]#  systemctl is-active chronyd
+active
+[root@test ~]# 
+
+</code></pre></div><h5 id="查看服务器信息-2"><a href="#查看服务器信息-2" class="header-anchor">#</a> 查看服务器信息</h5> <ul><li>客户端查看连接情况命令：<code>chronyc sources -v</code>【加-v显示详细信息，可以不加】<br>
+如下，我没同步前时间为<code>15:28</code>，同步以后时间变成<code>23:22</code>了【和服务端一样】【如果没有自动同步可以执行<code>chronyc tracking</code>立即同步】<br>
+显示的是主机名而非ip是因为我添加解析了。。。没添加解析是显示的ip
+<ul><li><code>^?</code>同步失败</li> <li><code>^*</code> 同步成功【可能不是立即显示，反正只要Reach有值就表示成功了，状态需要等一会才能更新】<br> <img src="/assets/img/6812936c8b644040b915e0333288ef8e.4c7e5285.png" alt="在这里插入图片描述"></li></ul></li></ul> <h4 id="ntp的方式连接chronyd服务端【必看】"><a href="#ntp的方式连接chronyd服务端【必看】" class="header-anchor">#</a> ntp的方式连接chronyd服务端【必看】</h4> <h5 id="ntp服务端搭建"><a href="#ntp服务端搭建" class="header-anchor">#</a> ntp服务端搭建</h5> <ul><li>本文主要说的是chronyd服务，ntp是我测试的时候做过，也顺便说一下，ntp超级简单。<br>
+为什么用chronyd，是因为chronyd管理更方便，比如可以看到已经连接该主机的ip有哪些。</li> <li>安装ntp，ntpdate已经系统默认安装过了</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# yum install -y ntp
+
+</code></pre></div><ul><li>修改ntp配置文件</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# vim /etc/ntp.conf
+
+#把配置文件下面四行注释掉：
+server 0.centos.pool.ntp.org iburst
+server 1.centos.pool.ntp.org iburst
+server 2.centos.pool.ntp.org iburst
+server 3.centos.pool.ntp.org iburst
+
+#然后在下面添加这几行即可，其他默认不变就行了。
+#也可以使用上面chronyd中说到的公网ntp服务器
+server 0.cn.pool.ntp.org iburst
+server 1.cn.pool.ntp.org iburst
+server 2.cn.pool.ntp.org iburst
+server 3.cn.pool.ntp.org iburst
+
+</code></pre></div><ul><li><p>权限配置说明【默认允许所有连接，下面内容了解为主】</p> <ul><li><p>1 配置方法一：只允许192.168.100.0网段的客户机进行时间同步<br>
+在<code>restrict default kod nomodify notrap nopeer noquery</code>（表示默认拒绝所有IP的时间同步）之后增加一行：<br> <code>restrict 192.168.100.0 mask 255.255.255.0 nomodify notrap</code></p></li> <li><p>2 配置方法二：允许任何ip的客户机都可以进行时间同步<br>
+将<code>restrict default kod nomodify notrap nopeer noquery</code>修改为如下行：<br> <code>Restrict default nomodify</code></p></li></ul></li> <li><p>参数说明：</p> <ul><li><code>ignore</code> ：关闭所有的 NTP 联机服务</li> <li><code>nomodify</code>：客户端不能更改服务端的时间参数，但是客户端可以通过服务端进行网络校时。</li> <li><code>notrust</code>：客户端除非通过认证，否则该客户端来源将被视为不信任子网</li> <li><code>noquery</code>：不提供客户端的时间查询</li></ul></li> <li><p>启动ntp服务，并开机自启动</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# systemctl start ntpd
+[root@localhost ~]# systemctl enable ntpd
+
+</code></pre></div><ul><li>查询ntp是否同步</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*119.28.206.193  100.122.36.196   2 u  128  128  377   19.711   -0.468   5.363
+
+</code></pre></div><ul><li>如果没有立即同步可以执行 <code>ntpdate cn.pool.ntp.org</code> 或 <code>ntpdate -u cn.pool.ntp.org</code> 立即同步<br>
+同步成功后如下，<code>NTP synchronized: yes</code></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# timedatectl 
+      Local time: Wed 2022-07-06 14:08:15 CST
+  Universal time: Wed 2022-07-06 06:08:15 UTC
+        RTC time: Wed 2022-07-06 06:00:13
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC in local TZ: no
+      DST active: n/a
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><ul><li>开启防火墙ntp默认端口udp123</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# firewall-cmd --permanent --zone=public --add-port=123/udp
+success
+[root@localhost ~]# firewall-cmd --reload
+success
+
+</code></pre></div><h5 id="说明【重要】"><a href="#说明【重要】" class="header-anchor">#</a> 说明【重要】</h5> <ul><li>服务器是chronyd服务，客户端如果我也用chronyd服务，有可能能用，有可能不能用，明白我意思吧？<br>
+但是我服务端是chronyd，我客户端用ntp方式，欸，那么就很好用，随时用随时正确。</li> <li>如下，chronyd服务是不正常的，但是我用ntpdata拉取时间后重启又</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 现在状态正常
+[root@host-10-241-105-39 ~]# systemctl is-active chronyd
+active
+[root@host-10-241-105-39 ~]#
+[root@host-10-241-105-39 ~]# 
+# 看，之前的是一直同步失败的
+[root@host-10-241-105-39 ~]# timedatectl 
+      Local time: Wed 2022-07-06 12:13:41 CST
+  Universal time: Wed 2022-07-06 04:13:41 UTC
+        RTC time: Wed 2022-07-06 04:13:41
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@host-10-241-105-39 ~]# 
+
+# 我用ntp的方式更新时间成功了 
+[root@host-10-241-105-39 ~]# ntpdate 1.2.105.41
+ 6 Jul 12:22:13 ntpdate[6220]: step time server 1.2.105.41 offset 481.822244 sec
+[root@host-10-241-105-39 ~]# timedatectl 
+      Local time: Wed 2022-07-06 12:22:21 CST
+  Universal time: Wed 2022-07-06 04:22:21 UTC
+        RTC time: Wed 2022-07-06 04:14:19
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@host-10-241-105-39 ~]# date
+Wed Jul  6 12:22:29 CST 2022
+[root@host-10-241-105-39 ~]#
+
+# 我修改时间为错误的
+[root@host-10-241-105-39 ~]# timedatectl set-time &quot;2022-06-28 17:10:34&quot;
+Failed to set time: Automatic time synchronization is enabled
+[root@host-10-241-105-39 ~]# date
+Wed Jul  6 12:22:59 CST 2022
+[root@host-10-241-105-39 ~]# 
+[root@host-10-241-105-39 ~]# timedatectl set-ntp no
+[root@host-10-241-105-39 ~]# timedatectl set-time &quot;2022-07-01 17:10:34&quot;
+[root@host-10-241-105-39 ~]# date
+Fri Jul  1 17:10:35 CST 2022
+[root@host-10-241-105-39 ~]#
+
+# 使用chronyd的方式又成功了，他奶奶的，之前一直搞都是错误的同步不了。
+[root@host-10-241-105-39 ~]# chronyc tracking
+506 Cannot talk to daemon
+[root@host-10-241-105-39 ~]# systemctl is-active chronyd
+unknown
+[root@host-10-241-105-39 ~]# systemctl restart chronyd
+[root@host-10-241-105-39 ~]# chronyc tracking
+Reference ID    : 00000000 ()
+Stratum         : 0
+Ref time (UTC)  : Thu Jan 01 00:00:00 1970
+System time     : 0.000000000 seconds slow of NTP time
+Last offset     : +0.000000000 seconds
+RMS offset      : 0.000000000 seconds
+Frequency       : 26.307 ppm slow
+Residual freq   : +0.000 ppm
+Skew            : 0.000 ppm
+Root delay      : 1.000000000 seconds
+Root dispersion : 1.000000000 seconds
+Update interval : 0.0 seconds
+Leap status     : Not synchronised
+[root@host-10-241-105-39 ~]# timedatectl 
+      Local time: Wed 2022-07-06 12:26:12 CST
+  Universal time: Wed 2022-07-06 04:26:12 UTC
+        RTC time: Fri 2022-07-01 09:12:31
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: no
+NTP synchronized: yes
+ RTC in local TZ: no
+      DST active: n/a
+[root@host-10-241-105-39 ~]# date
+Wed Jul  6 12:26:23 CST 2022
+[root@host-10-241-105-39 ~]# 
+[root@host-10-241-105-39 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* host-10-241-105-41.opens&gt;     4   6   177    41    +39us[  +73us] +/-   91ms
+[root@host-10-241-105-39 ~]# 
+
+</code></pre></div><h5 id="客户端安装ntpd"><a href="#客户端安装ntpd" class="header-anchor">#</a> 客户端安装ntpd</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@host-10-241-105-39 ~]#  yum install -y ntp
+[root@host-10-241-105-39 ~]#  
+[root@host-10-241-105-39 ~]#  systemctl enable ntpd --now
+[root@host-10-241-105-39 ~]#  systemctl is-active ntpd
+active
+[root@host-10-241-105-39 ~]# 
+
+</code></pre></div><h5 id="客户端配置并重启服务"><a href="#客户端配置并重启服务" class="header-anchor">#</a> 客户端配置并重启服务</h5> <ul><li>指需要修改一项，server注释现有的4项，加一个服务端ip即可。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test ~]# cat /etc/ntp.conf | grep iburst
+#server 0.centos.pool.ntp.org iburst
+##server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+server 1.2.105.41 iburst
+[root@test ~]# 
+
+</code></pre></div><ul><li>重启服务生效</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test ~]# systemctl restart ntpd
+
+</code></pre></div><h5 id="客户端与ntp-server服务器同步一下时间"><a href="#客户端与ntp-server服务器同步一下时间" class="header-anchor">#</a> 客户端与NTP server服务器同步一下时间</h5> <ul><li>如果时间没有立即同步，执行：<code>ntpdata -u 服务端ip</code><br>
+如下，我修改为错误时间立即同步回来。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test ~]# systemctl status ntpd
+● ntpd.service - Network Time Service
+   Loaded: loaded (/usr/lib/systemd/system/ntpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Wed 2022-07-06 04:05:58 UTC; 32min ago
+  Process: 21024 ExecStart=/usr/sbin/ntpd -u ntp:ntp $OPTIONS (code=exited, status=0/SUCCESS)
+ Main PID: 21025 (ntpd)
+   CGroup: /system.slice/ntpd.service
+           └─21025 /usr/sbin/ntpd -u ntp:ntp -g
+
+Jul 06 04:05:58 test.novalocal ntpd[21025]: Listen normally on 3 eth0 1.2.105.58 UDP 123
+Jul 06 04:05:58 test.novalocal ntpd[21025]: Listen normally on 4 lo ::1 UDP 123
+Jul 06 04:05:58 test.novalocal ntpd[21025]: Listen normally on 5 eth0 fe80::f816:3eff:fe18:a626 UDP 123
+Jul 06 04:05:58 test.novalocal ntpd[21025]: Listening on routing socket on fd #22 for interface updates
+Jul 06 04:05:58 test.novalocal ntpd[21025]: 0.0.0.0 c016 06 restart
+Jul 06 04:05:58 test.novalocal ntpd[21025]: 0.0.0.0 c012 02 freq_set kernel 0.000 PPM
+Jul 06 04:05:58 test.novalocal ntpd[21025]: 0.0.0.0 c011 01 freq_not_set
+Jul 06 04:06:05 test.novalocal ntpd[21025]: 0.0.0.0 c614 04 freq_mode
+Jul 06 04:27:22 test.novalocal ntpd[21025]: 0.0.0.0 0612 02 freq_set kernel 17.735 PPM
+Jul 06 04:27:22 test.novalocal ntpd[21025]: 0.0.0.0 0615 05 clock_sync
+[root@test ~]# 
+[root@test ~]# date
+Wed Jul  6 04:38:23 UTC 2022
+[root@test ~]# timedatectl set-ntp no
+[root@test ~]# timedatectl set-time &quot;2022-06-28 17:10:34&quot;
+[root@test ~]# ntpdate 1.2.105.41
+28 Jun 17:10:46 ntpdate[21076]: the NTP socket is in use, exiting
+[root@test ~]# date
+Tue Jun 28 17:10:48 UTC 2022
+[root@test ~]# ntpdate -u 1.2.105.41
+ 6 Jul 04:39:32 ntpdate[21079]: step time server 1.2.105.41 offset 646112.382185 sec
+[root@test ~]# date
+Wed Jul  6 04:39:35 UTC 2022
+[root@test ~]# 
+
+</code></pre></div><h5 id="查看同步状态"><a href="#查看同步状态" class="header-anchor">#</a> 查看同步状态</h5> <ul><li>客户端和服务器都可以查询。</li> <li>前面有<code>*</code>则正常。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>#客户端1
+[root@test ~]# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*host-10-241-105 162.159.200.1    4 u   45   64  377    0.643    3.976  11.360
+[root@test ~]# 
+
+#客户端2
+[root@xz-oa-uatapp-05 ~]# ntpq -p
+     remote           refid      st t when poll reach   delay   offset  jitter
+==============================================================================
+*1.2.105.41   162.159.200.1    4 u   59   64  377    1.296   -4.194   0.785
+[root@xz-oa-uatapp-05 ~]# 
+
+</code></pre></div><h5 id="同步时间加入定时任务"><a href="#同步时间加入定时任务" class="header-anchor">#</a> 同步时间加入定时任务</h5> <ul><li>理论上同步一次时间，如果系统不重启会一直生效保持和服务端时间一致，如果重启后没有立即更新，执行一下 <code>ntpdate -u 服务端ip</code>即可，个人觉得加定时任务意义不大。</li> <li>客户端设置：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@test ~]# ls /usr/sbin/ntpdate 
+/usr/sbin/ntpdate
+[root@test ~]# 
+[root@test ~]# crontab -e
+
+#加入一行，意思是每天8点30同步一次时间
+30 8 * * * /usr/sbin/ntpdate -u 1.2.105.41
+
+</code></pre></div><h2 id="时间不同步可能的原因"><a href="#时间不同步可能的原因" class="header-anchor">#</a> <a href="https://blog.csdn.net/cuichongxin/article/details/123178318" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>时间不同步可能的原因</h2> <h3 id="_1-chrony服务端、客户端-版本是否一致和服务是否正常【chrony各版本之间差异很大-确保版本一致】"><a href="#_1-chrony服务端、客户端-版本是否一致和服务是否正常【chrony各版本之间差异很大-确保版本一致】" class="header-anchor">#</a> 1.chrony服务端、客户端 版本是否一致和服务是否正常【chrony各版本之间差异很大，确保版本一致】</h3> <ul><li>查看客户端和服务端版本是否一致</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 服务端
+[root@ccx_server128 ~]# chronyc -v
+chronyc (chrony) version 3.2 (+READLINE +IPV6 +DEBUG)
+[root@ccx_server128 ~]# 
+#客户端
+[root@ccx_server129 ~]# chronyc -v
+chronyc (chrony) version 3.2 (+READLINE +IPV6 +DEBUG)
+[root@ccx_server129 ~]# 
+
+</code></pre></div><ul><li>查看服务是否正常</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 服务端
+[root@ccx_server128 ~]# systemctl is-active chronyd
+active
+[root@ccx_server128 ~]# 
+# 客户端
+[root@ccx_server129 ~]# systemctl is-active chronyd
+active
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h3 id="_2、服务端防火墙原因"><a href="#_2、服务端防火墙原因" class="header-anchor">#</a> 2、服务端防火墙原因</h3> <ul><li>防火墙这个东西应该没啥好说的了，无论是iptables还是firewalld都最好关闭，如果不能关闭，则放开123端口【上面有说防火墙设置。】</li> <li>selinux也可以关闭。<br> <code>setenforce 0</code>临时关闭</li></ul> <h3 id="_3、检查服务端和客户端是否能互通"><a href="#_3、检查服务端和客户端是否能互通" class="header-anchor">#</a> 3、检查服务端和客户端是否能互通</h3> <ul><li>也就是说客户端和服务端是不是在同一网络，能互相ssh就证明网络没问题。</li></ul> <h3 id="_4、看看时区是否正确"><a href="#_4、看看时区是否正确" class="header-anchor">#</a> 4、看看时区是否正确</h3> <ul><li>执行<code>date</code> 如果时区不是CST修改时区，我今天就遇到这个问题了，修改方式如下<br>
+这种情况一般是要和服务端保持一致哈，如果服务端不是est，客户端单独改了也没用。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# date
+Mon Feb 28 07:58:21 EST 2022
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# timedatectl set-timezone Asia/Shanghai
+[root@ccx_server129 ~]# date
+Mon Feb 28 22:56:13 CST 2022
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h3 id="_5、间隔2小时左右-chrony服务端机器ntp不同步"><a href="#_5、间隔2小时左右-chrony服务端机器ntp不同步" class="header-anchor">#</a> 5、间隔2小时左右，chrony服务端机器ntp不同步</h3> <ul><li>意思是NTP synchronized这个出问题了，看下面注释后面说的<br>
+但是此时同步状态是正常的【^*】</li> <li>未找到相应解决办法。临时解决方法 ：在定时任务中 每隔一段时间重启该客户端的chrony。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# timedatectl 
+      Local time: Tue 2022-03-01 00:22:57 CST
+  Universal time: Mon 2022-02-28 16:22:57 UTC
+        RTC time: Mon 2022-02-28 16:22:57
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: yes # 就是这个变成no了
+ RTC in local TZ: yes
+      DST active: n/a
+
+Warning: The system is configured to read the RTC time in the local time zone.
+         This mode can not be fully supported. It will create various problems
+         with time zone changes and daylight saving time adjustments. The RTC
+         time is never updated, it relies on external facilities to maintain it.
+         If at all possible, use RTC in UTC by calling
+         'timedatectl set-local-rtc 0'.
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# chronyc sources
+210 Number of sources = 1
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+===============================================================================
+^* ccx_server128                10   9   377   499    -15us[  -19us] +/-  133us
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h3 id="_6、更换为ntp方式连接"><a href="#_6、更换为ntp方式连接" class="header-anchor">#</a> 6、更换为ntp方式连接</h3> <ul><li>我在测试环境各种顺畅，跑到真实环境就是各种报错，真绝了。这是今天遇到的一个大坑，解决方式就是更换为ntp。</li> <li>服务端是chronyd，客户端用chronyd老是出问题，就改用ntp的方式连接chronyd即可。具体方法见上面ntp的方式连接chronyd服务端。</li></ul> <h3 id="_7、配置文件server和allow"><a href="#_7、配置文件server和allow" class="header-anchor">#</a> 7、配置文件server和allow</h3> <p>我的服务端今天我是改为如下才正常的。<br>
+可以参考一下。</p> <div class="language- extra-class"><pre class="language-text"><code>[root@yum-centos-dmz ~]# cat /etc/chrony.conf 
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+#server 0.centos.pool.ntp.org iburst
+#server 1.centos.pool.ntp.org iburst
+#server 2.centos.pool.ntp.org iburst
+#server 3.centos.pool.ntp.org iburst
+server cn.pool.ntp.org iburst
+#server 0.cn.pool.ntp.org iburst
+#server 1.cn.pool.ntp.org iburst
+#server 2.cn.pool.ntp.org iburst
+#server 3.cn.pool.ntp.org iburst
+
+# Record the rate at which the system clock gains/losses time.
+driftfile /var/lib/chrony/drift
+
+# Allow the system clock to be stepped in the first three updates
+# if its offset is larger than 1 second.
+makestep 1.0 3
+
+# Enable kernel synchronization of the real-time clock (RTC).
+rtcsync
+
+# Enable hardware timestamping on all interfaces that support it.
+#hwtimestamp *
+
+# Increase the minimum number of selectable sources required to adjust
+# the system clock.
+#minsources 2
+
+# Allow NTP client access from local network.
+#allow 192.168.0.0/16
+allow 1.2.105.0/24
+allow 1.2.0.0/16
+
+# Serve time even if not synchronized to a time source.
+#local stratum 10
+
+# Specify file containing keys for NTP authentication.
+#keyfile /etc/chrony.keys
+
+# Specify directory for log files.
+logdir /var/log/chrony
+
+# Select which information is logged.
+#log measurements statistics tracking
+[root@yum-centos-dmz ~]# 
+
+</code></pre></div><h3 id="说明"><a href="#说明" class="header-anchor">#</a> 说明</h3> <ul><li>一般就上面几种情况导致不同步。</li> <li>如果你上面都排查了还是没用，仔细检查配置文件，配置文件有问题。</li></ul> <h2 id="timedatectl说明"><a href="#timedatectl说明" class="header-anchor">#</a> <a href="https://blog.csdn.net/cuichongxin/article/details/123178318" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>timedatectl说明</h2> <p>timedatectl是Linux下的一条命令，用于控制系统时间和日期。可以用来查询和更改系统时钟于设定，同时可以设定和修改时区信息。这篇文章简单介绍一下如何使用timedatectl进行常见操作。</p> <h3 id="查看系统时间timedatectl"><a href="#查看系统时间timedatectl" class="header-anchor">#</a> 查看系统时间timedatectl</h3> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# timedatectl 
+      Local time: 二 2022-03-01 00:47:50 CST #当地时间
+  Universal time: 一 2022-02-28 16:47:50 UTC #伦敦时间
+        RTC time: 一 2022-02-28 16:47:50 #硬件时间
+       Time zone: Asia/Shanghai (CST, +0800) #时区：亚洲上海（东8区）UTC时间加上8等于当前时间
+     NTP enabled: yes #NTP服务
+NTP synchronized: no #NTP时间是否启用
+ RTC in local TZ: no  #是否启用RTC硬件时间【设定系统时间计算方式，0表示使用utc时间计算方式，yes为0，no为1】【timedatectl set-local-rtc 1这个命令控制】
+      DST active: n/a
+[root@ccx_server128 ~]# 
+
+</code></pre></div><h3 id="常见用法"><a href="#常见用法" class="header-anchor">#</a> 常见用法</h3> <ul><li>使用timedatectl可以进行如下常见操作
+<ul><li>查看当前时间/日期/时区：<code>timedatectl</code>或者<code>timedatectl status</code></li> <li>查看所有可用时区：<code>timedatectl list-timezones</code></li> <li>设置时区：<code>timedatectl set-timezone 时区信息</code> <ul><li>显示系统的所有时区： <code>timedatectl list-timezones</code></li> <li>如：设定系统时区为亚洲上海<code>timedatectl set-timezone Asia/Shanghai</code></li></ul></li> <li>设置UTC：<code>timedatectl set-timezone UTC</code>【别乱操作，设置这个以后上面定义的上海+8就没了，变成+0了】</li> <li>设置硬件时钟为本地时间：<code>timedatectl set-local-rtc 1</code>【/etc/adjtime 文件中第三个为状态】</li> <li>设置硬件时钟为UTC时间：<code>timedatectl set-local-rtc 0</code>【/etc/adjtime 文件中第三个为状态】</li> <li>设置时间：<code>timedatectl set-time HH:MM:SS</code></li> <li>设置日期：<code>timedatectl set-time YYYY-MM-DD</code></li> <li>设置日期时间：<code>timedatectl set-time “YYYY-MM-DD HH:MM:SS”</code>【年月日时分秒】
+<ul><li>修改报错执行：<code>timedatectl set-ntp no</code></li> <li>修改时间后执行：<code>clock -w</code>【写入硬件时间，一般2个时间同步修改】</li></ul></li> <li>启动NTP时间同步（启用NTP服务或者Chrony服务）：<code>timedatectl set-ntp true</code></li> <li>禁用NTP时间同步（禁用NTP服务或者Chrony服务）：<code>timedatectl set-ntp false</code></li></ul></li></ul> <h3 id="使用示例"><a href="#使用示例" class="header-anchor">#</a> <a href="https://blog.csdn.net/cuichongxin/article/details/123178318" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>使用示例</h3> <p>我觉得上面常见用法中已经很明显了，我这不做全部示例，只做部分。</p> <h4 id="设置时区"><a href="#设置时区" class="header-anchor">#</a> <a href="https://blog.csdn.net/cuichongxin/article/details/123178318" target="_blank" rel="noopener noreferrer"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>设置时区</h4> <ul><li>设置时区：<code>timedatectl set-timezone 时区信息</code>【“要不要都行】
+<ul><li>显示系统的所有时区： <code>timedatectl list-timezones</code></li> <li>如：设定系统时区为亚洲上海<code>timedatectl set-timezone Asia/Shanghai</code></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# date
+Mon Feb 28 07:58:21 EST 2022
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# timedatectl list-timezones | grep hai
+Asia/Shanghai
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# timedatectl set-timezone Asia/Shanghai
+[root@ccx_server129 ~]# date
+Mon Feb 28 22:56:13 CST 2022
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="设置时间"><a href="#设置时间" class="header-anchor">#</a> 设置时间</h4> <ul><li><p>设置时间：<code>timedatectl set-time HH:MM:SS</code></p></li> <li><p>设置日期：<code>timedatectl set-time YYYY-MM-DD</code></p></li> <li><p>设置日期时间：<code>timedatectl set-time “YYYY-MM-DD HH:MM:SS”</code>【年月日时分秒】</p> <ul><li>修改报错执行：<code>timedatectl set-ntp no</code></li> <li>修改时间后执行：<code>clock -w</code>【写入硬件时间，一般2个时间同步修改】</li></ul></li> <li><p>我这以我ntp服务端时间为例</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server128 ~]# date
+2022年 03月 01日 星期二 01:10:04 CST
+[root@ccx_server128 ~]# timedatectl set-time &quot;2022-02-28 17:10:34&quot;
+Failed to set time: Automatic time synchronization is enabled
+[root@ccx_server128 ~]# timedatectl 
+      Local time: 二 2022-03-01 01:13:18 CST
+  Universal time: 一 2022-02-28 17:13:18 UTC
+        RTC time: 一 2022-02-28 17:13:18
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server128 ~]# timedatectl set-ntp no
+[root@ccx_server128 ~]# timedatectl set-time &quot;2022-02-28 17:13:55&quot;
+[root@ccx_server128 ~]# date
+2022年 02月 28日 星期一 17:13:57 CST
+[root@ccx_server128 ~]# timedatectl 
+      Local time: 一 2022-02-28 17:14:02 CST
+  Universal time: 一 2022-02-28 09:14:02 UTC
+        RTC time: 一 2022-02-28 09:14:02
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: no
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server128 ~]# timedatectl set-ntp yes
+[root@ccx_server128 ~]# 
+
+# 然后我去客户端立即获取。。。多香啊
+[root@ccx_server129 ~]# date
+Tue Mar  1 01:15:13 CST 2022
+[root@ccx_server129 ~]# 
+[root@ccx_server129 ~]# ntpdate 192.168.59.128
+28 Feb 17:15:37 ntpdate[46458]: step time server 192.168.59.128 offset -28789.784156 sec
+[root@ccx_server129 ~]# date
+Mon Feb 28 17:15:39 CST 2022
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="设置硬件时间"><a href="#设置硬件时间" class="header-anchor">#</a> 设置硬件时间</h4> <ul><li><p>设置硬件时钟为本地（LOCAL）时间：<code>timedatectl set-local-rtc 1</code>【/etc/adjtime 文件中第三个为状态】</p></li> <li><p>设置硬件时钟为UTC时间：<code>timedatectl set-local-rtc 0</code>【/etc/adjtime 文件中第三个为状态】</p></li> <li><p>没有加入ntp服务测试：</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server130 ~]# cat /etc/adjtime  #没有加入ntp显示是这样的
+0.0 0 0.0
+0
+UTC
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Tue 2022-03-01 01:27:44 CST
+  Universal time: Mon 2022-02-28 17:27:44 UTC
+        RTC time: Mon 2022-02-28 17:27:44
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server130 ~]# 
+[root@ccx_server130 ~]# timedatectl set-local-rtc 1 #设置为本地
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Tue 2022-03-01 01:27:55 CST
+  Universal time: Mon 2022-02-28 17:27:55 UTC
+        RTC time: Tue 2022-03-01 01:27:56
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: yes
+      DST active: n/a
+
+# 改成local以后会有一串这样的警告，也不知道有啥副作用。。..
+Warning: The system is configured to read the RTC time in the local time zone.
+         This mode can not be fully supported. It will create various problems
+         with time zone changes and daylight saving time adjustments. The RTC
+         time is never updated, it relies on external facilities to maintain it.
+         If at all possible, use RTC in UTC by calling
+         'timedatectl set-local-rtc 0'.
+[root@ccx_server130 ~]# cat /etc/adjtime 
+0.0 0 0.0
+0
+LOCAL  #显示local
+[root@ccx_server130 ~]# 
+[root@ccx_server130 ~]# timedatectl set-local-rtc 0
+[root@ccx_server130 ~]# cat /etc/adjtime 
+0.0 0 0.0
+0
+UTC
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Tue 2022-03-01 01:28:27 CST
+  Universal time: Mon 2022-02-28 17:28:27 UTC
+        RTC time: Mon 2022-02-28 17:28:27
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server130 ~]# 
+
+</code></pre></div><ul><li>加入ntp<br>
+就文件中显示不一样而已，我也不知道有啥区别。。。。反正其他倒是一样的，改为local会有一串警告</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server129 ~]# cat /etc/adjtime 
+0.000000 1646040080 0.000000
+1646040080
+UTC
+[root@ccx_server129 ~]# 
+
+</code></pre></div><h4 id="utc测试"><a href="#utc测试" class="header-anchor">#</a> UTC测试</h4> <ul><li>设置UTC：<code>timedatectl set-timezone UTC</code>【别乱操作，设置这个以后上面定义的上海+8就没了，变成+0了】<br>
+哈哈 我一开始还没搞懂这个UTC是啥，我以为这个UTC和上面设置硬件时间是一样的【改变的是UTC/LOCAL】<br>
+下面是我测试，你先看看，能发现啥不~</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server130 ~]# timedatectl  #设置为utc前
+      Local time: Tue 2022-03-01 01:28:27 CST
+  Universal time: Mon 2022-02-28 17:28:27 UTC
+        RTC time: Mon 2022-02-28 17:28:27
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server130 ~]# 
+[root@ccx_server130 ~]# 
+[root@ccx_server130 ~]# cat /etc/adjtime 
+0.0 0 0.0
+0
+UTC
+[root@ccx_server130 ~]# timedatectl set-local-rtc 1 
+[root@ccx_server130 ~]# cat /etc/adjtime 
+0.0 0 0.0
+0
+LOCAL
+[root@ccx_server130 ~]# timedatectl set-timezone UTC 
+[root@ccx_server130 ~]# cat /etc/adjtime 
+0.0 0 0.0
+0
+LOCAL
+[root@ccx_server130 ~]# 
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Mon 2022-02-28 17:31:43 UTC
+  Universal time: Mon 2022-02-28 17:31:43 UTC
+        RTC time: Mon 2022-02-28 17:31:43
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: yes
+      DST active: n/a
+
+Warning: The system is configured to read the RTC time in the local time zone.
+         This mode can not be fully supported. It will create various problems
+         with time zone changes and daylight saving time adjustments. The RTC
+         time is never updated, it relies on external facilities to maintain it.
+         If at all possible, use RTC in UTC by calling
+         'timedatectl set-local-rtc 0'.
+[root@ccx_server130 ~]# timedatectl set-local-rtc 0
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Mon 2022-02-28 17:32:07 UTC
+  Universal time: Mon 2022-02-28 17:32:07 UTC
+        RTC time: Mon 2022-02-28 17:32:08
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server130 ~]# 
+
+</code></pre></div><ul><li>解密，后面我发现我设置为LOCAL以后，再设置UTC，但我发现配置文件中LOCAL没变，于是确认这个不是设置硬件时间的。<br>
+然后执行<code>timedatectl set-timezone LOCAL</code>报错了，并且我在<code>timedatectl list-timezones</code> 这里面看到了UTC，发现不对劲，仔细一看<code>timedatectl</code>中的Time zone选项，发现后面变成UTC，并且时间为+0了，哈哈，我之前设置的亚洲上海+8没了。<br>
+所以，这个UTC就是恢复默认的哦，为+0，所以我还是需要改回去的哈</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@ccx_server130 ~]# timedatectl set-timezone UTC 
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Mon 2022-02-28 17:32:12 UTC
+  Universal time: Mon 2022-02-28 17:32:12 UTC
+        RTC time: Mon 2022-02-28 17:32:12
+       Time zone: UTC (UTC, +0000)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server130 ~]# 
+[root@ccx_server130 ~]# timedatectl set-timezone Asia/Shanghai
+[root@ccx_server130 ~]# timedatectl 
+      Local time: Tue 2022-03-01 01:43:26 CST
+  Universal time: Mon 2022-02-28 17:43:26 UTC
+        RTC time: Mon 2022-02-28 17:43:27
+       Time zone: Asia/Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: no
+ RTC in local TZ: no
+      DST active: n/a
+[root@ccx_server130 ~]# 
+
+</code></pre></div><p>https://blog.csdn.net/cuichongxin/article/details/123178318</p> <p>https://blog.csdn.net/wangjie72270/article/details/122196213?spm=1018.2226.3001.9630.1&amp;extra%5Btitle%5D=Linux%20%E2%9D%89%20Chronyd%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AF%A6%E8%A7%A3&amp;extra%5Butm_source%5D=vip_chatgpt_common_search_pc_result&amp;extra%5Butm_medium%5D=distribute.pc_search_result.none-task-cask-2~all~insert_cask~default-1-null.142%5Ev96%5Epc_search_result_base2</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月5日星期五下午2点08分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-use/linux/基本使用/命令--12.打包压缩.html" class="prev">
+        命令--12.打包压缩
+      </a></span> <span class="next"><a href="/zs-use/linux/基本使用/命令--14.痕迹.html">
+        命令--14.痕迹
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/10.1fd06a28.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>

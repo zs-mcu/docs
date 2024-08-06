@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置--1.过滤器工厂 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cc894c05.css" as="style"><link rel="preload" href="/assets/js/app.202a821d.js" as="script"><link rel="preload" href="/assets/js/2.53d26b14.js" as="script"><link rel="preload" href="/assets/js/1.14bcf0ea.js" as="script"><link rel="preload" href="/assets/js/147.84a3f5ba.js" as="script"><link rel="preload" href="/assets/js/93.1a30db68.js" as="script"><link rel="prefetch" href="/assets/js/10.1fd06a28.js"><link rel="prefetch" href="/assets/js/100.15268f01.js"><link rel="prefetch" href="/assets/js/101.4f1cd864.js"><link rel="prefetch" href="/assets/js/102.589640b4.js"><link rel="prefetch" href="/assets/js/103.29d59ddd.js"><link rel="prefetch" href="/assets/js/104.706f196b.js"><link rel="prefetch" href="/assets/js/105.b46f7c43.js"><link rel="prefetch" href="/assets/js/106.49b6b66a.js"><link rel="prefetch" href="/assets/js/107.7eaca415.js"><link rel="prefetch" href="/assets/js/108.66e34789.js"><link rel="prefetch" href="/assets/js/109.4e67bb7a.js"><link rel="prefetch" href="/assets/js/11.b9519a5f.js"><link rel="prefetch" href="/assets/js/110.76d2d009.js"><link rel="prefetch" href="/assets/js/111.fe8dede0.js"><link rel="prefetch" href="/assets/js/112.99904549.js"><link rel="prefetch" href="/assets/js/113.59cea5dc.js"><link rel="prefetch" href="/assets/js/114.e4982820.js"><link rel="prefetch" href="/assets/js/115.27fe7d6f.js"><link rel="prefetch" href="/assets/js/116.a3b411a0.js"><link rel="prefetch" href="/assets/js/117.69d67383.js"><link rel="prefetch" href="/assets/js/118.5153ae23.js"><link rel="prefetch" href="/assets/js/119.e9fb8595.js"><link rel="prefetch" href="/assets/js/12.366175f2.js"><link rel="prefetch" href="/assets/js/120.6d174c50.js"><link rel="prefetch" href="/assets/js/121.9cddb768.js"><link rel="prefetch" href="/assets/js/122.99b91e06.js"><link rel="prefetch" href="/assets/js/123.b57d14ef.js"><link rel="prefetch" href="/assets/js/124.4d5f8d8c.js"><link rel="prefetch" href="/assets/js/125.07471e2b.js"><link rel="prefetch" href="/assets/js/126.4cb43e75.js"><link rel="prefetch" href="/assets/js/127.3508b801.js"><link rel="prefetch" href="/assets/js/128.e748b97b.js"><link rel="prefetch" href="/assets/js/129.1dab5bbe.js"><link rel="prefetch" href="/assets/js/13.50a05794.js"><link rel="prefetch" href="/assets/js/130.cc76176b.js"><link rel="prefetch" href="/assets/js/131.89d26b29.js"><link rel="prefetch" href="/assets/js/132.4db66b77.js"><link rel="prefetch" href="/assets/js/133.6f3faa04.js"><link rel="prefetch" href="/assets/js/134.b6f13cbc.js"><link rel="prefetch" href="/assets/js/135.93af1ad8.js"><link rel="prefetch" href="/assets/js/136.98e19b2a.js"><link rel="prefetch" href="/assets/js/137.e1bda52a.js"><link rel="prefetch" href="/assets/js/138.aeb38f02.js"><link rel="prefetch" href="/assets/js/139.d4f62545.js"><link rel="prefetch" href="/assets/js/14.5d7c6512.js"><link rel="prefetch" href="/assets/js/140.7b7a68ed.js"><link rel="prefetch" href="/assets/js/141.d32cab73.js"><link rel="prefetch" href="/assets/js/142.9c0ea279.js"><link rel="prefetch" href="/assets/js/143.1ebeea31.js"><link rel="prefetch" href="/assets/js/144.f02be311.js"><link rel="prefetch" href="/assets/js/145.ca951cce.js"><link rel="prefetch" href="/assets/js/146.f3b53827.js"><link rel="prefetch" href="/assets/js/148.b9161c79.js"><link rel="prefetch" href="/assets/js/149.d6f83933.js"><link rel="prefetch" href="/assets/js/15.6df7a105.js"><link rel="prefetch" href="/assets/js/150.c88d4cbf.js"><link rel="prefetch" href="/assets/js/151.d6ee4a37.js"><link rel="prefetch" href="/assets/js/152.71a2d894.js"><link rel="prefetch" href="/assets/js/153.56495497.js"><link rel="prefetch" href="/assets/js/154.1d9f6b6f.js"><link rel="prefetch" href="/assets/js/155.d208f367.js"><link rel="prefetch" href="/assets/js/156.74bb4c0f.js"><link rel="prefetch" href="/assets/js/157.e908daef.js"><link rel="prefetch" href="/assets/js/158.3a570986.js"><link rel="prefetch" href="/assets/js/159.a11196e5.js"><link rel="prefetch" href="/assets/js/16.cf690c23.js"><link rel="prefetch" href="/assets/js/160.41a9f6e7.js"><link rel="prefetch" href="/assets/js/161.10fefad3.js"><link rel="prefetch" href="/assets/js/162.c8c4a539.js"><link rel="prefetch" href="/assets/js/163.d6b427f7.js"><link rel="prefetch" href="/assets/js/164.6add353a.js"><link rel="prefetch" href="/assets/js/165.b2562dbf.js"><link rel="prefetch" href="/assets/js/166.d928e81b.js"><link rel="prefetch" href="/assets/js/167.0ce333a3.js"><link rel="prefetch" href="/assets/js/168.224249ea.js"><link rel="prefetch" href="/assets/js/169.c8faaf4d.js"><link rel="prefetch" href="/assets/js/17.6f39737a.js"><link rel="prefetch" href="/assets/js/170.3fcb43d6.js"><link rel="prefetch" href="/assets/js/171.7a21c473.js"><link rel="prefetch" href="/assets/js/172.a56aeb21.js"><link rel="prefetch" href="/assets/js/173.135a41e6.js"><link rel="prefetch" href="/assets/js/174.749da787.js"><link rel="prefetch" href="/assets/js/175.7f5f12b8.js"><link rel="prefetch" href="/assets/js/176.6c85f0c5.js"><link rel="prefetch" href="/assets/js/177.7b41063c.js"><link rel="prefetch" href="/assets/js/178.e1579fd8.js"><link rel="prefetch" href="/assets/js/179.4b762402.js"><link rel="prefetch" href="/assets/js/18.5d407c1f.js"><link rel="prefetch" href="/assets/js/180.3d6d9095.js"><link rel="prefetch" href="/assets/js/181.6c306360.js"><link rel="prefetch" href="/assets/js/182.de79721e.js"><link rel="prefetch" href="/assets/js/183.9390ab00.js"><link rel="prefetch" href="/assets/js/184.13179159.js"><link rel="prefetch" href="/assets/js/185.4c008565.js"><link rel="prefetch" href="/assets/js/186.b3750f8d.js"><link rel="prefetch" href="/assets/js/187.b85becfa.js"><link rel="prefetch" href="/assets/js/188.5fa8fc3e.js"><link rel="prefetch" href="/assets/js/189.ef710b57.js"><link rel="prefetch" href="/assets/js/19.849ada78.js"><link rel="prefetch" href="/assets/js/190.81c465d0.js"><link rel="prefetch" href="/assets/js/191.70318d94.js"><link rel="prefetch" href="/assets/js/192.acb933a0.js"><link rel="prefetch" href="/assets/js/193.dc253521.js"><link rel="prefetch" href="/assets/js/194.acf2580b.js"><link rel="prefetch" href="/assets/js/195.96e77b56.js"><link rel="prefetch" href="/assets/js/196.a2de8200.js"><link rel="prefetch" href="/assets/js/197.f3556a51.js"><link rel="prefetch" href="/assets/js/198.a36bcec9.js"><link rel="prefetch" href="/assets/js/199.059564f9.js"><link rel="prefetch" href="/assets/js/20.fbf09d2c.js"><link rel="prefetch" href="/assets/js/200.96c0a85d.js"><link rel="prefetch" href="/assets/js/201.93a4981d.js"><link rel="prefetch" href="/assets/js/202.9769d33d.js"><link rel="prefetch" href="/assets/js/203.b3f3cb56.js"><link rel="prefetch" href="/assets/js/204.7f708ab9.js"><link rel="prefetch" href="/assets/js/205.6ffa19a0.js"><link rel="prefetch" href="/assets/js/206.d177ed19.js"><link rel="prefetch" href="/assets/js/207.0e3ddb8a.js"><link rel="prefetch" href="/assets/js/208.1b03f5c2.js"><link rel="prefetch" href="/assets/js/209.b18574b1.js"><link rel="prefetch" href="/assets/js/21.32f2cda6.js"><link rel="prefetch" href="/assets/js/210.c036b521.js"><link rel="prefetch" href="/assets/js/211.bdf67e24.js"><link rel="prefetch" href="/assets/js/212.1a42796f.js"><link rel="prefetch" href="/assets/js/213.8b678e62.js"><link rel="prefetch" href="/assets/js/214.13ac6ac2.js"><link rel="prefetch" href="/assets/js/215.f9e7ad86.js"><link rel="prefetch" href="/assets/js/216.c4c2a704.js"><link rel="prefetch" href="/assets/js/217.b6027367.js"><link rel="prefetch" href="/assets/js/218.8d3ae0e6.js"><link rel="prefetch" href="/assets/js/219.57957f0d.js"><link rel="prefetch" href="/assets/js/22.6b24c7b6.js"><link rel="prefetch" href="/assets/js/220.e39bae07.js"><link rel="prefetch" href="/assets/js/221.8698360c.js"><link rel="prefetch" href="/assets/js/222.cd85ccf4.js"><link rel="prefetch" href="/assets/js/223.acd1f415.js"><link rel="prefetch" href="/assets/js/224.35a6b08f.js"><link rel="prefetch" href="/assets/js/225.a05874ee.js"><link rel="prefetch" href="/assets/js/226.d08a94ee.js"><link rel="prefetch" href="/assets/js/227.241742c4.js"><link rel="prefetch" href="/assets/js/228.b5186cea.js"><link rel="prefetch" href="/assets/js/229.38bb2721.js"><link rel="prefetch" href="/assets/js/23.1d81ccfe.js"><link rel="prefetch" href="/assets/js/230.924a14ee.js"><link rel="prefetch" href="/assets/js/231.1cb7e68b.js"><link rel="prefetch" href="/assets/js/232.ab39ecf6.js"><link rel="prefetch" href="/assets/js/233.2d575322.js"><link rel="prefetch" href="/assets/js/234.b544a9f8.js"><link rel="prefetch" href="/assets/js/235.828779d1.js"><link rel="prefetch" href="/assets/js/236.def59bd6.js"><link rel="prefetch" href="/assets/js/237.2b04c017.js"><link rel="prefetch" href="/assets/js/24.f173c14c.js"><link rel="prefetch" href="/assets/js/25.aa9a3ab6.js"><link rel="prefetch" href="/assets/js/26.a558fdac.js"><link rel="prefetch" href="/assets/js/27.d77e2b73.js"><link rel="prefetch" href="/assets/js/28.178adf00.js"><link rel="prefetch" href="/assets/js/29.1536fe4a.js"><link rel="prefetch" href="/assets/js/3.07c15512.js"><link rel="prefetch" href="/assets/js/30.331ffe3f.js"><link rel="prefetch" href="/assets/js/31.0aefe123.js"><link rel="prefetch" href="/assets/js/32.46094125.js"><link rel="prefetch" href="/assets/js/33.e20177be.js"><link rel="prefetch" href="/assets/js/34.3b92759d.js"><link rel="prefetch" href="/assets/js/35.a5cc465f.js"><link rel="prefetch" href="/assets/js/36.a85bacee.js"><link rel="prefetch" href="/assets/js/37.093e85a5.js"><link rel="prefetch" href="/assets/js/38.bce6931d.js"><link rel="prefetch" href="/assets/js/39.ef5a9bd1.js"><link rel="prefetch" href="/assets/js/4.8ded8821.js"><link rel="prefetch" href="/assets/js/40.9cfd0e58.js"><link rel="prefetch" href="/assets/js/41.f2f417e0.js"><link rel="prefetch" href="/assets/js/42.e51c4027.js"><link rel="prefetch" href="/assets/js/43.64fc4f0a.js"><link rel="prefetch" href="/assets/js/44.2cf87247.js"><link rel="prefetch" href="/assets/js/45.b759d6b8.js"><link rel="prefetch" href="/assets/js/46.d59905bd.js"><link rel="prefetch" href="/assets/js/47.9828dab3.js"><link rel="prefetch" href="/assets/js/48.83131858.js"><link rel="prefetch" href="/assets/js/49.6c4e62f8.js"><link rel="prefetch" href="/assets/js/5.965946e3.js"><link rel="prefetch" href="/assets/js/50.d7e975da.js"><link rel="prefetch" href="/assets/js/51.68e8991c.js"><link rel="prefetch" href="/assets/js/52.c3b736db.js"><link rel="prefetch" href="/assets/js/53.019c9f63.js"><link rel="prefetch" href="/assets/js/54.6e2a3064.js"><link rel="prefetch" href="/assets/js/55.330d6b34.js"><link rel="prefetch" href="/assets/js/56.cd549622.js"><link rel="prefetch" href="/assets/js/57.30c0bc43.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.ba5e9a71.js"><link rel="prefetch" href="/assets/js/6.91b4e404.js"><link rel="prefetch" href="/assets/js/60.e076bb8d.js"><link rel="prefetch" href="/assets/js/61.0b3cb65b.js"><link rel="prefetch" href="/assets/js/62.122e1fe0.js"><link rel="prefetch" href="/assets/js/63.dd7d8db1.js"><link rel="prefetch" href="/assets/js/64.76bb4f7a.js"><link rel="prefetch" href="/assets/js/65.a416333b.js"><link rel="prefetch" href="/assets/js/66.70c163ac.js"><link rel="prefetch" href="/assets/js/67.49d1a181.js"><link rel="prefetch" href="/assets/js/68.200f4111.js"><link rel="prefetch" href="/assets/js/69.327cacd0.js"><link rel="prefetch" href="/assets/js/7.9e1b6160.js"><link rel="prefetch" href="/assets/js/70.5804aa26.js"><link rel="prefetch" href="/assets/js/71.f7ed2893.js"><link rel="prefetch" href="/assets/js/72.82931fbd.js"><link rel="prefetch" href="/assets/js/73.4311ff4c.js"><link rel="prefetch" href="/assets/js/74.bebc8bce.js"><link rel="prefetch" href="/assets/js/75.e7dd3766.js"><link rel="prefetch" href="/assets/js/76.b462b2cb.js"><link rel="prefetch" href="/assets/js/77.eb6e2c70.js"><link rel="prefetch" href="/assets/js/78.ab45e3fe.js"><link rel="prefetch" href="/assets/js/79.1823bdce.js"><link rel="prefetch" href="/assets/js/80.32fc1014.js"><link rel="prefetch" href="/assets/js/81.4552160d.js"><link rel="prefetch" href="/assets/js/82.534fb34e.js"><link rel="prefetch" href="/assets/js/83.5fd20585.js"><link rel="prefetch" href="/assets/js/84.52022dd8.js"><link rel="prefetch" href="/assets/js/85.4fbe9e76.js"><link rel="prefetch" href="/assets/js/86.205df9ae.js"><link rel="prefetch" href="/assets/js/87.c5f5a08d.js"><link rel="prefetch" href="/assets/js/88.43138ef1.js"><link rel="prefetch" href="/assets/js/89.9635bbaf.js"><link rel="prefetch" href="/assets/js/90.99c2de75.js"><link rel="prefetch" href="/assets/js/91.4fadbd0f.js"><link rel="prefetch" href="/assets/js/92.cb048c7f.js"><link rel="prefetch" href="/assets/js/94.7fc7bc98.js"><link rel="prefetch" href="/assets/js/95.e2f8df12.js"><link rel="prefetch" href="/assets/js/96.63b91df7.js"><link rel="prefetch" href="/assets/js/97.2bfb6ba1.js"><link rel="prefetch" href="/assets/js/98.87960b7c.js"><link rel="prefetch" href="/assets/js/99.f438084f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5fa209f3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cc894c05.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/resume/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  zs-在线简历
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Cloud Gateway</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zs-ee-%E6%A1%86%E6%9E%B6/cloud-gateway/" aria-current="page" class="sidebar-link">版本关系</a></li><li><a href="/zs-ee-框架/cloud-gateway/概述--介绍.html" class="sidebar-link">概述--介绍</a></li><li><a href="/zs-ee-框架/cloud-gateway/配置--0.断言工厂.html" class="sidebar-link">配置--0.断言工厂</a></li><li><a href="/zs-ee-框架/cloud-gateway/配置--1.过滤器工厂.html" class="active sidebar-link">配置--1.过滤器工厂</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zs-ee-框架/cloud-gateway/配置--1.过滤器工厂.html#内置过滤器工厂" class="sidebar-link">内置过滤器工厂</a></li><li class="sidebar-sub-header"><a href="/zs-ee-框架/cloud-gateway/配置--1.过滤器工厂.html#常用的内置工厂" class="sidebar-link">常用的内置工厂</a></li><li class="sidebar-sub-header"><a href="/zs-ee-框架/cloud-gateway/配置--1.过滤器工厂.html#自定义过滤器工厂" class="sidebar-link">自定义过滤器工厂</a></li></ul></li><li><a href="/zs-ee-框架/cloud-gateway/配置--2.全局过滤器.html" class="sidebar-link">配置--2.全局过滤器</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="配置-1-过滤器工厂"><a href="#配置-1-过滤器工厂" class="header-anchor">#</a> 配置--1.过滤器工厂</h1> <p>https://docs.spring.io/spring-cloud-gateway/docs/current/reference/html/#the-stripprefix-gatewayfilter-factory</p> <h2 id="内置过滤器工厂"><a href="#内置过滤器工厂" class="header-anchor">#</a> 内置过滤器工厂</h2> <p>这里简单将Spring Cloud Gateway内置的所有过滤器工厂整理成了一张表格。如下：</p> <table><thead><tr><th style="text-align:left;">过滤器工厂</th> <th style="text-align:left;">作用</th> <th style="text-align:left;">参数</th></tr></thead> <tbody><tr><td style="text-align:left;">AddRequestHeader</td> <td style="text-align:left;">为原始请求添加Header</td> <td style="text-align:left;">Header的名称及值</td></tr> <tr><td style="text-align:left;">AddRequestParameter</td> <td style="text-align:left;">为原始请求添加请求参数</td> <td style="text-align:left;">参数名称及值</td></tr> <tr><td style="text-align:left;">AddResponseHeader</td> <td style="text-align:left;">为原始响应添加Header</td> <td style="text-align:left;">Header的名称及值</td></tr> <tr><td style="text-align:left;">DedupeResponseHeader</td> <td style="text-align:left;">剔除响应头中重复的值</td> <td style="text-align:left;">需要去重的Header名称及去重策略</td></tr> <tr><td style="text-align:left;">Hystrix</td> <td style="text-align:left;">为路由引入Hystrix的断路器保护</td> <td style="text-align:left;"><code>HystrixCommand</code>的名称</td></tr> <tr><td style="text-align:left;">FallbackHeaders</td> <td style="text-align:left;">为fallbackUri的请求头中添加具体的异常信息</td> <td style="text-align:left;">Header的名称</td></tr> <tr><td style="text-align:left;">PrefixPath</td> <td style="text-align:left;">为原始请求路径添加前缀</td> <td style="text-align:left;">前缀路径</td></tr> <tr><td style="text-align:left;">PreserveHostHeader</td> <td style="text-align:left;">为请求添加一个preserveHostHeader=true的属性，路由过滤器会检查该属性以决定是否要发送原始的Host</td> <td style="text-align:left;">无</td></tr> <tr><td style="text-align:left;">RequestRateLimiter</td> <td style="text-align:left;">用于对请求限流，限流算法为令牌桶</td> <td style="text-align:left;">keyResolver、rateLimiter、statusCode、denyEmptyKey、emptyKeyStatus</td></tr> <tr><td style="text-align:left;">RedirectTo</td> <td style="text-align:left;">将原始请求重定向到指定的URL</td> <td style="text-align:left;">http状态码及重定向的url</td></tr> <tr><td style="text-align:left;">RemoveHopByHopHeadersFilter</td> <td style="text-align:left;">为原始请求删除IETF组织规定的一系列Header</td> <td style="text-align:left;">默认就会启用，可以通过配置指定仅删除哪些Header</td></tr> <tr><td style="text-align:left;">RemoveRequestHeader</td> <td style="text-align:left;">为原始请求删除某个Header</td> <td style="text-align:left;">Header名称</td></tr> <tr><td style="text-align:left;">RemoveResponseHeader</td> <td style="text-align:left;">为原始响应删除某个Header</td> <td style="text-align:left;">Header名称</td></tr> <tr><td style="text-align:left;">RewritePath</td> <td style="text-align:left;">重写原始的请求路径</td> <td style="text-align:left;">原始路径正则表达式以及重写后路径的正则表达式</td></tr> <tr><td style="text-align:left;">RewriteResponseHeader</td> <td style="text-align:left;">重写原始响应中的某个Header</td> <td style="text-align:left;">Header名称，值的正则表达式，重写后的值</td></tr> <tr><td style="text-align:left;">SaveSession</td> <td style="text-align:left;">在转发请求之前，强制执行<code>WebSession::save</code>操作</td> <td style="text-align:left;">无</td></tr> <tr><td style="text-align:left;">secureHeaders</td> <td style="text-align:left;">为原始响应添加一系列起安全作用的响应头</td> <td style="text-align:left;">无，支持修改这些安全响应头的值</td></tr> <tr><td style="text-align:left;">SetPath</td> <td style="text-align:left;">修改原始的请求路径</td> <td style="text-align:left;">修改后的路径</td></tr> <tr><td style="text-align:left;">SetResponseHeader</td> <td style="text-align:left;">修改原始响应中某个Header的值</td> <td style="text-align:left;">Header名称，修改后的值</td></tr> <tr><td style="text-align:left;">SetStatus</td> <td style="text-align:left;">修改原始响应的状态码</td> <td style="text-align:left;">HTTP 状态码，可以是数字，也可以是字符串</td></tr> <tr><td style="text-align:left;">StripPrefix</td> <td style="text-align:left;">用于截断原始请求的路径</td> <td style="text-align:left;">使用数字表示要截断的路径的数量</td></tr> <tr><td style="text-align:left;">Retry</td> <td style="text-align:left;">针对不同的响应进行重试</td> <td style="text-align:left;">retries、statuses、methods、series</td></tr> <tr><td style="text-align:left;">RequestSize</td> <td style="text-align:left;">设置允许接收最大请求包的大小。如果请求包大小超过设置的值，则返回 <code>413 Payload Too Large</code></td> <td style="text-align:left;">请求包大小，单位为字节，默认值为5M</td></tr> <tr><td style="text-align:left;">ModifyRequestBody</td> <td style="text-align:left;">在转发请求之前修改原始请求体内容</td> <td style="text-align:left;">修改后的请求体内容</td></tr> <tr><td style="text-align:left;">ModifyResponseBody</td> <td style="text-align:left;">修改原始响应体的内容</td> <td style="text-align:left;">修改后的响应体内容</td></tr> <tr><td style="text-align:left;">Default</td> <td style="text-align:left;">为所有路由添加过滤器</td> <td style="text-align:left;">过滤器工厂名称及值</td></tr></tbody></table> <p>**Tips：**每个过滤器工厂都对应一个实现类，并且这些类的名称必须以<code>GatewayFilterFactory</code>结尾，这是Spring Cloud Gateway的一个约定，例如<code>AddRequestHeader</code>对应的实现类为<code>AddRequestHeaderGatewayFilterFactory</code>。</p> <h4 id="_1、addrequestheader"><a href="#_1、addrequestheader" class="header-anchor">#</a> 1、AddRequestHeader</h4> <p>为原始请求添加Header，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_request_header_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddRequestHeader=X<span class="token punctuation">-</span>Request<span class="token punctuation">-</span>Foo<span class="token punctuation">,</span> Bar
+</code></pre></div><p>为原始请求添加名为 <code>X-Request-Foo</code> ，值为 <code>Bar</code> 的请求头</p> <h4 id="_2、addrequestparameter"><a href="#_2、addrequestparameter" class="header-anchor">#</a> 2、AddRequestParameter</h4> <p>为原始请求添加请求参数及值，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_request_parameter_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddRequestParameter=foo<span class="token punctuation">,</span> bar
+</code></pre></div><p>为原始请求添加名为foo，值为bar的参数，即：<code>foo=bar</code></p> <h4 id="_3、addresponseheader"><a href="#_3、addresponseheader" class="header-anchor">#</a> 3、AddResponseHeader</h4> <p>为原始响应添加Header，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_response_header_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddResponseHeader=X<span class="token punctuation">-</span>Response<span class="token punctuation">-</span>Foo<span class="token punctuation">,</span> Bar
+</code></pre></div><p>为原始响应添加名为 <code>X-Request-Foo</code> ，值为 <code>Bar</code> 的响应头</p> <h4 id="_4、deduperesponseheader"><a href="#_4、deduperesponseheader" class="header-anchor">#</a> 4、DedupeResponseHeader</h4> <p>DedupeResponseHeader可以根据配置的Header名称及去重策略剔除响应头中重复的值，这是Spring Cloud Greenwich SR2提供的新特性，低于这个版本无法使用。</p> <p>我们在Gateway以及微服务上都设置了CORS（解决跨域）Header的话，如果不做任何配置，那么请求 -&gt; 网关 -&gt; 微服务，获得的CORS Header的值，就将会是这样的：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Access-Control-Allow-Credentials: true, <span class="token boolean">true</span>
+Access-Control-Allow-Origin: https://musk.mars, https://musk.mars
+</code></pre></div><p>可以看到这两个Header的值都重复了，若想把这两个Header的值去重的话，就需要使用到DedupeResponseHeader，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> dedupe_response_header_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token comment"># 若需要去重的Header有多个，使用空格分隔</span>
+        <span class="token punctuation">-</span> DedupeResponseHeader=Access<span class="token punctuation">-</span>Control<span class="token punctuation">-</span>Allow<span class="token punctuation">-</span>Credentials Access<span class="token punctuation">-</span>Control<span class="token punctuation">-</span>Allow<span class="token punctuation">-</span>Origin
+</code></pre></div><p>去重策略：</p> <ul><li>RETAIN_FIRST：默认值，保留第一个值</li> <li>RETAIN_LAST：保留最后一个值</li> <li>RETAIN_UNIQUE：保留所有唯一值，以它们第一次出现的顺序保留</li></ul> <p>若想对该过滤器工厂有个比较全面的了解的话，建议阅读该过滤器工厂的源码，因为源码里有详细的注释及示例，比官方文档写得还好：<code>org.springframework.cloud.gateway.filter.factory.DedupeResponseHeaderGatewayFilterFactory</code></p> <h4 id="_5、hystrix"><a href="#_5、hystrix" class="header-anchor">#</a> 5、Hystrix</h4> <p>为路由引入Hystrix的断路器保护，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> hystrix_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Hystrix=myCommandName
+</code></pre></div><p>Hystrix是Spring Cloud第一代容错组件，不过已经进入维护模式，未来Hystrix会被Spring Cloud移除掉，取而代之的是Alibaba Sentinel/Resilience4J。所以本文不做详细介绍了，感兴趣的话可以参考官方文档：</p> <ul><li><a href="https://cloud.spring.io/spring-cloud-static/Greenwich.SR2/single/spring-cloud.html#hystrix" target="_blank" rel="noopener noreferrer">Hystrix GatewayFilter Factory<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="_6、fallbackheaders"><a href="#_6、fallbackheaders" class="header-anchor">#</a> 6、FallbackHeaders</h4> <p>同样是对Hystrix的支持，上一小节所介绍的过滤器工厂支持一个配置参数：<code>fallbackUri</code>，该配置用于当发生异常时将请求转发到一个特定的uri上。而<code>FallbackHeaders</code>这个过滤工厂可以在转发请求到该uri时添加一个Header，这个Header的值为具体的异常信息。配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> ingredients
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> lb<span class="token punctuation">:</span>//ingredients
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=//ingredients/<span class="token important">**</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Hystrix
+          <span class="token key atrule">args</span><span class="token punctuation">:</span>
+            <span class="token key atrule">name</span><span class="token punctuation">:</span> fetchIngredients
+            <span class="token key atrule">fallbackUri</span><span class="token punctuation">:</span> forward<span class="token punctuation">:</span>/fallback
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> ingredients<span class="token punctuation">-</span>fallback
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span><span class="token number">9994</span>
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/fallback
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> FallbackHeaders
+          <span class="token key atrule">args</span><span class="token punctuation">:</span>
+            <span class="token key atrule">executionExceptionTypeHeaderName</span><span class="token punctuation">:</span> Test<span class="token punctuation">-</span>Header
+</code></pre></div><p>这里也不做详细介绍了，感兴趣可以参考官方文档：</p> <ul><li><a href="https://cloud.spring.io/spring-cloud-static/Greenwich.SR2/single/spring-cloud.html#fallback-headers" target="_blank" rel="noopener noreferrer">FallbackHeaders GatewayFilter Factory<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="_7、prefixpath"><a href="#_7、prefixpath" class="header-anchor">#</a> 7、PrefixPath</h4> <p>为原始的请求路径添加一个前缀路径，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> prefixpath_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> PrefixPath=/mypath
+</code></pre></div><p>该配置使访问<code>${GATEWAY_URL}/hello</code> 会转发到<code>https://example.org/mypath/hello</code></p> <h4 id="_8、preservehostheader"><a href="#_8、preservehostheader" class="header-anchor">#</a> 8、PreserveHostHeader</h4> <p>为请求添加一个preserveHostHeader=true的属性，路由过滤器会检查该属性以决定是否要发送原始的Host Header。配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> preserve_host_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> PreserveHostHeader
+</code></pre></div><p>如果不设置，那么名为 <code>Host</code> 的Header将由Http Client控制</p> <h4 id="_9、requestratelimiter"><a href="#_9、requestratelimiter" class="header-anchor">#</a> 9、RequestRateLimiter</h4> <p>用于对请求进行限流，限流算法为令牌桶。配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> requestratelimiter_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> RequestRateLimiter
+          <span class="token key atrule">args</span><span class="token punctuation">:</span>
+            <span class="token key atrule">redis-rate-limiter.replenishRate</span><span class="token punctuation">:</span> <span class="token number">10</span>
+            <span class="token key atrule">redis-rate-limiter.burstCapacity</span><span class="token punctuation">:</span> <span class="token number">20</span>
+</code></pre></div><p>由于另一篇文章中已经介绍过如何使用该过滤器工厂实现网关限流，所以这里就不再赘述了：</p> <ul><li><a href="https://blog.51cto.com/zero01/2430532" target="_blank" rel="noopener noreferrer">Spring Cloud Gateway - 扩展<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p>或者参考官方文档：</p> <ul><li><a href="https://cloud.spring.io/spring-cloud-static/Greenwich.SR2/single/spring-cloud.html#_requestratelimiter_gatewayfilter_factory" target="_blank" rel="noopener noreferrer">RequestRateLimiter GatewayFilter Factory<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="_10、redirectto"><a href="#_10、redirectto" class="header-anchor">#</a> 10、RedirectTo</h4> <p>将原始请求重定向到指定的Url，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> redirect_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> RedirectTo=302<span class="token punctuation">,</span> https<span class="token punctuation">:</span>//acme.org
+</code></pre></div><p>该配置使访问 <code>${GATEWAY_URL}/hello</code> 会被重定向到 <code>https://acme.org/hello</code> ，并且携带一个 <code>Location:http://acme.org</code> 的Header，而返回客户端的HTTP状态码为302</p> <p>注意事项：</p> <ul><li>HTTP状态码应为3xx，例如301</li> <li>URL必须是合法的URL，该URL会作为<code>Location</code> Header的值</li></ul> <h4 id="_11、removehopbyhopheadersfilter"><a href="#_11、removehopbyhopheadersfilter" class="header-anchor">#</a> 11、RemoveHopByHopHeadersFilter</h4> <p>为原始请求删除<a href="https://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging-14#section-7.1.3" target="_blank" rel="noopener noreferrer">IETF<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>组织规定的一系列Header，默认删除的Header如下：</p> <ul><li>Connection</li> <li>Keep-Alive</li> <li>Proxy-Authenticate</li> <li>Proxy-Authorization</li> <li>TE</li> <li>Trailer</li> <li>Transfer-Encoding</li> <li>Upgrade</li></ul> <p>可以通过配置去指定仅删除哪些Header，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">filter</span><span class="token punctuation">:</span>
+        <span class="token key atrule">remove-hop-by-hop</span><span class="token punctuation">:</span>
+          <span class="token comment"># 多个Header使用逗号（,）分隔</span>
+          <span class="token key atrule">headers</span><span class="token punctuation">:</span> Connection<span class="token punctuation">,</span>Keep<span class="token punctuation">-</span>Alive
+</code></pre></div><h4 id="_12、removerequestheader"><a href="#_12、removerequestheader" class="header-anchor">#</a> 12、RemoveRequestHeader</h4> <p>为原始请求删除某个Header，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> removerequestheader_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> RemoveRequestHeader=X<span class="token punctuation">-</span>Request<span class="token punctuation">-</span>Foo
+</code></pre></div><p>删除原始请求中名为 <code>X-Request-Foo</code> 的请求头</p> <h4 id="_13、removeresponseheader"><a href="#_13、removeresponseheader" class="header-anchor">#</a> 13、RemoveResponseHeader</h4> <p>为原始响应删除某个Header，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> removeresponseheader_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> RemoveResponseHeader=X<span class="token punctuation">-</span>Response<span class="token punctuation">-</span>Foo
+</code></pre></div><p>删除原始响应中名为 <code>X-Request-Foo</code> 的响应头</p> <h4 id="_14、rewritepath"><a href="#_14、rewritepath" class="header-anchor">#</a> 14、RewritePath</h4> <p>通过正则表达式重写原始的请求路径，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> rewritepath_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/foo/<span class="token important">**</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token comment"># 参数1为原始路径的正则表达式，参数2为重写后路径的正则表达式</span>
+        <span class="token punctuation">-</span> RewritePath=/foo/(<span class="token punctuation">?</span>&lt;segment<span class="token punctuation">&gt;</span>.<span class="token important">*)</span><span class="token punctuation">,</span> /$\<span class="token punctuation">{</span>segment<span class="token punctuation">}</span>
+
+</code></pre></div><p>该配置使得访问 <code>/foo/bar</code> 时，会将路径重写为<code>/bar</code> 再进行转发，也就是会转发到 <code>https://example.org/bar</code>。需要注意的是：由于YAML语法，需用<code>$\</code> 替换 <code>$</code></p> <h4 id="_15、rewriteresponseheader"><a href="#_15、rewriteresponseheader" class="header-anchor">#</a> 15、RewriteResponseHeader</h4> <p>重写原始响应中的某个Header，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> rewriteresponseheader_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token comment"># 参数1为Header名称，参数2为值的正则表达式，参数3为重写后的值</span>
+        <span class="token punctuation">-</span> RewriteResponseHeader=X<span class="token punctuation">-</span>Response<span class="token punctuation">-</span>Foo<span class="token punctuation">,</span> password=<span class="token punctuation">[</span>^&amp;<span class="token punctuation">]</span>+<span class="token punctuation">,</span> password=<span class="token important">***</span>
+
+</code></pre></div><p>该配置的意义在于：如果响应头中 <code>X-Response-Foo</code> 的值为<code>/42?user=ford&amp;password=omg!what&amp;flag=true</code>，那么就会被按照配置的值重写成<code>/42?user=ford&amp;password=***&amp;flag=true</code>，也就是把其中的<code>password=omg!what</code>重写成了<code>password=***</code></p> <h4 id="_16、savesession"><a href="#_16、savesession" class="header-anchor">#</a> 16、SaveSession</h4> <p>在转发请求之前，强制执行<code>WebSession::save</code>操作，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> save_session
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/foo/<span class="token important">**</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> SaveSession
+
+</code></pre></div><p>主要用在那种像 Spring Session 延迟数据存储（数据不是立刻持久化）的，并希望在请求转发前确保session状态保存情况。如果你将Spring Secutiry于Spring Session集成使用，并想确保安全信息都传到下游机器，你就需要配置这个filter。</p> <h4 id="_17、secureheaders"><a href="#_17、secureheaders" class="header-anchor">#</a> 17、secureHeaders</h4> <p>secureHeaders过滤器工厂主要是参考了<a href="https://blog.appcanary.com/2017/http-security-headers.html" target="_blank" rel="noopener noreferrer">这篇博客<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>中的建议，为原始响应添加了一系列起安全作用的响应头。默认会添加如下Headers（包括值）：</p> <ul><li><code>X-Xss-Protection:1; mode=block</code></li> <li><code>Strict-Transport-Security:max-age=631138519</code></li> <li><code>X-Frame-Options:DENY</code></li> <li><code>X-Content-Type-Options:nosniff</code></li> <li><code>Referrer-Policy:no-referrer</code></li> <li><code>Content-Security-Policy:default-src 'self' https:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'; script-src https:; style-src 'self' https: 'unsafe-inline'</code></li> <li><code>X-Download-Options:noopen</code></li> <li><code>X-Permitted-Cross-Domain-Policies:none</code></li></ul> <p>如果你想修改这些Header的值，那么就需要使用这些Headers对应的后缀，如下：</p> <ul><li><code>xss-protection-header</code></li> <li><code>strict-transport-security</code></li> <li><code>frame-options</code></li> <li><code>content-type-options</code></li> <li><code>referrer-policy</code></li> <li><code>content-security-policy</code></li> <li><code>download-options</code></li> <li><code>permitted-cross-domain-policies</code></li></ul> <p>配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">filter</span><span class="token punctuation">:</span>
+        <span class="token key atrule">secure-headers</span><span class="token punctuation">:</span>
+          <span class="token comment"># 修改 X-Xss-Protection 的值为 2; mode=unblock</span>
+          <span class="token key atrule">xss-protection-header</span><span class="token punctuation">:</span> 2; mode=unblock
+</code></pre></div><p>如果想禁用某些Header，可使用如下配置：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">filter</span><span class="token punctuation">:</span>
+        <span class="token key atrule">secure-headers</span><span class="token punctuation">:</span>
+          <span class="token comment"># 多个使用逗号（,）分隔</span>
+          <span class="token key atrule">disable</span><span class="token punctuation">:</span> frame<span class="token punctuation">-</span>options<span class="token punctuation">,</span>download<span class="token punctuation">-</span>options
+
+</code></pre></div><h4 id="_18、setpath"><a href="#_18、setpath" class="header-anchor">#</a> 18、SetPath</h4> <p>修改原始的请求路径，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> setpath_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/foo/<span class="token punctuation">{</span>segment<span class="token punctuation">}</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> SetPath=/<span class="token punctuation">{</span>segment<span class="token punctuation">}</span>
+
+</code></pre></div><p>该配置使访问 <code>${GATEWAY_URL}/foo/bar</code> 时会转发到 <code>https://example.org/bar</code> ，也就是原本的<code>/foo/bar</code>被修改为了<code>/bar</code></p> <h4 id="_19、setresponseheader"><a href="#_19、setresponseheader" class="header-anchor">#</a> 19、SetResponseHeader</h4> <p>修改原始响应中某个Header的值，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> setresponseheader_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> SetResponseHeader=X<span class="token punctuation">-</span>Response<span class="token punctuation">-</span>Foo<span class="token punctuation">,</span> Bar
+
+</code></pre></div><p>将原始响应中 <code>X-Response-Foo</code> 的值修改为 <code>Bar</code></p> <h4 id="_20、setstatus"><a href="#_20、setstatus" class="header-anchor">#</a> 20、SetStatus</h4> <p>修改原始响应的状态码，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> setstatusstring_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token comment"># 字符串形式</span>
+        <span class="token punctuation">-</span> SetStatus=BAD_REQUEST
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> setstatusint_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token comment"># 数字形式</span>
+        <span class="token punctuation">-</span> SetStatus=401
+</code></pre></div><p>SetStatusd的值可以是数字，也可以是字符串。但一定要是Spring <code>HttpStatus</code> 枚举类中的值。上面这两种配置都可以返回401这个HTTP状态码。</p> <h4 id="_21、stripprefix"><a href="#_21、stripprefix" class="header-anchor">#</a> 21、StripPrefix</h4> <p>用于截断原始请求的路径，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> nameRoot
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//nameservice
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/name/<span class="token important">**</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token comment"># 数字表示要截断的路径的数量</span>
+        <span class="token punctuation">-</span> StripPrefix=2
+
+</code></pre></div><p>如上配置，如果请求的路径为 <code>/name/bar/foo</code> ，那么则会截断成<code>/foo</code>后进行转发 ，也就是会截断2个路径。</p> <h4 id="_22、retry"><a href="#_22、retry" class="header-anchor">#</a> 22、Retry</h4> <p>针对不同的响应进行重试，例如可以针对HTTP状态码进行重试，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> retry_test
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span>8080/flakey
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Host=<span class="token important">*.retry.com</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Retry
+          <span class="token key atrule">args</span><span class="token punctuation">:</span>
+            <span class="token key atrule">retries</span><span class="token punctuation">:</span> <span class="token number">3</span>
+            <span class="token key atrule">statuses</span><span class="token punctuation">:</span> BAD_GATEWAY
+</code></pre></div><p>可配置如下参数：</p> <ul><li><code>retries</code>：重试次数</li> <li><code>statuses</code>：需要重试的状态码，取值在 <code>org.springframework.http.HttpStatus</code> 中</li> <li><code>methods</code>：需要重试的请求方法，取值在 <code>org.springframework.http.HttpMethod</code> 中</li> <li><code>series</code>：HTTP状态码序列，取值在 <code>org.springframework.http.HttpStatus.Series</code> 中</li></ul> <h4 id="_23、requestsize"><a href="#_23、requestsize" class="header-anchor">#</a> 23、RequestSize</h4> <p>设置允许接收最大请求包的大小，配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> request_size_route
+      <span class="token key atrule">uri</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span>8080/upload
+      <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> Path=/upload
+      <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> RequestSize
+        <span class="token key atrule">args</span><span class="token punctuation">:</span>
+          <span class="token comment"># 单位为字节</span>
+          <span class="token key atrule">maxSize</span><span class="token punctuation">:</span> <span class="token number">5000000</span>
+
+</code></pre></div><p>如果请求包大小超过设置的值，则会返回 <code>413 Payload Too Large</code>以及一个<code>errorMessage</code></p> <h4 id="_24、modify-request-body"><a href="#_24、modify-request-body" class="header-anchor">#</a> 24、Modify Request Body</h4> <p>在转发请求之前修改原始请求体内容，该过滤器工厂只能通过代码配置，不支持在配置文件中配置。代码示例：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@Bean</span>
+<span class="token keyword">public</span> <span class="token class-name">RouteLocator</span> <span class="token function">routes</span><span class="token punctuation">(</span><span class="token class-name">RouteLocatorBuilder</span> builder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> builder<span class="token punctuation">.</span><span class="token function">routes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">&quot;rewrite_request_obj&quot;</span><span class="token punctuation">,</span> r <span class="token operator">-&gt;</span> r<span class="token punctuation">.</span><span class="token function">host</span><span class="token punctuation">(</span><span class="token string">&quot;*.rewriterequestobj.org&quot;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">filters</span><span class="token punctuation">(</span>f <span class="token operator">-&gt;</span> f<span class="token punctuation">.</span><span class="token function">prefixPath</span><span class="token punctuation">(</span><span class="token string">&quot;/httpbin&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">modifyRequestBody</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token class-name">Hello</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token class-name">MediaType</span><span class="token punctuation">.</span><span class="token constant">APPLICATION_JSON_VALUE</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">(</span>exchange<span class="token punctuation">,</span> s<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token keyword">return</span> <span class="token class-name">Mono</span><span class="token punctuation">.</span><span class="token function">just</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Hello</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">uri</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ 
+<span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Hello</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span> message<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">public</span> <span class="token class-name">Hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+ 
+    <span class="token keyword">public</span> <span class="token class-name">Hello</span><span class="token punctuation">(</span><span class="token class-name">String</span> message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>message <span class="token operator">=</span> message<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ 
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> message<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ 
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setMessage</span><span class="token punctuation">(</span><span class="token class-name">String</span> message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>message <span class="token operator">=</span> message<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>Tips：该过滤器工厂处于 <strong>BETA</strong> 状态，未来API可能会变化，生产环境请慎用</p></blockquote> <h4 id="_25、modify-response-body"><a href="#_25、modify-response-body" class="header-anchor">#</a> 25、Modify Response Body</h4> <p>可用于修改原始响应体的内容，该过滤器工厂同样只能通过代码配置，不支持在配置文件中配置。代码示例：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@Bean</span>
+<span class="token keyword">public</span> <span class="token class-name">RouteLocator</span> <span class="token function">routes</span><span class="token punctuation">(</span><span class="token class-name">RouteLocatorBuilder</span> builder<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> builder<span class="token punctuation">.</span><span class="token function">routes</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">&quot;rewrite_response_upper&quot;</span><span class="token punctuation">,</span> r <span class="token operator">-&gt;</span> r<span class="token punctuation">.</span><span class="token function">host</span><span class="token punctuation">(</span><span class="token string">&quot;*.rewriteresponseupper.org&quot;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">filters</span><span class="token punctuation">(</span>f <span class="token operator">-&gt;</span> f<span class="token punctuation">.</span><span class="token function">prefixPath</span><span class="token punctuation">(</span><span class="token string">&quot;/httpbin&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">modifyResponseBody</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">(</span>exchange<span class="token punctuation">,</span> s<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token class-name">Mono</span><span class="token punctuation">.</span><span class="token function">just</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">uri</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><blockquote><p>Tips：该过滤器工厂处于 <strong>BETA</strong> 状态，未来API可能会变化，生产环境请慎用</p></blockquote> <h4 id="_26、default"><a href="#_26、default" class="header-anchor">#</a> 26、Default</h4> <p>Default Filters用于为所有路由添加过滤器工厂，也就是说通过Default Filter所配置的过滤器工厂会作用到所有的路由上。配置示例：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">default-filters</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> AddResponseHeader=X<span class="token punctuation">-</span>Response<span class="token punctuation">-</span>Default<span class="token punctuation">-</span>Foo<span class="token punctuation">,</span> Default<span class="token punctuation">-</span>Bar
+      <span class="token punctuation">-</span> PrefixPath=/httpbin
+</code></pre></div><hr> <p>官方文档：</p> <ul><li><a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.1.0.RELEASE/single/spring-cloud-gateway.html#_gatewayfilter_factories" target="_blank" rel="noopener noreferrer">GatewayFilter Factories<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="常用的内置工厂"><a href="#常用的内置工厂" class="header-anchor">#</a> 常用的内置工厂</h2> <h3 id="_1、添加header"><a href="#_1、添加header" class="header-anchor">#</a> 1、添加Header</h3> <p>AddRequestHeader GatewayFilter工厂接受一个名称和值参数。下面的示例配置一个AddRequestHeader GatewayFilter</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_request_header_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddRequestHeader=X<span class="token punctuation">-</span>Request<span class="token punctuation">-</span>red<span class="token punctuation">,</span> blue
+</code></pre></div><p>AddRequestHeader知道用于匹配路径或主机的URI变量。URI变量可以在值中使用，并在运行时展开。下面的例子配置了一个使用变量的AddRequestHeader GatewayFilter</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_request_header_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/red/<span class="token punctuation">{</span>segment<span class="token punctuation">}</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddRequestHeader=X<span class="token punctuation">-</span>Request<span class="token punctuation">-</span>Red<span class="token punctuation">,</span> Blue<span class="token punctuation">-</span><span class="token punctuation">{</span>segment<span class="token punctuation">}</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">&quot;/header&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">header</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestHeader</span><span class="token punctuation">(</span><span class="token string">&quot;X-Request-color&quot;</span><span class="token punctuation">)</span> <span class="token class-name">String</span>  color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> color<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2、添加参数"><a href="#_2、添加参数" class="header-anchor">#</a> 2、添加参数</h3> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_request_parameter_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddRequestParameter=red<span class="token punctuation">,</span> blue
+</code></pre></div><p>这将为所有匹配请求的下游请求的查询字符串添加red=blue</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> add_request_parameter_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">Host</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>segment<span class="token punctuation">}</span>.myhost.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AddRequestParameter=foo<span class="token punctuation">,</span> bar<span class="token punctuation">-</span><span class="token punctuation">{</span>segment<span class="token punctuation">}</span>
+</code></pre></div><p>AddRequestParameter知道用于匹配路径或主机的URI变量。URI变量可以在值中使用，并在运行时展开。下面的示例配置一个使用变量的AddRequestParameter GatewayFilter</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span><span class="token string">&quot;/addRequestParam&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">header</span><span class="token punctuation">(</span><span class="token annotation punctuation">@RequestParam</span><span class="token punctuation">(</span><span class="token string">&quot;color&quot;</span><span class="token punctuation">)</span> <span class="token class-name">String</span>  color<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> color<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3、添加前缀"><a href="#_3、添加前缀" class="header-anchor">#</a> 3、添加前缀</h3> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> prefixpath_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> PrefixPath=/mypath
+</code></pre></div><p>This prefixes <code>/mypath</code> to the path of all matching requests. So a request to <code>/hello</code> is sent to <code>/mypath/hello</code>.</p> <h3 id="_4、重定向"><a href="#_4、重定向" class="header-anchor">#</a> 4、重定向</h3> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> prefixpath_route
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//example.org
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> RedirectTo=302<span class="token punctuation">,</span> https<span class="token punctuation">:</span>//acme.org
+</code></pre></div><p>This will send a status 302 with a <code>Location:https://acme.org</code> header to perform a redirect.</p> <h3 id="_5、路径截取"><a href="#_5、路径截取" class="header-anchor">#</a> 5、路径截取</h3> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> nameRoot
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//nameservice
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> Path=/name/<span class="token important">**</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> StripPrefix=2
+</code></pre></div><p>When a request is made through the gateway to <code>/name/blue/red</code>, the request made to <code>nameservice</code> looks like <code>nameservice/red</code>.</p> <h2 id="自定义过滤器工厂"><a href="#自定义过滤器工厂" class="header-anchor">#</a> 自定义过滤器工厂</h2> <ul><li>继承 AbstractGatewayFilterFactory 类</li> <li>重写 apply 方法的逻辑</li> <li>命名需要以 GatewayFilterFactory 结尾</li></ul> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@Slf4j</span>
+<span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AccessAuthGatewayFilterFactory</span> <span class="token keyword">extends</span> <span class="token class-name">AbstractGatewayFilterFactory</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">AccessAuthGatewayFilterFactory<span class="token punctuation">.</span>Config</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+ 
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">WARNING_MSG</span> <span class="token operator">=</span> <span class="token string">&quot;访问未授权&quot;</span><span class="token punctuation">;</span>
+ 
+    <span class="token keyword">public</span> <span class="token class-name">AccessAuthGatewayFilterFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token class-name">AccessAuthGatewayFilterFactory<span class="token punctuation">.</span>Config</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;Loaded GatewayFilterFactory [AccessAuth]&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token annotation punctuation">@Override</span>
+<span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> <span class="token function">shortcutFieldOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">return</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span><span class="token string">&quot;name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> 
+ 
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">GatewayFilter</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">Config</span> config<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ 
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>exchange<span class="token punctuation">,</span> chain<span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">{</span>
+            <span class="token class-name">ServerHttpRequest</span> request <span class="token operator">=</span> exchange<span class="token punctuation">.</span><span class="token function">getRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">ServerHttpResponse</span> response <span class="token operator">=</span> exchange<span class="token punctuation">.</span><span class="token function">getResponse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span><span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> chain<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>exchange<span class="token punctuation">.</span><span class="token function">mutate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+ 
+                <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> bits <span class="token operator">=</span> <span class="token constant">WARNING_MSG</span><span class="token punctuation">.</span><span class="token function">getBytes</span><span class="token punctuation">(</span><span class="token class-name">StandardCharsets</span><span class="token punctuation">.</span><span class="token constant">UTF_8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token class-name">DataBuffer</span> buffer <span class="token operator">=</span> response<span class="token punctuation">.</span><span class="token function">bufferFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">wrap</span><span class="token punctuation">(</span>bits<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">//指定编码，否则在浏览器中会中文乱码</span>
+                response<span class="token punctuation">.</span><span class="token function">getHeaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;Content-Type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text/plain;charset=UTF-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">writeWith</span><span class="token punctuation">(</span><span class="token class-name">Mono</span><span class="token punctuation">.</span><span class="token function">just</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+ 
+    <span class="token punctuation">}</span>
+ 
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Config</span> <span class="token punctuation">{</span>
+ 
+        <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+ 
+        <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+ 
+        <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> name<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>修改service-gateway服务application.yml配置文件的路由配置，如下：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> hello
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>   <span class="token comment">#断言</span>
+        <span class="token punctuation">-</span> Path=/hello
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span><span class="token number">8080</span>  <span class="token comment">#目标服务地址</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AccessAuth=lisi
+</code></pre></div><p>启动服务，在浏览器访问在浏览器访问http://localhost/hello?name=xiaoming,返回如下：</p> <div class="language- extra-class"><pre class="language-text"><code>访问未授权
+</code></pre></div><p>若将service-gateway服务application.yml配置文件的路由配置修改，如下：</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">cloud</span><span class="token punctuation">:</span>
+    <span class="token key atrule">gateway</span><span class="token punctuation">:</span>
+      <span class="token key atrule">routes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">id</span><span class="token punctuation">:</span> hello
+        <span class="token key atrule">predicates</span><span class="token punctuation">:</span>   <span class="token comment">#断言</span>
+        <span class="token punctuation">-</span> Path=/hello
+        <span class="token key atrule">uri</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span><span class="token number">8080</span>  <span class="token comment">#目标服务地址</span>
+        <span class="token key atrule">filters</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> AccessAuth=zhangsan
+</code></pre></div><p>重新启动服务，从浏览器再次访问http://localhost/hello?name=xiaoming，返回如下：</p> <div class="language-cobol extra-class"><pre class="language-cobol"><code>hello<span class="token punctuation">,</span> xiaoming<span class="token punctuation">,</span> 我是服务提供者<span class="token punctuation">:</span>端口为：<span class="token number">8080</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span>gateway<span class="token punctuation">.</span>filter<span class="token punctuation">.</span>factory</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>net<span class="token punctuation">.</span></span><span class="token class-name">URI</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Arrays</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">List</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">reactor<span class="token punctuation">.</span>core<span class="token punctuation">.</span>publisher<span class="token punctuation">.</span></span><span class="token class-name">Mono</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span>gateway<span class="token punctuation">.</span>filter<span class="token punctuation">.</span></span><span class="token class-name">GatewayFilter</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span>gateway<span class="token punctuation">.</span>filter<span class="token punctuation">.</span></span><span class="token class-name">GatewayFilterChain</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span>gateway<span class="token punctuation">.</span>support<span class="token punctuation">.</span></span><span class="token class-name">HttpStatusHolder</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>http<span class="token punctuation">.</span></span><span class="token class-name">HttpHeaders</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>http<span class="token punctuation">.</span></span><span class="token class-name">HttpStatus</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>http<span class="token punctuation">.</span>server<span class="token punctuation">.</span>reactive<span class="token punctuation">.</span></span><span class="token class-name">ServerHttpResponse</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">Assert</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token import"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>web<span class="token punctuation">.</span>server<span class="token punctuation">.</span></span><span class="token class-name">ServerWebExchange</span></span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token keyword">static</span> <span class="token import static"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span>gateway<span class="token punctuation">.</span>support<span class="token punctuation">.</span></span><span class="token class-name">GatewayToStringStyler</span><span class="token punctuation">.</span><span class="token static">filterToStringCreator</span></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token keyword">static</span> <span class="token import static"><span class="token namespace">org<span class="token punctuation">.</span>springframework<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span>gateway<span class="token punctuation">.</span>support<span class="token punctuation">.</span></span><span class="token class-name">ServerWebExchangeUtils</span><span class="token punctuation">.</span><span class="token static">setResponseStatus</span></span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * @author Spencer Gibb
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RedirectToGatewayFilterFactory</span>
+		<span class="token keyword">extends</span> <span class="token class-name">AbstractGatewayFilterFactory</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">RedirectToGatewayFilterFactory<span class="token punctuation">.</span>Config</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>
+
+	<span class="token comment">/**
+	 * Status key.
+	 */</span>
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">STATUS_KEY</span> <span class="token operator">=</span> <span class="token string">&quot;status&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * URL key.
+	 */</span>
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> <span class="token constant">URL_KEY</span> <span class="token operator">=</span> <span class="token string">&quot;url&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">public</span> <span class="token class-name">RedirectToGatewayFilterFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">super</span><span class="token punctuation">(</span><span class="token class-name">Config</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> <span class="token function">shortcutFieldOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span><span class="token constant">STATUS_KEY</span><span class="token punctuation">,</span> <span class="token constant">URL_KEY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token annotation punctuation">@Override</span>
+	<span class="token keyword">public</span> <span class="token class-name">GatewayFilter</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">Config</span> config<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token function">apply</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>status<span class="token punctuation">,</span> config<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token class-name">GatewayFilter</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">String</span> statusString<span class="token punctuation">,</span> <span class="token class-name">String</span> urlString<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">HttpStatusHolder</span> httpStatus <span class="token operator">=</span> <span class="token class-name">HttpStatusHolder</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>statusString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">Assert</span><span class="token punctuation">.</span><span class="token function">isTrue</span><span class="token punctuation">(</span>httpStatus<span class="token punctuation">.</span><span class="token function">is3xxRedirection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+				<span class="token string">&quot;status must be a 3xx code, but was &quot;</span> <span class="token operator">+</span> statusString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">final</span> <span class="token class-name">URI</span> url <span class="token operator">=</span> <span class="token constant">URI</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>urlString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token function">apply</span><span class="token punctuation">(</span>httpStatus<span class="token punctuation">,</span> url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token class-name">GatewayFilter</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">HttpStatus</span> httpStatus<span class="token punctuation">,</span> <span class="token class-name">URI</span> uri<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">HttpStatusHolder</span><span class="token punctuation">(</span>httpStatus<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">,</span> uri<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token class-name">GatewayFilter</span> <span class="token function">apply</span><span class="token punctuation">(</span><span class="token class-name">HttpStatusHolder</span> httpStatus<span class="token punctuation">,</span> <span class="token class-name">URI</span> uri<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">GatewayFilter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token annotation punctuation">@Override</span>
+			<span class="token keyword">public</span> <span class="token class-name">Mono</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Void</span><span class="token punctuation">&gt;</span></span> <span class="token function">filter</span><span class="token punctuation">(</span><span class="token class-name">ServerWebExchange</span> exchange<span class="token punctuation">,</span>
+					<span class="token class-name">GatewayFilterChain</span> chain<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>exchange<span class="token punctuation">.</span><span class="token function">getResponse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">isCommitted</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token function">setResponseStatus</span><span class="token punctuation">(</span>exchange<span class="token punctuation">,</span> httpStatus<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+					<span class="token keyword">final</span> <span class="token class-name">ServerHttpResponse</span> response <span class="token operator">=</span> exchange<span class="token punctuation">.</span><span class="token function">getResponse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					response<span class="token punctuation">.</span><span class="token function">getHeaders</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token class-name">HttpHeaders</span><span class="token punctuation">.</span><span class="token constant">LOCATION</span><span class="token punctuation">,</span> uri<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">setComplete</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+				<span class="token keyword">return</span> <span class="token class-name">Mono</span><span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+
+			<span class="token annotation punctuation">@Override</span>
+			<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token class-name">String</span> status<span class="token punctuation">;</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>httpStatus<span class="token punctuation">.</span><span class="token function">getHttpStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					status <span class="token operator">=</span> <span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>httpStatus<span class="token punctuation">.</span><span class="token function">getHttpStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+				<span class="token keyword">else</span> <span class="token punctuation">{</span>
+					status <span class="token operator">=</span> httpStatus<span class="token punctuation">.</span><span class="token function">getStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+				<span class="token keyword">return</span> <span class="token function">filterToStringCreator</span><span class="token punctuation">(</span><span class="token class-name">RedirectToGatewayFilterFactory</span><span class="token punctuation">.</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+						<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>status<span class="token punctuation">,</span> uri<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Config</span> <span class="token punctuation">{</span>
+
+		<span class="token class-name">String</span> status<span class="token punctuation">;</span>
+
+		<span class="token class-name">String</span> url<span class="token punctuation">;</span>
+
+		<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getStatus</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> status<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setStatus</span><span class="token punctuation">(</span><span class="token class-name">String</span> status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">=</span> status<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getUrl</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> url<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setUrl</span><span class="token punctuation">(</span><span class="token class-name">String</span> url<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">this</span><span class="token punctuation">.</span>url <span class="token operator">=</span> url<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2024年1月15日星期一晚上7点55分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zs-ee-框架/cloud-gateway/配置--0.断言工厂.html" class="prev">
+        配置--0.断言工厂
+      </a></span> <span class="next"><a href="/zs-ee-框架/cloud-gateway/配置--2.全局过滤器.html">
+        配置--2.全局过滤器
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.202a821d.js" defer></script><script src="/assets/js/2.53d26b14.js" defer></script><script src="/assets/js/1.14bcf0ea.js" defer></script><script src="/assets/js/147.84a3f5ba.js" defer></script><script src="/assets/js/93.1a30db68.js" defer></script>
+  </body>
+</html>
