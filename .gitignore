@@ -132,6 +132,8 @@ dist
 # mac
 .DS_Store
 
+# idea
+.idea/
 
 # 隐私密文
 # secret.js
