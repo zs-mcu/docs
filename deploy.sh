@@ -4,16 +4,16 @@ set -e
 
 # 生成静态文件
 yarn docs:build
-cd ../animating-resume
-yarn build
-cd -
-cp -r ../animating-resume/public/static/css/* docs/.vuepress/dist/assets/css/
-cp -r ../animating-resume/public/static/js/* docs/.vuepress/dist/assets/js/
-mkdir docs/.vuepress/dist/resume/ 
-cp ../animating-resume/public/index.html docs/.vuepress/dist/resume/
+#cd ../animating-resume
+#yarn build
+#cd -
+#cp -r ../animating-resume/public/static/css/* docs/.vuepress/dist/assets/css/
+#cp -r ../animating-resume/public/static/js/* docs/.vuepress/dist/assets/js/
+#mkdir docs/.vuepress/dist/resume/
+#cp ../animating-resume/public/index.html docs/.vuepress/dist/resume/
 # Mac下的sed命令需要添加 “” 空字符串
-sed -i '' 's/\/static\/css\//\/assets\/css\//g' docs/.vuepress/dist/resume/index.html
-sed -i '' 's/\/static\/js\//\/assets\/js\//g' docs/.vuepress/dist/resume/index.html
+#sed -i '' 's/\/static\/css\//\/assets\/css\//g' docs/.vuepress/dist/resume/index.html
+#sed -i '' 's/\/static\/js\//\/assets\/js\//g' docs/.vuepress/dist/resume/index.html
 
 
 

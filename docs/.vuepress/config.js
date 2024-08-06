@@ -10,4 +10,5 @@ module.exports = {
   // base: "/docs/",
   plugins: pluginsConfig,
   themeConfig: themeConfig,
+  dest: `zsdist/dist`
 }
