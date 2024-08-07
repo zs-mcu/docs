@@ -15,6 +15,12 @@ module.exports = [
     ]
   },
   {
+    "text":"小工具",
+    "items": [
+      { text: 'axure', link: "/小工具/axure/" }
+    ]
+  },
+  {
     "text": "zs-se",
     "items": [
       { "text": "基础", "link": "/zs-se/基础/" },
