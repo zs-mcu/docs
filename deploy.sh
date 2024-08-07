@@ -2,36 +2,29 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+now=$(date +'%Y%m%d%H%M%S')
+
 # 生成静态文件
+echo "开始备份静态文件仓库信息"
+mv ./zsdist/dist ./zsdist/bakdist-$now
+
+
+# 生成静态文件
+echo "开始打包静态文件"
 yarn docs:build
-#cd ../animating-resume
-#yarn build
-#cd -
-#cp -r ../animating-resume/public/static/css/* docs/.vuepress/dist/assets/css/
-#cp -r ../animating-resume/public/static/js/* docs/.vuepress/dist/assets/js/
-#mkdir docs/.vuepress/dist/resume/
-#cp ../animating-resume/public/index.html docs/.vuepress/dist/resume/
-# Mac下的sed命令需要添加 “” 空字符串
-#sed -i '' 's/\/static\/css\//\/assets\/css\//g' docs/.vuepress/dist/resume/index.html
-#sed -i '' 's/\/static\/js\//\/assets\/js\//g' docs/.vuepress/dist/resume/index.html
-
-
 
 # 进入生成的文件夹
-cd docs/.vuepress/dist
+echo "开始还原仓库信息"
+cp -r zsdist/bakdist-$now/.git zsdist/dist/
+#rm -rf zsdist/bakdist
+
+echo "进入发布文件夹"
+cd zsdist/dist
 
 # 如果是发布到自定义域名
+echo "开始推送"
 echo 'docs.xiaoshaozi.site' > CNAME
-git init
-git add -A
+git add .
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-# 如果想修改 cname 就必须使用ssh推送了
-git push -f git@github.com:zs-mcu/docs.git master:gh-pages
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# 第一次发布的时候使用
-# git push -f https://github.com/zs-mcu/docs.git master:gh-pages
-cd -
+git push -u
