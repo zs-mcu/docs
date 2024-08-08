@@ -20,7 +20,8 @@ module.exports = [
       { text: 'axure', link: "/小工具/axure/" },
       { text: 'cygwin', link: '/小工具/cygwin/'},
       { text: 'markmap', link: '/小工具/markmap/'},
-      { text: 'html2md', link: '/小工具/html2md/'}
+      { text: 'html2md', link: '/小工具/html2md/'},
+      { text: 'markdown', link: '/小工具/markdown/'}
     ]
   },
   {
