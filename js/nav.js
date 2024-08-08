@@ -25,6 +25,12 @@ module.exports = [
     ]
   },
   {
+    "text":"小需求",
+    "items": [
+      { text: 'js需求', link: '/小需求/js需求/js-分组' }
+    ]
+  },
+  {
     "text": "web",
     "items": [
       { text: 'js', link: '/web/js/JSON-stringify函数'}
