@@ -11,7 +11,15 @@ module.exports = [
   {
     "text":"中间件",
     "items": [
-      { text: 'docker', link: "/中间件/docker" },
+      { text: 'docker', link: "/中间件/docker/" },
+    ]
+  },
+  {
+    "text":"小工具",
+    "items": [
+      { text: 'axure', link: "/小工具/axure/" },
+      { text: 'cygwin', link: '/小工具/cygwin/'},
+      { text: 'markmap', link: '/小工具/markmap/'}
     ]
   },
   {

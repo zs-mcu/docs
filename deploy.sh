@@ -28,3 +28,7 @@ git add .
 git commit -m 'deploy'
 
 git push -u
+
+echo "开始清除备份文件夹"
+cd -
+rm -rf ./zsdist/bakdist-$now

@@ -52,5 +52,5 @@ function loadSidebar(hrefTxt) {
 }
 
 //页面延时一秒
-setTimeout("vueSidebarShow()",1000)
+// setTimeout("vueSidebarShow()",1000)
 
