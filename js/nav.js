@@ -18,7 +18,8 @@ module.exports = [
     "text":"小工具",
     "items": [
       { text: 'axure', link: "/小工具/axure/" },
-      { text: 'cygwin', link: '/小工具/cygwin/'}
+      { text: 'cygwin', link: '/小工具/cygwin/'},
+      { text: 'markmap', link: '/小工具/markmap/'}
     ]
   },
   {
