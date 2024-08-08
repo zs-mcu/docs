@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JSON.stringify() | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.9632ee24.css" as="style"><link rel="preload" href="/assets/js/app.84fe6af9.js" as="script"><link rel="preload" href="/assets/js/2.57cc69f3.js" as="script"><link rel="preload" href="/assets/js/1.2250ab76.js" as="script"><link rel="preload" href="/assets/js/125.0cb9d25b.js" as="script"><link rel="preload" href="/assets/js/95.dbf66513.js" as="script"><link rel="prefetch" href="/assets/js/10.bb3a4c8b.js"><link rel="prefetch" href="/assets/js/100.cb3f754d.js"><link rel="prefetch" href="/assets/js/101.3606f9fe.js"><link rel="prefetch" href="/assets/js/102.3026752d.js"><link rel="prefetch" href="/assets/js/103.4afd6775.js"><link rel="prefetch" href="/assets/js/104.474b7985.js"><link rel="prefetch" href="/assets/js/105.7ab2382d.js"><link rel="prefetch" href="/assets/js/106.7580a683.js"><link rel="prefetch" href="/assets/js/107.fb8a995d.js"><link rel="prefetch" href="/assets/js/108.0fddcb64.js"><link rel="prefetch" href="/assets/js/109.e1975f92.js"><link rel="prefetch" href="/assets/js/11.33915784.js"><link rel="prefetch" href="/assets/js/110.8dc7e838.js"><link rel="prefetch" href="/assets/js/111.7103f14c.js"><link rel="prefetch" href="/assets/js/112.dfcce36b.js"><link rel="prefetch" href="/assets/js/113.26b1142d.js"><link rel="prefetch" href="/assets/js/114.12de21e6.js"><link rel="prefetch" href="/assets/js/115.858cafa7.js"><link rel="prefetch" href="/assets/js/116.d98b5d7e.js"><link rel="prefetch" href="/assets/js/117.1d2ced62.js"><link rel="prefetch" href="/assets/js/118.c69f867a.js"><link rel="prefetch" href="/assets/js/119.283fca38.js"><link rel="prefetch" href="/assets/js/12.06798330.js"><link rel="prefetch" href="/assets/js/120.748af014.js"><link rel="prefetch" href="/assets/js/121.6143c5f5.js"><link rel="prefetch" href="/assets/js/122.8a306c07.js"><link rel="prefetch" href="/assets/js/123.93751c61.js"><link rel="prefetch" href="/assets/js/124.3a306d27.js"><link rel="prefetch" href="/assets/js/126.5bf85956.js"><link rel="prefetch" href="/assets/js/127.8f734b41.js"><link rel="prefetch" href="/assets/js/128.94f15da0.js"><link rel="prefetch" href="/assets/js/129.d6e2b988.js"><link rel="prefetch" href="/assets/js/13.01c30914.js"><link rel="prefetch" href="/assets/js/130.20e0371a.js"><link rel="prefetch" href="/assets/js/131.4e95887d.js"><link rel="prefetch" href="/assets/js/132.2bf9ad8c.js"><link rel="prefetch" href="/assets/js/133.b2fc8903.js"><link rel="prefetch" href="/assets/js/134.b5b731c5.js"><link rel="prefetch" href="/assets/js/135.157780f6.js"><link rel="prefetch" href="/assets/js/136.06ead84d.js"><link rel="prefetch" href="/assets/js/137.43983280.js"><link rel="prefetch" href="/assets/js/138.09793524.js"><link rel="prefetch" href="/assets/js/139.b931f69a.js"><link rel="prefetch" href="/assets/js/14.5c391e32.js"><link rel="prefetch" href="/assets/js/140.b6d78ed4.js"><link rel="prefetch" href="/assets/js/141.944f91a7.js"><link rel="prefetch" href="/assets/js/142.e7fabc7e.js"><link rel="prefetch" href="/assets/js/143.e48b5c80.js"><link rel="prefetch" href="/assets/js/144.7b84ff7c.js"><link rel="prefetch" href="/assets/js/145.2474b9c1.js"><link rel="prefetch" href="/assets/js/146.50c98d93.js"><link rel="prefetch" href="/assets/js/147.5d8736e8.js"><link rel="prefetch" href="/assets/js/148.27b99c30.js"><link rel="prefetch" href="/assets/js/149.abc9f861.js"><link rel="prefetch" href="/assets/js/15.c70678ca.js"><link rel="prefetch" href="/assets/js/150.4f7b5131.js"><link rel="prefetch" href="/assets/js/151.bc09b9a7.js"><link rel="prefetch" href="/assets/js/152.385c5d99.js"><link rel="prefetch" href="/assets/js/153.3d651ce9.js"><link rel="prefetch" href="/assets/js/154.3a4104de.js"><link rel="prefetch" href="/assets/js/155.98f22058.js"><link rel="prefetch" href="/assets/js/156.f0851d5a.js"><link rel="prefetch" href="/assets/js/157.3fb74674.js"><link rel="prefetch" href="/assets/js/158.c43eaeea.js"><link rel="prefetch" href="/assets/js/159.0c51ca8f.js"><link rel="prefetch" href="/assets/js/16.9040e685.js"><link rel="prefetch" href="/assets/js/160.e93e4d38.js"><link rel="prefetch" href="/assets/js/161.0e6df7d3.js"><link rel="prefetch" href="/assets/js/162.8edcfc4a.js"><link rel="prefetch" href="/assets/js/163.f31f36de.js"><link rel="prefetch" href="/assets/js/164.da93556e.js"><link rel="prefetch" href="/assets/js/165.35538847.js"><link rel="prefetch" href="/assets/js/166.43092cb0.js"><link rel="prefetch" href="/assets/js/167.3b3b8f7b.js"><link rel="prefetch" href="/assets/js/168.6d8ed894.js"><link rel="prefetch" href="/assets/js/169.78134c6b.js"><link rel="prefetch" href="/assets/js/17.64c5a04d.js"><link rel="prefetch" href="/assets/js/170.e3c068ad.js"><link rel="prefetch" href="/assets/js/171.d0db1070.js"><link rel="prefetch" href="/assets/js/172.eb507ca1.js"><link rel="prefetch" href="/assets/js/173.213250bb.js"><link rel="prefetch" href="/assets/js/174.4cc58b21.js"><link rel="prefetch" href="/assets/js/175.740ebafa.js"><link rel="prefetch" href="/assets/js/176.8ec5e7cb.js"><link rel="prefetch" href="/assets/js/177.3b467ff7.js"><link rel="prefetch" href="/assets/js/178.d0787dcb.js"><link rel="prefetch" href="/assets/js/179.c56c4896.js"><link rel="prefetch" href="/assets/js/18.e0ad8a9e.js"><link rel="prefetch" href="/assets/js/180.5c63c9ff.js"><link rel="prefetch" href="/assets/js/181.6b639b21.js"><link rel="prefetch" href="/assets/js/182.3f7043ee.js"><link rel="prefetch" href="/assets/js/183.1685506d.js"><link rel="prefetch" href="/assets/js/184.4c1bb2ce.js"><link rel="prefetch" href="/assets/js/185.b57d7204.js"><link rel="prefetch" href="/assets/js/186.532430e3.js"><link rel="prefetch" href="/assets/js/187.faec10d9.js"><link rel="prefetch" href="/assets/js/188.241dac2b.js"><link rel="prefetch" href="/assets/js/189.1e03efad.js"><link rel="prefetch" href="/assets/js/19.28e46f0c.js"><link rel="prefetch" href="/assets/js/190.441a9832.js"><link rel="prefetch" href="/assets/js/191.8b67a15b.js"><link rel="prefetch" href="/assets/js/192.002103e6.js"><link rel="prefetch" href="/assets/js/193.baf18b8a.js"><link rel="prefetch" href="/assets/js/194.845ddacf.js"><link rel="prefetch" href="/assets/js/195.fbd196cf.js"><link rel="prefetch" href="/assets/js/196.dea60436.js"><link rel="prefetch" href="/assets/js/197.a537abc3.js"><link rel="prefetch" href="/assets/js/198.2fab9cd6.js"><link rel="prefetch" href="/assets/js/199.cbcf02c5.js"><link rel="prefetch" href="/assets/js/20.a2fec036.js"><link rel="prefetch" href="/assets/js/200.6b07535f.js"><link rel="prefetch" href="/assets/js/201.ee1defaa.js"><link rel="prefetch" href="/assets/js/202.be0021b3.js"><link rel="prefetch" href="/assets/js/203.a224f2fc.js"><link rel="prefetch" href="/assets/js/204.58c016a5.js"><link rel="prefetch" href="/assets/js/205.e80efbd7.js"><link rel="prefetch" href="/assets/js/206.73496822.js"><link rel="prefetch" href="/assets/js/207.458d7ca1.js"><link rel="prefetch" href="/assets/js/208.e0aa8559.js"><link rel="prefetch" href="/assets/js/209.3168ce2b.js"><link rel="prefetch" href="/assets/js/21.ffc19c97.js"><link rel="prefetch" href="/assets/js/210.4db87641.js"><link rel="prefetch" href="/assets/js/211.e8c99d08.js"><link rel="prefetch" href="/assets/js/212.55c695c2.js"><link rel="prefetch" href="/assets/js/213.d2f74b60.js"><link rel="prefetch" href="/assets/js/214.fa3ad6fe.js"><link rel="prefetch" href="/assets/js/215.e5e362b9.js"><link rel="prefetch" href="/assets/js/216.7b32ac60.js"><link rel="prefetch" href="/assets/js/217.2fa1437f.js"><link rel="prefetch" href="/assets/js/218.3d05f229.js"><link rel="prefetch" href="/assets/js/219.01f68eab.js"><link rel="prefetch" href="/assets/js/22.675f61b2.js"><link rel="prefetch" href="/assets/js/220.b50a0c3c.js"><link rel="prefetch" href="/assets/js/221.0bbfd2f7.js"><link rel="prefetch" href="/assets/js/222.ea428248.js"><link rel="prefetch" href="/assets/js/223.4c08f929.js"><link rel="prefetch" href="/assets/js/224.efe30d0e.js"><link rel="prefetch" href="/assets/js/225.d9bc1451.js"><link rel="prefetch" href="/assets/js/226.cca99e19.js"><link rel="prefetch" href="/assets/js/227.11168aa8.js"><link rel="prefetch" href="/assets/js/228.a8365063.js"><link rel="prefetch" href="/assets/js/229.05fb0434.js"><link rel="prefetch" href="/assets/js/23.21c68390.js"><link rel="prefetch" href="/assets/js/230.764bdea0.js"><link rel="prefetch" href="/assets/js/231.0d4af0f7.js"><link rel="prefetch" href="/assets/js/232.eace0b6d.js"><link rel="prefetch" href="/assets/js/233.28854cbe.js"><link rel="prefetch" href="/assets/js/234.9846ab13.js"><link rel="prefetch" href="/assets/js/235.3289f231.js"><link rel="prefetch" href="/assets/js/236.de890940.js"><link rel="prefetch" href="/assets/js/237.f08bfef3.js"><link rel="prefetch" href="/assets/js/238.decb51e8.js"><link rel="prefetch" href="/assets/js/239.000f51dd.js"><link rel="prefetch" href="/assets/js/24.3063a488.js"><link rel="prefetch" href="/assets/js/240.a6c55a1d.js"><link rel="prefetch" href="/assets/js/241.3232dabe.js"><link rel="prefetch" href="/assets/js/242.63959b4a.js"><link rel="prefetch" href="/assets/js/243.c979ede0.js"><link rel="prefetch" href="/assets/js/244.ef104ca7.js"><link rel="prefetch" href="/assets/js/245.64eaa985.js"><link rel="prefetch" href="/assets/js/25.07556b66.js"><link rel="prefetch" href="/assets/js/26.ea236397.js"><link rel="prefetch" href="/assets/js/27.fd8a2419.js"><link rel="prefetch" href="/assets/js/28.200aca67.js"><link rel="prefetch" href="/assets/js/29.b582504c.js"><link rel="prefetch" href="/assets/js/3.137d7fb7.js"><link rel="prefetch" href="/assets/js/30.54dd5e1a.js"><link rel="prefetch" href="/assets/js/31.d5191907.js"><link rel="prefetch" href="/assets/js/32.3f917cc8.js"><link rel="prefetch" href="/assets/js/33.8dddbb3a.js"><link rel="prefetch" href="/assets/js/34.ad694ef6.js"><link rel="prefetch" href="/assets/js/35.a93ead4f.js"><link rel="prefetch" href="/assets/js/36.21e65f90.js"><link rel="prefetch" href="/assets/js/37.0be36ea2.js"><link rel="prefetch" href="/assets/js/38.bc557fe7.js"><link rel="prefetch" href="/assets/js/39.13819425.js"><link rel="prefetch" href="/assets/js/4.cae93daa.js"><link rel="prefetch" href="/assets/js/40.3eb47e75.js"><link rel="prefetch" href="/assets/js/41.56193b35.js"><link rel="prefetch" href="/assets/js/42.fc17a8b9.js"><link rel="prefetch" href="/assets/js/43.f0bc036e.js"><link rel="prefetch" href="/assets/js/44.0dc70836.js"><link rel="prefetch" href="/assets/js/45.683b98b1.js"><link rel="prefetch" href="/assets/js/46.dbf56fe2.js"><link rel="prefetch" href="/assets/js/47.4a20343f.js"><link rel="prefetch" href="/assets/js/48.243ee25d.js"><link rel="prefetch" href="/assets/js/49.21dd6583.js"><link rel="prefetch" href="/assets/js/5.e44e4152.js"><link rel="prefetch" href="/assets/js/50.3da04a53.js"><link rel="prefetch" href="/assets/js/51.8f370d95.js"><link rel="prefetch" href="/assets/js/52.259921f1.js"><link rel="prefetch" href="/assets/js/53.381645e9.js"><link rel="prefetch" href="/assets/js/54.9a7c8364.js"><link rel="prefetch" href="/assets/js/55.3722268c.js"><link rel="prefetch" href="/assets/js/56.49e7ed45.js"><link rel="prefetch" href="/assets/js/57.a0e663ad.js"><link rel="prefetch" href="/assets/js/58.effd55d6.js"><link rel="prefetch" href="/assets/js/59.e8abebdb.js"><link rel="prefetch" href="/assets/js/6.4bb31a58.js"><link rel="prefetch" href="/assets/js/60.07a55110.js"><link rel="prefetch" href="/assets/js/61.0ff93446.js"><link rel="prefetch" href="/assets/js/62.e89ceb4b.js"><link rel="prefetch" href="/assets/js/63.34386352.js"><link rel="prefetch" href="/assets/js/64.86b7ca58.js"><link rel="prefetch" href="/assets/js/65.e6e1db4f.js"><link rel="prefetch" href="/assets/js/66.fa2637f7.js"><link rel="prefetch" href="/assets/js/67.6f3d1d21.js"><link rel="prefetch" href="/assets/js/68.71c81916.js"><link rel="prefetch" href="/assets/js/69.d0e92fbd.js"><link rel="prefetch" href="/assets/js/7.de6f05e6.js"><link rel="prefetch" href="/assets/js/70.6a834161.js"><link rel="prefetch" href="/assets/js/71.0459c535.js"><link rel="prefetch" href="/assets/js/72.e6f0559b.js"><link rel="prefetch" href="/assets/js/73.1bfef368.js"><link rel="prefetch" href="/assets/js/74.2f4858e4.js"><link rel="prefetch" href="/assets/js/75.3f88f459.js"><link rel="prefetch" href="/assets/js/76.73a2cb25.js"><link rel="prefetch" href="/assets/js/77.54501a77.js"><link rel="prefetch" href="/assets/js/78.4ab45fdd.js"><link rel="prefetch" href="/assets/js/79.e8c89ad7.js"><link rel="prefetch" href="/assets/js/80.338c395f.js"><link rel="prefetch" href="/assets/js/81.90872477.js"><link rel="prefetch" href="/assets/js/82.5c23ecca.js"><link rel="prefetch" href="/assets/js/83.9ed3accb.js"><link rel="prefetch" href="/assets/js/84.466d5d64.js"><link rel="prefetch" href="/assets/js/85.cd0a31ee.js"><link rel="prefetch" href="/assets/js/86.01911cd5.js"><link rel="prefetch" href="/assets/js/87.69378ec9.js"><link rel="prefetch" href="/assets/js/88.be085d91.js"><link rel="prefetch" href="/assets/js/89.1f7b9d18.js"><link rel="prefetch" href="/assets/js/90.cae775e2.js"><link rel="prefetch" href="/assets/js/91.ff533346.js"><link rel="prefetch" href="/assets/js/92.fb57de0b.js"><link rel="prefetch" href="/assets/js/93.17777966.js"><link rel="prefetch" href="/assets/js/94.6a96ccd0.js"><link rel="prefetch" href="/assets/js/96.2b482421.js"><link rel="prefetch" href="/assets/js/97.dcdfb785.js"><link rel="prefetch" href="/assets/js/98.30fe83d4.js"><link rel="prefetch" href="/assets/js/99.a49f000d.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.a8254278.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9632ee24.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/中间件/docker/" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小工具" class="dropdown-title"><span class="title">小工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="小工具" class="mobile-dropdown-title"><span class="title">小工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/小工具/axure/" class="nav-link">
+  axure
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/cygwin/" class="nav-link">
+  cygwin
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markmap/" class="nav-link">
+  markmap
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/html2md/" class="nav-link">
+  html2md
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markdown/" class="nav-link">
+  markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web" class="dropdown-title"><span class="title">web</span> <span class="arrow down"></span></button> <button type="button" aria-label="web" class="mobile-dropdown-title"><span class="title">web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/js/JSON-stringify函数.html" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/中间件/docker/" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小工具" class="dropdown-title"><span class="title">小工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="小工具" class="mobile-dropdown-title"><span class="title">小工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/小工具/axure/" class="nav-link">
+  axure
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/cygwin/" class="nav-link">
+  cygwin
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markmap/" class="nav-link">
+  markmap
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/html2md/" class="nav-link">
+  html2md
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markdown/" class="nav-link">
+  markdown
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web" class="dropdown-title"><span class="title">web</span> <span class="arrow down"></span></button> <button type="button" aria-label="web" class="mobile-dropdown-title"><span class="title">web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/js/JSON-stringify函数.html" class="nav-link">
+  js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>api</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/js/JSON-stringify函数.html" class="active sidebar-link">JSON.stringify()</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/js/JSON-stringify函数.html#通过需求学习" class="sidebar-link">通过需求学习</a></li><li class="sidebar-sub-header"><a href="/web/js/JSON-stringify函数.html#九大特性" class="sidebar-link">九大特性</a></li><li class="sidebar-sub-header"><a href="/web/js/JSON-stringify函数.html#第二个参数和第三个参数" class="sidebar-link">第二个参数和第三个参数</a></li><li class="sidebar-sub-header"><a href="/web/js/JSON-stringify函数.html#强大的第二个参数-replacer" class="sidebar-link">强大的第二个参数 replacer</a></li><li class="sidebar-sub-header"><a href="/web/js/JSON-stringify函数.html#有意思却没啥用的第三个参数-space" class="sidebar-link">有意思却没啥用的第三个参数 space</a></li><li class="sidebar-sub-header"><a href="/web/js/JSON-stringify函数.html#总结" class="sidebar-link">总结</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>https://github.com/NieZhuZhu/Blog/issues/1</p> <p><img src="/assets/img/70389976-5a454500-1a01-11ea-81bd-8c12208fbd0e.c9f4ec41.png" alt="image"></p> <h2 id="通过需求学习"><a href="#通过需求学习" class="header-anchor">#</a> 通过需求学习</h2> <p>首先我们在开发的过程当中遇到这样一个处理数据的需求</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> todayILearn <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">_id</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">'今天学习 JSON.stringify()，我很开心！'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">created_at</span><span class="token operator">:</span> <span class="token string">'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">updated_at</span><span class="token operator">:</span> <span class="token string">'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们需要将上面这个对象处理成下面这个对象</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> todayILearn <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">'今天学习 JSON.stringify()，我很开心！'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">createdAt</span><span class="token operator">:</span> <span class="token string">'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">updatedAt</span><span class="token operator">:</span> <span class="token string">'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>也就是在不改变属性的值的前提下，将对象属性修改一下。 把<code>_id</code> 改成 <code>id</code>，把 <code>updated_at</code> 改成 <code>updatedAt</code>，把 <code>created_at</code> 改成 <code>createdAt</code>。我们现在通过这个小小的需求来见识一下 <code>JSON.stringify()</code> 的强大吧。</p> <p>首先要解决这个问题我们有很多的解决方式，我们先提供两种不优雅的解决方案：</p> <ul><li><strong>方案一：一次遍历+多声明一个变量</strong></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 多一个变量存储</span>
+<span class="token keyword">const</span> todayILearnTemp <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> value<span class="token punctuation">]</span> <span class="token keyword">of</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>todayILearn<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">===</span> <span class="token string">&quot;_id&quot;</span><span class="token punctuation">)</span> todayILearnTemp<span class="token punctuation">[</span><span class="token string">&quot;id&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+  <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">===</span> <span class="token string">&quot;created_at&quot;</span><span class="token punctuation">)</span> todayILearnTemp<span class="token punctuation">[</span><span class="token string">&quot;createdAt&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+  <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>key <span class="token operator">===</span> <span class="token string">&quot;updatedAt&quot;</span><span class="token punctuation">)</span> todayILearnTemp<span class="token punctuation">[</span><span class="token string">&quot;updatedAt&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+  <span class="token keyword">else</span> todayILearnTemp<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>todayILearnTemp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 结果：</span>
+<span class="token comment">// { id: 1,</span>
+<span class="token comment">//  content: '今天学习 JSON.stringify()，我很开心！',</span>
+<span class="token comment">//  createdAt: 'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)',</span>
+<span class="token comment">//  updated_at: 'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)' </span>
+<span class="token comment">// }</span>
+</code></pre></div><p>方案一完全没有问题可以实现。但是多声明了一个变量又加上一层循环并且还有很多的 <code>if</code> <code>else</code> 语句，怎么都显得不太优雅。</p> <ul><li><strong>方案二：暴力 <code>delete</code> 属性和增加属性</strong></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 极致的暴力美学</span>
+todayILearn<span class="token punctuation">.</span>id <span class="token operator">=</span> todayILearn<span class="token punctuation">.</span>_id<span class="token punctuation">;</span>
+todayILearn<span class="token punctuation">.</span>createdAt <span class="token operator">=</span> todayILearn<span class="token punctuation">.</span>created_at<span class="token punctuation">;</span>
+todayILearn<span class="token punctuation">.</span>updatedAt <span class="token operator">=</span> todayILearn<span class="token punctuation">.</span>updated_at<span class="token punctuation">;</span>
+<span class="token keyword">delete</span> todayILearn<span class="token punctuation">.</span>_id<span class="token punctuation">;</span>
+<span class="token keyword">delete</span> todayILearn<span class="token punctuation">.</span>created_at<span class="token punctuation">;</span>
+<span class="token keyword">delete</span> todayILearn<span class="token punctuation">.</span>updated_at<span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>todayILearn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 	太暴力😢</span>
+<span class="token comment">//{ </span>
+<span class="token comment">//  content: '今天学习 JSON.stringify()，我很开心！',</span>
+<span class="token comment">//  id: 1,</span>
+<span class="token comment">//  createdAt: 'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)',</span>
+<span class="token comment">//  updatedAt: 'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)' </span>
+<span class="token comment">//}</span>
+</code></pre></div><p>直接 delete 暴力解决太粗鲁了，而且有一个缺点，属性的顺序变了。</p> <ul><li><strong>方案三：序列化+ <code>replace</code> 美学典范</strong></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> mapObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">_id</span><span class="token operator">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">created_at</span><span class="token operator">:</span> <span class="token string">&quot;createdAt&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">updated_at</span><span class="token operator">:</span> <span class="token string">&quot;updatedAt&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>
+  <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>todayILearn<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>
+    <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">_id|created_at|updated_at</span><span class="token regex-delimiter">/</span><span class="token regex-flags">gi</span></span><span class="token punctuation">,</span>
+    <span class="token parameter">matched</span> <span class="token operator">=&gt;</span> mapObj<span class="token punctuation">[</span>matched<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+<span class="token comment">// { </span>
+<span class="token comment">// id: 1,</span>
+<span class="token comment">//  content: '今天学习 JSON.stringify()，我很开心！',</span>
+<span class="token comment">//  createdAt: 'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)',</span>
+<span class="token comment">//  updatedAt: 'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)' </span>
+<span class="token comment">// }</span>
+</code></pre></div><p>瞬间感觉非常优雅和舒服，有木有！如果你这样写，你导师给你 review 代码的时候，你导师肯定会夸赞你的😁。</p> <p>接下来，正片开始，我们今天将系统的学习或者说是复习一遍 <code>JSON.stringify</code> 的基础知识，让我们在日常开发中更加的游刃有余。</p> <h2 id="九大特性"><a href="#九大特性" class="header-anchor">#</a> 九大特性</h2> <h3 id="特性1"><a href="#特性1" class="header-anchor">#</a> 特性1</h3> <p><strong>对于 <code>undefined</code>、任意的函数以及 <code>symbol</code> 三个特殊的值分别作为对象属性的值、数组元素、单独的值时 <code>JSON.stringify()</code>将返回不同的结果。</strong></p> <p>首先，我们来复习一下知识点，看一道非常简单的面试题目：请问下面代码会输出什么？</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token string">&quot;aaa&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">&quot;dd&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">fn</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 输出：？</span>
+
+<span class="token comment">// &quot;{&quot;a&quot;:&quot;aaa&quot;}&quot;</span>
+</code></pre></div><p>很简单这道题目面试官主要考察的知识点是：</p> <ul><li><code>undefined</code>、任意的函数以及 <code>symbol</code> 作为对象属性值时 <code>JSON.stringify()</code> 跳过（忽略）对它们进行序列化</li></ul> <p><strong>面试官追问</strong>：假设 <code>undefined</code>、任意的函数以及 <code>symbol</code> 值作为数组元素会是怎样呢？</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">aa</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'dd'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment">// 输出：？</span>
+
+<span class="token comment">// &quot;[&quot;aaa&quot;,null,null,null]&quot;</span>
+</code></pre></div><p>知识点是：</p> <ul><li><code>undefined</code>、任意的函数以及 <code>symbol</code> 作为数组元素值时，<code>JSON.stringify()</code> 将会将它们序列化为 <code>null</code></li></ul> <p>我们再发挥动下脑筋，如果单独序列化这些值会是什么样的结果呢？</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">a</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// undefined</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span>
+<span class="token comment">// undefined</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'dd'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// undefined</span>
+</code></pre></div><p>单独转换的结果就是：</p> <ul><li><code>undefined</code>、任意的函数以及 <code>symbol</code> 被 <code>JSON.stringify()</code> 作为单独的值进行序列化时都会返回 <code>undefined</code></li></ul> <h3 id="特性1总结"><a href="#特性1总结" class="header-anchor">#</a> 特性1总结</h3> <ul><li><code>undefined</code>、任意的函数以及 <code>symbol</code> 作为对象属性值时 <code>JSON.stringify()</code> 对跳过（忽略）它们进行序列化</li> <li><code>undefined</code>、任意的函数以及 <code>symbol</code> 作为数组元素值时，<code>JSON.stringify()</code> 将会将它们序列化为 <code>null</code></li> <li><code>undefined</code>、任意的函数以及 <code>symbol</code> 被 <code>JSON.stringify()</code> 作为单独的值进行序列化时，都会返回 <code>undefined</code></li></ul> <h3 id="特性2"><a href="#特性2" class="header-anchor">#</a> 特性2</h3> <p>也是在使用过程中必须要非常注意的一个点：</p> <ul><li>非数组对象的属性不能保证以特定的顺序出现在序列化后的字符串中。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token string">&quot;aaa&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">b</span><span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">c</span><span class="token operator">:</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">&quot;dd&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">fn</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">d</span><span class="token operator">:</span> <span class="token string">&quot;ddd&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 输出：？</span>
+<span class="token comment">// &quot;{&quot;a&quot;:&quot;aaa&quot;,&quot;d&quot;:&quot;ddd&quot;}&quot;</span>
+
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;aaa&quot;</span><span class="token punctuation">,</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">aa</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'dd'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token string">&quot;eee&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment">// 输出：？</span>
+
+<span class="token comment">// &quot;[&quot;aaa&quot;,null,null,null,&quot;eee&quot;]&quot;</span>
+</code></pre></div><p>正如我们在第一特性所说，<code>JSON.stringify()</code> 序列化时会忽略一些特殊的值，所以不能保证序列化后的字符串还是以特定的顺序出现（数组除外）。</p> <h3 id="特性3"><a href="#特性3" class="header-anchor">#</a> 特性3</h3> <ul><li>转换值如果有 <code>toJSON()</code> 函数，该函数返回什么值，序列化结果就是什么值，并且忽略其他属性的值。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">say</span><span class="token operator">:</span> <span class="token string">&quot;hello JSON.stringify&quot;</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">toJSON</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;today i learn&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// &quot;today i learn&quot;</span>
+</code></pre></div><h3 id="特性4"><a href="#特性4" class="header-anchor">#</a> 特性4</h3> <ul><li><code>JSON.stringify()</code> 将会正常序列化 <code>Date</code> 的值。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">now</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &quot;{&quot;now&quot;:&quot;2019-12-08T07:42:11.973Z&quot;}&quot;</span>
+</code></pre></div><p>实际上 <code>Date</code> 对象自己部署了 <code>toJSON()</code> 方法（同Date.toISOString()），因此 <code>Date</code> 对象会被当做字符串处理。</p> <h3 id="特性5"><a href="#特性5" class="header-anchor">#</a> 特性5</h3> <ul><li><code>NaN</code> 和 <code>Infinity</code> 格式的数值及 <code>null</code> 都会被当做 <code>null</code>。</li></ul> <p>直接上代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token number">NaN</span><span class="token punctuation">)</span>
+<span class="token comment">// &quot;null&quot;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+<span class="token comment">// &quot;null&quot;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token number">Infinity</span><span class="token punctuation">)</span>
+<span class="token comment">// &quot;null&quot;</span>
+</code></pre></div><h3 id="特性6"><a href="#特性6" class="header-anchor">#</a> 特性6</h3> <p>关于基本类型的序列化：</p> <ul><li>布尔值、数字、字符串的包装对象在序列化过程中会自动转换成对应的原始值。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">&quot;false&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &quot;[1,&quot;false&quot;,false]&quot;</span>
+</code></pre></div><h3 id="特性7"><a href="#特性7" class="header-anchor">#</a> 特性7</h3> <p>关于对象属性的是否可枚举：</p> <ul><li>其他类型的对象，包括 Map/Set/WeakMap/WeakSet，仅会序列化可枚举的属性。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 不可枚举的属性默认会被忽略：</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span> 
+    Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>
+        <span class="token keyword">null</span><span class="token punctuation">,</span> 
+        <span class="token punctuation">{</span> 
+            <span class="token literal-property property">x</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'json'</span><span class="token punctuation">,</span> <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+            <span class="token literal-property property">y</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token string">'stringify'</span><span class="token punctuation">,</span> <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span> 
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &quot;{&quot;y&quot;,&quot;stringify&quot;}&quot;</span>
+</code></pre></div><h3 id="特性8"><a href="#特性8" class="header-anchor">#</a> 特性8</h3> <p>我们都知道实现深拷贝最简单粗暴的方式就是序列化：<code>JSON.parse(JSON.stringify())</code>，这个方式实现深拷贝会因为序列化的诸多特性导致诸多的坑点：比如现在我们要说的循环引用问题。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 对包含循环引用的对象（对象之间相互引用，形成无限循环）执行此方法，会抛出错误。 </span>
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;loopObj&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> loopObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  obj
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// 对象之间形成循环引用，形成闭环</span>
+obj<span class="token punctuation">.</span>loopObj <span class="token operator">=</span> loopObj<span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">deepClone</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">deepClone</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+<span class="token comment">/**
+ VM44:9 Uncaught TypeError: Converting circular structure to JSON
+    --&gt; starting at object with constructor 'Object'
+    |     property 'loopObj' -&gt; object with constructor 'Object'
+    --- property 'obj' closes the circle
+    at JSON.stringify (&lt;anonymous&gt;)
+    at deepClone (&lt;anonymous&gt;:9:26)
+    at &lt;anonymous&gt;:11:13
+ */</span>
+</code></pre></div><ul><li>对包含循环引用的对象（对象之间相互引用，形成无限循环）执行此方法，会抛出错误。</li></ul> <p>这也就是为什么用序列化去实现深拷贝时，遇到循环引用的对象会抛出错误的原因。</p> <h3 id="特性9"><a href="#特性9" class="header-anchor">#</a> 特性9</h3> <p>最后，关于 <code>symbol</code> 属性还有一点要说的就是：</p> <ul><li>所有以 <code>symbol</code> 为属性键的属性都会被完全忽略掉，即便 <code>replacer</code> 参数中强制指定包含了它们。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token punctuation">[</span>Symbol<span class="token punctuation">.</span><span class="token function">for</span><span class="token punctuation">(</span><span class="token string">&quot;json&quot;</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token string">&quot;stringify&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">k<span class="token punctuation">,</span> v</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> k <span class="token operator">===</span> <span class="token string">&quot;symbol&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> v<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// undefined</span>
+</code></pre></div><p>关于 <code>replacer</code> 是什么呢，它是 <code>JSON.stringify()</code> 的第二个参数，我们比较少的会用到，所以很多时候我们会忘记 <code>JSON.stringify()</code> 第二个、第三个参数，场景不多，但是用的好的话会非常的方便，关于 <code>JSON.stringify()</code> 第九大特性的例子中对 <code>replacer</code> 参数不明白的同学先别急，其实很简单，我们马上就会在下面的学习中弄懂。</p> <h2 id="第二个参数和第三个参数"><a href="#第二个参数和第三个参数" class="header-anchor">#</a> 第二个参数和第三个参数</h2> <h2 id="强大的第二个参数-replacer"><a href="#强大的第二个参数-replacer" class="header-anchor">#</a> 强大的第二个参数 <code>replacer</code></h2> <p><code>replacer</code> 参数有两种形式，可以是一个函数或者一个数组。作为函数时，它有两个参数，键（key）和值（value），函数类似就是数组方法 <code>map</code>、<code>filter</code> 等方法的回调函数，对每一个属性值都会执行一次该函数。如果 <code>replacer</code> 是一个数组，数组的值代表将被序列化成 JSON 字符串的属性名。</p> <h3 id="replacer-作为函数时"><a href="#replacer-作为函数时" class="header-anchor">#</a> <code>replacer</code> 作为函数时</h3> <p>第二个参数<code>replacer</code> 非常强大， <code>replacer</code> 作为函数时，我们可以打破九大特性的大多数特性，我们直接来看代码吧。</p> <div class="language- extra-class"><pre class="language-text"><code>const data = {
+  a: &quot;aaa&quot;,
+  b: undefined,
+  c: Symbol(&quot;dd&quot;),
+  fn: function() {
+    return true;
+  }
+};
+// 不用 replacer 参数时
+JSON.stringify(data); 
+
+// &quot;{&quot;a&quot;:&quot;aaa&quot;}&quot;
+// 使用 replacer 参数作为函数时
+JSON.stringify(data, (key, value) =&gt; {
+  switch (true) {
+    case typeof value === &quot;undefined&quot;:
+      return &quot;undefined&quot;;
+    case typeof value === &quot;symbol&quot;:
+      return value.toString();
+    case typeof value === &quot;function&quot;:
+      return value.toString();
+    default:
+      break;
+  }
+  return value;
+})
+// &quot;{&quot;a&quot;:&quot;aaa&quot;,&quot;b&quot;:&quot;undefined&quot;,&quot;c&quot;:&quot;Symbol(dd)&quot;,&quot;fn&quot;:&quot;function() {\n    return true;\n  }&quot;}&quot;
+</code></pre></div><p>虽然使用 toString() 方法有点耍流氓的意思但是不得不说第二个参数很强大。</p> <h4 id="传入-replacer-函数的第一个参数"><a href="#传入-replacer-函数的第一个参数" class="header-anchor">#</a> 传入 <code>replacer</code> 函数的第一个参数</h4> <p><strong>需要注意的是，replacer 被传入的函数时，第一个参数不是对象的第一个键值对，而是空字符串作为 key 值，value 值是整个对象的键值对：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>const data = {
+  a: 2,
+  b: 3,
+  c: 4,
+  d: 5
+};
+JSON.stringify(data, (key, value) =&gt; {
+  console.log(value);
+  return value;
+})
+// 第一个被传入 replacer 函数的是 {&quot;&quot;:{a: 2, b: 3, c: 4, d: 5}}
+// {a: 2, b: 3, c: 4, d: 5}   
+// 2
+// 3
+// 4
+// 5
+</code></pre></div><h4 id="实现-map-函数"><a href="#实现-map-函数" class="header-anchor">#</a> 实现 <code>map</code> 函数</h4> <p>我们还可以用它来手写实现一个对象的类似 map 的函数。</p> <div class="language- extra-class"><pre class="language-text"><code>// 实现一个 map 函数
+const data = {
+  a: 2,
+  b: 3,
+  c: 4,
+  d: 5
+};
+const objMap = (obj, fn) =&gt; {
+  if (typeof fn !== &quot;function&quot;) {
+    throw new TypeError(`${fn} is not a function !`);
+  }
+  return JSON.parse(JSON.stringify(obj, fn));
+};
+objMap(data, (key, value) =&gt; {
+  if (value % 2 === 0) {
+    return value / 2;
+  }
+  return value;
+});
+// {a: 1, b: 3, c: 2, d: 5}
+</code></pre></div><h3 id="replacer-作为数组时"><a href="#replacer-作为数组时" class="header-anchor">#</a> <code>replacer</code> 作为数组时</h3> <p><code>replacer</code> 作为数组时，结果非常简单，数组的值就代表了将被序列化成 JSON 字符串的属性名。</p> <div class="language- extra-class"><pre class="language-text"><code>const jsonObj = {
+  name: &quot;JSON.stringify&quot;,
+  params: &quot;obj,replacer,space&quot;
+};
+
+// 只保留 params 属性的值
+JSON.stringify(jsonObj, [&quot;params&quot;]);
+// &quot;{&quot;params&quot;:&quot;obj,replacer,space&quot;}&quot; 
+</code></pre></div><h2 id="有意思却没啥用的第三个参数-space"><a href="#有意思却没啥用的第三个参数-space" class="header-anchor">#</a> 有意思却没啥用的第三个参数 <code>space</code></h2> <p><code>space</code> 参数用来控制结果字符串里面的间距。首先看一个例子就是到这东西到底是干啥用的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> tiedan <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;弹铁蛋同学&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">describe</span><span class="token operator">:</span> <span class="token string">&quot;今天在学 JSON.stringify()&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">emotion</span><span class="token operator">:</span> <span class="token string">&quot;like shit&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>tiedan<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token string">&quot;🐷&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 接下来是输出结果</span>
+<span class="token comment">// &quot;{</span>
+<span class="token comment">// 🐷&quot;name&quot;: &quot;弹铁蛋同学&quot;,</span>
+<span class="token comment">// 🐷&quot;describe&quot;: &quot;今天在学 JSON.stringify()&quot;,</span>
+<span class="token comment">// 🐷&quot;emotion&quot;: &quot;like shit&quot;</span>
+<span class="token comment">// }&quot;</span>
+<span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>tiedan<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &quot;{</span>
+<span class="token comment">//   &quot;name&quot;: &quot;弹铁蛋同学&quot;,</span>
+<span class="token comment">//   &quot;describe&quot;: &quot;今天在学 JSON.stringify()&quot;,</span>
+<span class="token comment">//   &quot;emotion&quot;: &quot;like shit&quot;</span>
+<span class="token comment">// }&quot;</span>
+</code></pre></div><p>上面代码一眼就能看出第三个参数的作用了，花里胡哨的，其实这个参数还是比较鸡肋的，除了好看没啥特别的用处。我们用 <code>\t</code>、 <code>\n</code> 等缩进能让输出更加格式化，更适于观看。</p> <ul><li>如果是一个数字, 则在字符串化时每一级别会比上一级别缩进多这个数字值的空格（最多10个空格）；</li> <li>如果是一个字符串，则每一级别会比上一级别多缩进该字符串（或该字符串的前10个字符）。</li></ul> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <h3 id="九大特性-2"><a href="#九大特性-2" class="header-anchor">#</a> 九大特性：</h3> <p><strong>一、对于 <code>undefined</code>、任意的函数以及 <code>symbol</code> 三个特殊的值分别作为对象属性的值、数组元素、单独的值时的不同返回结果。</strong></p> <ul><li><code>undefined</code>、任意的函数以及 <code>symbol</code> 作为对象属性值时 <code>JSON.stringify()</code> 对跳过（忽略）它们进行序列化</li> <li><code>undefined</code>、任意的函数以及 <code>symbol</code> 作为数组元素值时，<code>JSON.stringify()</code> 将会将它们序列化为 <code>null</code></li> <li><code>undefined</code>、任意的函数以及 <code>symbol</code> 被 <code>JSON.stringify()</code> 作为单独的值进行序列化时都会返回 <code>undefined</code></li></ul> <p>二、<strong>非数组对象的属性不能保证以特定的顺序出现在序列化后的字符串中。</strong></p> <p>三、<strong>转换值如果有 <code>toJSON()</code> 函数，该函数返回什么值，序列化结果就是什么值，并且忽略其他属性的值。</strong></p> <p>四、<strong><code>JSON.stringify()</code> 将会正常序列化 <code>Date</code> 的值。</strong></p> <p>五、<strong><code>NaN</code> 和 <code>Infinity</code> 格式的数值及 <code>null</code> 都会被当做 <code>null</code>。</strong></p> <p>六、<strong>布尔值、数字、字符串的包装对象在序列化过程中会自动转换成对应的原始值。</strong></p> <p>七、<strong>其他类型的对象，包括 Map/Set/WeakMap/WeakSet，仅会序列化可枚举的属性。</strong></p> <p>八、<strong>对包含循环引用的对象（对象之间相互引用，形成无限循环）执行此方法，会抛出错误。</strong></p> <p>九、<strong>所有以 <code>symbol</code> 为属性键的属性都会被完全忽略掉，即便 <code>replacer</code> 参数中强制指定包含了它们。</strong></p> <h3 id="第二个参数和第三个参数-2"><a href="#第二个参数和第三个参数-2" class="header-anchor">#</a> 第二个参数和第三个参数</h3> <h4 id="第二个参数"><a href="#第二个参数" class="header-anchor">#</a> 第二个参数：</h4> <ul><li>作为函数时，它有两个参数，键（key）和值（value），函数类似就是数组方法 <code>map</code>、<code>filter</code> 等方法的回调函数，对每一个属性值都会执行一次该函数（期间我们还简单实现过一个 <code>map</code> 函数）。</li> <li>如果 <code>replacer</code> 是一个数组，数组的值代表将被序列化成 JSON 字符串的属性名。</li></ul> <h4 id="第三个参数"><a href="#第三个参数" class="header-anchor">#</a> 第三个参数：</h4> <ul><li>如果是一个数字, 则在字符串化时每一级别会比上一级别缩进多这个数字值的空格（最多10个空格）。</li> <li>如果是一个字符串，则每一级别会比上一级别多缩进该字符串（或该字符串的前10个字符）。</li></ul> <h4 id="注意"><a href="#注意" class="header-anchor">#</a> 注意：</h4> <p>第一个例子的方案三，有小伙伴提示说这个方案会有风险，确实是这样的(<strong>可能会把对象的值给替换掉</strong>)。大家慎用吧，大部分情况下这样使用是 ok 的。小伙伴们提供的第四种方案还是很不错的：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> todayILearn <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">_id</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">'今天学习 JSON.stringify()，我很开心！'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">created_at</span><span class="token operator">:</span> <span class="token string">'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">updated_at</span><span class="token operator">:</span> <span class="token string">'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)'</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">const</span> mapObj <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">_id</span><span class="token operator">:</span> <span class="token string">&quot;id&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">created_at</span><span class="token operator">:</span> <span class="token string">&quot;createdAt&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">updated_at</span><span class="token operator">:</span> <span class="token string">&quot;updatedAt&quot;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+Object<span class="token punctuation">.</span><span class="token function">fromEntries</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>todayILearn<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">[</span>k<span class="token punctuation">,</span> v<span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>mapObj<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token operator">||</span>k<span class="token punctuation">,</span> v<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// { </span>
+<span class="token comment">// id: 1,</span>
+<span class="token comment">//  content: '今天学习 JSON.stringify()，我很开心！',</span>
+<span class="token comment">//  createdAt: 'Mon Nov 25 2019 14:03:55 GMT+0800 (中国标准时间)',</span>
+<span class="token comment">//  updatedAt: 'Mon Nov 25 2019 16:03:55 GMT+0800 (中国标准时间)' </span>
+<span class="token comment">// }</span>
+</code></pre></div><p><a href="https://github.com/NieZhuZhu/Blog/issues/2" target="_blank" rel="noopener noreferrer">面试官连环追问：数组拍平（扁平化） flat 方法实现<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!---->  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.84fe6af9.js" defer></script><script src="/assets/js/2.57cc69f3.js" defer></script><script src="/assets/js/1.2250ab76.js" defer></script><script src="/assets/js/125.0cb9d25b.js" defer></script><script src="/assets/js/95.dbf66513.js" defer></script>
+  </body>
+</html>

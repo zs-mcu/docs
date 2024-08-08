@@ -25,6 +25,12 @@ module.exports = [
     ]
   },
   {
+    "text": "web",
+    "items": [
+      { text: 'js', link: '/web/js/JSON-stringify函数'}
+    ]
+  },
+  {
     "text": "zs-se",
     "items": [
       { "text": "基础", "link": "/zs-se/基础/" },
