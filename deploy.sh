@@ -15,7 +15,8 @@ yarn docs:build
 
 # 进入生成的文件夹
 echo "开始还原仓库信息"
-cp -r zsdist/bakdist-$now/.git zsdist/dist/
+#cp -r zsdist/bakdist-$now/.git zsdist/dist/
+mv zsdist/bakdist-$now/.git zsdist/dist/
 #rm -rf zsdist/bakdist
 
 echo "进入发布文件夹"
