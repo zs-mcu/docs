@@ -28,14 +28,17 @@ module.exports = [
   {
     "text":"小需求",
     "items": [
-      { text: 'js需求', link: '/小需求/js需求/js-分组' },
-      { text: 'js需求', link: '/小需求/html需求/video-播放视频' }
+      { text: 'js', link: '/小需求/js/js-分组' },
+      { text: 'html', link: '/小需求/html/video-播放视频' },
+      { text: 'iframe', link: '/小需求/iframe/iframe-自适应高度' },
+      { text: 'css', link: '/小需求/css/撑开高度' },
     ]
   },
   {
     "text": "web",
     "items": [
-      { text: 'js', link: '/web/js/JSON-stringify函数'}
+      { text: 'js', link: '/web/js/JSON-stringify函数'},
+      { text: 'iframe', link: '/web/iframe/iframe-简单使用'}
     ]
   },
   {

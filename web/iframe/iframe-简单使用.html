@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>iframe简单使用 | 小邵子</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script charset="utf-8" src="/js/custom.js"></script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b2140ca1d9ce57e6aac1a7709f5f5fe7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <meta name="description" content="小邵子的个人笔记">
+    <meta name="author" content="小邵子">
+    <meta name="keywords" content="张邵,小邵子的 vuepress 个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.9632ee24.css" as="style"><link rel="preload" href="/assets/js/app.99bef45f.js" as="script"><link rel="preload" href="/assets/js/2.086d8f22.js" as="script"><link rel="preload" href="/assets/js/158.9509f4e7.js" as="script"><link rel="preload" href="/assets/js/99.7ba210b9.js" as="script"><link rel="prefetch" href="/assets/js/1.236bbdc7.js"><link rel="prefetch" href="/assets/js/10.abdc1344.js"><link rel="prefetch" href="/assets/js/100.5dd882c3.js"><link rel="prefetch" href="/assets/js/101.586162ed.js"><link rel="prefetch" href="/assets/js/102.f43eeebd.js"><link rel="prefetch" href="/assets/js/103.9bad7112.js"><link rel="prefetch" href="/assets/js/104.5d8d9f41.js"><link rel="prefetch" href="/assets/js/105.e788e16f.js"><link rel="prefetch" href="/assets/js/106.a73025af.js"><link rel="prefetch" href="/assets/js/107.7c33c816.js"><link rel="prefetch" href="/assets/js/108.f188d75a.js"><link rel="prefetch" href="/assets/js/109.b734c275.js"><link rel="prefetch" href="/assets/js/11.edff873e.js"><link rel="prefetch" href="/assets/js/110.573eefec.js"><link rel="prefetch" href="/assets/js/111.63cc2be6.js"><link rel="prefetch" href="/assets/js/112.8266fce0.js"><link rel="prefetch" href="/assets/js/113.fb39f36b.js"><link rel="prefetch" href="/assets/js/114.8fce4e64.js"><link rel="prefetch" href="/assets/js/115.b200ae33.js"><link rel="prefetch" href="/assets/js/116.bf77ebd8.js"><link rel="prefetch" href="/assets/js/117.841c90a0.js"><link rel="prefetch" href="/assets/js/118.b4780215.js"><link rel="prefetch" href="/assets/js/119.8dca41b3.js"><link rel="prefetch" href="/assets/js/12.e2abd5fa.js"><link rel="prefetch" href="/assets/js/120.9cf4cb88.js"><link rel="prefetch" href="/assets/js/121.2e052f71.js"><link rel="prefetch" href="/assets/js/122.3911660f.js"><link rel="prefetch" href="/assets/js/123.30aaf520.js"><link rel="prefetch" href="/assets/js/124.7c0197bd.js"><link rel="prefetch" href="/assets/js/125.ca75fa58.js"><link rel="prefetch" href="/assets/js/126.bd5add56.js"><link rel="prefetch" href="/assets/js/127.7e34d5c0.js"><link rel="prefetch" href="/assets/js/128.30906160.js"><link rel="prefetch" href="/assets/js/129.6666c104.js"><link rel="prefetch" href="/assets/js/13.59d78d2c.js"><link rel="prefetch" href="/assets/js/130.2274b59a.js"><link rel="prefetch" href="/assets/js/131.8c5b086f.js"><link rel="prefetch" href="/assets/js/132.bcafa8bf.js"><link rel="prefetch" href="/assets/js/133.8f1e70b8.js"><link rel="prefetch" href="/assets/js/134.9e7f20e2.js"><link rel="prefetch" href="/assets/js/135.59085bc2.js"><link rel="prefetch" href="/assets/js/136.71abe2fb.js"><link rel="prefetch" href="/assets/js/137.be29ee15.js"><link rel="prefetch" href="/assets/js/138.76b85c53.js"><link rel="prefetch" href="/assets/js/139.891fc5d8.js"><link rel="prefetch" href="/assets/js/14.3b9c6a60.js"><link rel="prefetch" href="/assets/js/140.6ee97cf8.js"><link rel="prefetch" href="/assets/js/141.e4be3edb.js"><link rel="prefetch" href="/assets/js/142.289efd80.js"><link rel="prefetch" href="/assets/js/143.82888f91.js"><link rel="prefetch" href="/assets/js/144.64c9f822.js"><link rel="prefetch" href="/assets/js/145.b945480f.js"><link rel="prefetch" href="/assets/js/146.0336e539.js"><link rel="prefetch" href="/assets/js/147.a3b6d66e.js"><link rel="prefetch" href="/assets/js/148.733b5d41.js"><link rel="prefetch" href="/assets/js/149.30f37cc0.js"><link rel="prefetch" href="/assets/js/15.b659be06.js"><link rel="prefetch" href="/assets/js/150.d5b74b52.js"><link rel="prefetch" href="/assets/js/151.15054b4f.js"><link rel="prefetch" href="/assets/js/152.db05003d.js"><link rel="prefetch" href="/assets/js/153.7c13664d.js"><link rel="prefetch" href="/assets/js/154.08ac2a8a.js"><link rel="prefetch" href="/assets/js/155.48c2b937.js"><link rel="prefetch" href="/assets/js/156.a1a44ae1.js"><link rel="prefetch" href="/assets/js/157.844f4b8f.js"><link rel="prefetch" href="/assets/js/159.418109ae.js"><link rel="prefetch" href="/assets/js/16.ab1966fd.js"><link rel="prefetch" href="/assets/js/160.c5b14d40.js"><link rel="prefetch" href="/assets/js/161.6c0600ad.js"><link rel="prefetch" href="/assets/js/162.678cc36a.js"><link rel="prefetch" href="/assets/js/163.244d34d9.js"><link rel="prefetch" href="/assets/js/164.a3ced4b0.js"><link rel="prefetch" href="/assets/js/165.3c16f574.js"><link rel="prefetch" href="/assets/js/166.ff9b9975.js"><link rel="prefetch" href="/assets/js/167.05c09d06.js"><link rel="prefetch" href="/assets/js/168.c6f95880.js"><link rel="prefetch" href="/assets/js/169.48bcf490.js"><link rel="prefetch" href="/assets/js/17.61e3fda6.js"><link rel="prefetch" href="/assets/js/170.11c0af9a.js"><link rel="prefetch" href="/assets/js/171.90e8a46b.js"><link rel="prefetch" href="/assets/js/172.b41ac984.js"><link rel="prefetch" href="/assets/js/173.2738e141.js"><link rel="prefetch" href="/assets/js/174.79dddeac.js"><link rel="prefetch" href="/assets/js/175.e32f5c8c.js"><link rel="prefetch" href="/assets/js/176.0d38dc77.js"><link rel="prefetch" href="/assets/js/177.ad51986a.js"><link rel="prefetch" href="/assets/js/178.e5619c95.js"><link rel="prefetch" href="/assets/js/179.44d21f12.js"><link rel="prefetch" href="/assets/js/18.9c692605.js"><link rel="prefetch" href="/assets/js/180.950f782e.js"><link rel="prefetch" href="/assets/js/181.c538cbb5.js"><link rel="prefetch" href="/assets/js/182.9e97c1fd.js"><link rel="prefetch" href="/assets/js/183.1ca1386a.js"><link rel="prefetch" href="/assets/js/184.53b31112.js"><link rel="prefetch" href="/assets/js/185.7254db0f.js"><link rel="prefetch" href="/assets/js/186.e7b3ff8d.js"><link rel="prefetch" href="/assets/js/187.c7795382.js"><link rel="prefetch" href="/assets/js/188.6b8b23d6.js"><link rel="prefetch" href="/assets/js/189.0b3f3058.js"><link rel="prefetch" href="/assets/js/19.77f7261b.js"><link rel="prefetch" href="/assets/js/190.b717b363.js"><link rel="prefetch" href="/assets/js/191.94d8af2d.js"><link rel="prefetch" href="/assets/js/192.32bec967.js"><link rel="prefetch" href="/assets/js/193.24ec00d0.js"><link rel="prefetch" href="/assets/js/194.82efed06.js"><link rel="prefetch" href="/assets/js/195.aa01a9be.js"><link rel="prefetch" href="/assets/js/196.7e03f1c5.js"><link rel="prefetch" href="/assets/js/197.d0b76491.js"><link rel="prefetch" href="/assets/js/198.e3eb0484.js"><link rel="prefetch" href="/assets/js/199.2f24f645.js"><link rel="prefetch" href="/assets/js/20.c4183d31.js"><link rel="prefetch" href="/assets/js/200.05abdd0a.js"><link rel="prefetch" href="/assets/js/201.4f616d59.js"><link rel="prefetch" href="/assets/js/202.5f71fac9.js"><link rel="prefetch" href="/assets/js/203.88ce219a.js"><link rel="prefetch" href="/assets/js/204.0b6a2564.js"><link rel="prefetch" href="/assets/js/205.8e7fad25.js"><link rel="prefetch" href="/assets/js/206.9c66f817.js"><link rel="prefetch" href="/assets/js/207.0532bf3e.js"><link rel="prefetch" href="/assets/js/208.928f78fe.js"><link rel="prefetch" href="/assets/js/209.78839eab.js"><link rel="prefetch" href="/assets/js/21.74bae286.js"><link rel="prefetch" href="/assets/js/210.062e2e7a.js"><link rel="prefetch" href="/assets/js/211.2d27fcee.js"><link rel="prefetch" href="/assets/js/212.4c499a4f.js"><link rel="prefetch" href="/assets/js/213.0b827761.js"><link rel="prefetch" href="/assets/js/214.2326dcc0.js"><link rel="prefetch" href="/assets/js/215.e3528e71.js"><link rel="prefetch" href="/assets/js/216.b55c7d38.js"><link rel="prefetch" href="/assets/js/217.c9021d3a.js"><link rel="prefetch" href="/assets/js/218.1184100f.js"><link rel="prefetch" href="/assets/js/219.cd934fa4.js"><link rel="prefetch" href="/assets/js/22.f45bdb61.js"><link rel="prefetch" href="/assets/js/220.42185da1.js"><link rel="prefetch" href="/assets/js/221.eb200193.js"><link rel="prefetch" href="/assets/js/222.66dfae8d.js"><link rel="prefetch" href="/assets/js/223.5958d5e3.js"><link rel="prefetch" href="/assets/js/224.931502de.js"><link rel="prefetch" href="/assets/js/225.225b9cd0.js"><link rel="prefetch" href="/assets/js/226.bfb3cd08.js"><link rel="prefetch" href="/assets/js/227.3dca99a7.js"><link rel="prefetch" href="/assets/js/228.dfbda844.js"><link rel="prefetch" href="/assets/js/229.d4166c8c.js"><link rel="prefetch" href="/assets/js/23.1e49c279.js"><link rel="prefetch" href="/assets/js/230.fb0547d9.js"><link rel="prefetch" href="/assets/js/231.f19caf8d.js"><link rel="prefetch" href="/assets/js/232.e5b1e22a.js"><link rel="prefetch" href="/assets/js/233.2234c870.js"><link rel="prefetch" href="/assets/js/234.c02ec428.js"><link rel="prefetch" href="/assets/js/235.0de6ce15.js"><link rel="prefetch" href="/assets/js/236.0eae9000.js"><link rel="prefetch" href="/assets/js/237.23b0bc5d.js"><link rel="prefetch" href="/assets/js/238.c16ae139.js"><link rel="prefetch" href="/assets/js/239.47481f5d.js"><link rel="prefetch" href="/assets/js/24.e4540e0b.js"><link rel="prefetch" href="/assets/js/240.1f28ccea.js"><link rel="prefetch" href="/assets/js/241.028dfc29.js"><link rel="prefetch" href="/assets/js/242.38e90637.js"><link rel="prefetch" href="/assets/js/243.868773a6.js"><link rel="prefetch" href="/assets/js/244.e34d4f83.js"><link rel="prefetch" href="/assets/js/245.abf7df50.js"><link rel="prefetch" href="/assets/js/246.f8d0c2be.js"><link rel="prefetch" href="/assets/js/247.97f16a08.js"><link rel="prefetch" href="/assets/js/248.01ad97f3.js"><link rel="prefetch" href="/assets/js/249.48187cfb.js"><link rel="prefetch" href="/assets/js/25.093f6ef2.js"><link rel="prefetch" href="/assets/js/250.a7b8e5c9.js"><link rel="prefetch" href="/assets/js/251.47d0b370.js"><link rel="prefetch" href="/assets/js/252.bbe2acf2.js"><link rel="prefetch" href="/assets/js/253.a0e8e82f.js"><link rel="prefetch" href="/assets/js/254.00ea0635.js"><link rel="prefetch" href="/assets/js/255.54449f39.js"><link rel="prefetch" href="/assets/js/256.0522ad59.js"><link rel="prefetch" href="/assets/js/257.2a352827.js"><link rel="prefetch" href="/assets/js/258.70a66f8b.js"><link rel="prefetch" href="/assets/js/259.baf59710.js"><link rel="prefetch" href="/assets/js/26.d1fdfb68.js"><link rel="prefetch" href="/assets/js/260.255090e9.js"><link rel="prefetch" href="/assets/js/261.12b6bee0.js"><link rel="prefetch" href="/assets/js/27.41fc845e.js"><link rel="prefetch" href="/assets/js/28.3159e376.js"><link rel="prefetch" href="/assets/js/29.bdea26cd.js"><link rel="prefetch" href="/assets/js/3.fb533065.js"><link rel="prefetch" href="/assets/js/30.a8a11e85.js"><link rel="prefetch" href="/assets/js/31.efd65fbe.js"><link rel="prefetch" href="/assets/js/32.1d2492ff.js"><link rel="prefetch" href="/assets/js/33.da02c97b.js"><link rel="prefetch" href="/assets/js/34.1379cf2e.js"><link rel="prefetch" href="/assets/js/35.b4667f95.js"><link rel="prefetch" href="/assets/js/36.13921dbb.js"><link rel="prefetch" href="/assets/js/37.e8e9e955.js"><link rel="prefetch" href="/assets/js/38.775d67bb.js"><link rel="prefetch" href="/assets/js/39.45893c5d.js"><link rel="prefetch" href="/assets/js/4.c10fb295.js"><link rel="prefetch" href="/assets/js/40.532b6b7c.js"><link rel="prefetch" href="/assets/js/41.7083d232.js"><link rel="prefetch" href="/assets/js/42.282d4996.js"><link rel="prefetch" href="/assets/js/43.0569a114.js"><link rel="prefetch" href="/assets/js/44.47b8fa15.js"><link rel="prefetch" href="/assets/js/45.dee4ed31.js"><link rel="prefetch" href="/assets/js/46.1e227ea8.js"><link rel="prefetch" href="/assets/js/47.8e73cd39.js"><link rel="prefetch" href="/assets/js/48.eb17abc1.js"><link rel="prefetch" href="/assets/js/49.27a0850c.js"><link rel="prefetch" href="/assets/js/5.9c33c463.js"><link rel="prefetch" href="/assets/js/50.713e7a07.js"><link rel="prefetch" href="/assets/js/51.83b12e2b.js"><link rel="prefetch" href="/assets/js/52.1e867123.js"><link rel="prefetch" href="/assets/js/53.b4c68f09.js"><link rel="prefetch" href="/assets/js/54.bd82caf8.js"><link rel="prefetch" href="/assets/js/55.4c698b17.js"><link rel="prefetch" href="/assets/js/56.5d97075a.js"><link rel="prefetch" href="/assets/js/57.2b762f7a.js"><link rel="prefetch" href="/assets/js/58.d4b8ff5d.js"><link rel="prefetch" href="/assets/js/59.ca805133.js"><link rel="prefetch" href="/assets/js/6.230671f4.js"><link rel="prefetch" href="/assets/js/60.715bfb05.js"><link rel="prefetch" href="/assets/js/61.2df4a89b.js"><link rel="prefetch" href="/assets/js/62.86c4477e.js"><link rel="prefetch" href="/assets/js/63.f0054729.js"><link rel="prefetch" href="/assets/js/64.23fe9b1b.js"><link rel="prefetch" href="/assets/js/65.ad204f2b.js"><link rel="prefetch" href="/assets/js/66.49c97feb.js"><link rel="prefetch" href="/assets/js/67.a233653c.js"><link rel="prefetch" href="/assets/js/68.b68e1789.js"><link rel="prefetch" href="/assets/js/69.5bbb52c2.js"><link rel="prefetch" href="/assets/js/7.054b6e22.js"><link rel="prefetch" href="/assets/js/70.d3a5f6d8.js"><link rel="prefetch" href="/assets/js/71.24b751c1.js"><link rel="prefetch" href="/assets/js/72.bab5b151.js"><link rel="prefetch" href="/assets/js/73.e085957c.js"><link rel="prefetch" href="/assets/js/74.bed2183d.js"><link rel="prefetch" href="/assets/js/75.d308fbf4.js"><link rel="prefetch" href="/assets/js/76.ce74a02d.js"><link rel="prefetch" href="/assets/js/77.f0793616.js"><link rel="prefetch" href="/assets/js/78.5a3c71be.js"><link rel="prefetch" href="/assets/js/79.40deef07.js"><link rel="prefetch" href="/assets/js/80.42959964.js"><link rel="prefetch" href="/assets/js/81.21b501c7.js"><link rel="prefetch" href="/assets/js/82.7e3cd98f.js"><link rel="prefetch" href="/assets/js/83.ea07d4b7.js"><link rel="prefetch" href="/assets/js/84.6f142077.js"><link rel="prefetch" href="/assets/js/85.88c99fa6.js"><link rel="prefetch" href="/assets/js/86.a41684d7.js"><link rel="prefetch" href="/assets/js/87.34f38520.js"><link rel="prefetch" href="/assets/js/88.a2abd5f3.js"><link rel="prefetch" href="/assets/js/89.8a546574.js"><link rel="prefetch" href="/assets/js/90.ee71c05c.js"><link rel="prefetch" href="/assets/js/91.dafd8bf4.js"><link rel="prefetch" href="/assets/js/92.1c282a64.js"><link rel="prefetch" href="/assets/js/93.43afa232.js"><link rel="prefetch" href="/assets/js/94.6f505f06.js"><link rel="prefetch" href="/assets/js/95.ecb8501d.js"><link rel="prefetch" href="/assets/js/96.b531df71.js"><link rel="prefetch" href="/assets/js/97.d1f4b0db.js"><link rel="prefetch" href="/assets/js/98.b488abe1.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.91090432.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9632ee24.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><a href="/" class="home-link router-link-active"><!----> <span class="site-name">小邵子</span></a> <div class="links"><!----> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/中间件/docker/" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小工具" class="dropdown-title"><span class="title">小工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="小工具" class="mobile-dropdown-title"><span class="title">小工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/小工具/axure/" class="nav-link">
+  axure
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/cygwin/" class="nav-link">
+  cygwin
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markmap/" class="nav-link">
+  markmap
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/html2md/" class="nav-link">
+  html2md
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markdown/" class="nav-link">
+  markdown
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/codeAi/" class="nav-link">
+  codeAi
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小需求" class="dropdown-title"><span class="title">小需求</span> <span class="arrow down"></span></button> <button type="button" aria-label="小需求" class="mobile-dropdown-title"><span class="title">小需求</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/小需求/js/js-分组.html" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/小需求/html/video-播放视频.html" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/小需求/iframe/iframe-自适应高度.html" class="nav-link">
+  iframe
+</a></li><li class="dropdown-item"><!----> <a href="/小需求/css/撑开高度.html" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web" class="dropdown-title"><span class="title">web</span> <span class="arrow down"></span></button> <button type="button" aria-label="web" class="mobile-dropdown-title"><span class="title">web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/js/JSON-stringify函数.html" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/web/iframe/iframe-简单使用.html" class="nav-link">
+  iframe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="linux" class="dropdown-title"><span class="title">linux</span> <span class="arrow down"></span></button> <button type="button" aria-label="linux" class="mobile-dropdown-title"><span class="title">linux</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中间件" class="dropdown-title"><span class="title">中间件</span> <span class="arrow down"></span></button> <button type="button" aria-label="中间件" class="mobile-dropdown-title"><span class="title">中间件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/中间件/docker/" class="nav-link">
+  docker
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小工具" class="dropdown-title"><span class="title">小工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="小工具" class="mobile-dropdown-title"><span class="title">小工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/小工具/axure/" class="nav-link">
+  axure
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/cygwin/" class="nav-link">
+  cygwin
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markmap/" class="nav-link">
+  markmap
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/html2md/" class="nav-link">
+  html2md
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/markdown/" class="nav-link">
+  markdown
+</a></li><li class="dropdown-item"><!----> <a href="/小工具/codeAi/" class="nav-link">
+  codeAi
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="小需求" class="dropdown-title"><span class="title">小需求</span> <span class="arrow down"></span></button> <button type="button" aria-label="小需求" class="mobile-dropdown-title"><span class="title">小需求</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/小需求/js/js-分组.html" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/小需求/html/video-播放视频.html" class="nav-link">
+  html
+</a></li><li class="dropdown-item"><!----> <a href="/小需求/iframe/iframe-自适应高度.html" class="nav-link">
+  iframe
+</a></li><li class="dropdown-item"><!----> <a href="/小需求/css/撑开高度.html" class="nav-link">
+  css
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web" class="dropdown-title"><span class="title">web</span> <span class="arrow down"></span></button> <button type="button" aria-label="web" class="mobile-dropdown-title"><span class="title">web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/js/JSON-stringify函数.html" class="nav-link">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/web/iframe/iframe-简单使用.html" class="nav-link">
+  iframe
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-se" class="dropdown-title"><span class="title">zs-se</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-se" class="mobile-dropdown-title"><span class="title">zs-se</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-se/基础/" class="nav-link">
+  基础
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/设计模式/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/zs-se/io/" class="nav-link">
+  io
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-ee-框架" class="dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-ee-框架" class="mobile-dropdown-title"><span class="title">zs-ee-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-ee-框架/mybatis-plus/" class="nav-link">
+  mybatis-plus
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/spring/" class="nav-link">
+  spring
+</a></li><li class="dropdown-item"><!----> <a href="/zs-ee-框架/cloud-gateway/" class="nav-link">
+  cloud-gateway
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-小结" class="dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-小结" class="mobile-dropdown-title"><span class="title">zs-tool-小结</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-小结/面经手册/面试--0.开篇.html" class="nav-link">
+  面经手册
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/网址收藏/实用网站.html" class="nav-link">
+  网址收藏
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-小结/文件/" class="nav-link">
+  文件
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-tool-框架" class="dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-tool-框架" class="mobile-dropdown-title"><span class="title">zs-tool-框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-tool-框架/vuepress/" class="nav-link">
+  Vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/java报表/" class="nav-link">
+  java报表
+</a></li><li class="dropdown-item"><!----> <a href="/zs-tool-框架/消息推送/消息推送技术方案.html" class="nav-link">
+  消息推送
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-use" class="dropdown-title"><span class="title">zs-use</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-use" class="mobile-dropdown-title"><span class="title">zs-use</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zs-use/linux/基本使用/" class="nav-link">
+  基本使用
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/常见问题/" class="nav-link">
+  常见问题
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/shell编程/" class="nav-link">
+  shell编程
+</a></li><li class="dropdown-subitem"><a href="/zs-use/linux/虚拟化/" class="nav-link">
+  虚拟化
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/zs-use/idea/" class="nav-link">
+  IDEA
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/env/" class="nav-link">
+  env
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/maven/自定义archetype-01.html" class="nav-link">
+  maven
+</a></li><li class="dropdown-item"><!----> <a href="/zs-use/下载视频/下载器.html" class="nav-link">
+  下载视频
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-web" class="dropdown-title"><span class="title">zs-web</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-web" class="mobile-dropdown-title"><span class="title">zs-web</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-web/tool-小结/" class="nav-link">
+  tool-小结
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/project/html/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/zs-web/node/nvm--安装.html" class="nav-link">
+  node
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="zs-project" class="dropdown-title"><span class="title">zs-project</span> <span class="arrow down"></span></button> <button type="button" aria-label="zs-project" class="mobile-dropdown-title"><span class="title">zs-project</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zs-project/mallchat/" class="nav-link">
+  mallchat
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Iframe</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/web/iframe/iframe-标签属性.html" class="sidebar-link">iframe介绍</a></li><li><a href="/web/iframe/iframe-简单使用.html" class="active sidebar-link">iframe简单使用</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/web/iframe/iframe-通信.html" class="sidebar-link">iframe通信</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="iframe简单使用"><a href="#iframe简单使用" class="header-anchor">#</a> iframe简单使用</h1> <h3 id="_1-iframe简单使用"><a href="#_1-iframe简单使用" class="header-anchor">#</a> 1.iframe简单使用</h3> <p><code>&lt;iframe&gt;</code> 标签规定一个内联框架。</p> <p>一个内联框架被用来在当前 HTML 文档中嵌入另一个文档。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>420</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>330</span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>auto</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>URL</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>width插入页的宽；</li> <li>height插入页的高；</li> <li>scrolling 是否显示页面滚动条（可选的参数为auto、yes、no，如果省略这个参数，则默认为auto）；</li> <li>frameborder 边框大小；</li></ul> <p><strong>注意：URL建议用绝对路径</strong></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>auto</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>WWW</span> <span class="token attr-name">.webjx.com</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>如果一个页面里面有框架，点页面里的连接，要求在这个<code>&lt;iframe&gt;</code> 里打开。在<code>&lt;iframe &gt;</code>中规定name</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>**</span>  <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>然后在修改默认打开模式，：网页head中加上<code>&lt;a href=URL target=**&gt;</code>或部分连接的目标框架设为（**）</p> <p>要插入一个页面。要求只拿中间一部分。其他的都不要。</p> <p>代码：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>123</span>  <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>middle</span> <span class="token attr-name">marginwidth</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">marginheight</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">vspace</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>-170</span> <span class="token attr-name">hspace</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>0</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>http://www.webjx.com/<span class="token punctuation">&quot;</span></span>  <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>no</span> <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>no</span>  <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>776</span>  <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>2500</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>控制插入页被框架覆盖的深度 <code>marginwidth=0 marginheight=0；</code>控制框架覆盖上部分的深度 <code>vspace=-170</code></p> <p>scrolling滚动条要否（auto、yes、no） frameborder框架的边框大小，width=776 height=2500此框架的大小。</p> <h3 id="_2-获取iframe"><a href="#_2-获取iframe" class="header-anchor">#</a> 2.获取iframe</h3> <p>常用获取元素的方法，dom ,jQ等;</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> ifr <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>‘mainIframe0’<span class="token punctuation">)</span>
+</code></pre></div><h3 id="_3-获取iframe-元素值"><a href="#_3-获取iframe-元素值" class="header-anchor">#</a> 3.获取iframe 元素值</h3> <div class="language-js extra-class"><pre class="language-js"><code>ifr<span class="token punctuation">.</span>contentWindow
+</code></pre></div><p>拿到的是window 对象</p> <div class="language-js extra-class"><pre class="language-js"><code>Window <span class="token punctuation">{</span><span class="token literal-property property">postMessage</span><span class="token operator">:</span> ƒ<span class="token punctuation">,</span> <span class="token literal-property property">blur</span><span class="token operator">:</span> ƒ<span class="token punctuation">,</span> <span class="token literal-property property">focus</span><span class="token operator">:</span> ƒ<span class="token punctuation">,</span> <span class="token literal-property property">close</span><span class="token operator">:</span> ƒ<span class="token punctuation">,</span> <span class="token literal-property property">parent</span><span class="token operator">:</span> Window<span class="token punctuation">,</span>
+…<span class="token punctuation">}</span>
+</code></pre></div><p><code>ifr.contentWindow.</code>值 定义的全局变量。</p> <h3 id="_4-iframe获取父页面的信息"><a href="#_4-iframe获取父页面的信息" class="header-anchor">#</a> 4.iframe获取父页面的信息：</h3> <p>获取父页面元素的值：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">jquery方式：$</span><span class="token punctuation">(</span><span class="token string">&quot;#auditDate&quot;</span><span class="token punctuation">,</span>parent<span class="token punctuation">.</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+js方式：parent<span class="token punctuation">.</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>“auditDate”<span class="token punctuation">)</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+</code></pre></div><p>本文转自 <a href="http://t.csdnimg.cn/gAroq" target="_blank" rel="noopener noreferrer">http://t.csdnimg.cn/gAroq<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，如有侵权，请联系删除。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/iframe/iframe-标签属性.html" class="prev">
+        iframe介绍
+      </a></span> <span class="next"><a href="/web/iframe/iframe-通信.html">
+        iframe通信
+      </a>
+      →
+    </span></p></div>  <!----></main></div><div class="global-ui"><!----><!----><!----></div></div>
+    <script src="/assets/js/app.99bef45f.js" defer></script><script src="/assets/js/2.086d8f22.js" defer></script><script src="/assets/js/158.9509f4e7.js" defer></script><script src="/assets/js/99.7ba210b9.js" defer></script>
+  </body>
+</html>
