@@ -7,6 +7,25 @@ autoGroup+1: 'Linux概述'
 > 
 > https://linux265.com/course/linux-command-ldconfig.html
 
+
+命令速查：[https://man.niaoge.com/](https://man.niaoge.com/)
+<style>
+#appid {
+    transform: scale(0.7, 1);
+    width: 150%;
+    height: 500px;
+    transform-origin: left top;
+}
+#appid iframe {
+    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<div id="appid">
+<iframe src="https://man.niaoge.com/" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="yes"></iframe>
+</div>
+
 ::: tip 了解
 
 Linux系统安装、help、man手册

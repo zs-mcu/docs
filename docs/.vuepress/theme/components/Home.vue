@@ -4,25 +4,31 @@
     :aria-labelledby="data.heroText !== null ? 'main-title' : null"
   >
     <header class="hero">
-      <img
-        v-if="data.heroImage"
-        :src="$withBase(data.heroImage)"
-        :alt="data.heroAlt || 'hero'"
-      >
+<!--      <img-->
+<!--        v-if="data.heroImage"-->
+<!--        :src="$withBase(data.heroImage)"-->
+<!--        :alt="data.heroAlt || 'hero'"-->
+<!--      >-->
 
-      <h1
-        v-if="data.heroText !== null"
-        id="main-title"
-      >
-        {{ data.heroText || $title || 'Hello' }}
-      </h1>
+<!--      <h1-->
+<!--        v-if="data.heroText !== null"-->
+<!--        id="main-title"-->
+<!--      >-->
+<!--        {{ data.heroText || $title || 'Hello' }}-->
+<!--      </h1>-->
 
-      <p
-        v-if="data.tagline !== null"
-        class="description"
-      >
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-      </p>
+<!--      <p-->
+<!--        v-if="data.tagline !== null"-->
+<!--        class="description"-->
+<!--      >-->
+<!--        {{ data.tagline || $description || 'Welcome to your VuePress site' }}-->
+<!--      </p>-->
+
+      <div style="width: 100%;height: 500px">
+        <iframe
+            style="width:100%;height:100%"
+            src="/html/知识图谱.html" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+      </div>
 
       <p
         v-if="data.actionText && data.actionLink"
@@ -63,6 +69,11 @@
       slot-key="footer"
       class="footer"
     />
+    <img
+        v-if="data.heroImage"
+        :src="$withBase(data.heroImage)"
+        :alt="data.heroAlt || 'hero'"
+    >
   </main>
 </template>
 

@@ -14,7 +14,6 @@ https://www.bilibili.com/video/BV1vm421T7Kw
     height: 100%;
 }
 </style>
-
 <div id="appid">
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1605087845&bvid=BV1vm421T7Kw&cid=1597378318&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 </div>

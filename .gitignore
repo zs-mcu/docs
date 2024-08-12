@@ -135,8 +135,7 @@ dist
 # idea
 .idea/
 
-zsdist/docs/
-zsdist/dist/
+zsdist/*
 
 # 隐私密文
 # secret.js
