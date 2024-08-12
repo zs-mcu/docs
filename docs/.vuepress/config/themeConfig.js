@@ -6,5 +6,6 @@ module.exports = {
   nav: nav,
   //使用自动生成
   //sidebar: sidebarConfig ,
+  search: false,
   lastUpdated: '更新时间',
 }

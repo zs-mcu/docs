@@ -86,18 +86,17 @@ https://github.com/tech-shrimp/docker_image_pusher
 |1Panel|[https://github.com/1Panel-dev/1Panel/](https://github.com/1Panel-dev/1Panel/)|https://docker.1panel.live|
 |Daocloud|[https://github.com/DaoCloud/public-image-mirror](https://github.com/DaoCloud/public-image-mirror)|https://docker.m.daocloud.io|
 |耗子面板|[https://github.com/TheTNB/panel](https://github.com/TheTNB/panel 	)|https://hub.rat.dev|
+|毫秒镜像|https://1ms.run/|https://docker.1ms.run|
 
 
 #### Linux配置镜像站
-
-
 
 
 ```
 sudo vi /etc/docker/daemon.json
 ```
 输入下列内容，最后按ESC，输入 :wq! 保存退出。
-```
+```sh
 {
     "registry-mirrors": [
         "https://docker.m.daocloud.io",
