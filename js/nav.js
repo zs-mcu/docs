@@ -21,13 +21,15 @@ module.exports = [
       { text: 'cygwin', link: '/小工具/cygwin/'},
       { text: 'markmap', link: '/小工具/markmap/'},
       { text: 'html2md', link: '/小工具/html2md/'},
-      { text: 'markdown', link: '/小工具/markdown/'}
+      { text: 'markdown', link: '/小工具/markdown/'},
+      { text: 'codeAi', link: '/小工具/codeAi/'}
     ]
   },
   {
     "text":"小需求",
     "items": [
-      { text: 'js需求', link: '/小需求/js需求/js-分组' }
+      { text: 'js需求', link: '/小需求/js需求/js-分组' },
+      { text: 'js需求', link: '/小需求/html需求/video-播放视频' }
     ]
   },
   {
