@@ -42,6 +42,12 @@ module.exports = [
     ]
   },
   {
+    "text": "小框架",
+    "items": [
+      { text: 'kkFileView', link: '/小框架/kkfileview/'},
+    ]
+  },
+  {
     "text": "zs-se",
     "items": [
       { "text": "基础", "link": "/zs-se/基础/" },
