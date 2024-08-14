@@ -23,7 +23,7 @@ module.exports = [
       { text: 'html2md', link: '/小工具/html2md/'},
       { text: 'markdown', link: '/小工具/markdown/'},
       { text: 'codeAi', link: '/小工具/codeAi/'},
-      { text: 'ppt', link: '/小工具/ppt/'},
+      { text: 'ppt', link: '/小工具/ppt/图形绘制'},
     ]
   },
   {
