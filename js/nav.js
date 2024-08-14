@@ -22,7 +22,8 @@ module.exports = [
       { text: 'markmap', link: '/小工具/markmap/'},
       { text: 'html2md', link: '/小工具/html2md/'},
       { text: 'markdown', link: '/小工具/markdown/'},
-      { text: 'codeAi', link: '/小工具/codeAi/'}
+      { text: 'codeAi', link: '/小工具/codeAi/'},
+      { text: 'ppt', link: '/小工具/ppt/'},
     ]
   },
   {
