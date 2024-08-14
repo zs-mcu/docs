@@ -27,6 +27,13 @@ module.exports = [
     ]
   },
   {
+    "text":"大工具",
+    "items": [
+      { text: 'git', link: "/大工具/git/常用命令" },
+      { text: 'idea', link: "/大工具/idea/" }
+    ]
+  },
+  {
     "text":"小需求",
     "items": [
       { text: 'js', link: '/小需求/js/js-分组' },
