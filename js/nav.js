@@ -12,6 +12,7 @@ module.exports = [
     "text":"中间件",
     "items": [
       { text: 'docker', link: "/中间件/docker/" },
+      { text: 'nginx', link: "/中间件/nginx/" },
     ]
   },
   {
