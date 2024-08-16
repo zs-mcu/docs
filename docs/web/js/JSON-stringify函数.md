@@ -1,5 +1,5 @@
 ---
-title: 'JSON.stringify()'
+title: 'JSON.stringify'
 autoGroup-1: api
 ---
 
