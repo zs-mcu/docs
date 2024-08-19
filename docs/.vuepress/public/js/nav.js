@@ -57,6 +57,12 @@ module.exports = [
     ]
   },
   {
+    "text": "杂谈",
+    "items": [
+      { text: 'cpu', link: '/杂谈/cpu/'},
+    ]
+  },
+  {
     "text": "zs-se",
     "items": [
       { "text": "基础", "link": "/zs-se/基础/" },
