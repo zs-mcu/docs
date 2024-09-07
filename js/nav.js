@@ -41,6 +41,7 @@ module.exports = [
       { text: 'html', link: '/小需求/html/video-播放视频' },
       { text: 'iframe', link: '/小需求/iframe/iframe-自适应高度' },
       { text: 'css', link: '/小需求/css/撑开高度' },
+      { text: 'java', link: '/小需求/java/ip获取' },
     ]
   },
   {
